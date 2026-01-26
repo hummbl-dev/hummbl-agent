@@ -2,7 +2,7 @@
 name: p1-perspective-framing
 description: Apply P1 mental model for problem framing and perspective shifting. Frame challenges from multiple viewpoints to reveal hidden insights and opportunities.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-systems/base120?dir=skills/perspective-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/perspective-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P1 Perspective Framing
