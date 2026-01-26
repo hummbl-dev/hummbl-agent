@@ -3,49 +3,55 @@
 Date: 2026-01-26
 
 ## Objective
-[Placeholder]
+Stabilize the governed multi-runner substrate (registry, router, runners, execution) and document safe recursive improvement mode.
 
 ## Constraints
-- [Placeholder]
+- No vendor code modification; vendor repos remain submodules/pins only.
+- Governed execution only (allowlisted commands, artifact hashes, run logs).
+- No autonomous learning or recursive self-modification without human approval.
 
 ## Current plan (next 3 steps)
-1. [Placeholder]
-2. [Placeholder]
-3. [Placeholder]
+1. Validate CI passes with new router/skill registry/lint steps.
+2. Draft initial Base120-to-skill registry entries using the template (manual/prompt-only).
+3. Run a controlled experiment cycle and record outcome under `_state/experiments/`.
 
 ## Workstream locks
-- [Placeholder]
+- docs + governance updates: hummbl-dev (until 2026-01-26)
 
 ## Next handoff
-[Placeholder]
+- for: hummbl-dev
+  instructions: Validate CI, then begin Base120 skill definition pass using the template.
 
 ## Snapshot
 - Repo: hummbl-agent
-- Focus: Multi-agent, multi-model orchestration (Clawdbot, ClawdHub, Everything Claude Code, Codex)
-- Vendor policy: No vendor directory present; upstream references in configs only.
+- Focus: Multi-agent, multi-model orchestration with governed execution and audit trail
+- Vendor policy: submodules/pins only; no edits under vendor/
 
 ## Structure
-- agents/: HUMMBL Claude Code agents (architect, planner, sitrep, transformation guide)
-- commands/: HUMMBL slash commands (apply transformation, plan, sitrep, verify)
-- configs/: Clawdbot gateway + workspace setup, Claude Code settings, learning instincts
-- skills/: Base120 skill families (P/IN/CO/DE/RE/SY)
-- scripts/: sitrep generation + verify helper
-- docs/: workflow examples + validation checklist
-- examples/: placeholder
+- packages/kernel: types-only kernel contracts
+- packages/skills/registry: canonical skill registry JSON
+- packages/router: deterministic routing skeleton
+- packages/runners: runner scaffolds (claude-code, codex, grok, template)
+- packages/adapters/process: governed process execution adapter
+- packages/vendor-bridge: vendor mapping + path bridges
+- scripts/: orchestrate, run-cmd, sync-upstreams, lint helpers
+- docs/: SITREP schema/lint, Base120→skill template, experiment mode + walkthrough
 
 ## Key Configs
-- configs/clawdbot/gateway.json defines routing, models, skills registry, and HUMMBL coordination.
-- configs/claude-code/settings.json provides plugin enablement and learning hooks.
-- configs/learning/continuous-learning.json + instincts/* seed behavior tracking.
+- configs/process-policy.allowlist controls governed execution
+- configs/experiment-policy.json defines controlled recursive improvement guardrails
+- configs/claude-code/settings.json provides plugin enablement + learning hooks (external)
 
 ## Health Check
-- scripts/verify-hummbl.sh reports PASS (2026-01-26).
-- No documentation path mismatches detected by verification script.
+- Skill registry lint and SITREP lint available in scripts/
+- Router skeleton + runner templates present
 
 ## Gaps / Risks
-- Repository does not include AGENTS.md, SOUL.md, TOOLS.md referenced by configs/clawdbot/workspace-setup.md (expected in ~/clawd/hummbl-agent, not in repo). Clarify whether these should be tracked here or remain external.
-- README lists generate-sitrep.sh but does not mention verify-hummbl.sh (minor documentation gap).
+- No executable Base120 skills yet (registry-only).
+- Router selection semantics need tests and first real integration.
+- Observations remain external to governance (out-of-repo).
 
 ## Next Minimal Additions
-- Decide whether to add templates for AGENTS.md / SOUL.md / TOOLS.md under a dedicated directory (e.g., docs/templates) or keep external.
-- Update README to mention scripts/verify-hummbl.sh if desired.
+- Add Base120 skill entries (manual/prompt-only) to registry.json.
+- Add router tests + sample routing cases.
+- Align SITREP generation outputs with schema for canonical status.
