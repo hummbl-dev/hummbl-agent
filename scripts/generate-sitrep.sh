@@ -205,10 +205,10 @@ EOF
 
 if [[ -n "${IMPORT_FILE}" ]]; then
     if [[ -z "${IMPORT_SOURCE}" ]]; then
-        echo \"--import requires --source\" >&2
+        echo "--import requires --source" >&2
         exit 1
     fi
-    \"${SCRIPT_DIR}/import-observation.sh\" --file \"${IMPORT_FILE}\" --source \"${IMPORT_SOURCE}\" --note \"${IMPORT_NOTE}\"
+    "${SCRIPT_DIR}/import-observation.sh" --file "${IMPORT_FILE}" --source "${IMPORT_SOURCE}" --note "${IMPORT_NOTE}"
 fi
 
 if [[ -x "${SCRIPT_DIR}/lint-sitrep.sh" ]]; then
