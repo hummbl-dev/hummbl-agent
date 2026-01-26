@@ -6,7 +6,9 @@ This folder contains the integration work for HUMMBL Systems with Clawdbot, Claw
 
 ```
 hummbl-agent/
+├── .github/                                  # CI workflows + checks
 ├── README.md                                  # This file
+├── _state/                                    # Canonical state + run logs
 ├── skills/                                    # Base120 mental model skills for ClawdHub
 │   ├── P-perspective/                         # Perspective transformation (P1-P20)
 │   ├── IN-inversion/                          # Inversion transformation (IN1-IN20)
@@ -15,6 +17,13 @@ hummbl-agent/
 │   ├── RE-recursion/                          # Recursion transformation (RE1-RE20)
 │   ├── SY-systems/                            # Systems transformation (SY1-SY20)
 │   └── integration/                           # Cross-transformation skills
+├── packages/                                  # Governed contracts + execution layers
+│   ├── kernel/                                # Types-only kernel interfaces
+│   ├── skills/registry/                       # Skill registry (canonical JSON)
+│   ├── router/                                # Deterministic routing skeleton
+│   ├── runners/                               # Runner scaffolding + prompts
+│   ├── adapters/process/                      # Governed process execution adapter
+│   └── vendor-bridge/                         # Vendor mapping + path bridges
 ├── agents/                                    # HUMMBL-specific Claude Code agents
 │   ├── hummbl-architect.md                    # System design with mental models
 │   ├── hummbl-planner.md                      # Planning with Base120
@@ -30,10 +39,18 @@ hummbl-agent/
 │   ├── claude-code/                           # Claude Code settings template
 │   └── learning/                              # Continuous learning configs + instincts
 ├── scripts/                                   # Automation scripts
-│   └── generate-sitrep.sh                     # SITREP generator
+│   ├── generate-sitrep.sh                     # SITREP generator
+│   ├── orchestrate.sh                         # Open run + generate prompts
+│   ├── run-cmd.sh                             # Governed command execution
+│   ├── sync-upstreams.sh                      # Vendor pin tooling
+│   └── lint-*.sh                              # Lint helpers (state, skills, SITREP)
 ├── docs/                                      # Documentation
 │   ├── workflow-examples.md                   # Usage examples
-│   └── validation-checklist.md                # Lightweight validation checklist
+│   ├── validation-checklist.md                # Lightweight validation checklist
+│   ├── sitrep-schema.md                       # SITREP schema
+│   ├── sitrep-lint-checklist.md               # SITREP lint checklist
+│   └── base120-skill-template.md              # Base120 → skill template
+├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples
 ```
@@ -41,19 +58,22 @@ hummbl-agent/
 ## Integration Components
 
 ### 1. ClawdHub Skills
+
 - Publish Base120 mental models as installable skills
 - Version-controlled mental model evolution
 - Community distribution and feedback
 
 ### 2. Clawdbot Integration
+
 - Multi-agent coordination hub
 - Voice-accessible mental models
 - Cross-platform communication
 
 ### 3. Claude Code Enhancement
+
 - HUMMBL-specific agents and commands
-- Continuous learning of mental model patterns
-- Automated SITREP generation
+- Governed execution + artifact provenance
+- Automated SITREP generation + lint
 
 ## Quick Start
 
@@ -72,6 +92,23 @@ hummbl-agent/
    ls configs scripts
    ```
 
+4. **Optional: seed workspace coordination templates**
+   ```bash
+   mkdir -p ~/clawd/hummbl-agent
+   cp docs/templates/AGENTS.md ~/clawd/hummbl-agent/AGENTS.md
+   cp docs/templates/SOUL.md ~/clawd/hummbl-agent/SOUL.md
+   cp docs/templates/TOOLS.md ~/clawd/hummbl-agent/TOOLS.md
+   ```
+
+5. **Open a run + generate prompts**
+   ```bash
+   scripts/orchestrate.sh
+   ```
+
+6. **Run a governed command**
+   ```bash
+   scripts/run-cmd.sh --runner codex -- git status --porcelain
+   ```
 ## Development Phases
 
 - **Phase 1**: Foundation setup and basic skills (P1 + coordination)
@@ -80,7 +117,7 @@ hummbl-agent/
 
 ## Goal
 
-Make HUMMBL Base120 the mental intelligence layer for AI agent coordination, leveraging best-in-class tools for distribution, communication, and learning.
+Make HUMMBL Base120 the mental intelligence layer for AI agent coordination, leveraging governed tooling and audit-first execution.
 
 ---
 *HUMMBL Systems - Mental Models for AI Agent Coordination*
