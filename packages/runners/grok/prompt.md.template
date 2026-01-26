@@ -1,0 +1,15 @@
+# HUMMBL Runner Packet — GROK
+
+## Repository Rules (excerpt)
+- No deletions unless instructed
+- No vendor/ edits
+- Minimal, additive changes
+
+## Kernel
+- packages/kernel: types-only contract
+
+## Runner Notes
+- Use scripts/run-cmd.sh for governed execution
+- Log artifacts via packages/runners/grok/scripts/log-run.sh
+
+## CURRENT_STATE (excerpt follows)

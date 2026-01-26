@@ -38,6 +38,7 @@ hummbl-agent/
 │   ├── clawdbot/                              # Clawdbot gateway/workspace configs
 │   ├── claude-code/                           # Claude Code settings template
 │   ├── codex/                                 # Codex runner guidance
+│   ├── grok/                                  # Grok runner guidance
 │   └── learning/                              # Continuous learning configs + instincts
 ├── scripts/                                   # Automation scripts
 │   ├── generate-sitrep.sh                     # SITREP generator
@@ -81,6 +82,11 @@ hummbl-agent/
 - Automated SITREP generation + lint
 
 ### 4. Codex Runner
+
+- Prompt packet generation + run logging
+- Governed execution via `scripts/run-cmd.sh`
+
+### 5. Grok Runner
 
 - Prompt packet generation + run logging
 - Governed execution via `scripts/run-cmd.sh`
