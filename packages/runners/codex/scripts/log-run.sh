@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "$0")/../../../.." && pwd)"
 RUNS_DIR="${ROOT_DIR}/_state/runs"
 DATE_STR="$(date +%Y-%m-%d)"
 RUN_DIR="${RUNS_DIR}/${DATE_STR}"
@@ -13,8 +13,16 @@ artifact_hash=""
 use_hash_file=false
 date_override=""
 
-if [[ $# -ge 1 && "$1" != --* ]]; then
-  summary="$1"
+has_flags=false
+for arg in "$@"; do
+  if [[ "${arg}" == --* ]]; then
+    has_flags=true
+    break
+  fi
+done
+
+if [[ "${has_flags}" == false ]]; then
+  summary="${1:-}"
   artifact_path="${2:-}"
   artifact_hash="${3:-}"
 else
@@ -56,7 +64,7 @@ if [[ -n "${date_override}" ]]; then
 fi
 
 if [[ -z "${summary}" ]]; then
-  echo "Usage: log-run.sh \"summary\" [artifact_path] [sha256] | log-run.sh \"summary\" --artifact <path> [--hash <sha256>] [--hash-file] [--date <YYYY-MM-DD>]" >&2
+  echo "Usage: log-run.sh \"summary\" [artifact_path] [sha256] | log-run.sh \"summary\" [--artifact <path>] [--hash <sha256>] [--hash-file] [--date <YYYY-MM-DD>]" >&2
   exit 1
 fi
 

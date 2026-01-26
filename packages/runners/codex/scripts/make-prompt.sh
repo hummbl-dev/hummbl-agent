@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "$0")/../../../.." && pwd)"
 TEMPLATE="${ROOT_DIR}/packages/runners/codex/prompt.md.template"
 STATE_FILE="${ROOT_DIR}/_state/CURRENT_STATE.md"
 
