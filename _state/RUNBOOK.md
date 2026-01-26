@@ -30,3 +30,8 @@
 ## Kernel changes require a decision note
 - Any changes under `packages/kernel/` must include a decision note under `_state/decisions/`.
 - Alternatively, add `_state/decisions/KERNEL_CHANGE_OK` for an explicit override.
+
+## Controlled recursive improvement mode
+- Use `scripts/experiment-run.sh` to open an experiment run under `_state/experiments/YYYY-MM-DD/`.
+- Proposals must be recorded in `PROPOSALS.md` and approved in `APPROVAL.md`.
+- Apply changes manually only after human approval.

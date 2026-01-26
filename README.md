@@ -51,7 +51,9 @@ hummbl-agent/
 │   ├── sitrep-schema.md                       # SITREP schema
 │   ├── sitrep-lint-checklist.md               # SITREP lint checklist
 │   ├── base120-skill-template.md              # Base120 → skill template
-│   └── runner-howto.md                         # Runner scaffold how-to
+│   ├── runner-howto.md                         # Runner scaffold how-to
+│   ├── experiment-mode.md                      # Controlled recursive improvement mode
+│   └── experiment-approval-checklist.md        # Human approval checklist
 ├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples

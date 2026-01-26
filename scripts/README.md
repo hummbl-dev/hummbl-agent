@@ -22,3 +22,8 @@ scripts/run-cmd.sh --runner claude-code -- git status --porcelain
 ```bash
 scripts/lint-sitrep.sh /path/to/SITREP.md
 ```
+
+## Controlled Experiment Run
+```bash
+scripts/experiment-run.sh
+```

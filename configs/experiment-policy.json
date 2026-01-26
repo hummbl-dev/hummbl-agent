@@ -1,0 +1,22 @@
+{
+  "mode": "controlled-recursive-improvement",
+  "proposalOnly": true,
+  "humanApprovalRequired": true,
+  "scope": {
+    "allowedPaths": ["_state/experiments"],
+    "allowBranch": true,
+    "denyPaths": ["vendor", ".github/workflows"]
+  },
+  "execution": {
+    "allowRunCmd": true,
+    "allowlistFile": "configs/process-policy.allowlist",
+    "defaultTimeoutMs": 30000
+  },
+  "rateLimit": {
+    "maxIterations": 1,
+    "timeboxMinutes": 60
+  },
+  "logging": {
+    "requiredArtifacts": ["RUN.md", "PROPOSALS.md", "APPROVAL.md"]
+  }
+}
