@@ -14,13 +14,20 @@ Standardize how a mental model becomes a governed skill definition.
 
 ### Skill Definition (Registry Entry)
 
-- Skill id: `lowercase-with-dashes`
+- Skill id: `S.<category>.<slug>.v<semver>`
 - Name: `human-readable`
 - Summary: `<= 140 chars`
 - Tags: `["base120", "model-code", "domain"]`
 - Version: `0.1.0`
 - Status: `experimental` | `active`
 - Owners: `["owner"]`
+- Skill kind: `primitive_transformation` | `integration_pattern` | `model_binding`
+- Transformation code: `T.PER` | `T.INV` | `T.COM` | `T.DEC` | `T.REC` | `T.SYS` | `T.INT`
+- Base120 bindings:
+  - drives_selection: `[model codes]`
+  - sets_parameters: `[{model, param, rule}]`
+  - adds_constraints: `[{model, constraint_id}]`
+  - stop_conditions: `[{model, condition_id}]`
 
 ### Selection Signals
 
@@ -56,6 +63,18 @@ Standardize how a mental model becomes a governed skill definition.
 - createdAt: YYYY-MM-DD
 - source: native | vendor-pattern
 - references: [paths/links]
+
+## Kind rules (enforced by lint)
+
+- `primitive_transformation`: no `dependsOnSkills`, no `gates`, no `evidenceBundle`.
+- `integration_pattern`: must `dependsOnSkills` (>=2), plus `gates` and `evidenceBundle`.
+- `model_binding`: no tools, `permissions.exec = none`.
+
+## Namespace reminders
+
+- Transformations are `T.*` codes (never Base120 codes).
+- Mental models are Base120 (`P1`, `SY1`, `DE3`, ...).
+- Skills are `S.*` ids and reference Base120 only via bindings.
 
 ## Migration Path
 

@@ -3,9 +3,9 @@ import { pickBest, pickRunner, pickRunnerWithCapabilities, policyCheck, scoreSki
 import type { SkillDefinition, RunnerId } from "../../skills/registry/src/types";
 
 const scriptBySkill: Record<string, string> = {
-  "orchestrate-session": "scripts/orchestrate.sh",
-  "run-governed-command": "scripts/run-cmd.sh",
-  "sync-upstreams": "scripts/sync-upstreams.sh",
+  "S.primitive.T.SYS.orchestrate-session.v0.1.0": "scripts/orchestrate.sh",
+  "S.primitive.T.SYS.run-governed-command.v0.1.0": "scripts/run-cmd.sh",
+  "S.primitive.T.SYS.sync-upstreams.v0.1.0": "scripts/sync-upstreams.sh",
 };
 
 const promptPathForRunner = (runner: string): string =>

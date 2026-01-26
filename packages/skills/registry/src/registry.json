@@ -1,6 +1,6 @@
 [
   {
-    "id": "orchestrate-session",
+    "id": "S.primitive.T.SYS.orchestrate-session.v0.1.0",
     "name": "Orchestrate Session",
     "summary": "Open today’s run and generate prompts for Claude Code, Codex, and Grok.",
     "tags": [
@@ -64,10 +64,21 @@
         "invocation": "scripts/orchestrate.sh",
         "expectedOutcome": "Creates prompt files under _state/runs/YYYY-MM-DD/prompts/."
       }
-    ]
+    ],
+    "skill_kind": "primitive_transformation",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "aliases": [
+      "orchestrate-session"
+    ],
+    "transformation_code": "T.SYS"
   },
   {
-    "id": "run-governed-command",
+    "id": "S.primitive.T.SYS.run-governed-command.v0.1.0",
     "name": "Run Governed Command",
     "summary": "Execute an allowlisted command and log hashed artifacts into the run log.",
     "tags": [
@@ -139,10 +150,21 @@
         "invocation": "scripts/run-cmd.sh --runner codex -- git status --porcelain",
         "expectedOutcome": "Creates stdout/stderr/exitcode artifacts and logs them."
       }
-    ]
+    ],
+    "skill_kind": "primitive_transformation",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "aliases": [
+      "run-governed-command"
+    ],
+    "transformation_code": "T.SYS"
   },
   {
-    "id": "sync-upstreams",
+    "id": "S.primitive.T.SYS.sync-upstreams.v0.1.0",
     "name": "Sync Upstreams",
     "summary": "Print submodule init/status/update commands and record upstream pins.",
     "tags": [
@@ -214,6 +236,584 @@
         "invocation": "scripts/sync-upstreams.sh status",
         "expectedOutcome": "Prints current submodule SHAs or not initialized."
       }
-    ]
+    ],
+    "skill_kind": "primitive_transformation",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "aliases": [
+      "sync-upstreams"
+    ],
+    "transformation_code": "T.SYS"
+  },
+  {
+    "id": "S.pattern.T.INT.route-prioritize.v0.1.0",
+    "name": "P1 Routing and Priority",
+    "summary": "Apply P1 to prioritize objectives and select next transformations.",
+    "tags": [
+      "base120",
+      "p1",
+      "routing",
+      "priority"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "integration_pattern",
+    "inputs": [
+      {
+        "name": "objective",
+        "type": "string",
+        "required": true,
+        "description": "Current objective."
+      },
+      {
+        "name": "constraints",
+        "type": "string[]",
+        "required": false,
+        "description": "Known constraints."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "priorityOrder",
+        "type": "string[]",
+        "description": "Ordered priorities or next steps."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "P1"
+      ],
+      "sets_parameters": [
+        {
+          "model": "P1",
+          "param": "priority_rule",
+          "rule": "Rank by first principles impact."
+        }
+      ],
+      "adds_constraints": [
+        {
+          "model": "P1",
+          "constraint_id": "avoid-nonessential-actions"
+        }
+      ],
+      "stop_conditions": [
+        {
+          "model": "P1",
+          "condition_id": "objective-ranked"
+        }
+      ]
+    },
+    "dependsOnSkills": [
+      "S.primitive.T.DEC.decompose-plan.v0.1.0",
+      "S.primitive.T.PER.infer-decide.v0.1.0"
+    ],
+    "gates": [
+      "priority_gate",
+      "conflict_gate"
+    ],
+    "evidenceBundle": [
+      "objective",
+      "constraints"
+    ],
+    "aliases": [
+      "p1-routing-priority"
+    ],
+    "transformation_code": "T.INT"
+  },
+  {
+    "id": "S.primitive.T.DEC.decompose-plan.v0.1.0",
+    "name": "DE3 Decompose and Plan",
+    "summary": "Decompose a problem into ordered, testable steps.",
+    "tags": [
+      "base120",
+      "de3",
+      "decompose",
+      "plan"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "primitive_transformation",
+    "inputs": [
+      {
+        "name": "problem",
+        "type": "string",
+        "required": true,
+        "description": "Problem statement."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "plan",
+        "type": "string[]",
+        "description": "Ordered sub-tasks."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "DE3"
+      ],
+      "sets_parameters": [
+        {
+          "model": "DE3",
+          "param": "decomposition_depth",
+          "rule": "Depth until steps are testable."
+        }
+      ],
+      "adds_constraints": [],
+      "stop_conditions": [
+        {
+          "model": "DE3",
+          "condition_id": "steps-testable"
+        }
+      ]
+    },
+    "aliases": [
+      "de3-decompose-plan"
+    ],
+    "transformation_code": "T.DEC"
+  },
+  {
+    "id": "S.primitive.T.SYS.retrieve-ground.v0.1.0",
+    "name": "RE2 Retrieve and Ground",
+    "summary": "Retrieve existing context and ground decisions in evidence.",
+    "tags": [
+      "base120",
+      "re2",
+      "retrieve",
+      "ground"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "primitive_transformation",
+    "inputs": [
+      {
+        "name": "question",
+        "type": "string",
+        "required": true,
+        "description": "What needs grounding."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "evidence",
+        "type": "string[]",
+        "description": "Relevant grounded facts or references."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "RE2"
+      ],
+      "sets_parameters": [
+        {
+          "model": "RE2",
+          "param": "evidence_threshold",
+          "rule": "Require at least two sources."
+        }
+      ],
+      "adds_constraints": [],
+      "stop_conditions": [
+        {
+          "model": "RE2",
+          "condition_id": "evidence-collected"
+        }
+      ]
+    },
+    "aliases": [
+      "re2-retrieve-ground"
+    ],
+    "transformation_code": "T.SYS"
+  },
+  {
+    "id": "S.primitive.T.PER.infer-decide.v0.1.0",
+    "name": "IN3 Infer and Decide",
+    "summary": "Infer likely outcomes and make a bounded decision.",
+    "tags": [
+      "base120",
+      "in3",
+      "infer",
+      "decide"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "primitive_transformation",
+    "inputs": [
+      {
+        "name": "options",
+        "type": "string[]",
+        "required": true,
+        "description": "Decision options."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "decision",
+        "type": "string",
+        "description": "Chosen option with rationale."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "IN3"
+      ],
+      "sets_parameters": [
+        {
+          "model": "IN3",
+          "param": "risk_threshold",
+          "rule": "Prefer reversible decisions."
+        }
+      ],
+      "adds_constraints": [],
+      "stop_conditions": [
+        {
+          "model": "IN3",
+          "condition_id": "decision-made"
+        }
+      ]
+    },
+    "aliases": [
+      "in3-infer-decide"
+    ],
+    "transformation_code": "T.PER"
+  },
+  {
+    "id": "S.primitive.T.COM.synthesize-ship.v0.1.0",
+    "name": "SY8 Synthesize and Ship",
+    "summary": "Synthesize outputs into a coherent deliverable.",
+    "tags": [
+      "base120",
+      "sy8",
+      "synthesize",
+      "ship"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "primitive_transformation",
+    "inputs": [
+      {
+        "name": "inputs",
+        "type": "string[]",
+        "required": true,
+        "description": "Inputs to synthesize."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "deliverable",
+        "type": "string",
+        "description": "Synthesis output."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "SY8"
+      ],
+      "sets_parameters": [
+        {
+          "model": "SY8",
+          "param": "coherence_rule",
+          "rule": "Ensure end-to-end consistency."
+        }
+      ],
+      "adds_constraints": [],
+      "stop_conditions": [
+        {
+          "model": "SY8",
+          "condition_id": "deliverable-produced"
+        }
+      ]
+    },
+    "aliases": [
+      "sy8-synthesize-ship"
+    ],
+    "transformation_code": "T.COM"
+  },
+  {
+    "id": "S.pattern.T.INT.integrated-run.v0.1.0",
+    "name": "SY1 Integrated Run",
+    "summary": "Integrate the core transformations into an end-to-end run.",
+    "tags": [
+      "base120",
+      "sy1",
+      "integration",
+      "orchestration"
+    ],
+    "version": "0.1.0",
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120-skill-template.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces a structured reasoning output."
+      }
+    ],
+    "skill_kind": "integration_pattern",
+    "inputs": [
+      {
+        "name": "goal",
+        "type": "string",
+        "required": true,
+        "description": "Overall goal."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "runSummary",
+        "type": "string",
+        "description": "Integrated outcome summary."
+      }
+    ],
+    "base120_bindings": {
+      "drives_selection": [
+        "SY1"
+      ],
+      "sets_parameters": [
+        {
+          "model": "SY1",
+          "param": "loop_policy",
+          "rule": "Cycle primitives until coherence gate passes."
+        }
+      ],
+      "adds_constraints": [
+        {
+          "model": "SY1",
+          "constraint_id": "maintain-invariants"
+        }
+      ],
+      "stop_conditions": [
+        {
+          "model": "SY1",
+          "condition_id": "coherence-gate-pass"
+        }
+      ]
+    },
+    "dependsOnSkills": [
+      "S.primitive.T.DEC.decompose-plan.v0.1.0",
+      "S.primitive.T.SYS.retrieve-ground.v0.1.0",
+      "S.primitive.T.PER.infer-decide.v0.1.0",
+      "S.primitive.T.COM.synthesize-ship.v0.1.0"
+    ],
+    "gates": [
+      "coherence_gate",
+      "evidence_gate",
+      "handoff_gate"
+    ],
+    "evidenceBundle": [
+      "plan",
+      "evidence",
+      "decision",
+      "deliverable"
+    ],
+    "aliases": [
+      "sy1-integrated-run"
+    ],
+    "transformation_code": "T.INT"
   }
 ]

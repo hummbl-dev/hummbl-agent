@@ -42,7 +42,7 @@ import type { RunState } from "../kernel/src/state";
 const task: Task = {
   id: "task-1",
   title: "Run governed command for status",
-  description: "Use run-governed-command to capture artifacts.",
+  description: "Use S.primitive.T.SYS.run-governed-command.v0.1.0 to capture artifacts.",
   status: "queued",
   provenance: { sourceType: "user", sourceRef: "cli" },
   createdAt: "2026-01-26",
