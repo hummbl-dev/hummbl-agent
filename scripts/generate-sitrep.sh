@@ -5,10 +5,13 @@
 
 set -euo pipefail
 
+# Script location
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
 # Configuration
-SITREP_DIR="${HOME}/clawd/hummbl-agent/sessions/sitreps"
-OBSERVATIONS_FILE="${HOME}/.claude/homunculus/observations.jsonl"
-WORKSPACE_ROOT="${HOME}/clawd/hummbl-agent"
+SITREP_DIR="${SITREP_DIR:-${HOME}/clawd/hummbl-agent/sessions/sitreps}"
+OBSERVATIONS_FILE="${OBSERVATIONS_FILE:-${HOME}/.claude/homunculus/observations.jsonl}"
+WORKSPACE_ROOT="${WORKSPACE_ROOT:-${HOME}/clawd/hummbl-agent}"
 MAX_SITREPS=50
 
 # Ensure directories exist
@@ -39,17 +42,12 @@ extract_mental_models() {
 
 # Function to get agent coordination status
 get_agent_status() {
-    # Check if Clawdbot gateway is running
-    if pgrep -f "clawdbot.*gateway" > /dev/null; then
-        echo "Gateway: RUNNING"
-    else
-        echo "Gateway: STOPPED"
-    fi
-    
-    # Check recent agent activity
     if [[ -f "${OBSERVATIONS_FILE}" ]]; then
-        echo "Recent Activity: $(tail -n 10 "${OBSERVATIONS_FILE}" | grep -c "agent" || echo "0") agent interactions"
+        echo "Observations: external (non-canonical), recent entries: $(tail -n 10 "${OBSERVATIONS_FILE}" | grep -c \"agent\" || echo \"0\")"
+    else
+        echo "Observations: external (non-governed), none found"
     fi
+    echo "System state not tracked in-repo"
 }
 
 # Function to assess task completion
@@ -58,36 +56,29 @@ assess_tasks() {
     local in_progress=()
     local blocked=()
     
-    # Check for completed components
-    if [[ -f "${WORKSPACE_ROOT}/agents/hummbl-architect.md" ]]; then
-        completed+=("HUMMBL architect agent")
+    # Completed components (governed substrate)
+    if [[ -d "${WORKSPACE_ROOT}/packages/kernel" ]]; then
+        completed+=("Kernel contract (types-only)")
+    fi
+    if [[ -d "${WORKSPACE_ROOT}/packages/runners" ]]; then
+        completed+=("Runner scaffolding (Claude Code, Codex)")
+    fi
+    if [[ -f "${WORKSPACE_ROOT}/scripts/orchestrate.sh" ]]; then
+        completed+=("Orchestrator for run + prompt generation")
+    fi
+    if [[ -f "${WORKSPACE_ROOT}/scripts/run-cmd.sh" ]]; then
+        completed+=("Governed command execution + artifact hashing")
+    fi
+    if [[ -f "${WORKSPACE_ROOT}/packages/skills/registry/src/registry.json" ]]; then
+        completed+=("Skill registry (initial)")
+    fi
+    if [[ -f "${WORKSPACE_ROOT}/scripts/sync-upstreams.sh" ]]; then
+        completed+=("Vendor pin tooling")
     fi
     
-    if [[ -f "${WORKSPACE_ROOT}/commands/apply-transformation.md" ]]; then
-        completed+=("Apply transformation command")
-    fi
-    
-    if [[ -f "${WORKSPACE_ROOT}/skills/P-perspective/p1-first-principles-framing/SKILL.md" ]]; then
-        completed+=("P1 Perspective Framing skill")
-    fi
-    
-    if [[ -f "${WORKSPACE_ROOT}/configs/clawdbot/gateway.json" ]]; then
-        completed+=("Clawdbot gateway configuration")
-    fi
-    
-    if [[ -f "${WORKSPACE_ROOT}/configs/learning/continuous-learning.json" ]]; then
-        completed+=("Continuous learning configuration")
-    fi
-    
-    # Check for in-progress work
-    if [[ -f "${WORKSPACE_ROOT}/agents/sitrep-generator.md" ]]; then
-        in_progress+=("SITREP generation automation")
-    fi
-    
-    # Check for remaining skills directory
-    local remaining_skills=$(find "${WORKSPACE_ROOT}/skills" -name "*.md" | wc -l | tr -d ' ')
-    if [[ $remaining_skills -lt 20 ]]; then
-        in_progress+=("Additional Base120 skills (${remaining_skills}/20)")
+    # In-progress work
+    if [[ -d "${WORKSPACE_ROOT}/packages/router" ]]; then
+        in_progress+=("Router planning skeleton (deterministic contract)")
     fi
     
     printf '%s\n' "Completed: ${completed[*]:-None}"
@@ -99,48 +90,36 @@ assess_tasks() {
 generate_recommendations() {
     local recommendations=()
     
-    # Check what's missing and suggest next steps
-    if [[ ! -f "${WORKSPACE_ROOT}/skills/DE-decomposition/de3-breakdown/SKILL.md" ]]; then
-        recommendations+=("Create DE3 Decomposition skill for systematic problem breakdown")
-    fi
-    
-    if [[ ! -f "${WORKSPACE_ROOT}/skills/SY-systems/sy8-patterns/SKILL.md" ]]; then
-        recommendations+=("Create SY8 Systems Thinking skill for pattern recognition")
-    fi
-    
-    if [[ ! -f "${WORKSPACE_ROOT}/skills/integration/multi-agent-coordination/SKILL.md" ]]; then
-        recommendations+=("Build integration skill for multi-agent coordination")
-    fi
-    
-    if [[ ! -f "${WORKSPACE_ROOT}/docs/workflow-examples.md" ]]; then
-        recommendations+=("Document HUMMBL integration workflow and examples")
-    fi
-    
-    # Mental model suggestions
-    recommendations+=("Apply RE2 for iterative refinement of SITREP process")
-    recommendations+=("Use IN3 to test alternative coordination patterns")
-    recommendations+=("Implement SY1 for larger system pattern analysis")
+    recommendations+=("Define Base120 models as registry entries with manual/prompt steps")
+    recommendations+=("Finalize router skeleton tests and policy checks")
+    recommendations+=("Align SITREP generation with schema + lint rules")
+    recommendations+=("Incrementally replace manual steps with run-script steps")
+    recommendations+=("Expand allowlist for safe, governed commands")
+    recommendations+=("Add decision notes for contract-impacting changes")
+    recommendations+=("Use IN-series for risk framing before execution")
     
     printf '%s\n' "${recommendations[@]}"
 }
 
 # Generate SITREP content
 cat > "${SITREP_FILE}" << EOF
+STATUS: NON-CANONICAL | DRAFT | NOT AUDIT-VERIFIED
+
 SITREP-${SITREP_NUM}: ${PROJECT_NAME} - ${PHASE} | ${CLASSIFICATION} | ${DTG} | ${AUTHORIZATION} | 5 sections
 
 1. SITUATION
    // Using P1 (Perspective) - Multi-viewpoint assessment
-   Technical: HUMMBL Base120 integration framework development progressing
-   Business: Mental model distribution and coordination platform taking shape
-   Team: Multi-agent coordination protocols being established and tested
-   Timeline: Foundation phase ahead of schedule with core components complete
+   Technical: Governed agent infrastructure and execution substrate established; domain capabilities pending.
+   Business: Distribution and coordination scaffolding exists; executable skills minimal.
+   Team: Multi-runner orchestration defined; audit trail is deterministic.
+   Timeline: No schedule baseline defined in-repo; progress tracked via commits and run logs.
 
 2. INTELLIGENCE
    // Using SY8 (Systems) - Pattern analysis
-   Mental Model Usage:
+   Observations (external):
 $(extract_mental_models | sed 's/^/   - /')
    
-   Agent Coordination:
+   System State:
 $(get_agent_status | sed 's/^/   - /')
 
 3. OPERATIONS
@@ -150,19 +129,19 @@ $(assess_tasks | sed 's/^/   /')
 4. ASSESSMENT
    // Using IN2 (Inversion) - Risk analysis
    Successes:
-   - Core agent and command infrastructure established
-   - Mental model tracking and learning systems operational
-   - SITREP generation automated and standardized
+   - Core agent infrastructure and run governance established
+   - Deterministic logging + artifact hashing in place
+   - SITREP generation automated; standardization in progress
    
    Challenges:
-   - Need additional Base120 skills for complete coverage
-   - Integration testing across all agents required
-   - Community feedback loop not yet established
+   - No executable Base120 skills yet
+   - Router selection semantics need consolidation/testing
+   - Observations remain external to governance
    
    Lessons:
    - Explicit transformation codes crucial for traceability
-   - Multi-agent coordination benefits from standardized protocols
-   - Continuous learning significantly improves pattern recognition
+   - Multi-runner coordination benefits from standardized protocols
+   - Iterative, human-directed refinement improves coordination quality
 
 5. RECOMMENDATIONS
    // Using CO5 (Composition) - Integrative planning
@@ -182,6 +161,10 @@ Generated: $(date)
 Workspace: ${WORKSPACE_ROOT}
 Observations: ${OBSERVATIONS_FILE}
 EOF
+
+if [[ -x "${SCRIPT_DIR}/lint-sitrep.sh" ]]; then
+    "${SCRIPT_DIR}/lint-sitrep.sh" "${SITREP_FILE}"
+fi
 
 # Clean up old SITREPs (keep only the most recent)
 cd "${SITREP_DIR}"

@@ -70,3 +70,15 @@ jobs:
       - name: Lint skill registry
         shell: bash
         run: scripts/lint-skill-registry.sh
+
+      - name: Lint SITREPs (if present)
+        shell: bash
+        run: |
+          files=$(git ls-files -z -- 'sessions/sitreps/SITREP-*.md' 'sitreps/SITREP-*.md' || true)
+          if [[ -z "${files}" ]]; then
+            echo "No SITREPs tracked; skipping"
+            exit 0
+          fi
+          while IFS= read -r -d '' file; do
+            scripts/lint-sitrep.sh "${file}"
+          done <<< "${files}"
