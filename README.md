@@ -55,7 +55,8 @@ hummbl-agent/
 │   ├── runner-howto.md                         # Runner scaffold how-to
 │   ├── experiment-mode.md                      # Controlled recursive improvement mode
 │   ├── experiment-approval-checklist.md        # Human approval checklist
-│   └── experiment-run-walkthrough.md           # Experiment run walkthrough
+│   ├── experiment-run-walkthrough.md           # Experiment run walkthrough
+│   └── runner-manual-ui-log.md                 # Manual UI logging guide
 ├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples
