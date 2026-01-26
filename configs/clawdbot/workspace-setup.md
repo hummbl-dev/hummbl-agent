@@ -3,7 +3,7 @@
 ## Directory Structure
 
 ```
-~/clawd/hummbl/
+~/clawd/hummbl-agent/
 ├── AGENTS.md                 # HUMMBL agent coordination protocols
 ├── SOUL.md                   # HUMMBL system personality and principles
 ├── TOOLS.md                  # HUMMBL-specific tool configurations
@@ -21,50 +21,41 @@
 ### **Setup HUMMBL Workspace**
 ```bash
 # Create workspace directory
-mkdir -p ~/clawd/hummbl/{skills/{generated,base120,custom},workspace,sessions,config}
+mkdir -p ~/clawd/hummbl-agent/{skills/{generated,base120,custom},workspace,sessions,config}
 
 # Copy HUMMBL configuration
-cp /Users/others/hummbl/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
+cp /Users/others/hummbl-agent/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
 
 # Initialize workspace
-clawdbot workspace init hummbl --template mental-models
+clawdbot workspace init hummbl-agent --template mental-models
 ```
 
 ### **Install Base120 Skills**
 ```bash
 # Install P1 Perspective Framing
-clawdhub install hummbl-systems/p1-perspective-framing
+clawdhub install hummbl-agent/p1-perspective-framing
 
 # Install additional Base120 skills as they're created
-clawdhub install hummbl-systems/de3-decomposition
-clawdhub install hummbl-systems/sy8-systems-thinking
+clawdhub install hummbl-agent/de3-decomposition
+clawdhub install hummbl-agent/sy8-systems-thinking
 ```
 
 ### **Configure Claude Code Integration**
 ```bash
-# Copy HUMMBL agent to Claude Code
-cp /Users/others/hummbl/agents/hummbl-architect.md ~/.claude/agents/
+# Copy HUMMBL agents to Claude Code
+cp /Users/others/hummbl-agent/agents/hummbl-architect.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/hummbl-planner.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/sitrep-generator.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/transformation-guide.md ~/.claude/agents/
 
 # Copy HUMMBL commands
-cp /Users/others/hummbl/commands/apply-transformation.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/apply-transformation.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/plan-with-base120.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/sitrep.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/verify-hummbl.md ~/.claude/commands/
 
-# Update Claude Code settings
-cat >> ~/.claude/settings.json << 'EOF'
-{
-  "enabledPlugins": {
-    "everything-claude-code@everything-claude-code": true
-  },
-  "hooks": {
-    "PreToolUse": [{
-      "matcher": "*",
-      "hooks": [{
-        "type": "command",
-        "command": "~/.claude/skills/continuous-learning-v2/hooks/observe.sh pre"
-      }]
-    }]
-  }
-}
-EOF
+# Update Claude Code settings (template)
+cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
 ## Gateway Management
@@ -75,7 +66,7 @@ EOF
 clawdbot gateway --config ~/.clawdbot/clawdbot.json --port 18789
 
 # Or use the workspace command
-clawdbot workspace start hummbl
+clawdbot workspace start hummbl-agent
 ```
 
 ### **Test Integration**
@@ -152,7 +143,7 @@ clawdbot doctor --hummbl
 clawdbot agent --message "Review recent work for Base120 compliance"
 
 # Generate quality report
-clawdbot workspace report hummbl --format markdown
+clawdbot workspace report hummbl-agent --format markdown
 ```
 
 ## Troubleshooting
@@ -168,7 +159,7 @@ clawdbot workspace report hummbl --format markdown
 clawdbot gateway status
 
 # Test skill installation
-clawdhub test hummbl-systems/p1-perspective-framing
+clawdhub test hummbl-agent/p1-perspective-framing
 
 # Verify agent routing
 clawdbot agent --test-routing "mental.model"

@@ -2,7 +2,7 @@
 name: multi-agent-coordination
 description: Coordinate multiple AI agents using HUMMBL Base120 mental models. Optimize handoffs, communication protocols, and collaborative problem-solving across Claude Sonnet 4.5, Windsurf Cascade, ChatGPT-5, and Cursor.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/integration/multi-agent-coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # Multi-Agent Coordination
@@ -381,14 +381,14 @@ interface PredictiveCoordination {
 ```nix
 {
   programs.clawdbot.plugins = [
-    { source = "github:hummbl-systems/base120?dir=skills/coordination"; }
+    { source = "github:hummbl-dev/hummbl-agent?dir=skills/integration/multi-agent-coordination"; }
   ];
 }
 ```
 
 ### **Manual Installation**
 ```bash
-clawdhub install hummbl-systems/multi-agent-coordination
+clawdhub install hummbl-agent/multi-agent-coordination
 ```
 
 ### **Usage Examples**

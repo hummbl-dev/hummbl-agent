@@ -19,31 +19,30 @@ Claude Code (Development & Application)
 ### **Step 1: Setup HUMMBL Workspace**
 ```bash
 # Create workspace structure
-mkdir -p ~/clawd/hummbl/{skills,agents,commands,configs,sessions}
-cd ~/clawd/hummbl
+mkdir -p ~/clawd/hummbl-agent/{skills,agents,commands,configs,sessions}
+cd ~/clawd/hummbl-agent
 
 # Copy configurations
-cp /Users/others/hummbl/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
-cp /Users/others/hummbl/configs/learning/continuous-learning.json ~/.claude/homunculus/config.json
+cp /Users/others/hummbl-agent/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
+cp /Users/others/hummbl-agent/configs/learning/continuous-learning.json ~/.claude/homunculus/config.json
 ```
 
 ### **Step 2: Install Claude Code Components**
 ```bash
-# Install HUMMBL agent
-cp /Users/others/hummbl/agents/hummbl-architect.md ~/.claude/agents/
-cp /Users/others/hummbl/agents/sitrep-generator.md ~/.claude/agents/
+# Install HUMMBL agents
+cp /Users/others/hummbl-agent/agents/hummbl-architect.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/hummbl-planner.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/sitrep-generator.md ~/.claude/agents/
+cp /Users/others/hummbl-agent/agents/transformation-guide.md ~/.claude/agents/
 
 # Install HUMMBL commands
-cp /Users/others/hummbl/commands/apply-transformation.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/apply-transformation.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/plan-with-base120.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/sitrep.md ~/.claude/commands/
+cp /Users/others/hummbl-agent/commands/verify-hummbl.md ~/.claude/commands/
 
 # Update Claude Code settings
-cat >> ~/.claude/settings.json << 'EOF'
-{
-  "enabledPlugins": {
-    "everything-claude-code@everything-claude-code": true
-  }
-}
-EOF
+cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
 ### **Step 3: Configure Clawdbot Gateway**
@@ -58,11 +57,11 @@ clawdbot gateway status
 ### **Step 4: Install Base120 Skills**
 ```bash
 # Install from ClawdHub
-clawdhub install hummbl-systems/p1-perspective-framing
-clawdhub install hummbl-systems/multi-agent-coordination
+clawdhub install hummbl-agent/p1-perspective-framing
+clawdhub install hummbl-agent/multi-agent-coordination
 
 # Or install locally from development
-cp -r /Users/others/hummbl/skills/* ~/clawd/hummbl/skills/
+cp -r /Users/others/hummbl-agent/skills/* ~/clawd/hummbl-agent/skills/
 ```
 
 ## Daily Workflow Examples
@@ -109,7 +108,7 @@ clawdbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for 
 ### **Example 4: Generating SITREPs**
 ```bash
 # 4. Generate daily situation report
-~/clawd/hummbl/scripts/generate-sitrep.sh --show
+~/clawd/hummbl-agent/scripts/generate-sitrep.sh --show
 
 # Expected SITREP format:
 SITREP-1: HUMMBL-Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMMBL-LEAD | 5 sections
@@ -195,7 +194,7 @@ const improvementCycle = {
 clawdbot agent --message "Apply multi-agent coordination for API development using claude-sonnet for architecture, windsurf-cascade for implementation"
 
 # Daily progress tracking
-~/clawd/hummbl/scripts/generate-sitrep.sh
+~/clawd/hummbl-agent/scripts/generate-sitrep.sh
 ```
 
 ### **Use Case 2: System Migration**
@@ -258,7 +257,7 @@ clawdbot agent --session hummbl-sitrep --message "Generate SITREP for feature de
 ```bash
 # Symptoms: Context loss, misunderstood requirements
 # Diagnosis: Check handoff protocol compliance
-~/clawd/hummbl/scripts/generate-sitrep.sh | grep -A 10 "handoff"
+~/clawd/hummbl-agent/scripts/generate-sitrep.sh | grep -A 10 "handoff"
 
 # Solution: Apply SY8 to analyze patterns
 /apply-transformation SY8 "Analyze our agent handoff patterns to identify failure points"
@@ -276,7 +275,7 @@ const handoffTemplate = {
 ```bash
 # Symptoms: Inconsistent transformation application, unclear decision rationale
 # Diagnosis: Review mental model usage patterns
-grep -r "Using.*(" ~/clawd/hummbl/sessions/ | tail -20
+grep -r "Using.*(" ~/clawd/hummbl-agent/sessions/ | tail -20
 
 # Solution: Reinforce explicit code usage
 /apply-transformation P1 "Why are we inconsistent with mental model application?"
@@ -289,7 +288,7 @@ grep -r "Using.*(" ~/clawd/hummbl/sessions/ | tail -20
 ```bash
 # Symptoms: Decision delays, agent conflicts, duplicated work
 # Diagnosis: Generate SITREP to identify issues
-~/clawd/hummbl/scripts/generate-sitrep.sh --show | grep -A 5 "ASSESSMENT"
+~/clawd/hummbl-agent/scripts/generate-sitrep.sh --show | grep -A 5 "ASSESSMENT"
 
 # Solution: Apply IN2 for risk analysis
 /apply-transformation IN2 "What coordination bottlenecks could derail our project?"
@@ -327,7 +326,7 @@ echo "Starting weekly coordination optimization..."
 clawdbot agent --message "Apply RE2 to refine coordination protocols based on weekly performance"
 
 # 3. Update configurations
-~/clawd/hummbl/scripts/generate-sitrep.sh
+~/clawd/hummbl-agent/scripts/generate-sitrep.sh
 
 # 4. Implement changes
 # Update agent configurations, handoff protocols, communication templates
@@ -366,7 +365,7 @@ echo "## Mental Model Application
 ### **Slack/Discord Integration**
 ```bash
 # Automated SITREP distribution
-clawdbot message send --to #hummbl-updates --message "$(~/clawd/hummbl/scripts/generate-sitrep.sh)"
+clawdbot message send --to #hummbl-updates --message "$(~/clawd/hummbl-agent/scripts/generate-sitrep.sh)"
 
 # Mental model alerts
 clawdbot message send --to #hummbl-coordination --message "🧠 Applied P1 to frame new feature requirements - see project board for details"

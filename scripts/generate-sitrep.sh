@@ -6,9 +6,9 @@
 set -euo pipefail
 
 # Configuration
-SITREP_DIR="${HOME}/clawd/hummbl/sessions/sitreps"
+SITREP_DIR="${HOME}/clawd/hummbl-agent/sessions/sitreps"
 OBSERVATIONS_FILE="${HOME}/.claude/homunculus/observations.jsonl"
-WORKSPACE_ROOT="${HOME}/clawd/hummbl"
+WORKSPACE_ROOT="${HOME}/clawd/hummbl-agent"
 MAX_SITREPS=50
 
 # Ensure directories exist
@@ -20,7 +20,7 @@ SITREP_NUM=$(find "${SITREP_DIR}" -name "SITREP-*.md" | wc -l | tr -d ' ')
 SITREP_NUM=$((SITREP_NUM + 1))
 
 # Extract project information
-PROJECT_NAME="HUMMBL-Integration"
+PROJECT_NAME="HUMMBL-Agent"
 PHASE="Foundation"
 CLASSIFICATION="UNCLASSIFIED"
 AUTHORIZATION="HUMMBL-LEAD"

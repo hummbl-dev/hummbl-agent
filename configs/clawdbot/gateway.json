@@ -1,7 +1,7 @@
 {
   "agent": {
     "model": "anthropic/claude-opus-4-5",
-    "workspace": "~/clawd/hummbl",
+    "workspace": "~/clawd/hummbl-agent",
     "defaults": {
       "thinkingLevel": "high",
       "verboseLevel": "medium",
@@ -21,7 +21,7 @@
   },
   "agents": {
     "defaults": {
-      "workspace": "~/clawd/hummbl",
+      "workspace": "~/clawd/hummbl-agent",
       "model": "anthropic/claude-opus-4-5",
       "thinkingLevel": "high",
       "sandbox": {
@@ -50,9 +50,9 @@
   "skills": {
     "registry": "clawdhub",
     "autoInstall": [
-      "hummbl-systems/p1-perspective-framing"
+      "hummbl-agent/p1-perspective-framing"
     ],
-    "workspace": "~/clawd/hummbl/skills"
+    "workspace": "~/clawd/hummbl-agent/skills"
   },
   "browser": {
     "enabled": true,
@@ -94,7 +94,7 @@
       "escalation": "automatic"
     },
     "workspace": {
-      "root": "~/clawd/hummbl",
+      "root": "~/clawd/hummbl-agent",
       "skills": "skills",
       "agents": "agents",
       "commands": "commands",

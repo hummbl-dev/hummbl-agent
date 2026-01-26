@@ -5,33 +5,32 @@ This folder contains the integration work for HUMMBL Systems with Clawdbot, Claw
 ## Project Structure
 
 ```
-hummbl/
-├── README.md                    # This file
-├── skills/                      # Base120 mental model skills for ClawdHub
-│   ├── P-perspective/          # Perspective transformation skills
-│   ├── IN-inversion/           # Inversion transformation skills
-│   ├── CO-composition/         # Composition transformation skills
-│   ├── DE-decomposition/       # Decomposition transformation skills
-│   ├── RE-recursion/           # Recursion transformation skills
-│   ├── SY-systems/             # Systems transformation skills
-│   └── integration/            # Cross-transformation skills
-├── agents/                     # HUMMBL-specific Claude Code agents
-│   ├── hummbl-architect.md     # System design with mental models
-│   ├── hummbl-planner.md       # Planning with Base120
-│   ├── sitrep-generator.md     # SITREP automation
-│   └── transformation-guide.md # Mental model application guide
-├── commands/                   # HUMMBL slash commands
-│   ├── apply-transformation.md # Apply specific mental model
-│   ├── plan-with-base120.md    # Planning with mental models
-│   ├── sitrep.md              # Generate SITREPs
-│   └── verify-hummbl.md       # Verify HUMMBL compliance
-├── configs/                    # Configuration files
-│   ├── clawdbot/              # Clawdbot gateway configs
-│   ├── claude-code/           # Claude Code settings
-│   └── learning/              # Continuous learning configs
-├── scripts/                   # Automation scripts
-├── docs/                      # Documentation
-└── examples/                  # Example implementations
+hummbl-agent/
+├── README.md                                  # This file
+├── skills/                                    # Base120 mental model skills for ClawdHub
+│   ├── P-perspective/p1-framing/              # P1 Perspective framing skill
+│   └── integration/multi-agent-coordination/ # Multi-agent coordination skill
+├── agents/                                    # HUMMBL-specific Claude Code agents
+│   ├── hummbl-architect.md                    # System design with mental models
+│   ├── hummbl-planner.md                      # Planning with Base120
+│   ├── sitrep-generator.md                    # SITREP automation
+│   └── transformation-guide.md                # Transformation selection guide
+├── commands/                                  # HUMMBL slash commands
+│   ├── apply-transformation.md                # Apply specific mental model
+│   ├── plan-with-base120.md                   # Planning with mental models
+│   ├── sitrep.md                              # Generate SITREPs
+│   └── verify-hummbl.md                        # Verify HUMMBL compliance
+├── configs/                                   # Configuration files
+│   ├── clawdbot/                              # Clawdbot gateway/workspace configs
+│   ├── claude-code/                           # Claude Code settings template
+│   └── learning/                              # Continuous learning configs + instincts
+├── scripts/                                   # Automation scripts
+│   └── generate-sitrep.sh                     # SITREP generator
+├── docs/                                      # Documentation
+│   ├── workflow-examples.md                   # Usage examples
+│   └── validation-checklist.md                # Lightweight validation checklist
+└── examples/                                  # Example implementations
+   └── README.md                               # Placeholder examples
 ```
 
 ## Integration Components
@@ -53,29 +52,26 @@ hummbl/
 
 ## Quick Start
 
-1. **Setup Base120 Skills**
+1. **Review the current workflow**
    ```bash
-   cd skills/
-   # Create mental model skills for ClawdHub
+   cat docs/workflow-examples.md
    ```
 
-2. **Configure Agents**
+2. **Inspect agents, commands, and skills**
    ```bash
-   cd agents/
-   # Customize HUMMBL-specific agents
+   ls agents commands skills
    ```
 
-3. **Install Commands**
+3. **Check configs and scripts**
    ```bash
-   cd commands/
-   # Add HUMMBL commands to Claude Code
+   ls configs scripts
    ```
 
 ## Development Phases
 
-- **Phase 1**: Foundation setup and basic skills
-- **Phase 2**: Agent integration and coordination
-- **Phase 3**: Automation and continuous learning
+- **Phase 1**: Foundation setup and basic skills (P1 + coordination)
+- **Phase 2**: Agent integration and coordination hardening
+- **Phase 3**: Automation and continuous learning expansion
 
 ## Goal
 
