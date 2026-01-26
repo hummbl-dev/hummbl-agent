@@ -35,3 +35,7 @@
 - Use `scripts/experiment-run.sh` to open an experiment run under `_state/experiments/YYYY-MM-DD/`.
 - Proposals must be recorded in `PROPOSALS.md` and approved in `APPROVAL.md`.
 - Apply changes manually only after human approval.
+
+## Governed observation import
+- Use `scripts/import-observation.sh` to capture external observations into `_state/evidence/YYYY-MM-DD/`.
+- Evidence files are hashed and recorded in `EVIDENCE.md` for provenance.

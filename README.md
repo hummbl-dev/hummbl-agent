@@ -56,7 +56,8 @@ hummbl-agent/
 │   ├── experiment-mode.md                      # Controlled recursive improvement mode
 │   ├── experiment-approval-checklist.md        # Human approval checklist
 │   ├── experiment-run-walkthrough.md           # Experiment run walkthrough
-│   └── runner-manual-ui-log.md                 # Manual UI logging guide
+│   ├── runner-manual-ui-log.md                 # Manual UI logging guide
+│   └── evidence-import.md                      # Governed evidence import
 ├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples
