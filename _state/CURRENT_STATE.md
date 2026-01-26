@@ -11,21 +11,22 @@ Stabilize the governed multi-runner substrate (registry, router, runners, execut
 - No autonomous learning or recursive self-modification without human approval.
 
 ## Current plan (next 3 steps)
-1. Validate CI passes with new router/skill registry/lint steps.
-2. Draft initial Base120-to-skill registry entries using the template (manual/prompt-only).
-3. Run a controlled experiment cycle and record outcome under `_state/experiments/`.
+1. Review imported legacy skills/commands/agents for relevance and governance fit.
+2. Decide which legacy items to keep, quarantine further, or retire; document decisions.
+3. Expand router tests/sample cases to cover new skill namespaces and usage.
 
 ## Workstream locks
 - docs + governance updates: hummbl-dev (until 2026-01-26)
 
 ## Next handoff
 - for: hummbl-dev
-  instructions: Validate CI, then begin Base120 skill definition pass using the template.
+  instructions: Vet imported legacy skills/commands/agents; then update governance/docs with retention decisions.
 
 ## Snapshot
 - Repo: hummbl-agent
 - Focus: Multi-agent, multi-model orchestration with governed execution and audit trail
 - Vendor policy: submodules/pins only; no edits under vendor/
+- Legacy extraction: imported skills/commands/agents from clawdbot and everything-claude-code; forks quarantined
 
 ## Structure
 - packages/kernel: types-only kernel contracts
@@ -50,6 +51,7 @@ Stabilize the governed multi-runner substrate (registry, router, runners, execut
 - No executable Base120 skills yet (registry-only).
 - Router selection semantics need tests and first real integration.
 - Observations remain external to governance (out-of-repo).
+- Imported legacy skills include TODO placeholders and require governance review.
 
 ## Next Minimal Additions
 - Add Base120 skill entries (manual/prompt-only) to registry.json.
