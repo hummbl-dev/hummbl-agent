@@ -21,7 +21,7 @@ REQUIRED_FILES=(
 )
 
 TRANSFORM_REGEX='(P|IN|CO|DE|RE|SY)[0-9]+'
-PATH_MISMATCH_REGEX='(/Users/others/hummbl/|~/clawd/hummbl)'
+PATH_MISMATCH_REGEX='(/Users/others/hummbl/|~/clawd/hummbl/)'
 
 missing_files=()
 for file in "${REQUIRED_FILES[@]}"; do
@@ -38,8 +38,8 @@ while IFS= read -r -d '' file; do
 done < <(find "${WORKSPACE_ROOT}/agents" "${WORKSPACE_ROOT}/commands" "${WORKSPACE_ROOT}/docs" -type f -name "*.md" -print0)
 
 doc_mismatches=0
-if grep -R -n -E "${PATH_MISMATCH_REGEX}" "${WORKSPACE_ROOT}" >/dev/null 2>&1; then
-  doc_mismatches=$(grep -R -n -E "${PATH_MISMATCH_REGEX}" "${WORKSPACE_ROOT}" | wc -l | tr -d ' ')
+if grep -R -n -E "${PATH_MISMATCH_REGEX}" "${WORKSPACE_ROOT}" --exclude=verify-hummbl.sh >/dev/null 2>&1; then
+  doc_mismatches=$(grep -R -n -E "${PATH_MISMATCH_REGEX}" "${WORKSPACE_ROOT}" --exclude=verify-hummbl.sh | wc -l | tr -d ' ')
 fi
 
 result="PASS"

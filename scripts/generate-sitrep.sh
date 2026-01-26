@@ -67,7 +67,7 @@ assess_tasks() {
         completed+=("Apply transformation command")
     fi
     
-    if [[ -f "${WORKSPACE_ROOT}/skills/P-perspective/p1-framing/SKILL.md" ]]; then
+    if [[ -f "${WORKSPACE_ROOT}/skills/P-perspective/p1-first-principles-framing/SKILL.md" ]]; then
         completed+=("P1 Perspective Framing skill")
     fi
     

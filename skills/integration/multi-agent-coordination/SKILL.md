@@ -29,9 +29,9 @@ Systematic orchestration of multiple AI agents using mental model frameworks to 
 
 ## Base120 Coordination Applications
 
-### **P1 - Perspective Framing for Agent Roles**
+### **P1 - First Principles Framing for Agent Roles**
 ```typescript
-// Using P1 (Perspective) - Frame coordination from multiple viewpoints
+// Using P1 (First Principles Framing) - Reduce coordination to foundational truths
 interface AgentPerspectives {
   claudeSonnet: {
     role: "strategic_planning";
@@ -245,7 +245,7 @@ interface QualityProtocol {
 
 ### **Example 1: Complex Feature Development**
 ```typescript
-// Using P1 (Perspective) - Multi-agent feature development
+// Using P1 (First Principles Framing) - Multi-agent feature foundations
 const featureCoordination = {
   planning: {
     agent: "claude-sonnet-4.5",

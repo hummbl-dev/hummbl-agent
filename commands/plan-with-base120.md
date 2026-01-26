@@ -40,7 +40,7 @@ Generate a structured plan using Base120 transformations with explicit codes and
 
 Expected output:
 ```typescript
-// Using P1 (Perspective) - Frame the planning context
+// Using P1 (First Principles Framing) - Reduce the planning context to foundations
 const framing = {
   technical: "Add missing agents and commands",
   user: "Improve HUMMBL workflow usability",

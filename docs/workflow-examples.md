@@ -57,7 +57,7 @@ clawdbot gateway status
 ### **Step 4: Install Base120 Skills**
 ```bash
 # Install from ClawdHub
-clawdhub install hummbl-agent/p1-perspective-framing
+clawdhub install hummbl-agent/p1-first-principles-framing
 clawdhub install hummbl-agent/multi-agent-coordination
 
 # Or install locally from development
@@ -68,16 +68,15 @@ cp -r /Users/others/hummbl-agent/skills/* ~/clawd/hummbl-agent/skills/
 
 ### **Example 1: Starting a New Project**
 ```bash
-# 1. Frame the project with P1
-/apply-transformation P1 "Frame this new API development project from multiple perspectives"
+# 1. Reduce the project to first principles with P1
+/apply-transformation P1 "Reduce this new API development project to its foundational truths"
 
 # Expected output:
-// Using P1 (Perspective) - Multi-viewpoint framing
-const projectPerspectives = {
-  technical: "RESTful API with TypeScript and Node.js",
-  business: "Customer data integration platform", 
-  user: "Simple, reliable data synchronization",
-  system: "Scalable microservice architecture"
+// Using P1 (First Principles Framing) - Foundational framing
+const projectFirstPrinciples = {
+  coreGoal: "Enable reliable customer data synchronization",
+  nonNegotiables: ["data integrity", "secure access", "clear ownership"],
+  constraints: ["timeline", "team size", "existing infra"]
 };
 ```
 
@@ -114,7 +113,7 @@ clawdbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for 
 SITREP-1: HUMMBL-Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMMBL-LEAD | 5 sections
 
 1. SITUATION
-   // Using P1 (Perspective) - Multi-viewpoint assessment
+   // Using P1 (First Principles Framing) - Foundational assessment
    Technical: Core infrastructure 85% complete...
 ```
 
@@ -130,7 +129,7 @@ const systemAnalysis = {
   },
   
   mentalModelUsage: {
-    highImpact: "P1 framing reduces requirements churn by 40%",
+    highImpact: "P1 first-principles framing reduces requirements churn by 40%",
     lowImpact: "IN2 applied inconsistently across agents"
   },
   
@@ -339,17 +338,17 @@ clawdbot agent --message "Apply RE2 to refine coordination protocols based on we
 # Commit with mental model references
 git commit -m "feat: Add user authentication
 
-// Using P1 (Perspective) - Frame from security, UX, and technical perspectives
+// Using P1 (First Principles Framing) - Reduce to core security, UX, and technical truths
 // Using DE3 (Decomposition) - Break into auth service, UI components, and database schema
 // Using CO5 (Composition) - Integrate OAuth2, JWT tokens, and session management"
 
 # PR description with mental models
 echo "## Mental Model Application
 
-**P1 Perspective Framing:**
-- Security: Robust authentication and authorization
-- User: Seamless login experience  
-- Technical: Scalable and maintainable auth system
+**P1 First Principles Framing:**
+- Security: Must guarantee access control and auditability
+- User: Must minimize friction without weakening security
+- Technical: Must remain scalable and maintainable
 
 **DE3 Decomposition:**
 - Auth service for token management
@@ -368,13 +367,13 @@ echo "## Mental Model Application
 clawdbot message send --to #hummbl-updates --message "$(~/clawd/hummbl-agent/scripts/generate-sitrep.sh)"
 
 # Mental model alerts
-clawdbot message send --to #hummbl-coordination --message "🧠 Applied P1 to frame new feature requirements - see project board for details"
+clawdbot message send --to #hummbl-coordination --message "🧠 Applied P1 to reduce requirements to first principles - see project board for details"
 ```
 
 ## Best Practices Summary
 
 ### **Daily Practices**
-1. **Start with P1** - Frame every challenge from multiple perspectives
+1. **Start with P1** - Reduce every challenge to first principles
 2. **Use explicit codes** - Always reference transformation codes: `// Using DE3 (Decomposition)`
 3. **Generate SITREPs** - Daily progress reports with mental model tracking
 4. **Coordinate agents** - Use multi-agent coordination for complex tasks

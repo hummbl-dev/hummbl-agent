@@ -30,6 +30,11 @@ Run a structured compliance check for Base120 standards.
 - Agent handoff notes include transformation references
 - Documentation matches current repo structure
 
+Example transformation reference:
+```
+// Using P1 (First Principles Framing) - Reduce to foundational truths
+```
+
 ## Example
 
 ```bash

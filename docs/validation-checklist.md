@@ -10,6 +10,11 @@ Lightweight checklist for verifying Base120 compliance and repo alignment.
 - [ ] Agents and commands referenced in docs exist on disk.
 - [ ] Workspace paths use `~/clawd/hummbl-agent`.
 
+Example code reference:
+```
+// Using P1 (First Principles Framing) - Reduce to foundational truths
+```
+
 ## Verify Command Output Conventions
 
 The `/verify-hummbl` command should emit:

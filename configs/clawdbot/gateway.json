@@ -50,7 +50,7 @@
   "skills": {
     "registry": "clawdhub",
     "autoInstall": [
-      "hummbl-agent/p1-perspective-framing"
+      "hummbl-agent/p1-first-principles-framing"
     ],
     "workspace": "~/clawd/hummbl-agent/skills"
   },

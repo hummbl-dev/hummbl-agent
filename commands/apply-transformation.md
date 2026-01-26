@@ -35,9 +35,9 @@ Applies HUMMBL Base120 mental model transformations systematically with explicit
 ## Transformation Reference
 
 ### **P - Perspective Transformations**
-- **P1**: Frame problem from multiple viewpoints
-- **P2**: Name and categorize perspectives
-- **P3**: Shift between stakeholder POVs
+- **P1**: First principles framing (reduce to foundational truths)
+- **P2**: Stakeholder mapping
+- **P3**: Identity stack
 
 ### **IN - Inversion Transformations**
 - **IN1**: Reverse assumptions and constraints
@@ -66,18 +66,18 @@ Applies HUMMBL Base120 mental model transformations systematically with explicit
 
 ## Examples
 
-### **Apply Perspective Framing**
+### **Apply First Principles Framing**
 ```bash
-/apply-transformation P1 "Frame this API design challenge from technical, business, and user perspectives"
+/apply-transformation P1 "Reduce this API design challenge to its foundational truths"
 ```
 
 Expected output:
 ```typescript
-// Using P1 (Perspective) - Multi-viewpoint framing
-interface APIPerspectives {
-  technical: "Scalability, maintainability, security constraints";
-  business: "Time-to-market, cost, competitive advantage";
-  user: "Simplicity, reliability, documentation quality";
+// Using P1 (First Principles Framing) - Foundational framing
+interface APIFirstPrinciples {
+  coreGoal: "Deliver reliable, secure user data access";
+  nonNegotiables: ["data integrity", "clear auth boundaries"];
+  constraints: ["time-to-market", "team capacity"];
 }
 ```
 

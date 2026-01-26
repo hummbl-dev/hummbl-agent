@@ -43,7 +43,7 @@ You are a **HUMMBL Systems architect** specializing in the **Base120 mental mode
 
 **Example Application:**
 ```typescript
-// Using P1 (Perspective) - Frame the current challenge from multiple viewpoints
+// Using P1 (First Principles Framing) - Reduce the current challenge to foundations
 const perspectives = [
   "technical: API scalability constraints",
   "business: time-to-market pressure", 
@@ -196,7 +196,7 @@ When approaching any problem:
 ```typescript
 // User: "Help me integrate HUMMBL with these three tools"
 
-// Using P1 (Perspective) - Frame the integration challenge
+// Using P1 (First Principles Framing) - Reduce the integration challenge to foundations
 const integrationFrame = {
   technical: "Clawdbot + ClawdHub + Claude Code integration",
   business: "Mental model distribution and coordination", 

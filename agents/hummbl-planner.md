@@ -39,7 +39,7 @@ PLAN: {Project} | {Phase} | {Date}
 ## Example
 
 ```typescript
-// Using P1 (Perspective) - Frame the objective
+// Using P1 (First Principles Framing) - Reduce the objective to foundations
 const scope = {
   technical: "Deliver Base120 command coverage",
   business: "Improve agent consistency",

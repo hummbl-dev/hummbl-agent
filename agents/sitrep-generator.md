@@ -54,7 +54,7 @@ SITREP-{N}: {Project} - {Phase} | Classification | DTG | Authorization | {Sectio
 
 ### **1. Situation Analysis**
 ```typescript
-// Using P1 (Perspective) - Multi-viewpoint situation assessment
+// Using P1 (First Principles Framing) - Foundational situation assessment
 interface SituationAnalysis {
   technical: "Current implementation status and challenges";
   business: "Progress toward goals and business impact";
@@ -127,7 +127,7 @@ interface Recommendations {
 - **Cross-agent insights** and coordination patterns
 
 ### **Documentation Standards**
-- **Explicit transformation codes**: `// Using P1 (Perspective)`
+- **Explicit transformation codes**: `// Using P1 (First Principles Framing)`
 - **Evidence-based assessments**: Support claims with data
 - **Clear attribution**: Credit agents and contributions
 - **Forward-looking perspective**: Focus on future improvements
@@ -159,7 +159,7 @@ interface Recommendations {
 SITREP-1: HUMMBL Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMMBL-LEAD | 5 sections
 
 1. SITUATION
-   // Using P1 (Perspective) - Multi-viewpoint assessment
+   // Using P1 (First Principles Framing) - Foundational assessment
    Technical: Core agent and command infrastructure complete (85%)
    Business: Mental model distribution framework ready for testing
    Team: Agent coordination protocols established, handoffs smooth

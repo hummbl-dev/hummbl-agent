@@ -8,8 +8,13 @@ This folder contains the integration work for HUMMBL Systems with Clawdbot, Claw
 hummbl-agent/
 ├── README.md                                  # This file
 ├── skills/                                    # Base120 mental model skills for ClawdHub
-│   ├── P-perspective/p1-framing/              # P1 Perspective framing skill
-│   └── integration/multi-agent-coordination/ # Multi-agent coordination skill
+│   ├── P-perspective/                         # Perspective transformation (P1-P20)
+│   ├── IN-inversion/                          # Inversion transformation (IN1-IN20)
+│   ├── CO-composition/                        # Composition transformation (CO1-CO20)
+│   ├── DE-decomposition/                      # Decomposition transformation (DE1-DE20)
+│   ├── RE-recursion/                          # Recursion transformation (RE1-RE20)
+│   ├── SY-systems/                            # Systems transformation (SY1-SY20)
+│   └── integration/                           # Cross-transformation skills
 ├── agents/                                    # HUMMBL-specific Claude Code agents
 │   ├── hummbl-architect.md                    # System design with mental models
 │   ├── hummbl-planner.md                      # Planning with Base120

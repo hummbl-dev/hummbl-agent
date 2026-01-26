@@ -32,8 +32,8 @@ clawdbot workspace init hummbl-agent --template mental-models
 
 ### **Install Base120 Skills**
 ```bash
-# Install P1 Perspective Framing
-clawdhub install hummbl-agent/p1-perspective-framing
+# Install P1 First Principles Framing
+clawdhub install hummbl-agent/p1-first-principles-framing
 
 # Install additional Base120 skills as they're created
 clawdhub install hummbl-agent/de3-decomposition
@@ -110,7 +110,7 @@ interface HUMMBLCoordination {
 - Usage tracked for learning and optimization
 
 ### **Documentation Standards**
-- All transformations explicitly referenced: `// Using P1 (Perspective)`
+- All transformations explicitly referenced: `// Using P1 (First Principles Framing)`
 - Decision rationale documented with mental model citations
 - Cross-referenced with skill documentation
 
@@ -159,7 +159,7 @@ clawdbot workspace report hummbl-agent --format markdown
 clawdbot gateway status
 
 # Test skill installation
-clawdhub test hummbl-agent/p1-perspective-framing
+clawdhub test hummbl-agent/p1-first-principles-framing
 
 # Verify agent routing
 clawdbot agent --test-routing "mental.model"

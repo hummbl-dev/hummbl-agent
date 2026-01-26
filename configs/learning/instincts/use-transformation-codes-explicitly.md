@@ -9,7 +9,7 @@ source: "hummbl-training"
 # Use Transformation Codes Explicitly
 
 ## Action
-Always reference Base120 transformation codes explicitly in comments and documentation (e.g., `// Using P1 (Perspective)`).
+Always reference Base120 transformation codes explicitly in comments and documentation (e.g., `// Using P1 (First Principles Framing)`).
 
 ## Evidence
 - User corrected 8 instances where transformation codes were missing
@@ -33,7 +33,7 @@ Always reference Base120 transformation codes explicitly in comments and documen
 
 ## Examples
 ```typescript
-// Using P1 (Perspective) - Frame from multiple stakeholder viewpoints
+// Using P1 (First Principles Framing) - Frame from foundational truths
 const perspectives = analyzeStakeholders(requirements);
 
 // Using DE3 (Decomposition) - Break into manageable components

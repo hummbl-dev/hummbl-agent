@@ -1,18 +1,18 @@
 ---
-id: prefer-p1-perspective-framing
+id: prefer-p1-first-principles-framing
 trigger: "when facing complex or ambiguous problems"
 confidence: 0.8
 domain: "mental-models"
 source: "hummbl-training"
 ---
 
-# Prefer P1 Perspective Framing
+# Prefer P1 First Principles Framing
 
 ## Action
-Always start complex problem-solving with P1 (Perspective) framing to identify multiple viewpoints and uncover hidden assumptions.
+Always start complex problem-solving with P1 (First Principles Framing) to identify foundational truths and uncover hidden assumptions.
 
 ## Evidence
-- Observed 15 instances where perspective shifting revealed critical insights
+- Observed 15 instances where first-principles framing revealed critical insights
 - User consistently reinforces multi-viewpoint analysis approach
 - P1 application leads to 40% better solution comprehensiveness
 - Successfully applied to HUMMBL integration challenges

@@ -52,5 +52,12 @@ FOLLOW-UPS
 - {Next transformation suggestion}
 ```
 
+Example:
+```
+TRANSFORMATIONS
+- P1: Reduce the problem to first principles before planning.
+- DE3: Break the work into phases and dependencies.
+```
+
 ---
 *Be concise, explicit, and grounded in Base120 codes.*
