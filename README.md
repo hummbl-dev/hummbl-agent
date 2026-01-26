@@ -49,7 +49,8 @@ hummbl-agent/
 │   ├── validation-checklist.md                # Lightweight validation checklist
 │   ├── sitrep-schema.md                       # SITREP schema
 │   ├── sitrep-lint-checklist.md               # SITREP lint checklist
-│   └── base120-skill-template.md              # Base120 → skill template
+│   ├── base120-skill-template.md              # Base120 → skill template
+│   └── runner-howto.md                         # Runner scaffold how-to
 ├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples
