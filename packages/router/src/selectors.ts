@@ -1,4 +1,5 @@
 import type { SkillDefinition, SkillId, RunnerId } from "../../skills/registry/src/types";
+import type { RunnerCapabilities } from "./capabilities";
 import type { RouteExplain, ToolPolicy } from "./types";
 import type { Task } from "../../kernel/src/task";
 import type { RunState } from "../../kernel/src/state";
@@ -72,6 +73,22 @@ export const pickRunner = (
     return undefined;
   }
   return [...intersection].sort((a, b) => a.localeCompare(b))[0];
+};
+
+export const pickRunnerWithCapabilities = (
+  skill: SkillDefinition,
+  availableRunners: RunnerId[],
+  capabilities: RunnerCapabilities[]
+): RunnerId | undefined => {
+  const capSet = new Set(capabilities.map((cap) => cap.runnerId));
+  const compatible = skill.runnerCompatibility.filter((runner) =>
+    availableRunners.includes(runner)
+  );
+  const capable = compatible.filter((runner) => capSet.has(runner));
+  if (capable.length > 0) {
+    return [...capable].sort((a, b) => a.localeCompare(b))[0];
+  }
+  return pickRunner(skill, availableRunners);
 };
 
 export const policyCheck = (

@@ -90,3 +90,7 @@ jobs:
       - name: Lint runner registry consistency
         shell: bash
         run: scripts/lint-runner-registry-consistency.sh
+
+      - name: Lint skill runner compatibility
+        shell: bash
+        run: scripts/lint-runner-compatibility.sh

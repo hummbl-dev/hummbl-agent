@@ -13,3 +13,4 @@ packages/runners/template/scripts/log-run.sh "Session start: vendor" \
 - Copy this folder to `packages/runners/<vendor>/`.
 - Update `prompt.md.template` header and any vendor-specific notes.
 - Update `README.md` usage examples.
+- Update `CAPABILITIES.json` for the new runner.
