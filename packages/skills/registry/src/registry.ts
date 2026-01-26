@@ -1,0 +1,5 @@
+import type { SkillDefinition } from "./types";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const data = require("./registry.json") as SkillDefinition[];
+
+export const SKILLS: SkillDefinition[] = data;

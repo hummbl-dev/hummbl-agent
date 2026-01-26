@@ -66,3 +66,7 @@ jobs:
       - name: Check kernel decision note
         shell: bash
         run: scripts/check-kernel-decision.sh
+
+      - name: Lint skill registry
+        shell: bash
+        run: scripts/lint-skill-registry.sh

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "orchestrate-session",
+    "name": "Orchestrate Session",
+    "summary": "Open today’s run and generate prompts for Claude Code and Codex.",
+    "tags": ["orchestration", "runs"],
+    "version": "0.1.0",
+    "status": "active",
+    "owners": ["hummbl-dev"],
+    "inputs": [
+      {
+        "name": "force",
+        "type": "boolean",
+        "required": false,
+        "description": "Overwrite existing prompt files when true."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "promptPaths",
+        "type": "string[]",
+        "description": "Paths to generated prompt files."
+      }
+    ],
+    "runnerCompatibility": ["claude-code", "codex"],
+    "requiredTools": [
+      { "toolId": "process", "scopes": ["scripts/orchestrate.sh"] }
+    ],
+    "permissions": {
+      "network": "none",
+      "filesystem": "write",
+      "exec": "allowlisted",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Writes run prompts only; no external side effects."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": ["scripts/orchestrate.sh"]
+    },
+    "examples": [
+      {
+        "title": "Open today’s run",
+        "invocation": "scripts/orchestrate.sh",
+        "expectedOutcome": "Creates prompt files under _state/runs/YYYY-MM-DD/prompts/."
+      }
+    ]
+  },
+  {
+    "id": "run-governed-command",
+    "name": "Run Governed Command",
+    "summary": "Execute an allowlisted command and log hashed artifacts into the run log.",
+    "tags": ["execution", "governance"],
+    "version": "0.1.0",
+    "status": "active",
+    "owners": ["hummbl-dev"],
+    "inputs": [
+      {
+        "name": "runner",
+        "type": "string",
+        "required": true,
+        "description": "Runner id (claude-code|codex)."
+      },
+      {
+        "name": "command",
+        "type": "string",
+        "required": true,
+        "description": "Executable name and arguments."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "artifacts",
+        "type": "string[]",
+        "description": "Stdout/stderr/exitcode artifact paths with hashes."
+      }
+    ],
+    "runnerCompatibility": ["claude-code", "codex", "local-cli"],
+    "requiredTools": [
+      { "toolId": "process", "scopes": ["scripts/run-cmd.sh"] }
+    ],
+    "permissions": {
+      "network": "none",
+      "filesystem": "write",
+      "exec": "allowlisted",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "medium",
+      "notes": "Executes allowlisted commands only and records outputs with hashes."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": ["scripts/run-cmd.sh", "configs/process-policy.allowlist"]
+    },
+    "examples": [
+      {
+        "title": "Run git status",
+        "invocation": "scripts/run-cmd.sh --runner codex -- git status --porcelain",
+        "expectedOutcome": "Creates stdout/stderr/exitcode artifacts and logs them." 
+      }
+    ]
+  },
+  {
+    "id": "sync-upstreams",
+    "name": "Sync Upstreams",
+    "summary": "Print submodule init/status/update commands and record upstream pins.",
+    "tags": ["vendor", "governance"],
+    "version": "0.1.0",
+    "status": "active",
+    "owners": ["hummbl-dev"],
+    "inputs": [
+      {
+        "name": "action",
+        "type": "string",
+        "required": true,
+        "description": "init|status|update."
+      },
+      {
+        "name": "ref",
+        "type": "string",
+        "required": false,
+        "description": "Ref to pin on update."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "pinRecord",
+        "type": "string",
+        "description": "Updated vendor/UPSTREAM_PINS.md entries."
+      }
+    ],
+    "runnerCompatibility": ["claude-code", "codex", "local-cli"],
+    "requiredTools": [
+      { "toolId": "process", "scopes": ["scripts/sync-upstreams.sh"] }
+    ],
+    "permissions": {
+      "network": "none",
+      "filesystem": "write",
+      "exec": "allowlisted",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Does not execute git commands automatically; prints instructions." 
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "native",
+      "references": ["scripts/sync-upstreams.sh", "vendor/UPSTREAM_PINS.md"]
+    },
+    "examples": [
+      {
+        "title": "Show upstream status",
+        "invocation": "scripts/sync-upstreams.sh status",
+        "expectedOutcome": "Prints current submodule SHAs or not initialized."
+      }
+    ]
+  }
+]

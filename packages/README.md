@@ -5,3 +5,4 @@
 - runners
 - vendor-bridge
 - adapters/process
+- skills/registry
