@@ -57,7 +57,8 @@ hummbl-agent/
 │   ├── experiment-approval-checklist.md        # Human approval checklist
 │   ├── experiment-run-walkthrough.md           # Experiment run walkthrough
 │   ├── runner-manual-ui-log.md                 # Manual UI logging guide
-│   └── evidence-import.md                      # Governed evidence import
+│   ├── evidence-import.md                      # Governed evidence import
+│   └── evidence-import-example.md              # Evidence import example
 ├── vendor/                                    # Upstream mirrors (submodules, pinned)
 └── examples/                                  # Example implementations
    └── README.md                               # Placeholder examples
