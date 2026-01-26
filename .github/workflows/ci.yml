@@ -98,3 +98,7 @@ jobs:
       - name: Lint evidence logs (if present)
         shell: bash
         run: scripts/lint-evidence.sh
+
+      - name: Lint router exports
+        shell: bash
+        run: scripts/lint-router-exports.sh

@@ -22,6 +22,33 @@ DTG=$(date -u +"%Y%m%d-%H%MZ")
 SITREP_NUM=$(find "${SITREP_DIR}" -name "SITREP-*.md" | wc -l | tr -d ' ')
 SITREP_NUM=$((SITREP_NUM + 1))
 
+IMPORT_FILE=""
+IMPORT_SOURCE=""
+IMPORT_NOTE=""
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --import)
+            IMPORT_FILE="${2:-}"
+            shift 2
+            ;;
+        --source)
+            IMPORT_SOURCE="${2:-}"
+            shift 2
+            ;;
+        --note)
+            IMPORT_NOTE="${2:-}"
+            shift 2
+            ;;
+        --show)
+            shift 1
+            ;;
+        *)
+            shift 1
+            ;;
+    esac
+done
+
 # Extract project information
 PROJECT_NAME="HUMMBL-Agent"
 PHASE="Foundation"
@@ -175,6 +202,14 @@ Generated: $(date)
 Workspace: ${WORKSPACE_ROOT}
 Observations: ${OBSERVATIONS_FILE}
 EOF
+
+if [[ -n "${IMPORT_FILE}" ]]; then
+    if [[ -z "${IMPORT_SOURCE}" ]]; then
+        echo \"--import requires --source\" >&2
+        exit 1
+    fi
+    \"${SCRIPT_DIR}/import-observation.sh\" --file \"${IMPORT_FILE}\" --source \"${IMPORT_SOURCE}\" --note \"${IMPORT_NOTE}\"
+fi
 
 if [[ -x "${SCRIPT_DIR}/lint-sitrep.sh" ]]; then
     "${SCRIPT_DIR}/lint-sitrep.sh" "${SITREP_FILE}"
