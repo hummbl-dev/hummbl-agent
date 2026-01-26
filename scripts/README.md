@@ -17,3 +17,8 @@ scripts/run-cmd.sh --runner claude-code -- git status --porcelain
 ### Notes
 - Commands must be allowlisted in `configs/process-policy.allowlist`.
 - Artifacts are written to `_state/runs/YYYY-MM-DD/artifacts/`.
+
+## Lint SITREP
+```bash
+scripts/lint-sitrep.sh /path/to/SITREP.md
+```
