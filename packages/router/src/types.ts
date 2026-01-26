@@ -6,6 +6,7 @@ import type {
   SkillId,
   SkillPermissions,
 } from "../../skills/registry/src/types";
+import type { RunnerCapabilities } from "./capabilities";
 
 export type ToolPolicy = {
   allowedTools: string[];
@@ -20,6 +21,7 @@ export type RouterInput = {
   state: RunState;
   skills: SkillDefinition[];
   availableRunners: RunnerId[];
+  capabilities?: RunnerCapabilities[];
   toolPolicy: ToolPolicy;
 };
 

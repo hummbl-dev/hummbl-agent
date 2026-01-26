@@ -1,5 +1,5 @@
 import type { RouterInput, RouteResult, RouteStep, RouteExplain } from "./types";
-import { pickBest, pickRunner, policyCheck, scoreSkill } from "./selectors";
+import { pickBest, pickRunner, pickRunnerWithCapabilities, policyCheck, scoreSkill } from "./selectors";
 import type { SkillDefinition, RunnerId } from "../../skills/registry/src/types";
 
 const scriptBySkill: Record<string, string> = {
@@ -46,7 +46,14 @@ export const route = (input: RouterInput): RouteResult => {
     return { ok: false, error: "NO_SKILL_MATCH", explain };
   }
 
-  const runner = pickRunner(best.skill, input.availableRunners);
+  const runner =
+    input.capabilities && input.capabilities.length > 0
+      ? pickRunnerWithCapabilities(
+          best.skill,
+          input.availableRunners,
+          input.capabilities
+        )
+      : pickRunner(best.skill, input.availableRunners);
   if (!runner) {
     explain.runnerRationale = "no runner available for selected skill";
     return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
@@ -55,7 +62,10 @@ export const route = (input: RouterInput): RouteResult => {
   const policy = policyCheck(best.skill, input.toolPolicy);
   explain.policyChecks = policy.checks;
   explain.matchedByTags = best.matchedTags;
-  explain.runnerRationale = `selected ${runner} from compatible runners`;
+  explain.runnerRationale =
+    input.capabilities && input.capabilities.length > 0
+      ? `selected ${runner} with capabilities filter`
+      : `selected ${runner} from compatible runners`;
   explain.alternatives = buildAlternatives(
     scored,
     best.skill,

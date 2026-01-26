@@ -15,6 +15,7 @@ Deterministic, types-first router that maps Task + RunState + SkillRegistry to a
 - SkillDefinition[] (skills registry)
 - Available runners
 - ToolPolicy
+- Optional capabilities manifest for runner filtering
 
 ## Output
 

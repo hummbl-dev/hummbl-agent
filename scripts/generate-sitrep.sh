@@ -40,6 +40,17 @@ extract_mental_models() {
     fi
 }
 
+# Function to get canonical evidence entries
+extract_evidence() {
+    local evidence_file
+    evidence_file="${WORKSPACE_ROOT}/_state/evidence/$(date +%Y-%m-%d)/EVIDENCE.md"
+    if [[ -f "${evidence_file}" ]]; then
+        grep -v '^#' "${evidence_file}" | sed '/^$/d' || echo "No canonical evidence logged"
+    else
+        echo "No canonical evidence logged"
+    fi
+}
+
 # Function to get agent coordination status
 get_agent_status() {
     if [[ -f "${OBSERVATIONS_FILE}" ]]; then
@@ -119,6 +130,9 @@ SITREP-${SITREP_NUM}: ${PROJECT_NAME} - ${PHASE} | ${CLASSIFICATION} | ${DTG} | 
    Observations (external):
 $(extract_mental_models | sed 's/^/   - /')
    
+   Evidence (canonical):
+$(extract_evidence | sed 's/^/   /')
+
    System State:
 $(get_agent_status | sed 's/^/   - /')
 

@@ -23,6 +23,11 @@ scripts/run-cmd.sh --runner claude-code -- git status --porcelain
 scripts/lint-sitrep.sh /path/to/SITREP.md
 ```
 
+## Lint Evidence Logs
+```bash
+scripts/lint-evidence.sh
+```
+
 ## Controlled Experiment Run
 ```bash
 scripts/experiment-run.sh
