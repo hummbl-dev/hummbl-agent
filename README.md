@@ -37,6 +37,7 @@ hummbl-agent/
 ├── configs/                                   # Configuration files
 │   ├── clawdbot/                              # Clawdbot gateway/workspace configs
 │   ├── claude-code/                           # Claude Code settings template
+│   ├── codex/                                 # Codex runner guidance
 │   └── learning/                              # Continuous learning configs + instincts
 ├── scripts/                                   # Automation scripts
 │   ├── generate-sitrep.sh                     # SITREP generator
@@ -75,6 +76,11 @@ hummbl-agent/
 - HUMMBL-specific agents and commands
 - Governed execution + artifact provenance
 - Automated SITREP generation + lint
+
+### 4. Codex Runner
+
+- Prompt packet generation + run logging
+- Governed execution via `scripts/run-cmd.sh`
 
 ## Quick Start
 

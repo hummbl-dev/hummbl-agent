@@ -8,4 +8,8 @@
 ## Kernel
 - packages/kernel: types-only contract
 
+## Runner Notes
+- Use scripts/run-cmd.sh for governed execution
+- Log artifacts via packages/runners/codex/scripts/log-run.sh
+
 ## CURRENT_STATE (excerpt follows)

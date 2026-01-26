@@ -12,6 +12,11 @@ packages/runners/codex/scripts/log-run.sh "Append hashed artifact" \
 packages/runners/codex/scripts/log-run.sh "Checkpoint: no artifact"
 ```
 
+## Governed execution
+```bash
+scripts/run-cmd.sh --runner codex -- git status --porcelain
+```
+
 ## Notes
 - Prompt packet is template + CURRENT_STATE.
 - Run logs append to _state/runs/YYYY-MM-DD/run.md.
