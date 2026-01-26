@@ -815,5 +815,447 @@
       "sy1-integrated-run"
     ],
     "transformation_code": "T.INT"
+  },
+  {
+    "id": "S.primitive.T.SYS.coding-standards.v0.1.0",
+    "name": "Coding Standards",
+    "summary": "Apply a consistent coding standards checklist to a change set.",
+    "tags": [
+      "quality",
+      "standards",
+      "coding"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.SYS",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "changeSet",
+        "type": "string",
+        "required": true,
+        "description": "Description or diff context to review."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "standardsChecklist",
+        "type": "string",
+        "description": "Checklist findings and recommendations."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/coding-standards/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual review",
+        "invocation": "Apply coding-standards checklist to PR context",
+        "expectedOutcome": "A standards-focused review summary."
+      }
+    ],
+    "aliases": [
+      "coding-standards"
+    ]
+  },
+  {
+    "id": "S.primitive.T.INV.security-review.v0.1.0",
+    "name": "Security Review",
+    "summary": "Perform a manual security review pass focused on failure modes.",
+    "tags": [
+      "security",
+      "review"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.INV",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "scope",
+        "type": "string",
+        "required": true,
+        "description": "System or change scope to review."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "findings",
+        "type": "string",
+        "description": "Security findings and mitigations."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/security-review/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual review",
+        "invocation": "Run a security review on the change description",
+        "expectedOutcome": "A list of failure modes and mitigations."
+      }
+    ],
+    "aliases": [
+      "security-review"
+    ]
+  },
+  {
+    "id": "S.primitive.T.REC.tdd-workflow.v0.1.0",
+    "name": "TDD Workflow",
+    "summary": "Guide a test-first workflow with incremental red/green/refactor steps.",
+    "tags": [
+      "testing",
+      "tdd",
+      "workflow"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.REC",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "feature",
+        "type": "string",
+        "required": true,
+        "description": "Feature or change to implement."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "tddPlan",
+        "type": "string",
+        "description": "Red/green/refactor test sequence."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/tdd-workflow/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual workflow",
+        "invocation": "Create a TDD plan for the requested change",
+        "expectedOutcome": "A stepwise red/green/refactor plan."
+      }
+    ],
+    "aliases": [
+      "tdd-workflow"
+    ]
+  },
+  {
+    "id": "S.primitive.T.REC.verification-loop.v0.1.0",
+    "name": "Verification Loop",
+    "summary": "Iterate verification steps until confidence threshold is met.",
+    "tags": [
+      "verification",
+      "loop"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.REC",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "claim",
+        "type": "string",
+        "required": true,
+        "description": "Claim or result to verify."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "verificationNotes",
+        "type": "string",
+        "description": "Verification steps and confidence assessment."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/verification-loop/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual verification",
+        "invocation": "Run a verification loop on the result",
+        "expectedOutcome": "A verification log and confidence summary."
+      }
+    ],
+    "aliases": [
+      "verification-loop"
+    ]
+  },
+  {
+    "id": "S.primitive.T.REC.iterative-retrieval.v0.1.0",
+    "name": "Iterative Retrieval",
+    "summary": "Iteratively retrieve and refine context to ground decisions.",
+    "tags": [
+      "retrieval",
+      "context",
+      "grounding"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.REC",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "question",
+        "type": "string",
+        "required": true,
+        "description": "Question or decision needing context."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "retrievalNotes",
+        "type": "string",
+        "description": "Iterative retrieval log and grounding summary."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/iterative-retrieval/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual retrieval loop",
+        "invocation": "Iteratively retrieve context before deciding",
+        "expectedOutcome": "Grounded context summary."
+      }
+    ],
+    "aliases": [
+      "iterative-retrieval"
+    ]
+  },
+  {
+    "id": "S.primitive.T.PER.strategic-compact.v0.1.0",
+    "name": "Strategic Compact",
+    "summary": "Condense objectives and constraints into a strategic compact.",
+    "tags": [
+      "strategy",
+      "compact",
+      "planning"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.PER",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "objective",
+        "type": "string",
+        "required": true,
+        "description": "Goal or objective to compact."
+      },
+      {
+        "name": "constraints",
+        "type": "string[]",
+        "required": false,
+        "description": "Known constraints to include."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "compact",
+        "type": "string",
+        "description": "Concise strategic compact statement."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "updatedAt": "2026-01-26",
+      "source": "vendor-pattern",
+      "references": [
+        "skills/strategic-compact/SKILL.md"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual compact",
+        "invocation": "Draft a strategic compact for the objective",
+        "expectedOutcome": "A short objective/constraints statement."
+      }
+    ],
+    "aliases": [
+      "strategic-compact"
+    ]
   }
 ]
