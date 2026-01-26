@@ -2,11 +2,16 @@
   {
     "id": "orchestrate-session",
     "name": "Orchestrate Session",
-    "summary": "Open today’s run and generate prompts for Claude Code and Codex.",
-    "tags": ["orchestration", "runs"],
+    "summary": "Open today’s run and generate prompts for Claude Code, Codex, and Grok.",
+    "tags": [
+      "orchestration",
+      "runs"
+    ],
     "version": "0.1.0",
     "status": "active",
-    "owners": ["hummbl-dev"],
+    "owners": [
+      "hummbl-dev"
+    ],
     "inputs": [
       {
         "name": "force",
@@ -22,9 +27,18 @@
         "description": "Paths to generated prompt files."
       }
     ],
-    "runnerCompatibility": ["claude-code", "codex"],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok"
+    ],
     "requiredTools": [
-      { "toolId": "process", "scopes": ["scripts/orchestrate.sh"] }
+      {
+        "toolId": "process",
+        "scopes": [
+          "scripts/orchestrate.sh"
+        ]
+      }
     ],
     "permissions": {
       "network": "none",
@@ -40,7 +54,9 @@
       "createdAt": "2026-01-26",
       "updatedAt": "2026-01-26",
       "source": "native",
-      "references": ["scripts/orchestrate.sh"]
+      "references": [
+        "scripts/orchestrate.sh"
+      ]
     },
     "examples": [
       {
@@ -54,10 +70,15 @@
     "id": "run-governed-command",
     "name": "Run Governed Command",
     "summary": "Execute an allowlisted command and log hashed artifacts into the run log.",
-    "tags": ["execution", "governance"],
+    "tags": [
+      "execution",
+      "governance"
+    ],
     "version": "0.1.0",
     "status": "active",
-    "owners": ["hummbl-dev"],
+    "owners": [
+      "hummbl-dev"
+    ],
     "inputs": [
       {
         "name": "runner",
@@ -79,9 +100,19 @@
         "description": "Stdout/stderr/exitcode artifact paths with hashes."
       }
     ],
-    "runnerCompatibility": ["claude-code", "codex", "local-cli"],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "local-cli",
+      "grok"
+    ],
     "requiredTools": [
-      { "toolId": "process", "scopes": ["scripts/run-cmd.sh"] }
+      {
+        "toolId": "process",
+        "scopes": [
+          "scripts/run-cmd.sh"
+        ]
+      }
     ],
     "permissions": {
       "network": "none",
@@ -97,13 +128,16 @@
       "createdAt": "2026-01-26",
       "updatedAt": "2026-01-26",
       "source": "native",
-      "references": ["scripts/run-cmd.sh", "configs/process-policy.allowlist"]
+      "references": [
+        "scripts/run-cmd.sh",
+        "configs/process-policy.allowlist"
+      ]
     },
     "examples": [
       {
         "title": "Run git status",
         "invocation": "scripts/run-cmd.sh --runner codex -- git status --porcelain",
-        "expectedOutcome": "Creates stdout/stderr/exitcode artifacts and logs them." 
+        "expectedOutcome": "Creates stdout/stderr/exitcode artifacts and logs them."
       }
     ]
   },
@@ -111,10 +145,15 @@
     "id": "sync-upstreams",
     "name": "Sync Upstreams",
     "summary": "Print submodule init/status/update commands and record upstream pins.",
-    "tags": ["vendor", "governance"],
+    "tags": [
+      "vendor",
+      "governance"
+    ],
     "version": "0.1.0",
     "status": "active",
-    "owners": ["hummbl-dev"],
+    "owners": [
+      "hummbl-dev"
+    ],
     "inputs": [
       {
         "name": "action",
@@ -136,9 +175,19 @@
         "description": "Updated vendor/UPSTREAM_PINS.md entries."
       }
     ],
-    "runnerCompatibility": ["claude-code", "codex", "local-cli"],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "local-cli",
+      "grok"
+    ],
     "requiredTools": [
-      { "toolId": "process", "scopes": ["scripts/sync-upstreams.sh"] }
+      {
+        "toolId": "process",
+        "scopes": [
+          "scripts/sync-upstreams.sh"
+        ]
+      }
     ],
     "permissions": {
       "network": "none",
@@ -148,13 +197,16 @@
     },
     "safety": {
       "risk": "low",
-      "notes": "Does not execute git commands automatically; prints instructions." 
+      "notes": "Does not execute git commands automatically; prints instructions."
     },
     "provenance": {
       "createdAt": "2026-01-26",
       "updatedAt": "2026-01-26",
       "source": "native",
-      "references": ["scripts/sync-upstreams.sh", "vendor/UPSTREAM_PINS.md"]
+      "references": [
+        "scripts/sync-upstreams.sh",
+        "vendor/UPSTREAM_PINS.md"
+      ]
     },
     "examples": [
       {
