@@ -1,0 +1,4 @@
+# Allowlisted executables for governed command execution
+# One executable name per line
+
+git

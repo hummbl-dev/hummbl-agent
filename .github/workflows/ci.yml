@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  guardrails:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate VERSION format
+        shell: bash
+        run: |
+          if [[ ! -f VERSION ]]; then
+            echo "VERSION missing" >&2
+            exit 1
+          fi
+          if [[ "$(wc -l < VERSION | tr -d ' ')" != "1" ]]; then
+            echo "VERSION must be single line" >&2
+            exit 1
+          fi
+          if ! grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$' VERSION; then
+            echo "VERSION must match x.y.z" >&2
+            exit 1
+          fi
+
+      - name: Validate CURRENT_STATE headings
+        shell: bash
+        run: scripts/lint-state.sh
+
+      - name: Guard vendor changes in PR
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          git fetch origin main
+          changed_files=$(git diff --name-only origin/main...HEAD)
+          violations=$(echo "${changed_files}" | grep -E '^vendor/' | grep -vE '^vendor/(README\.md|UPSTREAM_PINS\.md|\.gitmodules)$' || true)
+          if [[ -n "${violations}" ]]; then
+            echo "Vendor changes not allowed:" >&2
+            echo "${violations}" >&2
+            exit 1
+          fi
+
+      - name: Validate sha256-file helper
+        shell: bash
+        run: |
+          if [[ ! -x scripts/sha256-file.sh ]]; then
+            echo "scripts/sha256-file.sh is not executable" >&2
+            exit 1
+          fi
+          if command -v sha256sum >/dev/null 2>&1 || command -v shasum >/dev/null 2>&1; then
+            tmpfile=$(mktemp)
+            printf "test" > "${tmpfile}"
+            scripts/sha256-file.sh "${tmpfile}"
+            rm -f "${tmpfile}"
+          else
+            echo "sha256sum/shasum not available; skipping hash check"
+          fi
+
+      - name: Check kernel decision note
+        shell: bash
+        run: scripts/check-kernel-decision.sh

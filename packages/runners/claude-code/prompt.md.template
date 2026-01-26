@@ -1,0 +1,11 @@
+# HUMMBL Runner Packet — Claude Code
+
+## Repository Rules (excerpt)
+- No deletions unless instructed
+- No vendor/ edits
+- Minimal, additive changes
+
+## Kernel
+- packages/kernel: types-only contract
+
+## CURRENT_STATE (excerpt follows)
