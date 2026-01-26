@@ -18,7 +18,7 @@ Static, governed registry of skills available in hummbl-agent.
 - `id`: lowercase-with-dashes, unique.
 - `summary`: max 140 chars.
 - `version`: semver-like `x.y.z`.
-- `runnerCompatibility`: which runners can execute this skill.
+- `runnerCompatibility`: which runners can execute this skill (e.g., claude-code, codex, grok).
 - `requiredTools`: tool ids and optional scopes.
 - `permissions`: network/filesystem/exec/secrets.
 - `provenance`: origin metadata and references.

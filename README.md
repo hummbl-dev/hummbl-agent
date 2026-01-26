@@ -125,6 +125,13 @@ hummbl-agent/
    ```bash
    scripts/run-cmd.sh --runner codex -- git status --porcelain
    ```
+
+7. **Grok runner example**
+   ```bash
+   packages/runners/grok/scripts/make-prompt.sh > /tmp/grok-prompt.md
+   packages/runners/grok/scripts/log-run.sh "Session start: grok" \
+     --artifact "_state/runs/YYYY-MM-DD/prompts/grok-prompt.md" --hash-file
+   ```
 ## Development Phases
 
 - **Phase 1**: Foundation setup and basic skills (P1 + coordination)
