@@ -1,0 +1,186 @@
+# HUMMBL Workspace Configuration
+
+## Directory Structure
+
+```
+~/clawd/hummbl/
+├── AGENTS.md                 # HUMMBL agent coordination protocols
+├── SOUL.md                   # HUMMBL system personality and principles
+├── TOOLS.md                  # HUMMBL-specific tool configurations
+├── skills/                   # Downloaded and custom skills
+│   ├── generated/           # Auto-installed from ClawdHub
+│   ├── base120/             # Base120 mental model skills
+│   └── custom/              # HUMMBL-specific skills
+├── workspace/               # Active project workspaces
+├── sessions/                # Agent session history and coordination
+└── config/                 # Workspace-specific configurations
+```
+
+## Installation Commands
+
+### **Setup HUMMBL Workspace**
+```bash
+# Create workspace directory
+mkdir -p ~/clawd/hummbl/{skills/{generated,base120,custom},workspace,sessions,config}
+
+# Copy HUMMBL configuration
+cp /Users/others/hummbl/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
+
+# Initialize workspace
+clawdbot workspace init hummbl --template mental-models
+```
+
+### **Install Base120 Skills**
+```bash
+# Install P1 Perspective Framing
+clawdhub install hummbl-systems/p1-perspective-framing
+
+# Install additional Base120 skills as they're created
+clawdhub install hummbl-systems/de3-decomposition
+clawdhub install hummbl-systems/sy8-systems-thinking
+```
+
+### **Configure Claude Code Integration**
+```bash
+# Copy HUMMBL agent to Claude Code
+cp /Users/others/hummbl/agents/hummbl-architect.md ~/.claude/agents/
+
+# Copy HUMMBL commands
+cp /Users/others/hummbl/commands/apply-transformation.md ~/.claude/commands/
+
+# Update Claude Code settings
+cat >> ~/.claude/settings.json << 'EOF'
+{
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true
+  },
+  "hooks": {
+    "PreToolUse": [{
+      "matcher": "*",
+      "hooks": [{
+        "type": "command",
+        "command": "~/.claude/skills/continuous-learning-v2/hooks/observe.sh pre"
+      }]
+    }]
+  }
+}
+EOF
+```
+
+## Gateway Management
+
+### **Start HUMMBL Gateway**
+```bash
+# Start with HUMMBL configuration
+clawdbot gateway --config ~/.clawdbot/clawdbot.json --port 18789
+
+# Or use the workspace command
+clawdbot workspace start hummbl
+```
+
+### **Test Integration**
+```bash
+# Test mental model application
+clawdbot agent --message "Apply P1 perspective framing to our current integration challenge"
+
+# Test agent coordination
+clawdbot agent --session hummbl-sitrep --message "Generate SITREP for integration progress"
+```
+
+## Multi-Agent Coordination
+
+### **Agent Roles**
+- **claude-sonnet**: Lead strategy and planning
+- **windsurf-cascade**: Implementation and execution
+- **chatgpt-5**: Product QA and validation
+- **cursor**: Prototyping and development
+
+### **Coordination Protocol**
+```typescript
+// SITREP coordination pattern
+interface HUMMBLCoordination {
+  sitrep: {
+    frequency: "hourly";
+    format: "SITREP-{N}: {Project} - {Phase}";
+    sections: ["Situation", "Intelligence", "Operations", "Assessment", "Recommendations"];
+  };
+  escalation: {
+    triggers: ["blocker", "decision_needed", "resource_conflict"];
+    protocol: "automatic_agent_handoff";
+  };
+}
+```
+
+## Mental Model Integration
+
+### **Automatic Application**
+- Base120 transformations auto-detected in conversations
+- Skills automatically applied based on context
+- Usage tracked for learning and optimization
+
+### **Documentation Standards**
+- All transformations explicitly referenced: `// Using P1 (Perspective)`
+- Decision rationale documented with mental model citations
+- Cross-referenced with skill documentation
+
+## Continuous Learning
+
+### **Pattern Recognition**
+- Mental model usage patterns tracked
+- Effectiveness measured by outcomes
+- Instincts created for repeated patterns
+
+### **Knowledge Evolution**
+- Successful patterns become instincts
+- Instincts cluster into new skills
+- Skills evolve based on usage feedback
+
+## Quality Assurance
+
+### **HUMMBL Compliance**
+- TypeScript strict mode enforced
+- Mental model references required
+- Documentation standards maintained
+- Test coverage 80%+ required
+
+### **Validation Checks**
+```bash
+# Verify HUMMBL compliance
+clawdbot doctor --hummbl
+
+# Check mental model application
+clawdbot agent --message "Review recent work for Base120 compliance"
+
+# Generate quality report
+clawdbot workspace report hummbl --format markdown
+```
+
+## Troubleshooting
+
+### **Common Issues**
+- **Gateway won't start**: Check configuration syntax and port availability
+- **Skills not loading**: Verify ClawdHub connection and skill format
+- **Agent coordination failing**: Check session routing and protocol configuration
+
+### **Debug Commands**
+```bash
+# Check gateway status
+clawdbot gateway status
+
+# Test skill installation
+clawdhub test hummbl-systems/p1-perspective-framing
+
+# Verify agent routing
+clawdbot agent --test-routing "mental.model"
+```
+
+## Next Steps
+
+1. **Complete workspace setup** using commands above
+2. **Test integration** with sample mental model application
+3. **Create additional Base120 skills** following P1 pattern
+4. **Set up continuous learning** for pattern evolution
+5. **Document custom workflows** for your specific use cases
+
+---
+*HUMMBL workspace configured for multi-agent mental intelligence coordination.*

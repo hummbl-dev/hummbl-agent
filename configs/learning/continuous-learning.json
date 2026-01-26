@@ -1,0 +1,120 @@
+{
+  "version": "2.0",
+  "observation": {
+    "enabled": true,
+    "store_path": "~/.claude/homunculus/observations.jsonl",
+    "max_file_size_mb": 10,
+    "archive_after_days": 7
+  },
+  "instincts": {
+    "personal_path": "~/.claude/homunculus/instincts/personal/",
+    "inherited_path": "~/.claude/homunculus/instincts/inherited/",
+    "min_confidence": 0.3,
+    "auto_approve_threshold": 0.7,
+    "confidence_decay_rate": 0.05
+  },
+  "observer": {
+    "enabled": true,
+    "model": "haiku",
+    "run_interval_minutes": 5,
+    "patterns_to_detect": [
+      "user_corrections",
+      "error_resolutions", 
+      "repeated_workflows",
+      "tool_preferences",
+      "mental_model_usage",
+      "transformation_effectiveness"
+    ]
+  },
+  "evolution": {
+    "cluster_threshold": 3,
+    "evolved_path": "~/.claude/homunculus/evolved/"
+  },
+  "hummbl": {
+    "base120_tracking": {
+      "enabled": true,
+      "transformations": ["P", "IN", "CO", "DE", "RE", "SY"],
+      "track_usage": true,
+      "track_effectiveness": true,
+      "track_context": true
+    },
+    "mental_model_patterns": {
+      "perspective_shifts": {
+        "trigger": "user asks for alternative viewpoint",
+        "confidence_boost": 0.2,
+        "evidence_weight": 0.8
+      },
+      "decomposition_success": {
+        "trigger": "complex problem broken down effectively",
+        "confidence_boost": 0.15,
+        "evidence_weight": 0.7
+      },
+      "systems_insights": {
+        "trigger": "pattern recognition leads to solution",
+        "confidence_boost": 0.25,
+        "evidence_weight": 0.9
+      },
+      "inversion_breakthroughs": {
+        "trigger": "reverse thinking reveals solution",
+        "confidence_boost": 0.3,
+        "evidence_weight": 0.85
+      },
+      "composition_synthesis": {
+        "trigger": "multiple elements integrated successfully",
+        "confidence_boost": 0.2,
+        "evidence_weight": 0.75
+      },
+      "recursion_refinement": {
+        "trigger": "iterative improvement shows progress",
+        "confidence_boost": 0.15,
+        "evidence_weight": 0.7
+      }
+    },
+    "agent_coordination": {
+      "track_handoffs": true,
+      "track_sitrep_quality": true,
+      "track_decision_outcomes": true,
+      "learn_coordination_patterns": true
+    }
+  },
+  "learning_loops": {
+    "immediate": {
+      "pattern_detection": true,
+      "instinct_creation": true,
+      "confidence_update": true
+    },
+    "session": {
+      "pattern_clustering": true,
+      "skill_evolution": true,
+      "command_generation": true
+    },
+    "weekly": {
+      "effectiveness_analysis": true,
+      "pattern_refinement": true,
+      "knowledge_export": true
+    }
+  },
+  "export": {
+    "formats": ["json", "markdown", "skills"],
+    "include_context": true,
+    "anonymize_data": true,
+    "auto_export_threshold": 0.8
+  },
+  "integration": {
+    "clawdhub": {
+      "auto_publish": false,
+      "quality_threshold": 0.9,
+      "review_required": true
+    },
+    "claude_code": {
+      "sync_commands": true,
+      "sync_agents": true,
+      "sync_skills": true
+    },
+    "clawdbot": {
+      "workspace_sync": true,
+      "agent_learning": true,
+      "coordination_optimization": true
+    }
+  }
+}

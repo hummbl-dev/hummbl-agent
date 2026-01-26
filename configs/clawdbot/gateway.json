@@ -1,0 +1,114 @@
+{
+  "agent": {
+    "model": "anthropic/claude-opus-4-5",
+    "workspace": "~/clawd/hummbl",
+    "defaults": {
+      "thinkingLevel": "high",
+      "verboseLevel": "medium",
+      "sendPolicy": "auto"
+    }
+  },
+  "gateway": {
+    "bind": "loopback",
+    "port": 18789,
+    "auth": {
+      "mode": "password",
+      "password": "hummbl-2025"
+    },
+    "tailscale": {
+      "mode": "off"
+    }
+  },
+  "agents": {
+    "defaults": {
+      "workspace": "~/clawd/hummbl",
+      "model": "anthropic/claude-opus-4-5",
+      "thinkingLevel": "high",
+      "sandbox": {
+        "mode": "non-main"
+      }
+    },
+    "routing": {
+      "hummbl-architect": {
+        "pattern": "mental.model|base120|transformation|P[0-9]+|IN[0-9]+|CO[0-9]+|DE[0-9]+|RE[0-9]+|SY[0-9]+",
+        "session": "hummbl-main"
+      },
+      "sitrep-generator": {
+        "pattern": "sitrep|status|report|update",
+        "session": "hummbl-sitrep"
+      },
+      "default": {
+        "session": "hummbl-main"
+      }
+    }
+  },
+  "channels": {
+    "webchat": {
+      "enabled": true
+    }
+  },
+  "skills": {
+    "registry": "clawdhub",
+    "autoInstall": [
+      "hummbl-systems/p1-perspective-framing"
+    ],
+    "workspace": "~/clawd/hummbl/skills"
+  },
+  "browser": {
+    "enabled": true,
+    "controlUrl": "http://127.0.0.1:18791",
+    "color": "#FF4500"
+  },
+  "canvas": {
+    "enabled": true,
+    "host": true
+  },
+  "hummbl": {
+    "base120": {
+      "enabled": true,
+      "transformations": ["P", "IN", "CO", "DE", "RE", "SY"],
+      "autoApply": true,
+      "documentUsage": true
+    },
+    "agents": {
+      "claude-sonnet": {
+        "role": "lead_strategy",
+        "model": "anthropic/claude-sonnet-4.5"
+      },
+      "windsurf-cascade": {
+        "role": "implementation",
+        "model": "anthropic/claude-sonnet-4.5"
+      },
+      "chatgpt-5": {
+        "role": "product_qa",
+        "model": "openai/gpt-5"
+      },
+      "cursor": {
+        "role": "execution_prototyping",
+        "model": "anthropic/claude-sonnet-4.5"
+      }
+    },
+    "coordination": {
+      "protocol": "sitrep",
+      "frequency": "hourly",
+      "escalation": "automatic"
+    },
+    "workspace": {
+      "root": "~/clawd/hummbl",
+      "skills": "skills",
+      "agents": "agents",
+      "commands": "commands",
+      "configs": "configs",
+      "docs": "docs"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "hummbl": {
+      "enabled": true,
+      "transformations": true,
+      "agentCoordination": true,
+      "sitrepGeneration": true
+    }
+  }
+}
