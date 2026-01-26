@@ -2,7 +2,16 @@ export type SkillId = string;
 
 export type SkillStatus = "active" | "experimental" | "deprecated";
 
-export type RunnerId = "claude-code" | "codex" | "local-cli";
+// Runner ids are vendor-agnostic; use recommended ids where possible.
+export type RunnerId = string;
+
+export const RECOMMENDED_RUNNERS = [
+  "claude-code",
+  "codex",
+  "grok",
+  "local-cli",
+  "template"
+] as const;
 
 export type SkillIO = {
   name: string;

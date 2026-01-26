@@ -82,3 +82,7 @@ jobs:
           while IFS= read -r -d '' file; do
             scripts/lint-sitrep.sh "${file}"
           done <<< "${files}"
+
+      - name: Lint runner capabilities
+        shell: bash
+        run: scripts/lint-runner-capabilities.sh

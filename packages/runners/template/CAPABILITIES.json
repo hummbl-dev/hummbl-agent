@@ -1,0 +1,8 @@
+{
+  "runnerId": "template",
+  "mode": "manual",
+  "network": "none",
+  "artifacts": "hashed",
+  "supports": ["prompt", "log", "dateOverride"],
+  "notes": "Copy this runner and update capabilities for new vendors."
+}
