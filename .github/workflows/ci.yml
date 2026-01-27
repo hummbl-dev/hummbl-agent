@@ -80,6 +80,10 @@ jobs:
         shell: bash
         run: node scripts/validate-base120-canonical.cjs
 
+      - name: Lint ESM usage
+        shell: bash
+        run: node scripts/lint-esm.mjs
+
       - name: Lint network policy
         shell: bash
         run: scripts/lint-network-policy.sh

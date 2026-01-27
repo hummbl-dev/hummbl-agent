@@ -134,7 +134,7 @@ scripts/run-anthropic-governed.sh --model claude-3-5-sonnet-20241022 --input "Su
 ```
 
 #### Notes
-- Requests are built via `scripts/build-request.js` with JSON escaping and `maxRequestBytes` enforcement.
+- Requests are built via `scripts/build-request.cjs` with JSON escaping and `maxRequestBytes` enforcement.
 - Global rate limiting is enforced via `_state/.rate-limit.json`.
 - Artifacts and hashes are logged under `_state/runs/YYYY-MM-DD/artifacts/`.
 - Full walkthrough: `docs/governed-model-call.md`

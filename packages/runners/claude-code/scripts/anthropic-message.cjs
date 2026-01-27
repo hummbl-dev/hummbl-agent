@@ -21,7 +21,7 @@ const timeoutMsArg = getArg("--timeout-ms");
 const maxBytesArg = getArg("--max-response-bytes");
 
 if (!requestPath || !responsePath || !metaPath) {
-  console.error("Usage: anthropic-message.js --request <file> --response <file> --meta <file>");
+  console.error("Usage: anthropic-message.cjs --request <file> --response <file> --meta <file>");
   process.exit(1);
 }
 
@@ -36,7 +36,7 @@ const {
   loadNetworkPolicy,
   enforceRequestSize,
   enforceRateLimit,
-} = require(path.join(root, "scripts", "network-guard.js"));
+} = require(path.join(root, "scripts", "network-guard.cjs"));
 
 let networkPolicy = { allowlist: { domains: ["api.anthropic.com"] }, default: {} };
 try {
