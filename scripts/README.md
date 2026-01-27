@@ -52,6 +52,11 @@ node scripts/generate-base120-skill-map.js
 - Writes `docs/base120-skill-map.md`.
 - Re-run after changes to `skills/` or `packages/skills/registry/src/registry.json`.
 
+## Lint Base120 Skill Map (drift guard)
+```bash
+scripts/lint-base120-skill-map.sh
+```
+
 ## Controlled Experiment Run
 ```bash
 scripts/experiment-run.sh

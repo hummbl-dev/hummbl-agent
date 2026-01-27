@@ -16,7 +16,15 @@ const registryPath = path.join(
   "src",
   "registry.json"
 );
-const outputPath = path.join(ROOT_DIR, "docs", "base120-skill-map.md");
+const outputPath = (() => {
+  const override = process.env.BASE120_MAP_OUTPUT;
+  if (!override) {
+    return path.join(ROOT_DIR, "docs", "base120-skill-map.md");
+  }
+  return path.isAbsolute(override)
+    ? override
+    : path.join(ROOT_DIR, override);
+})();
 
 function die(message) {
   console.error(message);
