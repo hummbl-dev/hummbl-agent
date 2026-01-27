@@ -75,6 +75,10 @@ jobs:
         shell: bash
         run: node scripts/validate-base120-refs.js
 
+      - name: Validate Base120 canonical JSON
+        shell: bash
+        run: node scripts/validate-base120-canonical.js
+
       - name: Lint SITREPs (if present)
         shell: bash
         run: |

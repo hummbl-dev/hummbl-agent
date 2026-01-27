@@ -1,0 +1,2053 @@
+{
+  "schema_version": "base120.schema.v1",
+  "base120_version": "1.0.0",
+  "canonical": true,
+  "model_count": 120,
+  "models": [
+    {
+      "id": "P1",
+      "name": "First Principles Framing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Reduce complex problems to foundational truths that cannot be further simplified",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P2",
+      "name": "Stakeholder Mapping",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Identify all parties with interest, influence, or impact in a system or decision",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P3",
+      "name": "Identity Stack",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Recognize that individuals operate from multiple nested identities simultaneously",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P4",
+      "name": "Lens Shifting",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Deliberately adopt different interpretive frameworks to reveal hidden aspects of a situation",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P5",
+      "name": "Empathy Mapping",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Systematically capture what stakeholders see, think, feel, and do in their context",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P6",
+      "name": "Point-of-View Anchoring",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Establish and maintain a consistent reference frame before analysis begins",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P7",
+      "name": "Perspective Switching",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Rotate through multiple viewpoints to identify invariants and blind spots",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P8",
+      "name": "Narrative Framing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Structure information as causal stories with conflict, choice, and consequence",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P9",
+      "name": "Cultural Lens Shifting",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Adjust communication and interpretation for different cultural contexts and norms",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P10",
+      "name": "Context Windowing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Define explicit boundaries in time, space, and scope for analysis or action",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P11",
+      "name": "Role Perspective-Taking",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Temporarily inhabit specific roles to understand constraints and priorities",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P12",
+      "name": "Temporal Framing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Organize understanding across past causes, present states, and future implications",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P13",
+      "name": "Spatial Framing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Scale perspective from local details to global patterns and back",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P14",
+      "name": "Reference Class Framing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Select comparable situations to inform judgment and avoid uniqueness bias",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P15",
+      "name": "Assumption Surfacing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Explicitly identify and document beliefs underlying plans or models",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P16",
+      "name": "Identity-Context Reciprocity",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Recognize how identities shape interpretations and contexts reinforce identities",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P17",
+      "name": "Frame Control & Reframing",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Consciously select or reshape interpretive frames to enable new solutions",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P18",
+      "name": "Boundary Object Selection",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Choose representations that bridge multiple perspectives while remaining meaningful to each",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P19",
+      "name": "Sensemaking Canvases",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Deploy structured templates to systematically capture and organize observations",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "P20",
+      "name": "Worldview Articulation",
+      "layer": "Systems",
+      "domain": "P",
+      "definition": "Make explicit the fundamental beliefs and values that drive interpretation and action",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "P20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN1",
+      "name": "Subtractive Thinking",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Improve systems by removing elements rather than adding complexity",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN2",
+      "name": "Premortem Analysis",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Assume failure has occurred and work backward to identify causes",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN3",
+      "name": "Problem Reversal",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Solve the inverse of the stated problem to reveal insights",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN4",
+      "name": "Contra-Logic",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Argue the opposite position to stress-test assumptions and expose weak reasoning",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN5",
+      "name": "Negative Space Framing",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Study what is absent rather than what is present",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN6",
+      "name": "Inverse/Proof by Contradiction",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Assume a claim is false, derive logical impossibility, thus proving the claim true",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN7",
+      "name": "Boundary Testing",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Explore extreme conditions to find system limits and breaking points",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN8",
+      "name": "Contrapositive Reasoning",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Use logical equivalence that if A then B equals if not B then not A",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN9",
+      "name": "Backward Induction",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Begin with desired end state and work backward to determine necessary steps",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN10",
+      "name": "Red Teaming",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Organize adversarial review to find vulnerabilities through simulated attack",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN11",
+      "name": "Devil's Advocate Protocol",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Assign explicit role to argue against group consensus or preferred option",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN12",
+      "name": "Failure First Design",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Begin planning by identifying all possible failure modes and designing to prevent them",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN13",
+      "name": "Opportunity Cost Focus",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Evaluate options by what must be forgone rather than what is gained",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN14",
+      "name": "Second-Order Effects (Inverted)",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Trace negative downstream consequences rather than immediate benefits",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN15",
+      "name": "Constraint Reversal",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Temporarily remove assumed constraints to explore alternative solution space",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN16",
+      "name": "Inverse Optimization",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Maximize worst outcomes to understand system vulnerabilities",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN17",
+      "name": "Counterfactual Negation",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Imagine outcomes if key decision had been reversed",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN18",
+      "name": "Kill-Criteria & Stop Rules",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Define conditions that trigger project termination before launch",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN19",
+      "name": "Harm Minimization (Via Negativa)",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Improve by removing harmful elements rather than adding beneficial ones",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "IN20",
+      "name": "Antigoals & Anti-Patterns Catalog",
+      "layer": "Systems",
+      "domain": "IN",
+      "definition": "Document failure modes to avoid rather than success patterns to emulate",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "IN20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO1",
+      "name": "Synergy Principle",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Design combinations where integrated value exceeds sum of parts",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO2",
+      "name": "Chunking",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Group related elements into meaningful units to reduce cognitive load",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO3",
+      "name": "Functional Composition",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Chain pure operations where output of one becomes input of next",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO4",
+      "name": "Interdisciplinary Synthesis",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Merge insights from distinct fields to generate novel solutions",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO5",
+      "name": "Emergence",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Recognize higher-order behavior arising from component interactions beyond individual properties",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO6",
+      "name": "Gestalt Integration",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Perceive and leverage whole patterns rather than isolated components",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO7",
+      "name": "Network Effects",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Exploit increasing value as user base or connections grow",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO8",
+      "name": "Layered Abstraction",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Separate concerns into hierarchical levels with clear interfaces between them",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO9",
+      "name": "Interface Contracts",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Define explicit agreements about data structures and behavior between components",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO10",
+      "name": "Pipeline Orchestration",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Coordinate sequential stages with explicit handoffs and error handling",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO11",
+      "name": "Pattern Composition (Tiling)",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Combine repeating elements to construct complex structures efficiently",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO12",
+      "name": "Modular Interoperability",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Ensure independent components work together through standardized connections",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO13",
+      "name": "Cross-Domain Analogy",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Transfer solution patterns from one domain to solve problems in another",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO14",
+      "name": "Platformization",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Extract common capabilities into reusable infrastructure serving multiple use cases",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO15",
+      "name": "Combinatorial Design",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Systematically explore option combinations to find optimal configurations",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO16",
+      "name": "System Integration Testing",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Verify assembled components work correctly together, not just in isolation",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO17",
+      "name": "Orchestration vs Choreography",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Choose between centralized coordination or distributed peer-to-peer interaction",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO18",
+      "name": "Knowledge Graphing",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Represent information as interconnected entities and relationships rather than isolated documents",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO19",
+      "name": "Multi-Modal Integration",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Synthesize information from different sensory or data modalities",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "CO20",
+      "name": "Holistic Integration",
+      "layer": "Systems",
+      "domain": "CO",
+      "definition": "Unify disparate elements into coherent, seamless whole where boundaries dissolve",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "CO20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE1",
+      "name": "Root Cause Analysis (5 Whys)",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Iteratively ask why problems occur until fundamental cause emerges",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE2",
+      "name": "Factorization",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Separate multiplicative components to understand relative contribution of each factor",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE3",
+      "name": "Modularization",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Partition system into self-contained units with minimal interdependencies",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE4",
+      "name": "Layered Breakdown",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Decompose from system to subsystem to component progressively",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE5",
+      "name": "Dimensional Reduction",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Focus on most informative variables while discarding noise or redundancy",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE6",
+      "name": "Taxonomy/Classification",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Organize entities into hierarchical categories based on shared properties",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE7",
+      "name": "Pareto Decomposition (80/20)",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Identify vital few drivers producing most impact versus trivial many",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE8",
+      "name": "Work Breakdown Structure",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Hierarchically divide project into deliverable-oriented components with clear ownership",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE9",
+      "name": "Signal Separation",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Distinguish meaningful patterns from random variation or confounding factors",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE10",
+      "name": "Abstraction Laddering",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Move up and down conceptual hierarchy to find appropriate solution level",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE11",
+      "name": "Scope Delimitation",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Define precise boundaries of what is included versus excluded from consideration",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE12",
+      "name": "Constraint Isolation",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Identify specific limiting factor preventing performance improvement",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE13",
+      "name": "Failure Mode Analysis (FMEA)",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Enumerate potential failure points with severity, likelihood, and detectability ratings",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE14",
+      "name": "Variable Control & Isolation",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Hold factors constant to measure single variable's causal impact",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE15",
+      "name": "Decision Tree Expansion",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Map choices and their consequences as branching paths",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE16",
+      "name": "Hypothesis Disaggregation",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Break compound claim into testable sub-hypotheses",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE17",
+      "name": "Orthogonalization",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Ensure factors vary independently without correlation or interdependence",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE18",
+      "name": "Scenario Decomposition",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Partition future possibilities into discrete, mutually exclusive scenarios",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE19",
+      "name": "Critical Path Unwinding",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Trace longest sequence of dependent tasks determining minimum project duration",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "DE20",
+      "name": "Partition-and-Conquer",
+      "layer": "Systems",
+      "domain": "DE",
+      "definition": "Divide problem into independent subproblems solvable separately then combined",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "DE20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE1",
+      "name": "Recursive Improvement (Kaizen)",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Continuously refine process through small, frequent enhancements",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE2",
+      "name": "Feedback Loops",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Create mechanisms where system outputs influence future inputs",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE3",
+      "name": "Meta-Learning (Learn-to-Learn)",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Improve the process of learning itself, not just domain knowledge",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE4",
+      "name": "Nested Narratives",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Structure information as stories within stories for depth and memorability",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE5",
+      "name": "Fractal Reasoning",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Recognize self-similar patterns repeating across different scales",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE6",
+      "name": "Recursive Framing",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Apply mental models to the process of selecting mental models",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE7",
+      "name": "Self-Referential Logic",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Create systems that monitor, measure, or modify themselves",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE8",
+      "name": "Bootstrapping",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Build capability using currently available resources, then use that to build more",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE9",
+      "name": "Iterative Prototyping",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Cycle rapidly through build-test-learn loops with increasing fidelity",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE10",
+      "name": "Compounding Cycles",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Design systems where gains reinforce future gains exponentially",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE11",
+      "name": "Calibration Loops",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Repeatedly check predictions against outcomes to improve forecasting accuracy",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE12",
+      "name": "Bayesian Updating in Practice",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Continuously revise beliefs as new evidence arrives, weighting by reliability",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE13",
+      "name": "Gradient Descent Heuristic",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Iteratively adjust toward improvement, even without perfect knowledge of optimal direction",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE14",
+      "name": "Spiral Learning",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Revisit concepts at increasing depth, building on previous understanding",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE15",
+      "name": "Convergence-Divergence Cycling",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Alternate between expanding possibilities and narrowing to decisions",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE16",
+      "name": "Retrospective → Prospective Loop",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Use systematic reflection on past to inform future planning",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE17",
+      "name": "Versioning & Diff",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Track changes over time and compare versions to understand evolution",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE18",
+      "name": "Anti-Catastrophic Forgetting",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Preserve critical knowledge while adapting to new information",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE19",
+      "name": "Auto-Refactor",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Systematically improve system structure without changing external behavior",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "RE20",
+      "name": "Recursive Governance (Guardrails that Learn)",
+      "layer": "Systems",
+      "domain": "RE",
+      "definition": "Establish rules that adapt based on their own effectiveness",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "RE20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY1",
+      "name": "Leverage Points",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Identify intervention points where small changes produce disproportionate effects",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY01",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY2",
+      "name": "System Boundaries",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Define what is inside versus outside system scope for analysis or design",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY02",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY3",
+      "name": "Stocks & Flows",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Distinguish accumulations from rates of change affecting them",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY03",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY4",
+      "name": "Requisite Variety",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Match control system's complexity to system being controlled",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY04",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY5",
+      "name": "Systems Archetypes",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Recognize recurring dynamic patterns across different domains",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY05",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY6",
+      "name": "Feedback Structure Mapping",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Diagram causal loops showing how variables influence each other",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY06",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY7",
+      "name": "Path Dependence",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Acknowledge how early decisions constrain future options through accumulated consequences",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY07",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY8",
+      "name": "Homeostasis/Dynamic Equilibrium",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Understand self-regulating mechanisms maintaining stable states despite disturbances",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY08",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY9",
+      "name": "Phase Transitions & Tipping Points",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Identify thresholds where gradual changes produce sudden qualitative shifts",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY09",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY10",
+      "name": "Causal Loop Diagrams",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Visualize circular cause-effect relationships with reinforcing and balancing dynamics",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY10",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY11",
+      "name": "Governance Patterns",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Design decision rights, accountability structures, and coordination mechanisms",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY11",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY12",
+      "name": "Protocol/Interface Standards",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Specify rules for interaction enabling coordination without central control",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY12",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY13",
+      "name": "Incentive Architecture",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Design reward and penalty structures aligning individual actions with system goals",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY13",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY14",
+      "name": "Risk & Resilience Engineering",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Build systems that fail gracefully and recover automatically",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY14",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY15",
+      "name": "Multi-Scale Alignment",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Ensure strategy, operations, and execution cohere across organizational levels",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY15",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY16",
+      "name": "Ecosystem Strategy",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Position organization within network of partners, competitors, and stakeholders",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY16",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY17",
+      "name": "Policy Feedbacks",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Anticipate how rules shape behavior, which creates conditions affecting future rules",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY17",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY18",
+      "name": "Measurement & Telemetry",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Instrument systems to capture state, changes, and anomalies for informed response",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY18",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY19",
+      "name": "Meta-Model Selection",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Choose appropriate framework or tool for specific problem characteristics",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY19",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "SY20",
+      "name": "Systems-of-Systems Coordination",
+      "layer": "Systems",
+      "domain": "SY",
+      "definition": "Manage interactions between independent systems with emergent behaviors",
+      "constraints": [],
+      "failure_modes": [],
+      "transformations": [
+        {
+          "code": "SY20",
+          "description": "Transform class membership",
+          "direction": "bidirectional"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "governance": {
+    "freeze_status": "FROZEN",
+    "change_policy": "GOVERNED_VERSION_BUMP_ONLY",
+    "hash_algorithm": "SHA-256"
+  }
+}
