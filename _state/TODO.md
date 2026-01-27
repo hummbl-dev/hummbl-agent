@@ -13,6 +13,10 @@
 - Experiment mode: run first controlled experiment cycle
 - Document canonical Base120 JSON governance (decision note + frozen policy)
 - Update validation checklist to reference canonical JSON + skill map
+- Add Base120 registry cross-checks (bindings valid, 120 model_binding skills)
+- Enforce runner capability coverage for exec/network permissions
+- Tighten CAPABILITIES.json validation (supports allowed + no duplicates)
+- Optional: verify canonical JSON hash when governance hash is provided
 
 ## Later
 - Optional vendor API adapters with explicit network policy and approvals

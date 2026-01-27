@@ -30,6 +30,20 @@ if (!Array.isArray(data)) {
 const idSet = new Set();
 let ok = true;
 
+const canonicalPath = path.resolve(process.cwd(), "docs/base120.v1.0.canonical.json");
+let canonical;
+try {
+  canonical = JSON.parse(fs.readFileSync(canonicalPath, "utf8"));
+} catch (err) {
+  console.error("base120 canonical JSON missing or invalid:", canonicalPath);
+  process.exit(1);
+}
+
+const canonicalCodes = new Set(
+  Array.isArray(canonical.models) ? canonical.models.map((m) => m.id) : []
+);
+const modelBindingCodes = new Map();
+
 const semverRe = /^[0-9]+\.[0-9]+\.[0-9]+$/;
 const base120Re = /^[A-Z]{1,3}\d+$/;
 const legacySlugRe = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -129,6 +143,39 @@ for (const skill of data) {
     if (!Array.isArray(b.stop_conditions)) {
       console.error(`base120_bindings.stop_conditions missing for id: ${id}`);
       ok = false;
+    }
+  }
+
+  if (skill.base120_bindings) {
+    const b = skill.base120_bindings;
+    const drives = Array.isArray(b.drives_selection) ? b.drives_selection : [];
+    const sets = Array.isArray(b.sets_parameters)
+      ? b.sets_parameters.map((entry) => entry && entry.model).filter(Boolean)
+      : [];
+    const adds = Array.isArray(b.adds_constraints)
+      ? b.adds_constraints.map((entry) => entry && entry.model).filter(Boolean)
+      : [];
+    const stops = Array.isArray(b.stop_conditions)
+      ? b.stop_conditions.map((entry) => entry && entry.model).filter(Boolean)
+      : [];
+    const codes = Array.from(new Set([...drives, ...sets, ...adds, ...stops]));
+    for (const code of codes) {
+      if (!canonicalCodes.has(code)) {
+        console.error(`Invalid Base120 code '${code}' in skill ${id}`);
+        ok = false;
+      }
+    }
+    if (skill.skill_kind === "model_binding") {
+      if (drives.length !== 1) {
+        console.error(`model_binding must have exactly 1 drives_selection code: ${id}`);
+        ok = false;
+      }
+      const code = drives[0];
+      if (code) {
+        const list = modelBindingCodes.get(code) || [];
+        list.push(id);
+        modelBindingCodes.set(code, list);
+      }
     }
   }
 
@@ -233,6 +280,27 @@ for (const skill of data) {
       }
     }
   }
+}
+
+
+const expectedCodes = Array.from(canonicalCodes);
+const missing = expectedCodes.filter((code) => !modelBindingCodes.has(code));
+if (missing.length > 0) {
+  console.error(`Missing model_binding entries for Base120 codes: ${missing.join(", ")}`);
+  ok = false;
+}
+
+for (const [code, skills] of modelBindingCodes.entries()) {
+  if (skills.length > 1) {
+    console.error(`Duplicate model_binding for ${code}: ${skills.join(", ")}`);
+    ok = false;
+  }
+}
+
+const modelBindingCount = data.filter((skill) => skill.skill_kind === "model_binding").length;
+if (modelBindingCount !== canonicalCodes.size) {
+  console.error(`model_binding count ${modelBindingCount} does not match canonical ${canonicalCodes.size}`);
+  ok = false;
 }
 
 if (!ok) {

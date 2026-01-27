@@ -19,6 +19,7 @@ let ok = true;
 const allowedMode = new Set(["manual", "api"]);
 const allowedNetwork = new Set(["none", "restricted", "open"]);
 const allowedExec = new Set(["none", "allowlisted"]);
+const allowedSupports = new Set(["prompt", "log", "dateOverride"]);
 
 for (const file of files) {
   let data;
@@ -55,6 +56,16 @@ for (const file of files) {
     ok = false;
   } else {
     const supports = new Set(data.supports);
+    if (supports.size !== data.supports.length) {
+      console.error(`supports contains duplicates in ${file}`);
+      ok = false;
+    }
+    for (const entry of data.supports) {
+      if (!allowedSupports.has(entry)) {
+        console.error(`supports contains invalid value '${entry}' in ${file}`);
+        ok = false;
+      }
+    }
     for (const req of ["prompt", "log", "dateOverride"]) {
       if (!supports.has(req)) {
         console.error(`supports missing '${req}' in ${file}`);

@@ -3,6 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const ROOT_DIR = path.resolve(__dirname, "..");
 const canonicalPath =
@@ -29,6 +30,22 @@ if (!fs.existsSync(canonicalPath)) {
 
 const data = readJson(canonicalPath);
 const errors = [];
+
+const governance = data.governance || {};
+if (governance.hash) {
+  const algo = (governance.hash_algorithm || "").toUpperCase();
+  if (algo !== "SHA-256") {
+    errors.push(`Unsupported hash_algorithm: ${governance.hash_algorithm}`);
+  } else {
+    const fileHash = crypto
+      .createHash("sha256")
+      .update(fs.readFileSync(canonicalPath))
+      .digest("hex");
+    if (fileHash !== governance.hash) {
+      errors.push("Canonical JSON hash does not match governance.hash");
+    }
+  }
+}
 
 const requiredTop = ["schema_version", "base120_version", "canonical", "model_count", "models", "governance"];
 for (const key of requiredTop) {

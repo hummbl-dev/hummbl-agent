@@ -17,7 +17,12 @@ const registryPath = path.resolve(process.cwd(), "packages/skills/registry/src/r
 const registry = JSON.parse(fs.readFileSync(registryPath, "utf8"));
 
 const allowedVirtual = new Set(["local-cli"]);
-const caps = new Set();
+const capabilityMap = new Map();
+const virtualCaps = new Map([
+  ["local-cli", { network: "none", exec: "allowlisted" }],
+]);
+const networkOrder = { none: 0, restricted: 1, open: 2 };
+const execOrder = { none: 0, allowlisted: 1 };
 
 const runnerDirs = fs
   .readdirSync(path.resolve(process.cwd(), "packages/runners"), { withFileTypes: true })
@@ -28,7 +33,7 @@ const runnerDirs = fs
 for (const file of runnerDirs) {
   const data = JSON.parse(fs.readFileSync(file, "utf8"));
   if (data.runnerId) {
-    caps.add(data.runnerId);
+    capabilityMap.set(data.runnerId, data);
   }
 }
 
@@ -37,12 +42,42 @@ for (const skill of registry) {
   const runners = Array.isArray(skill.runnerCompatibility)
     ? skill.runnerCompatibility
     : [];
+
   for (const runner of runners) {
-    if (caps.has(runner) || allowedVirtual.has(runner)) {
+    if (capabilityMap.has(runner) || allowedVirtual.has(runner)) {
       continue;
     }
     console.error(
       `RunnerId '${runner}' in skill '${skill.id}' has no CAPABILITIES.json and is not virtual.`
+    );
+    ok = false;
+  }
+
+  const neededNetwork = skill.permissions?.network || "none";
+  const neededExec = skill.permissions?.exec || "none";
+
+  const hasNetworkCoverage = runners.some((runner) => {
+    const cap = capabilityMap.get(runner) || virtualCaps.get(runner);
+    if (!cap) return false;
+    return networkOrder[cap.network] >= networkOrder[neededNetwork];
+  });
+
+  const hasExecCoverage = runners.some((runner) => {
+    const cap = capabilityMap.get(runner) || virtualCaps.get(runner);
+    if (!cap) return false;
+    return execOrder[cap.exec] >= execOrder[neededExec];
+  });
+
+  if (!hasNetworkCoverage) {
+    console.error(
+      `No runner in skill '${skill.id}' supports network=${neededNetwork}`
+    );
+    ok = false;
+  }
+
+  if (!hasExecCoverage) {
+    console.error(
+      `No runner in skill '${skill.id}' supports exec=${neededExec}`
     );
     ok = false;
   }
