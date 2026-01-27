@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+node <<'NODE'
+const fs = require("fs");
+const path = require("path");
+const { execSync } = require("child_process");
+
+const root = process.cwd();
+const patterns = [
+  { name: "OpenAI key", re: /\bsk-[A-Za-z0-9]{20,}\b/ },
+  { name: "GitHub PAT", re: /\bghp_[A-Za-z0-9]{36,}\b/ },
+  { name: "GitHub token", re: /\bgho_[A-Za-z0-9]{36,}\b/ },
+  { name: "GitHub app token", re: /\bghs_[A-Za-z0-9]{36,}\b/ },
+  { name: "GitHub PAT v2", re: /\bgithub_pat_[A-Za-z0-9_]{22,}\b/ },
+  { name: "Slack token", re: /\bxox[baprs]-[A-Za-z0-9-]{10,}\b/ },
+  { name: "Google API key", re: /\bAIza[0-9A-Za-z\-_]{35}\b/ },
+  { name: "Bearer token", re: /Bearer\s+[A-Za-z0-9._\-]{20,}/ },
+  { name: "xAI key", re: /\bxai-[A-Za-z0-9]{20,}\b/ },
+];
+
+const tracked = execSync("git ls-files", { encoding: "utf8" })
+  .split("\n")
+  .map((f) => f.trim())
+  .filter(Boolean);
+
+const artifactFiles = tracked.filter((f) =>
+  f.startsWith("_state/") || f.startsWith("sessions/sitreps/") || f.startsWith("sitreps/")
+);
+
+let ok = true;
+for (const file of artifactFiles) {
+  let content;
+  try {
+    content = fs.readFileSync(path.join(root, file), "utf8");
+  } catch {
+    continue;
+  }
+  for (const pat of patterns) {
+    if (pat.re.test(content)) {
+      console.error(`Secret pattern detected (${pat.name}) in ${file}`);
+      ok = false;
+    }
+  }
+}
+
+if (!ok) process.exit(1);
+NODE

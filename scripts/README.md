@@ -43,6 +43,21 @@ scripts/lint-network-policy.sh
 scripts/lint-secrets-policy.sh
 ```
 
+## Lint Secret Scan (repo)
+```bash
+scripts/lint-secret-scan.sh
+```
+
+## Lint Artifact Secrets (tracked)
+```bash
+scripts/lint-artifact-secrets.sh
+```
+
+## Lint No-Server (control plane guard)
+```bash
+scripts/lint-no-server.sh
+```
+
 ## Validate Base120 Canonical JSON
 ```bash
 node scripts/validate-base120-canonical.js

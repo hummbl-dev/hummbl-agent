@@ -87,6 +87,18 @@ jobs:
         shell: bash
         run: scripts/lint-secrets-policy.sh
 
+      - name: Lint secret scan
+        shell: bash
+        run: scripts/lint-secret-scan.sh
+
+      - name: Lint artifact secrets
+        shell: bash
+        run: scripts/lint-artifact-secrets.sh
+
+      - name: Lint no-server
+        shell: bash
+        run: scripts/lint-no-server.sh
+
       - name: Lint Base120 skill map
         shell: bash
         run: scripts/lint-base120-skill-map.sh
