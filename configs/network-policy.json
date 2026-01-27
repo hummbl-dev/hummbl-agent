@@ -8,7 +8,8 @@
   },
   "allowlist": {
     "domains": [
-      "api.openai.com"
+      "api.openai.com",
+      "api.anthropic.com"
     ]
   },
   "denylist": {

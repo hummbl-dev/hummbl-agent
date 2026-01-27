@@ -8,5 +8,6 @@
 - vendor-bridge
 - adapters/process
 - adapters/openai
+- adapters/anthropic
 - skills/registry
 - router

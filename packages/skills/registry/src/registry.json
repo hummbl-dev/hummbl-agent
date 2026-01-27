@@ -10113,5 +10113,101 @@
     "aliases": [
       "openai-responses"
     ]
+  },
+  {
+    "id": "S.vendor.anthropic.messages.v0.1.0",
+    "name": "Anthropic Messages API",
+    "summary": "Execute a single Anthropic Messages API call with governed artifacts.",
+    "tags": [
+      "vendor",
+      "anthropic",
+      "network",
+      "messages"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.SYS",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "model",
+        "type": "string",
+        "required": true,
+        "description": "Anthropic model id."
+      },
+      {
+        "name": "input",
+        "type": "string",
+        "required": true,
+        "description": "Prompt or input content."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "response",
+        "type": "object",
+        "description": "Anthropic response payload."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code"
+    ],
+    "requiredTools": [
+      {
+        "toolId": "anthropic.messages",
+        "scopes": [
+          "packages/adapters/anthropic"
+        ]
+      }
+    ],
+    "requiredSecrets": [
+      "ANTHROPIC_API_KEY"
+    ],
+    "networkPolicy": {
+      "domains": [
+        "api.anthropic.com"
+      ],
+      "methods": [
+        "POST"
+      ],
+      "maxResponseBytes": 1048576
+    },
+    "permissions": {
+      "network": "restricted",
+      "filesystem": "write",
+      "exec": "none",
+      "secrets": "read"
+    },
+    "safety": {
+      "risk": "medium",
+      "notes": "Networked vendor call; outputs logged and hashed."
+    },
+    "provenance": {
+      "createdAt": "2026-01-27",
+      "source": "native",
+      "references": [
+        "packages/adapters/anthropic",
+        "packages/runners/claude-code/scripts/run-anthropic.sh"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Single message",
+        "invocation": "packages/runners/claude-code/scripts/run-anthropic.sh --model claude-3-5-sonnet-20241022 --input \"Hello\"",
+        "expectedOutcome": "Creates request/response artifacts and logs hashes."
+      }
+    ],
+    "aliases": [
+      "anthropic-messages"
+    ]
   }
 ]

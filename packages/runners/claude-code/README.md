@@ -1,17 +1,22 @@
-# Claude Code Runner (Scaffold)
-
-Minimal runner packet generation and run logging.
+# Claude Code Runner
 
 ## Usage
 ```bash
-packages/runners/claude-code/scripts/make-prompt.sh > /tmp/claude-code-prompt.md
-packages/runners/claude-code/scripts/log-run.sh "Kickoff: review CURRENT_STATE" \
-  "artifacts/plan.md" "sha256:..."
-packages/runners/claude-code/scripts/log-run.sh "Append hashed artifact" \
-  --artifact "_state/runs/YYYY-MM-DD/artifacts/plan.md" --hash-file
-packages/runners/claude-code/scripts/log-run.sh "Checkpoint: no artifact"
+packages/runners/claude-code/scripts/make-prompt.sh > /tmp/claude-prompt.md
+packages/runners/claude-code/scripts/log-run.sh "Session start: claude" \
+  --artifact "_state/runs/YYYY-MM-DD/prompts/claude-code-prompt.md" --hash-file
 ```
 
+## Anthropic Messages (networked)
+```bash
+export ANTHROPIC_API_KEY="..."
+packages/runners/claude-code/scripts/run-anthropic.sh \
+  --model claude-3-5-sonnet-20241022 \
+  --input "Hello from HUMMBL"
+```
+
+Artifacts are written to `_state/runs/YYYY-MM-DD/artifacts/` and logged with hashes.
+
 ## Notes
-- Prompt packet is template + CURRENT_STATE.
-- Run logs append to _state/runs/YYYY-MM-DD/run.md.
+- Anthropic requests are non-streaming (v0.1).
+- Domain allowlist enforced by `configs/network-policy.json`.
