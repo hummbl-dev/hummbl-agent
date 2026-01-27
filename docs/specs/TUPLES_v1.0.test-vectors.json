@@ -1,0 +1,68 @@
+{
+  "version": "1.0.0",
+  "hash": {
+    "alg": "sha256",
+    "encoding": "hex-lower"
+  },
+  "vectors": [
+    {
+      "name": "basic_string_scope_localhost_gateway",
+      "tuple": {
+        "principal": "127.0.0.1",
+        "capability": "gateway:control_panel",
+        "scope": "local"
+      },
+      "canonical": "127.0.0.1|gateway:control_panel|scope=local",
+      "sha256": "587fedc8c9d9335ee55c860c056d4c0aab8fb7175cd49a25257e929015ec48c5"
+    },
+    {
+      "name": "structured_scope_key_sorting",
+      "tuple": {
+        "principal": "agent:planner",
+        "capability": "plan:write",
+        "scope": {
+          "ttl": "3600s",
+          "channel": "slack"
+        }
+      },
+      "canonical": "agent:planner|plan:write|scope{channel=slack;ttl=3600s}",
+      "sha256": "9931b3387582e0a6f91f1f4a89d769091273b5ceecb5321ea12b9d689ae2c824"
+    },
+    {
+      "name": "escaping_in_principal_capability_and_scope_string",
+      "tuple": {
+        "principal": "agent\\alpha|beta",
+        "capability": "exec:process:{git};arg=a=b",
+        "scope": "local;mode={safe}|x=y\\z"
+      },
+      "canonical": "agent\\\\alpha\\|beta|exec:process:\\{git\\}\\;arg\\=a\\=b|scope=local\\;mode\\=\\{safe\\}\\|x\\=y\\\\z",
+      "sha256": "c7eaadb7d08981c826c64beb9284e3425c4a4f87f1310250fd42768a32f5de56"
+    },
+    {
+      "name": "structured_scope_string_value_escaping",
+      "tuple": {
+        "principal": "agent:runner",
+        "capability": "exec:process:git",
+        "scope": {
+          "cwd": "/repo/path",
+          "note": "a=b;c|d{e}f\\g"
+        }
+      },
+      "canonical": "agent:runner|exec:process:git|scope{cwd=/repo/path;note=a\\=b\\;c\\|d\\{e\\}f\\\\g}",
+      "sha256": "9ac14caad5d1ad8262de38f833476be9ffd3df6e06df9dd065fa22150cf6f676"
+    },
+    {
+      "name": "structured_scope_boolean_and_number_scalars",
+      "tuple": {
+        "principal": "agent:auditor",
+        "capability": "audit:emit",
+        "scope": {
+          "enabled": true,
+          "retry": 3
+        }
+      },
+      "canonical": "agent:auditor|audit:emit|scope{enabled=true;retry=3}",
+      "sha256": "2af606765ff671d926685db295aa560ec995e86257652c3cd921a78d1a1360e8"
+    }
+  ]
+}

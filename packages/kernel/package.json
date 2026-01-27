@@ -1,0 +1,5 @@
+{
+  "name": "@hummbl/kernel",
+  "private": true,
+  "type": "module"
+}

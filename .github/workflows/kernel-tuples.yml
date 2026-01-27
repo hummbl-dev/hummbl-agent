@@ -1,0 +1,45 @@
+name: kernel-tuples
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  kernel-tsc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Typecheck kernel
+        run: npx --yes -p typescript tsc -p packages/kernel/tsconfig.json
+
+  tuples-vectors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Verify tuple vectors
+        run: npx --yes tsx scripts/tuples/verify-vectors.mjs
+
+  tuples-lint-configs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+      - name: Lint tuples in configs
+        run: npx --yes tsx scripts/tuples/lint-tuples.mjs
