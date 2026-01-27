@@ -2,7 +2,7 @@
 name: in6-inverseproof-by-contradiction
 description: Apply IN6 Inverse/Proof by Contradiction to assume a claim is false, derive logical impossibility, thus proving the claim true.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in6-inverseproof-by-contradiction","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in6-inverseproof-by-contradiction","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN6 Inverse/Proof by Contradiction
@@ -88,7 +88,7 @@ const result = applyModel("IN6", "Assume a claim is false, derive logical imposs
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in6-inverseproof-by-contradiction"; }
   ];
 }

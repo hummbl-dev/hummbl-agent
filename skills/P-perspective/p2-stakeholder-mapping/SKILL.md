@@ -2,7 +2,7 @@
 name: p2-stakeholder-mapping
 description: Apply P2 Stakeholder Mapping to identify all parties with interest, influence, or impact in a system or decision.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p2-stakeholder-mapping","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p2-stakeholder-mapping","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P2 Stakeholder Mapping
@@ -88,7 +88,7 @@ const result = applyModel("P2", "Identify all parties with interest, influence, 
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p2-stakeholder-mapping"; }
   ];
 }

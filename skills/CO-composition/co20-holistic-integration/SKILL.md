@@ -2,7 +2,7 @@
 name: co20-holistic-integration
 description: Apply CO20 Holistic Integration to unify disparate elements into coherent, seamless whole where boundaries dissolve.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co20-holistic-integration","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co20-holistic-integration","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO20 Holistic Integration
@@ -88,7 +88,7 @@ const result = applyModel("CO20", "Unify disparate elements into coherent, seaml
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co20-holistic-integration"; }
   ];
 }

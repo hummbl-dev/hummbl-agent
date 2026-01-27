@@ -2,7 +2,7 @@
 name: p13-spatial-framing
 description: Apply P13 Spatial Framing to scale perspective from local details to global patterns and back.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p13-spatial-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p13-spatial-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P13 Spatial Framing
@@ -88,7 +88,7 @@ const result = applyModel("P13", "Scale perspective from local details to global
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p13-spatial-framing"; }
   ];
 }

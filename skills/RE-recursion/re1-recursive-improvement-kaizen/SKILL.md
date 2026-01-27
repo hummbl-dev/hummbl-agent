@@ -2,7 +2,7 @@
 name: re1-recursive-improvement-kaizen
 description: Apply RE1 Recursive Improvement (Kaizen) to continuously refine process through small, frequent enhancements.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re1-recursive-improvement-kaizen","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re1-recursive-improvement-kaizen","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE1 Recursive Improvement (Kaizen)
@@ -88,7 +88,7 @@ const result = applyModel("RE1", "Continuously refine process through small, fre
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re1-recursive-improvement-kaizen"; }
   ];
 }

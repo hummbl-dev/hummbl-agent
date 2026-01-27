@@ -2,7 +2,7 @@
 name: re5-fractal-reasoning
 description: Apply RE5 Fractal Reasoning to recognize self-similar patterns repeating across different scales.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re5-fractal-reasoning","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re5-fractal-reasoning","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE5 Fractal Reasoning
@@ -88,7 +88,7 @@ const result = applyModel("RE5", "Recognize self-similar patterns repeating acro
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re5-fractal-reasoning"; }
   ];
 }

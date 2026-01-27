@@ -2,7 +2,7 @@
 name: re12-bayesian-updating-in-practice
 description: Apply RE12 Bayesian Updating in Practice to continuously revise beliefs as new evidence arrives, weighting by reliability.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re12-bayesian-updating-in-practice","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re12-bayesian-updating-in-practice","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE12 Bayesian Updating in Practice
@@ -88,7 +88,7 @@ const result = applyModel("RE12", "Continuously revise beliefs as new evidence a
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re12-bayesian-updating-in-practice"; }
   ];
 }

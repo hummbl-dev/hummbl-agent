@@ -2,7 +2,7 @@
 name: re7-self-referential-logic
 description: Apply RE7 Self-Referential Logic to create systems that monitor, measure, or modify themselves.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re7-self-referential-logic","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re7-self-referential-logic","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE7 Self-Referential Logic
@@ -88,7 +88,7 @@ const result = applyModel("RE7", "Create systems that monitor, measure, or modif
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re7-self-referential-logic"; }
   ];
 }

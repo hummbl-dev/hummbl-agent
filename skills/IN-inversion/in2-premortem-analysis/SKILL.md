@@ -2,7 +2,7 @@
 name: in2-premortem-analysis
 description: Apply IN2 Premortem Analysis to assume failure has occurred and work backward to identify causes.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in2-premortem-analysis","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in2-premortem-analysis","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN2 Premortem Analysis
@@ -88,7 +88,7 @@ const result = applyModel("IN2", "Assume failure has occurred and work backward 
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in2-premortem-analysis"; }
   ];
 }

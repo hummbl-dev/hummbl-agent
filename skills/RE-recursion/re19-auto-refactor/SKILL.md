@@ -2,7 +2,7 @@
 name: re19-auto-refactor
 description: Apply RE19 Auto-Refactor to systematically improve system structure without changing external behavior.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re19-auto-refactor","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re19-auto-refactor","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE19 Auto-Refactor
@@ -88,7 +88,7 @@ const result = applyModel("RE19", "Systematically improve system structure witho
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re19-auto-refactor"; }
   ];
 }

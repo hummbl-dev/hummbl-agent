@@ -2,7 +2,7 @@
 name: sy17-policy-feedbacks
 description: Apply SY17 Policy Feedbacks to anticipate how rules shape behavior, which creates conditions affecting future rules.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy17-policy-feedbacks","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy17-policy-feedbacks","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY17 Policy Feedbacks
@@ -88,7 +88,7 @@ const result = applyModel("SY17", "Anticipate how rules shape behavior, which cr
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy17-policy-feedbacks"; }
   ];
 }

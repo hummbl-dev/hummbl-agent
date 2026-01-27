@@ -2,7 +2,7 @@
 name: re4-nested-narratives
 description: Apply RE4 Nested Narratives to structure information as stories within stories for depth and memorability.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re4-nested-narratives","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re4-nested-narratives","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE4 Nested Narratives
@@ -88,7 +88,7 @@ const result = applyModel("RE4", "Structure information as stories within storie
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re4-nested-narratives"; }
   ];
 }

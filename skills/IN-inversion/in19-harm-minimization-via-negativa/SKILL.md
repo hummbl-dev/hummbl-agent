@@ -2,7 +2,7 @@
 name: in19-harm-minimization-via-negativa
 description: Apply IN19 Harm Minimization (Via Negativa) to improve by removing harmful elements rather than adding beneficial ones.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in19-harm-minimization-via-negativa","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in19-harm-minimization-via-negativa","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN19 Harm Minimization (Via Negativa)
@@ -88,7 +88,7 @@ const result = applyModel("IN19", "Improve by removing harmful elements rather t
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in19-harm-minimization-via-negativa"; }
   ];
 }

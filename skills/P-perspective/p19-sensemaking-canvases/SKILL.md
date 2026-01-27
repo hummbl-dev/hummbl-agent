@@ -2,7 +2,7 @@
 name: p19-sensemaking-canvases
 description: Apply P19 Sensemaking Canvases to deploy structured templates to systematically capture and organize observations.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p19-sensemaking-canvases","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p19-sensemaking-canvases","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P19 Sensemaking Canvases
@@ -88,7 +88,7 @@ const result = applyModel("P19", "Deploy structured templates to systematically 
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p19-sensemaking-canvases"; }
   ];
 }

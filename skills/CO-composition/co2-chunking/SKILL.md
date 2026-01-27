@@ -2,7 +2,7 @@
 name: co2-chunking
 description: Apply CO2 Chunking to group related elements into meaningful units to reduce cognitive load.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co2-chunking","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co2-chunking","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO2 Chunking
@@ -88,7 +88,7 @@ const result = applyModel("CO2", "Group related elements into meaningful units t
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co2-chunking"; }
   ];
 }

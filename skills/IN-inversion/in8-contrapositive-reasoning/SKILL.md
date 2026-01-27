@@ -2,7 +2,7 @@
 name: in8-contrapositive-reasoning
 description: Apply IN8 Contrapositive Reasoning to use logical equivalence that if A then B equals if not B then not A.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in8-contrapositive-reasoning","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in8-contrapositive-reasoning","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN8 Contrapositive Reasoning
@@ -88,7 +88,7 @@ const result = applyModel("IN8", "Use logical equivalence that if A then B equal
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in8-contrapositive-reasoning"; }
   ];
 }

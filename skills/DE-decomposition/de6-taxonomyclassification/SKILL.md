@@ -2,7 +2,7 @@
 name: de6-taxonomyclassification
 description: Apply DE6 Taxonomy/Classification to organize entities into hierarchical categories based on shared properties.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de6-taxonomyclassification","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de6-taxonomyclassification","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE6 Taxonomy/Classification
@@ -88,7 +88,7 @@ const result = applyModel("DE6", "Organize entities into hierarchical categories
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de6-taxonomyclassification"; }
   ];
 }

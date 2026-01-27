@@ -2,7 +2,7 @@
 name: in20-antigoals-and-anti-patterns-catalog
 description: Apply IN20 Antigoals & Anti-Patterns Catalog to document failure modes to avoid rather than success patterns to emulate.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in20-antigoals-and-anti-patterns-catalog","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in20-antigoals-and-anti-patterns-catalog","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN20 Antigoals & Anti-Patterns Catalog
@@ -88,7 +88,7 @@ const result = applyModel("IN20", "Document failure modes to avoid rather than s
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in20-antigoals-and-anti-patterns-catalog"; }
   ];
 }

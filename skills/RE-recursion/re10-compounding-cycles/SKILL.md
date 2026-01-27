@@ -2,7 +2,7 @@
 name: re10-compounding-cycles
 description: Apply RE10 Compounding Cycles to design systems where gains reinforce future gains exponentially.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re10-compounding-cycles","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re10-compounding-cycles","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE10 Compounding Cycles
@@ -88,7 +88,7 @@ const result = applyModel("RE10", "Design systems where gains reinforce future g
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re10-compounding-cycles"; }
   ];
 }

@@ -2,7 +2,7 @@
 name: sy7-path-dependence
 description: Apply SY7 Path Dependence to acknowledge how early decisions constrain future options through accumulated consequences.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy7-path-dependence","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy7-path-dependence","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY7 Path Dependence
@@ -88,7 +88,7 @@ const result = applyModel("SY7", "Acknowledge how early decisions constrain futu
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy7-path-dependence"; }
   ];
 }

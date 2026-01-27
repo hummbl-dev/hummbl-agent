@@ -2,7 +2,7 @@
 name: p16-identity-context-reciprocity
 description: Apply P16 Identity-Context Reciprocity to recognize how identities shape interpretations and contexts reinforce identities.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p16-identity-context-reciprocity","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p16-identity-context-reciprocity","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P16 Identity-Context Reciprocity
@@ -88,7 +88,7 @@ const result = applyModel("P16", "Recognize how identities shape interpretations
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p16-identity-context-reciprocity"; }
   ];
 }

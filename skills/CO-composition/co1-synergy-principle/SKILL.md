@@ -2,7 +2,7 @@
 name: co1-synergy-principle
 description: Apply CO1 Synergy Principle to design combinations where integrated value exceeds sum of parts.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co1-synergy-principle","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co1-synergy-principle","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO1 Synergy Principle
@@ -88,7 +88,7 @@ const result = applyModel("CO1", "Design combinations where integrated value exc
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co1-synergy-principle"; }
   ];
 }

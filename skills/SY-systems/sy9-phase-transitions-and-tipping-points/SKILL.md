@@ -2,7 +2,7 @@
 name: sy9-phase-transitions-and-tipping-points
 description: Apply SY9 Phase Transitions & Tipping Points to identify thresholds where gradual changes produce sudden qualitative shifts.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy9-phase-transitions-and-tipping-points","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy9-phase-transitions-and-tipping-points","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY9 Phase Transitions & Tipping Points
@@ -88,7 +88,7 @@ const result = applyModel("SY9", "Identify thresholds where gradual changes prod
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy9-phase-transitions-and-tipping-points"; }
   ];
 }

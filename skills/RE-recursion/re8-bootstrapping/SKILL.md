@@ -2,7 +2,7 @@
 name: re8-bootstrapping
 description: Apply RE8 Bootstrapping to build capability using currently available resources, then use that to build more.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re8-bootstrapping","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re8-bootstrapping","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE8 Bootstrapping
@@ -88,7 +88,7 @@ const result = applyModel("RE8", "Build capability using currently available res
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re8-bootstrapping"; }
   ];
 }

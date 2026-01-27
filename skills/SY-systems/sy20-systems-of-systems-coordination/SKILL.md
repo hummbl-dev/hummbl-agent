@@ -2,7 +2,7 @@
 name: sy20-systems-of-systems-coordination
 description: Apply SY20 Systems-of-Systems Coordination to manage interactions between independent systems with emergent behaviors.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy20-systems-of-systems-coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy20-systems-of-systems-coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY20 Systems-of-Systems Coordination
@@ -88,7 +88,7 @@ const result = applyModel("SY20", "Manage interactions between independent syste
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy20-systems-of-systems-coordination"; }
   ];
 }

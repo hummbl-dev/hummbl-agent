@@ -2,7 +2,7 @@
 name: de20-partition-and-conquer
 description: Apply DE20 Partition-and-Conquer to divide problem into independent subproblems solvable separately then combined.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de20-partition-and-conquer","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de20-partition-and-conquer","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE20 Partition-and-Conquer
@@ -88,7 +88,7 @@ const result = applyModel("DE20", "Divide problem into independent subproblems s
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de20-partition-and-conquer"; }
   ];
 }

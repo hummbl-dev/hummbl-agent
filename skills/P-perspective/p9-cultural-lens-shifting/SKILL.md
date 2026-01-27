@@ -2,7 +2,7 @@
 name: p9-cultural-lens-shifting
 description: Apply P9 Cultural Lens Shifting to adjust communication and interpretation for different cultural contexts and norms.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p9-cultural-lens-shifting","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p9-cultural-lens-shifting","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P9 Cultural Lens Shifting
@@ -88,7 +88,7 @@ const result = applyModel("P9", "Adjust communication and interpretation for dif
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p9-cultural-lens-shifting"; }
   ];
 }

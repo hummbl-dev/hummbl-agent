@@ -1,6 +1,6 @@
 # HUMMBL Integration Workspace
 
-This folder contains the integration work for HUMMBL Systems with Clawdbot, ClawdHub, and Everything Claude Code.
+This folder contains the integration work for HUMMBL Systems with Moltbot, ClawdHub, and Everything Claude Code.
 
 ## Project Structure
 
@@ -35,7 +35,7 @@ hummbl-agent/
 │   ├── sitrep.md                              # Generate SITREPs
 │   └── verify-hummbl.md                        # Verify HUMMBL compliance
 ├── configs/                                   # Configuration files
-│   ├── clawdbot/                              # Clawdbot gateway/workspace configs
+│   ├── moltbot/                              # Moltbot gateway/workspace configs
 │   ├── claude-code/                           # Claude Code settings template
 │   ├── codex/                                 # Codex runner guidance
 │   ├── grok/                                  # Grok runner guidance
@@ -72,7 +72,7 @@ hummbl-agent/
 - Version-controlled mental model evolution
 - Community distribution and feedback
 
-### 2. Clawdbot Integration
+### 2. Moltbot Integration
 
 - Multi-agent coordination hub
 - Voice-accessible mental models

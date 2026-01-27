@@ -24,10 +24,10 @@
 mkdir -p ~/clawd/hummbl-agent/{skills/{generated,base120,custom},workspace,sessions,config}
 
 # Copy HUMMBL configuration
-cp /Users/others/hummbl-agent/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
+cp /Users/others/hummbl-agent/configs/moltbot/gateway.json ~/.moltbot/moltbot.json
 
 # Initialize workspace
-clawdbot workspace init hummbl-agent --template mental-models
+moltbot workspace init hummbl-agent --template mental-models
 ```
 
 ### **Install Base120 Skills**
@@ -63,19 +63,19 @@ cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settin
 ### **Start HUMMBL Gateway**
 ```bash
 # Start with HUMMBL configuration
-clawdbot gateway --config ~/.clawdbot/clawdbot.json --port 18789
+moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
 
 # Or use the workspace command
-clawdbot workspace start hummbl-agent
+moltbot workspace start hummbl-agent
 ```
 
 ### **Test Integration**
 ```bash
 # Test mental model application
-clawdbot agent --message "Apply P1 perspective framing to our current integration challenge"
+moltbot agent --message "Apply P1 perspective framing to our current integration challenge"
 
 # Test agent coordination
-clawdbot agent --session hummbl-sitrep --message "Generate SITREP for integration progress"
+moltbot agent --session hummbl-sitrep --message "Generate SITREP for integration progress"
 ```
 
 ## Multi-Agent Coordination
@@ -137,13 +137,13 @@ interface HUMMBLCoordination {
 ### **Validation Checks**
 ```bash
 # Verify HUMMBL compliance
-clawdbot doctor --hummbl
+moltbot doctor --hummbl
 
 # Check mental model application
-clawdbot agent --message "Review recent work for Base120 compliance"
+moltbot agent --message "Review recent work for Base120 compliance"
 
 # Generate quality report
-clawdbot workspace report hummbl-agent --format markdown
+moltbot workspace report hummbl-agent --format markdown
 ```
 
 ## Troubleshooting
@@ -156,13 +156,13 @@ clawdbot workspace report hummbl-agent --format markdown
 ### **Debug Commands**
 ```bash
 # Check gateway status
-clawdbot gateway status
+moltbot gateway status
 
 # Test skill installation
 clawdhub test hummbl-agent/p1-first-principles-framing
 
 # Verify agent routing
-clawdbot agent --test-routing "mental.model"
+moltbot agent --test-routing "mental.model"
 ```
 
 ## Next Steps

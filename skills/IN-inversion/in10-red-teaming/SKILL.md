@@ -2,7 +2,7 @@
 name: in10-red-teaming
 description: Apply IN10 Red Teaming to organize adversarial review to find vulnerabilities through simulated attack.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in10-red-teaming","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in10-red-teaming","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN10 Red Teaming
@@ -88,7 +88,7 @@ const result = applyModel("IN10", "Organize adversarial review to find vulnerabi
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in10-red-teaming"; }
   ];
 }

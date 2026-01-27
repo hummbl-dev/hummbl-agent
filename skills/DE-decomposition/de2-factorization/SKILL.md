@@ -2,7 +2,7 @@
 name: de2-factorization
 description: Apply DE2 Factorization to separate multiplicative components to understand relative contribution of each factor.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de2-factorization","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de2-factorization","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE2 Factorization
@@ -88,7 +88,7 @@ const result = applyModel("DE2", "Separate multiplicative components to understa
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de2-factorization"; }
   ];
 }

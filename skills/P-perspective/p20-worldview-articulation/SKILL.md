@@ -2,7 +2,7 @@
 name: p20-worldview-articulation
 description: Apply P20 Worldview Articulation to make explicit the fundamental beliefs and values that drive interpretation and action.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p20-worldview-articulation","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p20-worldview-articulation","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P20 Worldview Articulation
@@ -88,7 +88,7 @@ const result = applyModel("P20", "Make explicit the fundamental beliefs and valu
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p20-worldview-articulation"; }
   ];
 }

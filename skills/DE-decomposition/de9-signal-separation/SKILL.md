@@ -2,7 +2,7 @@
 name: de9-signal-separation
 description: Apply DE9 Signal Separation to distinguish meaningful patterns from random variation or confounding factors.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de9-signal-separation","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de9-signal-separation","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE9 Signal Separation
@@ -88,7 +88,7 @@ const result = applyModel("DE9", "Distinguish meaningful patterns from random va
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de9-signal-separation"; }
   ];
 }

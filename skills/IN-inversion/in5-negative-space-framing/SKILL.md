@@ -2,7 +2,7 @@
 name: in5-negative-space-framing
 description: Apply IN5 Negative Space Framing to study what is absent rather than what is present.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in5-negative-space-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in5-negative-space-framing","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN5 Negative Space Framing
@@ -88,7 +88,7 @@ const result = applyModel("IN5", "Study what is absent rather than what is prese
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in5-negative-space-framing"; }
   ];
 }

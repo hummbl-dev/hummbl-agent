@@ -1,6 +1,6 @@
 # UPSTREAM_MAPPING
 
-## clawdbot
+## moltbot
 
 ### What we borrow
 - Gateway and routing configuration patterns

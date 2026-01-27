@@ -2,7 +2,7 @@
 name: multi-agent-coordination
 description: Coordinate multiple AI agents using HUMMBL Base120 mental models. Optimize handoffs, communication protocols, and collaborative problem-solving across Claude Sonnet 4.5, Windsurf Cascade, ChatGPT-5, and Cursor.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/integration/multi-agent-coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/integration/multi-agent-coordination","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # Multi-Agent Coordination
@@ -325,13 +325,13 @@ const problemResolution = {
 
 ## Integration with Tools
 
-### **Clawdbot Integration**
+### **Moltbot Integration**
 ```bash
-# Agent coordination via Clawdbot
-clawdbot agent --session hummbl-coordination --message "Coordinate feature development using P1, DE3, SY8"
+# Agent coordination via Moltbot
+moltbot agent --session hummbl-coordination --message "Coordinate feature development using P1, DE3, SY8"
 
 # Handoff notifications
-clawdbot message send --to coordination-channel --message "Handoff: claude-sonnet → windsurf-cascade complete"
+moltbot message send --to coordination-channel --message "Handoff: claude-sonnet → windsurf-cascade complete"
 ```
 
 ### **Claude Code Integration**
@@ -380,7 +380,7 @@ interface PredictiveCoordination {
 ### **Nix Installation**
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/integration/multi-agent-coordination"; }
   ];
 }
@@ -394,7 +394,7 @@ clawdhub install hummbl-agent/multi-agent-coordination
 ### **Usage Examples**
 ```bash
 # Coordinate complex project
-clawdbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for feature development"
+moltbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for feature development"
 
 # Optimize existing coordination
 /apply-transformation SY8 "Analyze and improve our current agent coordination patterns"

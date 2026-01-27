@@ -2,7 +2,7 @@
 name: in11-devils-advocate-protocol
 description: Apply IN11 Devil's Advocate Protocol to assign explicit role to argue against group consensus or preferred option.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in11-devils-advocate-protocol","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in11-devils-advocate-protocol","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN11 Devil's Advocate Protocol
@@ -88,7 +88,7 @@ const result = applyModel("IN11", "Assign explicit role to argue against group c
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in11-devils-advocate-protocol"; }
   ];
 }

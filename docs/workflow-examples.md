@@ -1,6 +1,6 @@
 # HUMMBL Integration Workflow and Examples
 
-Complete guide for integrating HUMMBL Base120 mental models with Clawdbot, ClawdHub, and Claude Code for multi-agent coordination.
+Complete guide for integrating HUMMBL Base120 mental models with Moltbot, ClawdHub, and Claude Code for multi-agent coordination.
 
 Workflows index: `docs/workflows-index.md`
 
@@ -11,7 +11,7 @@ HUMMBL Base120 Mental Models
          ↓
 ClawdHub (Skills Distribution)
          ↓
-Clawdbot (Multi-Agent Coordination)
+Moltbot (Multi-Agent Coordination)
          ↓
 Claude Code (Development & Application)
 ```
@@ -25,7 +25,7 @@ mkdir -p ~/clawd/hummbl-agent/{skills,agents,commands,configs,sessions}
 cd ~/clawd/hummbl-agent
 
 # Copy configurations
-cp /Users/others/hummbl-agent/configs/clawdbot/gateway.json ~/.clawdbot/clawdbot.json
+cp /Users/others/hummbl-agent/configs/moltbot/gateway.json ~/.moltbot/moltbot.json
 cp /Users/others/hummbl-agent/configs/learning/continuous-learning.json ~/.claude/homunculus/config.json
 ```
 
@@ -47,13 +47,13 @@ cp /Users/others/hummbl-agent/commands/verify-hummbl.md ~/.claude/commands/
 cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
-### **Step 3: Configure Clawdbot Gateway**
+### **Step 3: Configure Moltbot Gateway**
 ```bash
 # Start HUMMBL gateway
-clawdbot gateway --config ~/.clawdbot/clawdbot.json --port 18789
+moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
 
 # Verify configuration
-clawdbot gateway status
+moltbot gateway status
 ```
 
 ### **Step 4: Install Base120 Skills**
@@ -100,7 +100,7 @@ const integrationTasks = {
 ### **Example 3: Multi-Agent Coordination**
 ```bash
 # 3. Coordinate agents for feature development
-clawdbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for user authentication feature"
+moltbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for user authentication feature"
 
 # Agent handoff sequence:
 # claude-sonnet-4.5 → windsurf-cascade → chatgpt-5 → cursor
@@ -274,7 +274,7 @@ const improvementCycle = {
 /apply-transformation DE3 "Break API development into design, implementation, testing, deployment phases"
 
 # Coordinate development team
-clawdbot agent --message "Apply multi-agent coordination for API development using claude-sonnet for architecture, windsurf-cascade for implementation"
+moltbot agent --message "Apply multi-agent coordination for API development using claude-sonnet for architecture, windsurf-cascade for implementation"
 
 # Daily progress tracking
 ~/clawd/hummbl-agent/scripts/generate-sitrep.sh
@@ -320,10 +320,10 @@ echo "Starting feature development workflow..."
 /apply-transformation P1 "Frame new real-time collaboration feature from multiple stakeholder perspectives"
 
 # 2. Coordinate agents
-clawdbot agent --session hummbl-main --message "Coordinate feature development using multi-agent coordination skill"
+moltbot agent --session hummbl-main --message "Coordinate feature development using multi-agent coordination skill"
 
 # 3. Monitor progress
-clawdbot agent --session hummbl-sitrep --message "Generate SITREP for feature development progress"
+moltbot agent --session hummbl-sitrep --message "Generate SITREP for feature development progress"
 
 # 4. Quality validation
 /apply-transformation IN2 "Identify potential failures in our collaboration feature launch"
@@ -406,7 +406,7 @@ echo "Starting weekly coordination optimization..."
 /apply-transformation SY8 "Identify coordination patterns from the past week"
 
 # 2. Generate improvement recommendations
-clawdbot agent --message "Apply RE2 to refine coordination protocols based on weekly performance"
+moltbot agent --message "Apply RE2 to refine coordination protocols based on weekly performance"
 
 # 3. Update configurations
 ~/clawd/hummbl-agent/scripts/generate-sitrep.sh
@@ -448,10 +448,10 @@ echo "## Mental Model Application
 ### **Slack/Discord Integration**
 ```bash
 # Automated SITREP distribution
-clawdbot message send --to #hummbl-updates --message "$(~/clawd/hummbl-agent/scripts/generate-sitrep.sh)"
+moltbot message send --to #hummbl-updates --message "$(~/clawd/hummbl-agent/scripts/generate-sitrep.sh)"
 
 # Mental model alerts
-clawdbot message send --to #hummbl-coordination --message "🧠 Applied P1 to reduce requirements to first principles - see project board for details"
+moltbot message send --to #hummbl-coordination --message "🧠 Applied P1 to reduce requirements to first principles - see project board for details"
 ```
 
 ## Best Practices Summary
@@ -489,7 +489,7 @@ clawdbot message send --to #hummbl-coordination --message "🧠 Applied P1 to re
 - **ClawdHub**: Publish and share Base120 skills
 - **Discord**: `discord.gg/clawd` for community support
 - **Documentation**: `docs.clawd.bot` for detailed guides
-- **GitHub**: `github.com/clawdbot/clawdbot` for issues and contributions
+- **GitHub**: `github.com/moltbot/moltbot` for issues and contributions
 
 ---
 *HUMMBL Integration: Transforming how AI agents coordinate and collaborate using systematic mental models*
