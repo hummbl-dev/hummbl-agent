@@ -30,6 +30,15 @@ export ANTHROPIC_API_KEY="..."
 scripts/run-anthropic-governed.sh --model claude-3-5-sonnet-20241022 --input "Hello"
 ```
 
+## End-to-End Validation
+```bash
+# offline-only (no vendor calls)
+scripts/e2e-validate.sh --mode offline
+
+# live mode (requires funded API keys)
+scripts/e2e-validate.sh --mode live
+```
+
 ## Lint SITREP
 ```bash
 scripts/lint-sitrep.sh /path/to/SITREP.md
