@@ -2,7 +2,7 @@
 name: sy8-homeostasisdynamic-equilibrium
 description: Apply SY8 Homeostasis/Dynamic Equilibrium to understand self-regulating mechanisms maintaining stable states despite disturbances.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy8-homeostasisdynamic-equilibrium","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy8-homeostasisdynamic-equilibrium","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY8 Homeostasis/Dynamic Equilibrium
@@ -88,7 +88,7 @@ const result = applyModel("SY8", "Understand self-regulating mechanisms maintain
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy8-homeostasisdynamic-equilibrium"; }
   ];
 }

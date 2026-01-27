@@ -2,7 +2,7 @@
 name: sy3-stocks-and-flows
 description: Apply SY3 Stocks & Flows to distinguish accumulations from rates of change affecting them.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy3-stocks-and-flows","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy3-stocks-and-flows","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY3 Stocks & Flows
@@ -88,7 +88,7 @@ const result = applyModel("SY3", "Distinguish accumulations from rates of change
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy3-stocks-and-flows"; }
   ];
 }

@@ -2,7 +2,7 @@
 name: in13-opportunity-cost-focus
 description: Apply IN13 Opportunity Cost Focus to evaluate options by what must be forgone rather than what is gained.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in13-opportunity-cost-focus","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in13-opportunity-cost-focus","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN13 Opportunity Cost Focus
@@ -88,7 +88,7 @@ const result = applyModel("IN13", "Evaluate options by what must be forgone rath
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in13-opportunity-cost-focus"; }
   ];
 }

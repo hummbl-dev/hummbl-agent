@@ -2,7 +2,7 @@
 name: co10-pipeline-orchestration
 description: Apply CO10 Pipeline Orchestration to coordinate sequential stages with explicit handoffs and error handling.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co10-pipeline-orchestration","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co10-pipeline-orchestration","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO10 Pipeline Orchestration
@@ -88,7 +88,7 @@ const result = applyModel("CO10", "Coordinate sequential stages with explicit ha
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co10-pipeline-orchestration"; }
   ];
 }

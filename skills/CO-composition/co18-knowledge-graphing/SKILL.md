@@ -2,7 +2,7 @@
 name: co18-knowledge-graphing
 description: Apply CO18 Knowledge Graphing to represent information as interconnected entities and relationships.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co18-knowledge-graphing","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co18-knowledge-graphing","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO18 Knowledge Graphing
@@ -88,7 +88,7 @@ const result = applyModel("CO18", "Represent information as interconnected entit
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co18-knowledge-graphing"; }
   ];
 }

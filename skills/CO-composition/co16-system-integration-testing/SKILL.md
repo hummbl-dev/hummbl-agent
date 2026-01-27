@@ -2,7 +2,7 @@
 name: co16-system-integration-testing
 description: Apply CO16 System Integration Testing to verify assembled components work correctly together, not just in isolation.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co16-system-integration-testing","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co16-system-integration-testing","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO16 System Integration Testing
@@ -88,7 +88,7 @@ const result = applyModel("CO16", "Verify assembled components work correctly to
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co16-system-integration-testing"; }
   ];
 }

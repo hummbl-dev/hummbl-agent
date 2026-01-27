@@ -111,7 +111,7 @@
       "sync_agents": true,
       "sync_skills": true
     },
-    "clawdbot": {
+    "moltbot": {
       "workspace_sync": true,
       "agent_learning": true,
       "coordination_optimization": true

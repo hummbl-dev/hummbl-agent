@@ -11,7 +11,7 @@ usage() {
 
 upstream_url() {
   case "${1}" in
-    clawdbot) echo "https://github.com/clawdbot/clawdbot.git" ;;
+    moltbot) echo "https://github.com/moltbot/moltbot.git" ;;
     clawdhub) echo "https://github.com/clawdhub/clawdhub.git" ;;
     everything-claude-code) echo "https://github.com/everything-claude-code/everything-claude-code.git" ;;
     *) return 1 ;;
@@ -20,7 +20,7 @@ upstream_url() {
 
 upstream_path() {
   case "${1}" in
-    clawdbot) echo "vendor/clawdbot" ;;
+    moltbot) echo "vendor/moltbot" ;;
     clawdhub) echo "vendor/clawdhub" ;;
     everything-claude-code) echo "vendor/everything-claude-code" ;;
     *) return 1 ;;
@@ -63,7 +63,7 @@ upsert_pin() {
 
 cmd_init() {
   echo "# Run these commands to initialize vendor submodules"
-  for name in clawdbot clawdhub everything-claude-code; do
+  for name in moltbot clawdhub everything-claude-code; do
     url="$(upstream_url "${name}")"
     path="$(upstream_path "${name}")"
     echo "git submodule add ${url} ${path}"
@@ -71,7 +71,7 @@ cmd_init() {
   echo "git submodule update --init --recursive"
 
   date_str="$(date +%Y-%m-%d)"
-  for name in clawdbot clawdhub everything-claude-code; do
+  for name in moltbot clawdhub everything-claude-code; do
     url="$(upstream_url "${name}")"
     path="$(upstream_path "${name}")"
     upsert_pin "${name}" "${url}" "${path}" "unknown" "unknown" "${date_str}" "unknown"
@@ -84,7 +84,7 @@ cmd_status() {
   fi
 
   date_str="$(date +%Y-%m-%d)"
-  for name in clawdbot clawdhub everything-claude-code; do
+  for name in moltbot clawdhub everything-claude-code; do
     url="$(upstream_url "${name}")"
     path="$(upstream_path "${name}")"
     if [[ -f "${ROOT_DIR}/.gitmodules" ]] && git submodule status -- "${path}" >/dev/null 2>&1; then

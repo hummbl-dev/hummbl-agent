@@ -2,7 +2,7 @@
 name: in3-problem-reversal
 description: Apply IN3 Problem Reversal to solve the inverse of the stated problem to reveal insights.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in3-problem-reversal","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in3-problem-reversal","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN3 Problem Reversal
@@ -88,7 +88,7 @@ const result = applyModel("IN3", "Solve the inverse of the stated problem to rev
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in3-problem-reversal"; }
   ];
 }

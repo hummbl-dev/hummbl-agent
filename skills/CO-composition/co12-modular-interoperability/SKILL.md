@@ -2,7 +2,7 @@
 name: co12-modular-interoperability
 description: Apply CO12 Modular Interoperability to ensure independent components work together through standardized connections.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co12-modular-interoperability","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co12-modular-interoperability","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # CO12 Modular Interoperability
@@ -88,7 +88,7 @@ const result = applyModel("CO12", "Ensure independent components work together t
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/CO-composition/co12-modular-interoperability"; }
   ];
 }

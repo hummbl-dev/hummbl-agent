@@ -2,7 +2,7 @@
 name: in4-contra-logic
 description: Apply IN4 Contra-Logic to argue the opposite position to stress-test assumptions and expose weak reasoning.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in4-contra-logic","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in4-contra-logic","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN4 Contra-Logic
@@ -88,7 +88,7 @@ const result = applyModel("IN4", "Argue the opposite position to stress-test ass
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in4-contra-logic"; }
   ];
 }

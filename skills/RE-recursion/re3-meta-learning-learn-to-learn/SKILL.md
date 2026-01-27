@@ -2,7 +2,7 @@
 name: re3-meta-learning-learn-to-learn
 description: Apply RE3 Meta-Learning (Learn-to-Learn) to improve the process of learning itself, not just domain knowledge.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re3-meta-learning-learn-to-learn","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re3-meta-learning-learn-to-learn","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE3 Meta-Learning (Learn-to-Learn)
@@ -88,7 +88,7 @@ const result = applyModel("RE3", "Improve the process of learning itself, not ju
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re3-meta-learning-learn-to-learn"; }
   ];
 }

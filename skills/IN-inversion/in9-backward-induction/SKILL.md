@@ -2,7 +2,7 @@
 name: in9-backward-induction
 description: Apply IN9 Backward Induction to begin with desired end state and work backward to determine necessary steps.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in9-backward-induction","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in9-backward-induction","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN9 Backward Induction
@@ -88,7 +88,7 @@ const result = applyModel("IN9", "Begin with desired end state and work backward
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in9-backward-induction"; }
   ];
 }

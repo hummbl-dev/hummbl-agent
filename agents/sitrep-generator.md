@@ -148,7 +148,7 @@ interface Recommendations {
 - **On-demand**: When requested by stakeholders
 
 ### **Distribution Channels**
-- **Clawdbot channels**: WhatsApp, Telegram, Slack, Discord
+- **Moltbot channels**: WhatsApp, Telegram, Slack, Discord
 - **Agent coordination**: Direct agent handoffs
 - **Documentation**: Workspace and knowledge base
 - **Stakeholder updates**: Executive summaries

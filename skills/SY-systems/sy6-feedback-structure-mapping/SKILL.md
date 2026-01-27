@@ -2,7 +2,7 @@
 name: sy6-feedback-structure-mapping
 description: Apply SY6 Feedback Structure Mapping to diagram causal loops showing how variables influence each other.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy6-feedback-structure-mapping","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy6-feedback-structure-mapping","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY6 Feedback Structure Mapping
@@ -88,7 +88,7 @@ const result = applyModel("SY6", "Diagram causal loops showing how variables inf
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy6-feedback-structure-mapping"; }
   ];
 }

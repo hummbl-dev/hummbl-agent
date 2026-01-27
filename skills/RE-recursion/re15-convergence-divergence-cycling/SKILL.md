@@ -2,7 +2,7 @@
 name: re15-convergence-divergence-cycling
 description: Apply RE15 Convergence-Divergence Cycling to alternate between expanding possibilities and narrowing to decisions.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re15-convergence-divergence-cycling","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re15-convergence-divergence-cycling","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE15 Convergence-Divergence Cycling
@@ -88,7 +88,7 @@ const result = applyModel("RE15", "Alternate between expanding possibilities and
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re15-convergence-divergence-cycling"; }
   ];
 }

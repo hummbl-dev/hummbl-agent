@@ -2,7 +2,7 @@
 name: de18-scenario-decomposition
 description: Apply DE18 Scenario Decomposition to partition future possibilities into discrete, mutually exclusive scenarios.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de18-scenario-decomposition","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de18-scenario-decomposition","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE18 Scenario Decomposition
@@ -88,7 +88,7 @@ const result = applyModel("DE18", "Partition future possibilities into discrete,
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de18-scenario-decomposition"; }
   ];
 }

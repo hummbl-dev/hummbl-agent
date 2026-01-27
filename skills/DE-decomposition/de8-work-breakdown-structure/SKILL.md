@@ -2,7 +2,7 @@
 name: de8-work-breakdown-structure
 description: Apply DE8 Work Breakdown Structure to hierarchically divide project into deliverable-oriented components with clear ownership.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de8-work-breakdown-structure","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de8-work-breakdown-structure","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE8 Work Breakdown Structure
@@ -88,7 +88,7 @@ const result = applyModel("DE8", "Hierarchically divide project into deliverable
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de8-work-breakdown-structure"; }
   ];
 }

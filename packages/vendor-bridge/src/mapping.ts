@@ -10,7 +10,7 @@ export type UpstreamMapping = {
 
 export const UPSTREAM_MAPPINGS: UpstreamMapping[] = [
   {
-    upstream: "clawdbot",
+    upstream: "moltbot",
     provides: ["gateway", "multi-agent routing", "sessions"],
     kernelConcepts: ["Runner", "Tool", "RunState"],
     usagePolicy: "wrap, do not edit",

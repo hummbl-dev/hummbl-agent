@@ -26,7 +26,7 @@ Stabilize the governed multi-runner substrate (registry, router, runners, execut
 - Repo: hummbl-agent
 - Focus: Multi-agent, multi-model orchestration with governed execution and audit trail
 - Vendor policy: submodules/pins only; no edits under vendor/
-- Legacy extraction: imported skills/commands/agents from clawdbot and everything-claude-code; forks quarantined
+- Legacy extraction: imported skills/commands/agents from moltbot and everything-claude-code; forks quarantined
 
 ## Structure
 - packages/kernel: types-only kernel contracts

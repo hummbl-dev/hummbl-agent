@@ -2,7 +2,7 @@
 name: de16-hypothesis-disaggregation
 description: Apply DE16 Hypothesis Disaggregation to break compound claim into testable sub-hypotheses.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de16-hypothesis-disaggregation","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de16-hypothesis-disaggregation","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE16 Hypothesis Disaggregation
@@ -88,7 +88,7 @@ const result = applyModel("DE16", "Break compound claim into testable sub-hypoth
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de16-hypothesis-disaggregation"; }
   ];
 }

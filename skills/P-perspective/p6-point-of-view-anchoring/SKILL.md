@@ -2,7 +2,7 @@
 name: p6-point-of-view-anchoring
 description: Apply P6 Point-of-View Anchoring to establish and maintain a consistent reference frame before analysis begins.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p6-point-of-view-anchoring","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p6-point-of-view-anchoring","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P6 Point-of-View Anchoring
@@ -88,7 +88,7 @@ const result = applyModel("P6", "Establish and maintain a consistent reference f
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p6-point-of-view-anchoring"; }
   ];
 }

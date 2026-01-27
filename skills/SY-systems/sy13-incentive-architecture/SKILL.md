@@ -2,7 +2,7 @@
 name: sy13-incentive-architecture
 description: Apply SY13 Incentive Architecture to design reward and penalty structures aligning individual actions with system goals.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy13-incentive-architecture","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy13-incentive-architecture","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY13 Incentive Architecture
@@ -88,7 +88,7 @@ const result = applyModel("SY13", "Design reward and penalty structures aligning
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy13-incentive-architecture"; }
   ];
 }

@@ -2,7 +2,7 @@
 name: sy4-requisite-variety
 description: Apply SY4 Requisite Variety to match control system's complexity to system being controlled.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy4-requisite-variety","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy4-requisite-variety","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY4 Requisite Variety
@@ -88,7 +88,7 @@ const result = applyModel("SY4", "Match control system's complexity to system be
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy4-requisite-variety"; }
   ];
 }

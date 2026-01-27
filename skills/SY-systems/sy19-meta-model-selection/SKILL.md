@@ -2,7 +2,7 @@
 name: sy19-meta-model-selection
 description: Apply SY19 Meta-Model Selection to choose appropriate framework or tool for specific problem characteristics.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy19-meta-model-selection","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy19-meta-model-selection","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY19 Meta-Model Selection
@@ -88,7 +88,7 @@ const result = applyModel("SY19", "Choose appropriate framework or tool for spec
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy19-meta-model-selection"; }
   ];
 }

@@ -2,7 +2,7 @@
 name: in14-second-order-effects-inverted
 description: Apply IN14 Second-Order Effects (Inverted) to trace negative downstream consequences rather than immediate benefits.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in14-second-order-effects-inverted","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in14-second-order-effects-inverted","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN14 Second-Order Effects (Inverted)
@@ -88,7 +88,7 @@ const result = applyModel("IN14", "Trace negative downstream consequences rather
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in14-second-order-effects-inverted"; }
   ];
 }

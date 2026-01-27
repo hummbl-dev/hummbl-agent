@@ -2,7 +2,7 @@
 name: re16-retrospectiveprospective-loop
 description: Apply RE16 Retrospective→Prospective Loop to use systematic reflection on past to inform future planning.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re16-retrospectiveprospective-loop","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re16-retrospectiveprospective-loop","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE16 Retrospective→Prospective Loop
@@ -88,7 +88,7 @@ const result = applyModel("RE16", "Use systematic reflection on past to inform f
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re16-retrospectiveprospective-loop"; }
   ];
 }

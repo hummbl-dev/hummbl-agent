@@ -2,7 +2,7 @@
 name: p7-perspective-switching
 description: Apply P7 Perspective Switching to rotate through multiple viewpoints to identify invariants and blind spots.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p7-perspective-switching","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p7-perspective-switching","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # P7 Perspective Switching
@@ -88,7 +88,7 @@ const result = applyModel("P7", "Rotate through multiple viewpoints to identify 
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/P-perspective/p7-perspective-switching"; }
   ];
 }

@@ -2,7 +2,7 @@
 name: de5-dimensional-reduction
 description: Apply DE5 Dimensional Reduction to focus on most informative variables while discarding noise or redundancy.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de5-dimensional-reduction","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de5-dimensional-reduction","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # DE5 Dimensional Reduction
@@ -88,7 +88,7 @@ const result = applyModel("DE5", "Focus on most informative variables while disc
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/DE-decomposition/de5-dimensional-reduction"; }
   ];
 }

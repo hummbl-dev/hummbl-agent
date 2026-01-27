@@ -2,7 +2,7 @@
 name: re14-spiral-learning
 description: Apply RE14 Spiral Learning to revisit concepts at increasing depth, building on previous understanding.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re14-spiral-learning","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re14-spiral-learning","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE14 Spiral Learning
@@ -88,7 +88,7 @@ const result = applyModel("RE14", "Revisit concepts at increasing depth, buildin
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re14-spiral-learning"; }
   ];
 }

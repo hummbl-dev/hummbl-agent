@@ -2,7 +2,7 @@
 name: re18-anti-catastrophic-forgetting
 description: Apply RE18 Anti-Catastrophic Forgetting to preserve critical knowledge while adapting to new information.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re18-anti-catastrophic-forgetting","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re18-anti-catastrophic-forgetting","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # RE18 Anti-Catastrophic Forgetting
@@ -88,7 +88,7 @@ const result = applyModel("RE18", "Preserve critical knowledge while adapting to
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/RE-recursion/re18-anti-catastrophic-forgetting"; }
   ];
 }

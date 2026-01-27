@@ -2,7 +2,7 @@
 name: sy15-multi-scale-alignment
 description: Apply SY15 Multi-Scale Alignment to ensure strategy, operations, and execution cohere across organizational levels.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy15-multi-scale-alignment","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy15-multi-scale-alignment","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # SY15 Multi-Scale Alignment
@@ -88,7 +88,7 @@ const result = applyModel("SY15", "Ensure strategy, operations, and execution co
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/SY-systems/sy15-multi-scale-alignment"; }
   ];
 }

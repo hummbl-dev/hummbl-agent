@@ -2,7 +2,7 @@
 name: in16-inverse-optimization
 description: Apply IN16 Inverse Optimization to maximize worst outcomes to understand system vulnerabilities.
 version: 1.0.0
-metadata: {"clawdbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in16-inverse-optimization","systems":["aarch64-darwin","x86_64-linux"]}}}
+metadata: {"moltbot":{"nix":{"plugin":"github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in16-inverse-optimization","systems":["aarch64-darwin","x86_64-linux"]}}}
 ---
 
 # IN16 Inverse Optimization
@@ -88,7 +88,7 @@ const result = applyModel("IN16", "Maximize worst outcomes to understand system 
 ### Nix Installation
 ```nix
 {
-  programs.clawdbot.plugins = [
+  programs.moltbot.plugins = [
     { source = "github:hummbl-dev/hummbl-agent?dir=skills/IN-inversion/in16-inverse-optimization"; }
   ];
 }
