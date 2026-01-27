@@ -80,14 +80,14 @@ REQ_PATH="${ROOT_DIR}/${REQ_PATH_REL}"
 RES_PATH="${ROOT_DIR}/${RES_PATH_REL}"
 META_PATH="${ROOT_DIR}/${META_PATH_REL}"
 
-node "${ROOT_DIR}/scripts/build-request.js" \
+node "${ROOT_DIR}/scripts/build-request.cjs" \
   --type openai \
   --out "${REQ_PATH}" \
   --model "${MODEL}" \
   --input "${INPUT}" \
   --check-rate-limit
 
-node "${SCRIPT_DIR}/openai-response.js" \
+node "${SCRIPT_DIR}/openai-response.cjs" \
   --request "${REQ_PATH}" \
   --response "${RES_PATH}" \
   --meta "${META_PATH}"

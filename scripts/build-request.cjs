@@ -26,7 +26,7 @@ const checkRate = args.includes("--check-rate-limit");
 
 if (!type || !outPath || !model || input === undefined) {
   console.error(
-    "Usage: build-request.js --type <openai|anthropic> --out <path> --model <model> --input <text> [--system <text>] [--max-tokens N] [--check-rate-limit]"
+    "Usage: build-request.cjs --type <openai|anthropic> --out <path> --model <model> --input <text> [--system <text>] [--max-tokens N] [--check-rate-limit]"
   );
   process.exit(1);
 }

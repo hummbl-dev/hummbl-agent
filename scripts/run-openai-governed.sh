@@ -77,7 +77,7 @@ REQ_PATH="${ROOT_DIR}/${REQ_PATH_REL}"
 RES_PATH="${ROOT_DIR}/${RES_PATH_REL}"
 META_PATH="${ROOT_DIR}/${META_PATH_REL}"
 
-node "${ROOT_DIR}/scripts/build-request.js" \
+node "${ROOT_DIR}/scripts/build-request.cjs" \
   --type openai \
   --out "${REQ_PATH}" \
   --model "${MODEL}" \
@@ -88,7 +88,7 @@ node "${ROOT_DIR}/scripts/build-request.js" \
   --runner codex \
   --date "${DATE_STR}" \
   --name "${NAME}" \
-  -- node "${ROOT_DIR}/packages/runners/codex/scripts/openai-response.js" \
+  -- node "${ROOT_DIR}/packages/runners/codex/scripts/openai-response.cjs" \
     --request "${REQ_PATH}" \
     --response "${RES_PATH}" \
     --meta "${META_PATH}"

@@ -22,7 +22,7 @@ fi
 small_out="${tmp_dir}/small.request.json"
 oversize_out="${tmp_dir}/oversize.request.json"
 
-node "${ROOT_DIR}/scripts/build-request.js" \
+node "${ROOT_DIR}/scripts/build-request.cjs" \
   --type openai \
   --out "${small_out}" \
   --model "gpt-test" \
@@ -35,7 +35,7 @@ PY
 )"
 
 set +e
-node "${ROOT_DIR}/scripts/build-request.js" \
+node "${ROOT_DIR}/scripts/build-request.cjs" \
   --type openai \
   --out "${oversize_out}" \
   --model "gpt-test" \
@@ -44,7 +44,7 @@ oversize_rc=$?
 set -e
 
 if [[ "${oversize_rc}" -eq 0 ]]; then
-  echo "Expected build-request.js to fail on oversize input" >&2
+  echo "Expected build-request.cjs to fail on oversize input" >&2
   exit 1
 fi
 
@@ -64,7 +64,7 @@ if [[ -n "${limit}" && "${limit}" -gt 0 ]]; then
 JSON
 
   set +e
-  node "${ROOT_DIR}/scripts/build-request.js" \
+  node "${ROOT_DIR}/scripts/build-request.cjs" \
     --type openai \
     --out "${tmp_dir}/rate.request.json" \
     --model "gpt-test" \

@@ -18,14 +18,14 @@ This creates:
 - `_state/runs/YYYY-MM-DD/prompts/*.md` (prompt packets)
 
 ## 2) Build Request + Enforce Guards
-Requests are built by `scripts/build-request.js`, which:
+Requests are built by `scripts/build-request.cjs`, which:
 - Escapes prompt input safely into JSON.
 - Enforces `maxRequestBytes` from `configs/network-policy.json`.
 - Optionally checks global rate limit (`--check-rate-limit`).
 
 Example:
 ```bash
-node scripts/build-request.js \
+node scripts/build-request.cjs \
   --type openai \
   --out /tmp/example.request.json \
   --model gpt-4.1-mini \
@@ -60,13 +60,13 @@ Each governed call produces and logs:
 ## Rate Limiting (Global)
 Rate limits are global per minute and enforced via:
 - `_state/.rate-limit.json` (counter window state)
-- `scripts/network-guard.js` in the runner layer
-- Optional preflight in `scripts/build-request.js` with `--check-rate-limit`
+- `scripts/network-guard.cjs` in the runner layer
+- Optional preflight in `scripts/build-request.cjs` with `--check-rate-limit`
 
 ## Request Size Limits
 `maxRequestBytes` is enforced from `configs/network-policy.json` before any network call.
 
 ## Troubleshooting
-- Invalid JSON or prompt injection: use `scripts/build-request.js` (never hand-build JSON).
+- Invalid JSON or prompt injection: use `scripts/build-request.cjs` (never hand-build JSON).
 - Rate limit errors: wait for the next minute or reset `_state/.rate-limit.json`.
 - Request too large: shrink input or raise `maxRequestBytes` (if policy allows).

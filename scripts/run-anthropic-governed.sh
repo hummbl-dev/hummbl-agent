@@ -84,7 +84,7 @@ RES_PATH="${ROOT_DIR}/${RES_PATH_REL}"
 META_PATH="${ROOT_DIR}/${META_PATH_REL}"
 
 if [[ -n "${SYSTEM_PROMPT}" ]]; then
-  node "${ROOT_DIR}/scripts/build-request.js" \
+  node "${ROOT_DIR}/scripts/build-request.cjs" \
     --type anthropic \
     --out "${REQ_PATH}" \
     --model "${MODEL}" \
@@ -93,7 +93,7 @@ if [[ -n "${SYSTEM_PROMPT}" ]]; then
     --system "${SYSTEM_PROMPT}" \
     --check-rate-limit
 else
-  node "${ROOT_DIR}/scripts/build-request.js" \
+  node "${ROOT_DIR}/scripts/build-request.cjs" \
     --type anthropic \
     --out "${REQ_PATH}" \
     --model "${MODEL}" \
@@ -106,7 +106,7 @@ fi
   --runner claude-code \
   --date "${DATE_STR}" \
   --name "${NAME}" \
-  -- node "${ROOT_DIR}/packages/runners/claude-code/scripts/anthropic-message.js" \
+  -- node "${ROOT_DIR}/packages/runners/claude-code/scripts/anthropic-message.cjs" \
     --request "${REQ_PATH}" \
     --response "${RES_PATH}" \
     --meta "${META_PATH}"
