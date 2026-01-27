@@ -21,7 +21,8 @@ jobs:
             echo "VERSION missing" >&2
             exit 1
           fi
-          if [[ "$(wc -l < VERSION | tr -d ' ')" != "1" ]]; then
+          line_count=$(awk 'END { print NR }' VERSION)
+          if [[ "${line_count}" != "1" ]]; then
             echo "VERSION must be single line" >&2
             exit 1
           fi
