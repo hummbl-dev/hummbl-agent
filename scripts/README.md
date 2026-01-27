@@ -18,6 +18,18 @@ scripts/run-cmd.sh --runner claude-code -- git status --porcelain
 - Commands must be allowlisted in `configs/process-policy.allowlist`.
 - Artifacts are written to `_state/runs/YYYY-MM-DD/artifacts/`.
 
+## Governed OpenAI Responses (wrapper)
+```bash
+export OPENAI_API_KEY="..."
+scripts/run-openai-governed.sh --model gpt-4.1-mini --input "Hello"
+```
+
+## Governed Anthropic Messages (wrapper)
+```bash
+export ANTHROPIC_API_KEY="..."
+scripts/run-anthropic-governed.sh --model claude-3-5-sonnet-20241022 --input "Hello"
+```
+
 ## Lint SITREP
 ```bash
 scripts/lint-sitrep.sh /path/to/SITREP.md
