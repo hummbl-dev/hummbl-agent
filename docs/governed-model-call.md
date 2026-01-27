@@ -6,6 +6,7 @@ Prompt → Request Build → API Call → Artifact Log.
 ## Prerequisites
 - OpenAI: `OPENAI_API_KEY` set in the environment.
 - Anthropic (optional): `ANTHROPIC_API_KEY` set in the environment.
+- Codex CLI itself can run without API keys when using ChatGPT auth; governed API calls still require vendor keys.
 
 ## 1) Open a Run + Generate Prompts
 ```bash

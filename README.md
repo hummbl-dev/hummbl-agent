@@ -140,6 +140,18 @@ hummbl-agent/
    packages/runners/grok/scripts/log-run.sh "Session start: grok" \
      --artifact "_state/runs/YYYY-MM-DD/prompts/grok-prompt.md" --hash-file
    ```
+
+## API Keys vs ChatGPT Auth
+
+- Codex CLI can be used without API keys by setting `preferred_auth_method = "chatgpt"` in `~/.codex/config.toml`.
+- Governed API calls (`scripts/run-openai-governed.sh`, `scripts/run-anthropic-governed.sh`) still require their vendor API keys.
+- Example config:
+  ```bash
+  cp configs/codex/config.example.toml ~/.codex/config.toml
+  ```
+- Claude Code can use a Claude.ai subscription login (no API keys). If `ANTHROPIC_API_KEY` is set, it will use API billing instead.
+  - Use `/login` inside Claude Code and verify with `/status`.
+  - Ensure `ANTHROPIC_API_KEY` is unset in your shell and not injected via `~/.claude/settings.json`.
 ## Development Phases
 
 - **Phase 1**: Foundation setup and basic skills (P1 + coordination)
