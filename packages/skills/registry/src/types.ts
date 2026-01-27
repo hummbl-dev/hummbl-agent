@@ -39,6 +39,12 @@ export type SkillToolRequirement = {
   scopes?: string[];
 };
 
+export type SkillNetworkPolicy = {
+  domains: string[];
+  methods?: Array<"GET" | "POST" | "PUT" | "PATCH" | "DELETE">;
+  maxResponseBytes?: number;
+};
+
 export type SkillPermissions = {
   network: "none" | "restricted" | "open";
   filesystem: "none" | "read" | "write";
@@ -96,6 +102,8 @@ export type SkillDefinition = {
   outputs: SkillIO[];
   runnerCompatibility: RunnerId[];
   requiredTools: SkillToolRequirement[];
+  requiredSecrets?: string[];
+  networkPolicy?: SkillNetworkPolicy;
   permissions: SkillPermissions;
   safety: SkillSafety;
   provenance: SkillProvenance;

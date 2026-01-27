@@ -33,6 +33,16 @@ scripts/lint-evidence.sh
 node scripts/validate-base120-refs.js
 ```
 
+## Lint Network Policy
+```bash
+scripts/lint-network-policy.sh
+```
+
+## Lint Secrets Policy
+```bash
+scripts/lint-secrets-policy.sh
+```
+
 ## Validate Base120 Canonical JSON
 ```bash
 node scripts/validate-base120-canonical.js

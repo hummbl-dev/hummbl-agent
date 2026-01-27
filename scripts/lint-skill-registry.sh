@@ -44,6 +44,45 @@ const canonicalCodes = new Set(
 );
 const modelBindingCodes = new Map();
 
+const networkPolicyPath = path.resolve(process.cwd(), "configs/network-policy.json");
+const secretsPolicyPath = path.resolve(process.cwd(), "configs/secrets-policy.json");
+let networkPolicy = { allowlist: { domains: [] } };
+let secretsPolicy = { allowedSecrets: [] };
+try {
+  networkPolicy = JSON.parse(fs.readFileSync(networkPolicyPath, "utf8"));
+} catch (err) {
+  console.error("network-policy.json missing or invalid:", networkPolicyPath);
+  process.exit(1);
+}
+try {
+  secretsPolicy = JSON.parse(fs.readFileSync(secretsPolicyPath, "utf8"));
+} catch (err) {
+  console.error("secrets-policy.json missing or invalid:", secretsPolicyPath);
+  process.exit(1);
+}
+
+const allowedSecrets = new Set(secretsPolicy.allowedSecrets || []);
+const allowedDomains = (networkPolicy.allowlist && Array.isArray(networkPolicy.allowlist.domains))
+  ? networkPolicy.allowlist.domains
+  : [];
+const denyDomains = (networkPolicy.denylist && Array.isArray(networkPolicy.denylist.domains))
+  ? networkPolicy.denylist.domains
+  : [];
+const wildcardDomains = allowedDomains.filter((d) => d.startsWith("*.")).map((d) => d.slice(1));
+const allowedDomainSet = new Set(allowedDomains.filter((d) => !d.startsWith("*.")));
+
+const isDomainAllowed = (domain) => {
+  if (!domain || typeof domain !== "string") return false;
+  if (allowedDomainSet.has(domain)) return true;
+  return wildcardDomains.some((suffix) => domain.endsWith(suffix));
+};
+
+const isDomainDenied = (domain) => {
+  if (!domain || typeof domain !== "string") return false;
+  if (denyDomains.includes(domain)) return true;
+  return denyDomains.some((suffix) => suffix.startsWith("*.") && domain.endsWith(suffix.slice(1)));
+};
+
 const semverRe = /^[0-9]+\.[0-9]+\.[0-9]+$/;
 const base120Re = /^[A-Z]{1,3}\d+$/;
 const legacySlugRe = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -200,6 +239,52 @@ for (const skill of data) {
 
   if (!skill.permissions || !skill.permissions.network || !skill.permissions.filesystem || !skill.permissions.exec || !skill.permissions.secrets) {
     console.error(`permissions missing for id: ${id}`);
+    ok = false;
+  }
+
+
+  if (skill.permissions && skill.permissions.network && skill.permissions.network !== "none") {
+    if (!skill.networkPolicy || !Array.isArray(skill.networkPolicy.domains) || skill.networkPolicy.domains.length === 0) {
+      console.error(`networkPolicy.domains required for id: ${id}`);
+      ok = false;
+    } else {
+      for (const domain of skill.networkPolicy.domains) {
+        if (isDomainDenied(domain)) {
+          console.error(`networkPolicy domain denied '${domain}' for id: ${id}`);
+          ok = false;
+        }
+        if (!isDomainAllowed(domain)) {
+          console.error(`networkPolicy domain not allowlisted '${domain}' for id: ${id}`);
+          ok = false;
+        }
+      }
+    }
+
+    if (!skill.requiredSecrets || !Array.isArray(skill.requiredSecrets) || skill.requiredSecrets.length === 0) {
+      console.error(`requiredSecrets required for networked skill id: ${id}`);
+      ok = false;
+    } else {
+      for (const secret of skill.requiredSecrets) {
+        if (!allowedSecrets.has(secret)) {
+          console.error(`requiredSecret not allowlisted '${secret}' for id: ${id}`);
+          ok = false;
+        }
+      }
+    }
+
+    if (!skill.requiredTools || skill.requiredTools.length === 0) {
+      console.error(`requiredTools required for networked skill id: ${id}`);
+      ok = false;
+    }
+
+    if (skill.permissions.secrets !== "read") {
+      console.error(`networked skill must set permissions.secrets=read: ${id}`);
+      ok = false;
+    }
+  }
+
+  if (skill.requiredSecrets && skill.permissions && skill.permissions.secrets !== "read") {
+    console.error(`requiredSecrets set but permissions.secrets is not read: ${id}`);
     ok = false;
   }
 

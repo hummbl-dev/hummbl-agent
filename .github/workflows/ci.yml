@@ -79,6 +79,14 @@ jobs:
         shell: bash
         run: node scripts/validate-base120-canonical.js
 
+      - name: Lint network policy
+        shell: bash
+        run: scripts/lint-network-policy.sh
+
+      - name: Lint secrets policy
+        shell: bash
+        run: scripts/lint-secrets-policy.sh
+
       - name: Lint Base120 skill map
         shell: bash
         run: scripts/lint-base120-skill-map.sh

@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "default": {
+    "network": "none",
+    "maxRequestBytes": 262144,
+    "maxResponseBytes": 1048576,
+    "rateLimitPerMinute": 60
+  },
+  "allowlist": {
+    "domains": []
+  },
+  "denylist": {
+    "domains": []
+  },
+  "notes": "Add vendor domains explicitly before enabling networked skills."
+}
