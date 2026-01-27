@@ -1257,5 +1257,8765 @@
     "aliases": [
       "strategic-compact"
     ]
+  },
+  {
+    "id": "S.binding.MM.P1.v0.1.0",
+    "name": "First Principles Framing",
+    "summary": "Base120 model P1: First Principles Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P2.v0.1.0",
+    "name": "Stakeholder Mapping",
+    "summary": "Base120 model P2: Stakeholder Mapping (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P3.v0.1.0",
+    "name": "Identity Stack",
+    "summary": "Base120 model P3: Identity Stack (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P4.v0.1.0",
+    "name": "Lens Shifting",
+    "summary": "Base120 model P4: Lens Shifting (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P5.v0.1.0",
+    "name": "Empathy Mapping",
+    "summary": "Base120 model P5: Empathy Mapping (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P6.v0.1.0",
+    "name": "Point-of-View Anchoring",
+    "summary": "Base120 model P6: Point-of-View Anchoring (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P7.v0.1.0",
+    "name": "Perspective Switching",
+    "summary": "Base120 model P7: Perspective Switching (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P8.v0.1.0",
+    "name": "Narrative Framing",
+    "summary": "Base120 model P8: Narrative Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P9.v0.1.0",
+    "name": "Cultural Lens Shifting",
+    "summary": "Base120 model P9: Cultural Lens Shifting (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P10.v0.1.0",
+    "name": "Context Windowing",
+    "summary": "Base120 model P10: Context Windowing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P11.v0.1.0",
+    "name": "Role Perspective-Taking",
+    "summary": "Base120 model P11: Role Perspective-Taking (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P12.v0.1.0",
+    "name": "Temporal Framing",
+    "summary": "Base120 model P12: Temporal Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P13.v0.1.0",
+    "name": "Spatial Framing",
+    "summary": "Base120 model P13: Spatial Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P14.v0.1.0",
+    "name": "Reference Class Framing",
+    "summary": "Base120 model P14: Reference Class Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P15.v0.1.0",
+    "name": "Assumption Surfacing",
+    "summary": "Base120 model P15: Assumption Surfacing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P16.v0.1.0",
+    "name": "Identity-Context Reciprocity",
+    "summary": "Base120 model P16: Identity-Context Reciprocity (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P17.v0.1.0",
+    "name": "Frame Control & Reframing",
+    "summary": "Base120 model P17: Frame Control & Reframing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P18.v0.1.0",
+    "name": "Boundary Object Selection",
+    "summary": "Base120 model P18: Boundary Object Selection (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P19.v0.1.0",
+    "name": "Sensemaking Canvases",
+    "summary": "Base120 model P19: Sensemaking Canvases (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.P20.v0.1.0",
+    "name": "Worldview Articulation",
+    "summary": "Base120 model P20: Worldview Articulation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "p20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "P20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "P20"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN1.v0.1.0",
+    "name": "Subtractive Thinking",
+    "summary": "Base120 model IN1: Subtractive Thinking (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN2.v0.1.0",
+    "name": "Premortem Analysis",
+    "summary": "Base120 model IN2: Premortem Analysis (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN3.v0.1.0",
+    "name": "Problem Reversal",
+    "summary": "Base120 model IN3: Problem Reversal (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN4.v0.1.0",
+    "name": "Contra-Logic",
+    "summary": "Base120 model IN4: Contra-Logic (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN5.v0.1.0",
+    "name": "Negative Space Framing",
+    "summary": "Base120 model IN5: Negative Space Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN6.v0.1.0",
+    "name": "Inverse/Proof by Contradiction",
+    "summary": "Base120 model IN6: Inverse/Proof by Contradiction (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN7.v0.1.0",
+    "name": "Boundary Testing",
+    "summary": "Base120 model IN7: Boundary Testing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN8.v0.1.0",
+    "name": "Contrapositive Reasoning",
+    "summary": "Base120 model IN8: Contrapositive Reasoning (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN9.v0.1.0",
+    "name": "Backward Induction",
+    "summary": "Base120 model IN9: Backward Induction (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN10.v0.1.0",
+    "name": "Red Teaming",
+    "summary": "Base120 model IN10: Red Teaming (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN11.v0.1.0",
+    "name": "Devil's Advocate Protocol",
+    "summary": "Base120 model IN11: Devil's Advocate Protocol (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN12.v0.1.0",
+    "name": "Failure First Design",
+    "summary": "Base120 model IN12: Failure First Design (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN13.v0.1.0",
+    "name": "Opportunity Cost Focus",
+    "summary": "Base120 model IN13: Opportunity Cost Focus (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN14.v0.1.0",
+    "name": "Second-Order Effects (Inverted)",
+    "summary": "Base120 model IN14: Second-Order Effects (Inverted) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN15.v0.1.0",
+    "name": "Constraint Reversal",
+    "summary": "Base120 model IN15: Constraint Reversal (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN16.v0.1.0",
+    "name": "Inverse Optimization",
+    "summary": "Base120 model IN16: Inverse Optimization (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN17.v0.1.0",
+    "name": "Counterfactual Negation",
+    "summary": "Base120 model IN17: Counterfactual Negation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN18.v0.1.0",
+    "name": "Kill-Criteria & Stop Rules",
+    "summary": "Base120 model IN18: Kill-Criteria & Stop Rules (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN19.v0.1.0",
+    "name": "Harm Minimization (Via Negativa)",
+    "summary": "Base120 model IN19: Harm Minimization (Via Negativa) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.IN20.v0.1.0",
+    "name": "Antigoals & Anti-Patterns Catalog",
+    "summary": "Base120 model IN20: Antigoals & Anti-Patterns Catalog (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "in20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "IN20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "IN20"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO1.v0.1.0",
+    "name": "Synergy Principle",
+    "summary": "Base120 model CO1: Synergy Principle (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO2.v0.1.0",
+    "name": "Chunking",
+    "summary": "Base120 model CO2: Chunking (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO3.v0.1.0",
+    "name": "Functional Composition",
+    "summary": "Base120 model CO3: Functional Composition (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO4.v0.1.0",
+    "name": "Interdisciplinary Synthesis",
+    "summary": "Base120 model CO4: Interdisciplinary Synthesis (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO5.v0.1.0",
+    "name": "Emergence",
+    "summary": "Base120 model CO5: Emergence (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO6.v0.1.0",
+    "name": "Gestalt Integration",
+    "summary": "Base120 model CO6: Gestalt Integration (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO7.v0.1.0",
+    "name": "Network Effects",
+    "summary": "Base120 model CO7: Network Effects (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO8.v0.1.0",
+    "name": "Layered Abstraction",
+    "summary": "Base120 model CO8: Layered Abstraction (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO9.v0.1.0",
+    "name": "Interface Contracts",
+    "summary": "Base120 model CO9: Interface Contracts (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO10.v0.1.0",
+    "name": "Pipeline Orchestration",
+    "summary": "Base120 model CO10: Pipeline Orchestration (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO11.v0.1.0",
+    "name": "Pattern Composition (Tiling)",
+    "summary": "Base120 model CO11: Pattern Composition (Tiling) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO12.v0.1.0",
+    "name": "Modular Interoperability",
+    "summary": "Base120 model CO12: Modular Interoperability (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO13.v0.1.0",
+    "name": "Cross-Domain Analogy",
+    "summary": "Base120 model CO13: Cross-Domain Analogy (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO14.v0.1.0",
+    "name": "Platformization",
+    "summary": "Base120 model CO14: Platformization (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO15.v0.1.0",
+    "name": "Combinatorial Design",
+    "summary": "Base120 model CO15: Combinatorial Design (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO16.v0.1.0",
+    "name": "System Integration Testing",
+    "summary": "Base120 model CO16: System Integration Testing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO17.v0.1.0",
+    "name": "Orchestration vs Choreography",
+    "summary": "Base120 model CO17: Orchestration vs Choreography (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO18.v0.1.0",
+    "name": "Knowledge Graphing",
+    "summary": "Base120 model CO18: Knowledge Graphing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO19.v0.1.0",
+    "name": "Multi-Modal Integration",
+    "summary": "Base120 model CO19: Multi-Modal Integration (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.CO20.v0.1.0",
+    "name": "Holistic Integration",
+    "summary": "Base120 model CO20: Holistic Integration (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "co20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "CO20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "CO20"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE1.v0.1.0",
+    "name": "Root Cause Analysis (5 Whys)",
+    "summary": "Base120 model DE1: Root Cause Analysis (5 Whys) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE2.v0.1.0",
+    "name": "Factorization",
+    "summary": "Base120 model DE2: Factorization (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE3.v0.1.0",
+    "name": "Modularization",
+    "summary": "Base120 model DE3: Modularization (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE4.v0.1.0",
+    "name": "Layered Breakdown",
+    "summary": "Base120 model DE4: Layered Breakdown (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE5.v0.1.0",
+    "name": "Dimensional Reduction",
+    "summary": "Base120 model DE5: Dimensional Reduction (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE6.v0.1.0",
+    "name": "Taxonomy/Classification",
+    "summary": "Base120 model DE6: Taxonomy/Classification (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE7.v0.1.0",
+    "name": "Pareto Decomposition (80/20)",
+    "summary": "Base120 model DE7: Pareto Decomposition (80/20) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE8.v0.1.0",
+    "name": "Work Breakdown Structure",
+    "summary": "Base120 model DE8: Work Breakdown Structure (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE9.v0.1.0",
+    "name": "Signal Separation",
+    "summary": "Base120 model DE9: Signal Separation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE10.v0.1.0",
+    "name": "Abstraction Laddering",
+    "summary": "Base120 model DE10: Abstraction Laddering (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE11.v0.1.0",
+    "name": "Scope Delimitation",
+    "summary": "Base120 model DE11: Scope Delimitation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE12.v0.1.0",
+    "name": "Constraint Isolation",
+    "summary": "Base120 model DE12: Constraint Isolation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE13.v0.1.0",
+    "name": "Failure Mode Analysis (FMEA)",
+    "summary": "Base120 model DE13: Failure Mode Analysis (FMEA) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE14.v0.1.0",
+    "name": "Variable Control & Isolation",
+    "summary": "Base120 model DE14: Variable Control & Isolation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE15.v0.1.0",
+    "name": "Decision Tree Expansion",
+    "summary": "Base120 model DE15: Decision Tree Expansion (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE16.v0.1.0",
+    "name": "Hypothesis Disaggregation",
+    "summary": "Base120 model DE16: Hypothesis Disaggregation (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE17.v0.1.0",
+    "name": "Orthogonalization",
+    "summary": "Base120 model DE17: Orthogonalization (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE18.v0.1.0",
+    "name": "Scenario Decomposition",
+    "summary": "Base120 model DE18: Scenario Decomposition (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE19.v0.1.0",
+    "name": "Critical Path Unwinding",
+    "summary": "Base120 model DE19: Critical Path Unwinding (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.DE20.v0.1.0",
+    "name": "Partition-and-Conquer",
+    "summary": "Base120 model DE20: Partition-and-Conquer (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "de20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "DE20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "DE20"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE1.v0.1.0",
+    "name": "Recursive Improvement (Kaizen)",
+    "summary": "Base120 model RE1: Recursive Improvement (Kaizen) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE2.v0.1.0",
+    "name": "Feedback Loops",
+    "summary": "Base120 model RE2: Feedback Loops (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE3.v0.1.0",
+    "name": "Meta-Learning (Learn-to-Learn)",
+    "summary": "Base120 model RE3: Meta-Learning (Learn-to-Learn) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE4.v0.1.0",
+    "name": "Nested Narratives",
+    "summary": "Base120 model RE4: Nested Narratives (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE5.v0.1.0",
+    "name": "Fractal Reasoning",
+    "summary": "Base120 model RE5: Fractal Reasoning (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE6.v0.1.0",
+    "name": "Recursive Framing",
+    "summary": "Base120 model RE6: Recursive Framing (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE7.v0.1.0",
+    "name": "Self-Referential Logic",
+    "summary": "Base120 model RE7: Self-Referential Logic (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE8.v0.1.0",
+    "name": "Bootstrapping",
+    "summary": "Base120 model RE8: Bootstrapping (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE9.v0.1.0",
+    "name": "Iterative Prototyping",
+    "summary": "Base120 model RE9: Iterative Prototyping (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE10.v0.1.0",
+    "name": "Compounding Cycles",
+    "summary": "Base120 model RE10: Compounding Cycles (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE11.v0.1.0",
+    "name": "Calibration Loops",
+    "summary": "Base120 model RE11: Calibration Loops (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE12.v0.1.0",
+    "name": "Bayesian Updating in Practice",
+    "summary": "Base120 model RE12: Bayesian Updating in Practice (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE13.v0.1.0",
+    "name": "Gradient Descent Heuristic",
+    "summary": "Base120 model RE13: Gradient Descent Heuristic (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE14.v0.1.0",
+    "name": "Spiral Learning",
+    "summary": "Base120 model RE14: Spiral Learning (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE15.v0.1.0",
+    "name": "Convergence-Divergence Cycling",
+    "summary": "Base120 model RE15: Convergence-Divergence Cycling (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE16.v0.1.0",
+    "name": "Retrospective → Prospective Loop",
+    "summary": "Base120 model RE16: Retrospective → Prospective Loop (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE17.v0.1.0",
+    "name": "Versioning & Diff",
+    "summary": "Base120 model RE17: Versioning & Diff (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE18.v0.1.0",
+    "name": "Anti-Catastrophic Forgetting",
+    "summary": "Base120 model RE18: Anti-Catastrophic Forgetting (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE19.v0.1.0",
+    "name": "Auto-Refactor",
+    "summary": "Base120 model RE19: Auto-Refactor (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.RE20.v0.1.0",
+    "name": "Recursive Governance (Guardrails that Learn)",
+    "summary": "Base120 model RE20: Recursive Governance (Guardrails that Learn) (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "re20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "RE20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "RE20"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY1.v0.1.0",
+    "name": "Leverage Points",
+    "summary": "Base120 model SY1: Leverage Points (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy1"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY1"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY1"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY2.v0.1.0",
+    "name": "System Boundaries",
+    "summary": "Base120 model SY2: System Boundaries (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy2"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY2"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY2"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY3.v0.1.0",
+    "name": "Stocks & Flows",
+    "summary": "Base120 model SY3: Stocks & Flows (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy3"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY3"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY3"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY4.v0.1.0",
+    "name": "Requisite Variety",
+    "summary": "Base120 model SY4: Requisite Variety (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy4"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY4"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY4"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY5.v0.1.0",
+    "name": "Systems Archetypes",
+    "summary": "Base120 model SY5: Systems Archetypes (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy5"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY5"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY5"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY6.v0.1.0",
+    "name": "Feedback Structure Mapping",
+    "summary": "Base120 model SY6: Feedback Structure Mapping (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy6"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY6"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY6"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY7.v0.1.0",
+    "name": "Path Dependence",
+    "summary": "Base120 model SY7: Path Dependence (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy7"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY7"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY7"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY8.v0.1.0",
+    "name": "Homeostasis/Dynamic Equilibrium",
+    "summary": "Base120 model SY8: Homeostasis/Dynamic Equilibrium (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy8"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY8"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY8"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY9.v0.1.0",
+    "name": "Phase Transitions & Tipping Points",
+    "summary": "Base120 model SY9: Phase Transitions & Tipping Points (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy9"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY9"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY9"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY10.v0.1.0",
+    "name": "Causal Loop Diagrams",
+    "summary": "Base120 model SY10: Causal Loop Diagrams (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy10"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY10"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY10"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY11.v0.1.0",
+    "name": "Governance Patterns",
+    "summary": "Base120 model SY11: Governance Patterns (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy11"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY11"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY11"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY12.v0.1.0",
+    "name": "Protocol/Interface Standards",
+    "summary": "Base120 model SY12: Protocol/Interface Standards (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy12"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY12"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY12"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY13.v0.1.0",
+    "name": "Incentive Architecture",
+    "summary": "Base120 model SY13: Incentive Architecture (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy13"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY13"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY13"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY14.v0.1.0",
+    "name": "Risk & Resilience Engineering",
+    "summary": "Base120 model SY14: Risk & Resilience Engineering (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy14"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY14"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY14"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY15.v0.1.0",
+    "name": "Multi-Scale Alignment",
+    "summary": "Base120 model SY15: Multi-Scale Alignment (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy15"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY15"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY15"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY16.v0.1.0",
+    "name": "Ecosystem Strategy",
+    "summary": "Base120 model SY16: Ecosystem Strategy (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy16"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY16"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY16"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY17.v0.1.0",
+    "name": "Policy Feedbacks",
+    "summary": "Base120 model SY17: Policy Feedbacks (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy17"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY17"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY17"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY18.v0.1.0",
+    "name": "Measurement & Telemetry",
+    "summary": "Base120 model SY18: Measurement & Telemetry (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy18"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY18"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY18"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY19.v0.1.0",
+    "name": "Meta-Model Selection",
+    "summary": "Base120 model SY19: Meta-Model Selection (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy19"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY19"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY19"
+    ]
+  },
+  {
+    "id": "S.binding.MM.SY20.v0.1.0",
+    "name": "Systems-of-Systems Coordination",
+    "summary": "Base120 model SY20: Systems-of-Systems Coordination (binding-only).",
+    "tags": [
+      "base120",
+      "model-binding",
+      "sy20"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "model_binding",
+    "base120_bindings": {
+      "drives_selection": [
+        "SY20"
+      ],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "context",
+        "type": "string",
+        "required": true,
+        "description": "Context to apply the model to."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "guidance",
+        "type": "string",
+        "description": "Model-guided guidance."
+      }
+    ],
+    "runnerCompatibility": [
+      "claude-code",
+      "codex",
+      "grok",
+      "local-cli"
+    ],
+    "requiredTools": [],
+    "permissions": {
+      "network": "none",
+      "filesystem": "none",
+      "exec": "none",
+      "secrets": "none"
+    },
+    "safety": {
+      "risk": "low",
+      "notes": "Manual/prompt-only; no execution."
+    },
+    "provenance": {
+      "createdAt": "2026-01-26",
+      "source": "native",
+      "references": [
+        "docs/base120.v1.0.canonical.json"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Manual use",
+        "invocation": "Use in planning prompts",
+        "expectedOutcome": "Produces model-guided guidance."
+      }
+    ],
+    "aliases": [
+      "SY20"
+    ]
   }
 ]
