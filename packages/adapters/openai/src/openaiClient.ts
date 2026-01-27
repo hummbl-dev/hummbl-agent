@@ -41,8 +41,8 @@ export class OpenAIClient {
       throw new Error("Streaming responses are not supported in v0.1");
     }
 
-    const baseUrl = this.config.baseUrl ?? DEFAULT_BASE_URL;
-    const url = new URL("/responses", baseUrl);
+    const baseUrl = (this.config.baseUrl ?? DEFAULT_BASE_URL).replace(/\/?$/, "/");
+    const url = new URL("responses", baseUrl);
     this.assertAllowedDomain(url.hostname);
 
     const body = JSON.stringify(request);

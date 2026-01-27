@@ -47,8 +47,8 @@ const allowedDomains = new Set(
     : []
 );
 
-const baseUrl = baseUrlArg || "https://api.openai.com/v1";
-const url = new URL("/responses", baseUrl);
+const baseUrl = baseUrlArg || "https://api.openai.com/v1/";
+const url = new URL("responses", baseUrl);
 if (!allowedDomains.has(url.hostname)) {
   console.error(`Domain not allowlisted: ${url.hostname}`);
   process.exit(1);
