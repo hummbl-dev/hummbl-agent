@@ -9,6 +9,10 @@ Lightweight checklist for verifying Base120 compliance and repo alignment.
 - [ ] SITREP output uses 5 standard sections.
 - [ ] Agents and commands referenced in docs exist on disk.
 - [ ] Workspace paths use `~/clawd/hummbl-agent`.
+- [ ] Tuple gates (`kernel-tuples` workflow) pass:
+  - Kernel `tsc --noEmit`
+  - Tuple vector verifier (hash + canonical)
+  - Tuple linter over `configs/**` + `packages/skills/registry/**` (fixture keeps the path hot until real tuples land; once real tuples exist, set `TUPLES_LINT_STRICT=1` in CI and remove the fixture).
 
 Example code reference:
 ```
