@@ -28,8 +28,8 @@ Provide a deterministic, audit-safe structure for SITREPs.
     - No claims of autonomous learning or tracking unless implemented.
 
 5. **RECOMMENDATIONS**
-    - Immediate / Short Term / Mental Model Applications
-    - Distinguish mental models (lenses) from skills (executables).
+    - Immediate / Short Term / Base120 Mental Model Applications
+    - Distinguish Base120 mental models (e.g., P1, SY1) from skills (executables).
 
 ## Canonicality Rules
 

@@ -28,6 +28,11 @@ scripts/lint-sitrep.sh /path/to/SITREP.md
 scripts/lint-evidence.sh
 ```
 
+## Lint Base120 References
+```bash
+node scripts/validate-base120-refs.js
+```
+
 ## Controlled Experiment Run
 ```bash
 scripts/experiment-run.sh

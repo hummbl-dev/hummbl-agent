@@ -5,7 +5,7 @@
 - [ ] No claims of learning/tracking unless explicitly implemented and governed.
 - [ ] No gateway/service state claims unless tracked in-repo.
 - [ ] No integration claims without executable skills.
-- [ ] Mental models are treated as lenses, not skills.
+- [ ] Base120 mental models are treated as lenses, not skills.
 
 ## Factual Anchors
 

@@ -71,6 +71,10 @@ jobs:
         shell: bash
         run: scripts/lint-skill-registry.sh
 
+      - name: Lint Base120 references
+        shell: bash
+        run: node scripts/validate-base120-refs.js
+
       - name: Lint SITREPs (if present)
         shell: bash
         run: |
