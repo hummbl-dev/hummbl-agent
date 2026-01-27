@@ -6,4 +6,4 @@
 - NO_SKILL_MATCH when skills list is empty.
 - NO_RUNNER_AVAILABLE when no runner overlaps skill compatibility.
 - Permission ordering: none < restricted < open; exec none < allowlisted.
-- Capabilities-aware selection prefers runners with CAPABILITIES.json when provided.
+- Capabilities-aware selection requires runner capabilities to satisfy skill network/exec.

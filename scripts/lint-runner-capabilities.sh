@@ -18,6 +18,7 @@ let ok = true;
 
 const allowedMode = new Set(["manual", "api"]);
 const allowedNetwork = new Set(["none", "restricted", "open"]);
+const allowedExec = new Set(["none", "allowlisted"]);
 
 for (const file of files) {
   let data;
@@ -39,6 +40,10 @@ for (const file of files) {
   }
   if (!allowedNetwork.has(data.network)) {
     console.error(`Invalid network in ${file}`);
+    ok = false;
+  }
+  if (!allowedExec.has(data.exec)) {
+    console.error(`Invalid exec in ${file}`);
     ok = false;
   }
   if (data.artifacts !== "hashed") {

@@ -1,5 +1,5 @@
 import type { RouterInput, RouteResult, RouteStep, RouteExplain } from "./types";
-import { pickBest, pickRunner, pickRunnerWithCapabilities, policyCheck, scoreSkill } from "./selectors";
+import { pickBest, pickRunner, pickRunnerWithCapabilities, policyCheck, scoreSkill, capabilityCheck } from "./selectors";
 import type { SkillDefinition, RunnerId } from "../../skills/registry/src/types";
 
 const scriptBySkill: Record<string, string> = {
@@ -59,8 +59,35 @@ export const route = (input: RouterInput): RouteResult => {
     return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
   }
 
+  let capabilityChecks: RouteExplain["policyChecks"] = [];
+  if (input.capabilities && input.capabilities.length > 0) {
+    const capMap = new Map(
+      input.capabilities.map((cap) => [cap.runnerId, cap])
+    );
+    const cap = capMap.get(runner);
+    if (!cap) {
+      capabilityChecks = [
+        {
+          check: "runner capabilities",
+          ok: false,
+          reason: `missing capabilities for ${runner}`,
+        },
+      ];
+      explain.policyChecks = capabilityChecks;
+      explain.runnerRationale = `runner ${runner} missing capabilities`;
+      return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
+    }
+    const capResult = capabilityCheck(best.skill, cap);
+    capabilityChecks = capResult.checks;
+    if (!capResult.ok) {
+      explain.policyChecks = capabilityChecks;
+      explain.runnerRationale = `runner ${runner} fails capability checks`;
+      return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
+    }
+  }
+
   const policy = policyCheck(best.skill, input.toolPolicy);
-  explain.policyChecks = policy.checks;
+  explain.policyChecks = [...policy.checks, ...capabilityChecks];
   explain.matchedByTags = best.matchedTags;
   explain.runnerRationale =
     input.capabilities && input.capabilities.length > 0

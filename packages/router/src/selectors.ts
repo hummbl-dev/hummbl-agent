@@ -75,20 +75,64 @@ export const pickRunner = (
   return [...intersection].sort((a, b) => a.localeCompare(b))[0];
 };
 
+export const capabilityCheck = (
+  skill: SkillDefinition,
+  capability: RunnerCapabilities
+): { ok: boolean; checks: RouteExplain["policyChecks"] } => {
+  const checks: RouteExplain["policyChecks"] = [];
+
+  const networkOk =
+    compareNetworkPermission(skill.permissions.network, capability.network) <= 0;
+  checks.push({
+    check: "runner network",
+    ok: networkOk,
+    reason: networkOk
+      ? undefined
+      : `network ${capability.network} insufficient for ${skill.permissions.network}`,
+  });
+
+  const execOk =
+    compareExecPermission(skill.permissions.exec, capability.exec) <= 0;
+  checks.push({
+    check: "runner exec",
+    ok: execOk,
+    reason: execOk
+      ? undefined
+      : `exec ${capability.exec} insufficient for ${skill.permissions.exec}`,
+  });
+
+  const supports = new Set(capability.supports || []);
+  const requires = ["prompt", "log"];
+  const missing = requires.filter((req) => !supports.has(req));
+  const supportsOk = missing.length === 0;
+  checks.push({
+    check: "runner supports",
+    ok: supportsOk,
+    reason: supportsOk ? undefined : `missing: ${missing.join(", ")}`,
+  });
+
+  return { ok: checks.every((check) => check.ok), checks };
+};
+
+
 export const pickRunnerWithCapabilities = (
   skill: SkillDefinition,
   availableRunners: RunnerId[],
   capabilities: RunnerCapabilities[]
 ): RunnerId | undefined => {
-  const capSet = new Set(capabilities.map((cap) => cap.runnerId));
+  const capMap = new Map(capabilities.map((cap) => [cap.runnerId, cap]));
   const compatible = skill.runnerCompatibility.filter((runner) =>
     availableRunners.includes(runner)
   );
-  const capable = compatible.filter((runner) => capSet.has(runner));
-  if (capable.length > 0) {
-    return [...capable].sort((a, b) => a.localeCompare(b))[0];
+  const eligible = compatible.filter((runner) => {
+    const cap = capMap.get(runner);
+    if (!cap) return false;
+    return capabilityCheck(skill, cap).ok;
+  });
+  if (eligible.length === 0) {
+    return undefined;
   }
-  return pickRunner(skill, availableRunners);
+  return [...eligible].sort((a, b) => a.localeCompare(b))[0];
 };
 
 export const policyCheck = (
