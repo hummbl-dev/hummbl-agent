@@ -7,7 +7,9 @@
     "rateLimitPerMinute": 60
   },
   "allowlist": {
-    "domains": []
+    "domains": [
+      "api.openai.com"
+    ]
   },
   "denylist": {
     "domains": []
