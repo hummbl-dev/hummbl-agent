@@ -39,6 +39,7 @@ run "lint-runner-capabilities" scripts/lint-runner-capabilities.sh
 run "lint-runner-registry" scripts/lint-runner-registry-consistency.sh
 run "lint-runner-compatibility" scripts/lint-runner-compatibility.sh
 run "lint-base120-map" scripts/lint-base120-skill-map.sh
+run "network-guard-regression" scripts/test-network-guard.sh
 
 run "orchestrate" scripts/orchestrate.sh --force
 run "governed-command" scripts/run-cmd.sh --runner codex --date "$DATE_STR" -- git status --porcelain

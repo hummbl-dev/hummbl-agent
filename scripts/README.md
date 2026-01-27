@@ -38,6 +38,8 @@ scripts/e2e-validate.sh --mode offline
 # live mode (requires funded API keys)
 scripts/e2e-validate.sh --mode live
 ```
+### Notes
+- Includes `scripts/test-network-guard.sh` regression checks for request size and rate limiting.
 
 ## Lint SITREP
 ```bash

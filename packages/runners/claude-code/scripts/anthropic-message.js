@@ -32,12 +32,17 @@ if (!apiKey) {
 }
 
 const root = path.resolve(__dirname, "../../../../");
-const networkPolicyPath = path.join(root, "configs", "network-policy.json");
+const {
+  loadNetworkPolicy,
+  enforceRequestSize,
+  enforceRateLimit,
+} = require(path.join(root, "scripts", "network-guard.js"));
+
 let networkPolicy = { allowlist: { domains: ["api.anthropic.com"] }, default: {} };
 try {
-  networkPolicy = JSON.parse(fs.readFileSync(networkPolicyPath, "utf8"));
+  networkPolicy = loadNetworkPolicy(root);
 } catch (err) {
-  console.error("Failed to read network-policy.json");
+  console.error(err.message || "Failed to read network-policy.json");
   process.exit(1);
 }
 
@@ -68,6 +73,19 @@ try {
 }
 
 const body = JSON.stringify(requestBody);
+try {
+  enforceRequestSize(body, networkPolicy.default?.maxRequestBytes);
+} catch (err) {
+  console.error(err.message || "Request too large");
+  process.exit(1);
+}
+
+try {
+  enforceRateLimit(root, networkPolicy);
+} catch (err) {
+  console.error(err.message || "Rate limit exceeded");
+  process.exit(1);
+}
 const headers = {
   "Content-Type": "application/json",
   "Content-Length": Buffer.byteLength(body).toString(),

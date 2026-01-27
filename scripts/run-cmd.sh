@@ -1,13 +1,61 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
 ALLOWLIST_FILE="${ROOT_DIR}/configs/process-policy.allowlist"
+SAFE_PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/homebrew/bin"
 
 runner=""
 cwd="${ROOT_DIR}"
 name=""
 date_str="$(date +%Y-%m-%d)"
+
+fail() {
+  echo "$1" >&2
+  exit 1
+}
+
+validate_date() {
+  local value="$1"
+  if [[ ! "${value}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+    fail "Invalid --date (expected YYYY-MM-DD): ${value}"
+  fi
+}
+
+validate_name() {
+  local value="$1"
+  if [[ -z "${value}" ]]; then
+    return
+  fi
+  if [[ "${value}" == *"/"* || "${value}" == *"\\"* || "${value}" == *".."* ]]; then
+    fail "Invalid --name (path traversal): ${value}"
+  fi
+  if [[ ! "${value}" =~ ^[A-Za-z0-9._-]+$ ]]; then
+    fail "Invalid --name (allowed: A-Z a-z 0-9 . _ -): ${value}"
+  fi
+}
+
+resolve_path() {
+  local target="$1"
+  local base="$2"
+  local dir=""
+  local resolved=""
+  if [[ "${target}" == /* ]]; then
+    dir="$(dirname "${target}")"
+    if resolved="$(cd "${dir}" 2>/dev/null && pwd -P)"; then
+      printf "%s/%s" "${resolved}" "$(basename "${target}")"
+    else
+      return 1
+    fi
+  else
+    dir="${base}/$(dirname "${target}")"
+    if resolved="$(cd "${dir}" 2>/dev/null && pwd -P)"; then
+      printf "%s/%s" "${resolved}" "$(basename "${target}")"
+    else
+      return 1
+    fi
+  fi
+}
 
 usage() {
   echo "Usage: $0 --runner <claude-code|codex> [--cwd <path>] [--name <artifact_prefix>] [--date <YYYY-MM-DD>] -- <cmd> [args...]" >&2
@@ -58,6 +106,8 @@ if [[ $# -lt 1 ]]; then
   usage
 fi
 
+validate_date "${date_str}"
+
 cmd="$1"
 shift
 args=("$@")
@@ -96,10 +146,39 @@ fi
 if [[ -z "${name}" ]]; then
   name="${cmd}"
 fi
+validate_name "${name}"
 
 if [[ ! -d "${cwd}" ]]; then
   echo "cwd does not exist: ${cwd}" >&2
   exit 1
+fi
+
+resolved_cwd="$(cd "${cwd}" && pwd -P)"
+case "${resolved_cwd}" in
+  "${ROOT_DIR}"|${ROOT_DIR}/*) ;;
+  *) fail "cwd must be within repo: ${cwd}" ;;
+esac
+
+cmd_path="$(PATH="${SAFE_PATH}" command -v "${cmd}" || true)"
+if [[ -z "${cmd_path}" || "${cmd_path}" != /* ]]; then
+  fail "Command not found in SAFE_PATH: ${cmd}"
+fi
+
+if [[ "${cmd}" == "node" ]]; then
+  if [[ ${#args[@]} -lt 1 ]]; then
+    fail "node requires a script path argument"
+  fi
+  if [[ "${args[0]}" == -* ]]; then
+    fail "node disallows flags in governed mode: ${args[0]}"
+  fi
+  script_abs="$(resolve_path "${args[0]}" "${resolved_cwd}")" || fail "node script path invalid: ${args[0]}"
+  case "${script_abs}" in
+    "${ROOT_DIR}"/*) ;;
+    *) fail "node script must be within repo: ${args[0]}" ;;
+  esac
+  if [[ ! -f "${script_abs}" ]]; then
+    fail "node script not found: ${args[0]}"
+  fi
 fi
 
 RUN_DIR="${ROOT_DIR}/_state/runs/${date_str}"
@@ -113,7 +192,7 @@ exit_file="${ART_DIR}/${name}.exitcode.txt"
 "${ROOT_DIR}/scripts/new-run.sh" >/dev/null
 
 set +e
-(cd "${cwd}" && "${cmd}" "${args[@]}") >"${stdout_file}" 2>"${stderr_file}"
+(cd "${resolved_cwd}" && PATH="${SAFE_PATH}" "${cmd_path}" "${args[@]}") >"${stdout_file}" 2>"${stderr_file}"
 exit_code=$?
 set -e
 
@@ -126,6 +205,8 @@ exit_hash=$("${ROOT_DIR}/scripts/sha256-file.sh" "${exit_file}")
 log_tool="${ROOT_DIR}/packages/runners/${runner}/scripts/log-run.sh"
 
 cmd_display="${cmd} ${args[*]}"
+cmd_display="${cmd_display//$'\n'/ }"
+cmd_display="${cmd_display//$'\r'/ }"
 
 stdout_rel="${stdout_file#${ROOT_DIR}/}"
 stderr_rel="${stderr_file#${ROOT_DIR}/}"

@@ -100,6 +100,11 @@ hummbl-agent/
    ```bash
    cat docs/workflow-examples.md
    ```
+   - Workflows index: `docs/workflows-index.md`
+   - Governed model calls: `docs/governed-model-call.md`
+   - Skill selection + routing: `docs/skill-routing-flow.md`
+   - Evidence + SITREP: `docs/evidence-sitrep-flow.md`
+   - Local Places skill: `docs/local-places-flow.md`
 
 2. **Inspect agents, commands, and skills**
    ```bash

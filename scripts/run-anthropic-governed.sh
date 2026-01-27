@@ -10,6 +10,29 @@ DATE_STR="$(date +%F)"
 NAME=""
 SYSTEM_PROMPT=""
 
+validate_date() {
+  local value="$1"
+  if [[ ! "${value}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+    echo "Invalid --date (expected YYYY-MM-DD): ${value}" >&2
+    exit 1
+  fi
+}
+
+validate_name() {
+  local value="$1"
+  if [[ -z "${value}" ]]; then
+    return
+  fi
+  if [[ "${value}" == *"/"* || "${value}" == *"\\"* || "${value}" == *".."* ]]; then
+    echo "Invalid --name (path traversal): ${value}" >&2
+    exit 1
+  fi
+  if [[ ! "${value}" =~ ^[A-Za-z0-9._-]+$ ]]; then
+    echo "Invalid --name (allowed: A-Z a-z 0-9 . _ -): ${value}" >&2
+    exit 1
+  fi
+}
+
 while [[ $# -gt 0 ]]; do
   case "$1" in
     --model)
@@ -40,6 +63,8 @@ if [[ -z "${ANTHROPIC_API_KEY:-}" ]]; then
   exit 1
 fi
 
+validate_date "${DATE_STR}"
+
 RUN_DIR="${ROOT_DIR}/_state/runs/${DATE_STR}"
 ART_DIR="${RUN_DIR}/artifacts"
 mkdir -p "${ART_DIR}"
@@ -48,6 +73,7 @@ TS="$(date +%H%M%S)"
 if [[ -z "$NAME" ]]; then
   NAME="anthropic-message-${TS}"
 fi
+validate_name "${NAME}"
 
 REQ_PATH_REL="_state/runs/${DATE_STR}/artifacts/${NAME}.request.json"
 RES_PATH_REL="_state/runs/${DATE_STR}/artifacts/${NAME}.response.json"
@@ -57,27 +83,23 @@ REQ_PATH="${ROOT_DIR}/${REQ_PATH_REL}"
 RES_PATH="${ROOT_DIR}/${RES_PATH_REL}"
 META_PATH="${ROOT_DIR}/${META_PATH_REL}"
 
-if [[ -n "$SYSTEM_PROMPT" ]]; then
-  cat <<JSON > "${REQ_PATH}"
-{
-  "model": "${MODEL}",
-  "max_tokens": ${MAX_TOKENS},
-  "system": "${SYSTEM_PROMPT}",
-  "messages": [
-    {"role": "user", "content": "${INPUT}"}
-  ]
-}
-JSON
+if [[ -n "${SYSTEM_PROMPT}" ]]; then
+  node "${ROOT_DIR}/scripts/build-request.js" \
+    --type anthropic \
+    --out "${REQ_PATH}" \
+    --model "${MODEL}" \
+    --input "${INPUT}" \
+    --max-tokens "${MAX_TOKENS}" \
+    --system "${SYSTEM_PROMPT}" \
+    --check-rate-limit
 else
-  cat <<JSON > "${REQ_PATH}"
-{
-  "model": "${MODEL}",
-  "max_tokens": ${MAX_TOKENS},
-  "messages": [
-    {"role": "user", "content": "${INPUT}"}
-  ]
-}
-JSON
+  node "${ROOT_DIR}/scripts/build-request.js" \
+    --type anthropic \
+    --out "${REQ_PATH}" \
+    --model "${MODEL}" \
+    --input "${INPUT}" \
+    --max-tokens "${MAX_TOKENS}" \
+    --check-rate-limit
 fi
 
 "${ROOT_DIR}/scripts/run-cmd.sh" \

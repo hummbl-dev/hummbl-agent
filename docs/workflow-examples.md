@@ -2,6 +2,8 @@
 
 Complete guide for integrating HUMMBL Base120 mental models with Clawdbot, ClawdHub, and Claude Code for multi-agent coordination.
 
+Workflows index: `docs/workflows-index.md`
+
 ## Quick Start Overview
 
 ```
@@ -116,6 +118,88 @@ SITREP-1: HUMMBL-Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMM
    // Using P1 (First Principles Framing) - Foundational assessment
    Technical: Core infrastructure 85% complete...
 ```
+
+### **Example 4.5: Governed Model Call (Prompt → Request → API → Log)**
+```bash
+# 1) Open a run and generate prompt packets
+scripts/orchestrate.sh
+
+# 2) Make a governed OpenAI response (request built + size/rate enforced)
+export OPENAI_API_KEY="..."
+scripts/run-openai-governed.sh --model gpt-4.1-mini --input "Summarize these notes: ..."
+
+# 3) Make a governed Anthropic response (optional)
+export ANTHROPIC_API_KEY="..."
+scripts/run-anthropic-governed.sh --model claude-3-5-sonnet-20241022 --input "Summarize these notes: ..."
+```
+
+#### Notes
+- Requests are built via `scripts/build-request.js` with JSON escaping and `maxRequestBytes` enforcement.
+- Global rate limiting is enforced via `_state/.rate-limit.json`.
+- Artifacts and hashes are logged under `_state/runs/YYYY-MM-DD/artifacts/`.
+- Full walkthrough: `docs/governed-model-call.md`
+
+### **Example 5: Skill Selection + Routing (Task → Decision → Prompt → Log)**
+```bash
+# 1) Open a run and generate prompt packets
+scripts/orchestrate.sh
+
+# 2) (App layer) run router decision
+# - Use packages/router/src/router.ts to select skill + runner.
+
+# 3) Log decision + prompt artifact
+packages/runners/codex/scripts/log-run.sh "Route selected: <skillId>" --date YYYY-MM-DD
+packages/runners/codex/scripts/log-run.sh "Prompt prepared" \
+  --artifact "_state/runs/YYYY-MM-DD/prompts/<runner>-prompt.md" \
+  --hash-file \
+  --date YYYY-MM-DD
+```
+
+#### Notes
+- Router output includes explain + alternatives for auditability.
+- Full walkthrough: `docs/skill-routing-flow.md`
+
+### **Example 6: Evidence + SITREP (Capture → Lint → Generate)**
+```bash
+# 1) Import evidence (canonical)
+scripts/import-observation.sh \
+  --file /path/to/observations.jsonl \
+  --source "external/observations" \
+  --note "imported raw observations"
+
+# 2) Lint evidence
+scripts/lint-evidence.sh
+scripts/lint-artifact-secrets.sh
+
+# 3) Generate SITREP (includes lint)
+scripts/generate-sitrep.sh
+```
+
+#### Notes
+- SITREP schema: `docs/sitrep-schema.md`
+- Full walkthrough: `docs/evidence-sitrep-flow.md`
+
+### **Example 7: Local Places Skill (Run → Query → Log)**
+```bash
+# 1) Run server
+cd skills/local-places
+echo "GOOGLE_PLACES_API_KEY=your-key" > .env
+uv venv
+uv pip install -e ".[dev]"
+uv run --env-file .env uvicorn local_places.main:app --host 127.0.0.1 --port 8000
+
+# 2) Resolve + search
+curl -X POST http://127.0.0.1:8000/locations/resolve \
+  -H "Content-Type: application/json" \
+  -d '{"location_text": "Soho, London", "limit": 5}'
+
+curl -X POST http://127.0.0.1:8000/places/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "coffee shop", "location_bias": {"lat": 51.5137, "lng": -0.1366, "radius_m": 1000}}'
+```
+
+#### Notes
+- Full walkthrough: `docs/local-places-flow.md`
 
 ## Advanced Integration Examples
 
