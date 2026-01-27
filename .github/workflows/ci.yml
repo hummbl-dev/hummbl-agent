@@ -74,7 +74,7 @@ jobs:
 
       - name: Lint Base120 references
         shell: bash
-        run: node scripts/validate-base120-refs.js
+        run: node scripts/validate-base120-refs.cjs
 
       - name: Validate Base120 canonical JSON
         shell: bash
