@@ -1,7 +1,7 @@
 {
   "runnerId": "codex",
   "mode": "manual",
-  "network": "none",
+  "network": "restricted",
   "artifacts": "hashed",
   "supports": [
     "prompt",

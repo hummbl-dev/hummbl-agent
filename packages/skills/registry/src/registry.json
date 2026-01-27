@@ -2,7 +2,7 @@
   {
     "id": "S.primitive.T.SYS.orchestrate-session.v0.1.0",
     "name": "Orchestrate Session",
-    "summary": "Open today’s run and generate prompts for Claude Code, Codex, and Grok.",
+    "summary": "Open today\u2019s run and generate prompts for Claude Code, Codex, and Grok.",
     "tags": [
       "orchestration",
       "runs"
@@ -60,7 +60,7 @@
     },
     "examples": [
       {
-        "title": "Open today’s run",
+        "title": "Open today\u2019s run",
         "invocation": "scripts/orchestrate.sh",
         "expectedOutcome": "Creates prompt files under _state/runs/YYYY-MM-DD/prompts/."
       }
@@ -8195,8 +8195,8 @@
   },
   {
     "id": "S.binding.MM.RE16.v0.1.0",
-    "name": "Retrospective → Prospective Loop",
-    "summary": "Base120 model RE16: Retrospective → Prospective Loop (binding-only).",
+    "name": "Retrospective \u2192 Prospective Loop",
+    "summary": "Base120 model RE16: Retrospective \u2192 Prospective Loop (binding-only).",
     "tags": [
       "base120",
       "model-binding",
@@ -10016,6 +10016,102 @@
     ],
     "aliases": [
       "SY20"
+    ]
+  },
+  {
+    "id": "S.vendor.openai.responses.v0.1.0",
+    "name": "OpenAI Responses API",
+    "summary": "Execute a single OpenAI Responses API call with governed artifacts.",
+    "tags": [
+      "vendor",
+      "openai",
+      "network",
+      "responses"
+    ],
+    "version": "0.1.0",
+    "skill_kind": "primitive_transformation",
+    "transformation_code": "T.SYS",
+    "base120_bindings": {
+      "drives_selection": [],
+      "sets_parameters": [],
+      "adds_constraints": [],
+      "stop_conditions": []
+    },
+    "status": "experimental",
+    "owners": [
+      "hummbl-dev"
+    ],
+    "inputs": [
+      {
+        "name": "model",
+        "type": "string",
+        "required": true,
+        "description": "OpenAI model id."
+      },
+      {
+        "name": "input",
+        "type": "string",
+        "required": true,
+        "description": "Prompt or input content."
+      }
+    ],
+    "outputs": [
+      {
+        "name": "response",
+        "type": "object",
+        "description": "OpenAI response payload."
+      }
+    ],
+    "runnerCompatibility": [
+      "codex"
+    ],
+    "requiredTools": [
+      {
+        "toolId": "openai.responses",
+        "scopes": [
+          "packages/adapters/openai"
+        ]
+      }
+    ],
+    "requiredSecrets": [
+      "OPENAI_API_KEY"
+    ],
+    "networkPolicy": {
+      "domains": [
+        "api.openai.com"
+      ],
+      "methods": [
+        "POST"
+      ],
+      "maxResponseBytes": 1048576
+    },
+    "permissions": {
+      "network": "restricted",
+      "filesystem": "write",
+      "exec": "none",
+      "secrets": "read"
+    },
+    "safety": {
+      "risk": "medium",
+      "notes": "Networked vendor call; outputs logged and hashed."
+    },
+    "provenance": {
+      "createdAt": "2026-01-27",
+      "source": "native",
+      "references": [
+        "packages/adapters/openai",
+        "packages/runners/codex/scripts/run-openai.sh"
+      ]
+    },
+    "examples": [
+      {
+        "title": "Single response",
+        "invocation": "packages/runners/codex/scripts/run-openai.sh --model gpt-4.1-mini --input \"Hello\"",
+        "expectedOutcome": "Creates request/response artifacts and logs hashes."
+      }
+    ],
+    "aliases": [
+      "openai-responses"
     ]
   }
 ]
