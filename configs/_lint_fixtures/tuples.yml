@@ -1,0 +1,6 @@
+fixtures:
+  - principal: "agent:lint"
+    capability: "lint:tuple"
+    scope:
+      channel: "ci"
+      ttl: "60s"
