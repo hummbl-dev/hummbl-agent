@@ -13,7 +13,7 @@
 - Adapter layer under packages/ wraps inputs/outputs
 - Skill layer under packages/ binds domain workflows
 
-## clawdhub
+## moltbot-registry
 
 ### What we borrow
 - Registry conventions for skills and metadata

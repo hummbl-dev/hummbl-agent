@@ -1,6 +1,6 @@
 # HUMMBL Integration Workspace
 
-This folder contains the integration work for HUMMBL Systems with Moltbot, ClawdHub, and Everything Claude Code.
+This folder contains the integration work for HUMMBL Systems with Moltbot, Moltbot registry, and Everything Claude Code.
 
 ## Project Structure
 
@@ -9,7 +9,7 @@ hummbl-agent/
 ├── .github/                                  # CI workflows + checks
 ├── README.md                                  # This file
 ├── _state/                                    # Canonical state + run logs
-├── skills/                                    # Base120 mental model skills for ClawdHub
+├── skills/                                    # Base120 mental model skills for Moltbot registry
 │   ├── P-perspective/                         # Perspective transformation (P1-P20)
 │   ├── IN-inversion/                          # Inversion transformation (IN1-IN20)
 │   ├── CO-composition/                        # Composition transformation (CO1-CO20)
@@ -66,7 +66,7 @@ hummbl-agent/
 
 ## Integration Components
 
-### 1. ClawdHub Skills
+### 1. Moltbot registry Skills
 
 - Publish Base120 mental models as installable skills
 - Version-controlled mental model evolution

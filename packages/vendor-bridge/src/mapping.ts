@@ -17,7 +17,7 @@ export const UPSTREAM_MAPPINGS: UpstreamMapping[] = [
     knownRisks: ["API drift", "config divergence"],
   },
   {
-    upstream: "clawdhub",
+    upstream: "moltbot-registry",
     provides: ["skills registry", "distribution"],
     kernelConcepts: ["Tool", "Memory"],
     usagePolicy: "wrap, do not edit",

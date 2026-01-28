@@ -8,7 +8,7 @@
 ├── SOUL.md                   # HUMMBL system personality and principles
 ├── TOOLS.md                  # HUMMBL-specific tool configurations
 ├── skills/                   # Downloaded and custom skills
-│   ├── generated/           # Auto-installed from ClawdHub
+│   ├── generated/           # Auto-installed from Moltbot registry
 │   ├── base120/             # Base120 mental model skills
 │   └── custom/              # HUMMBL-specific skills
 ├── workspace/               # Active project workspaces
@@ -33,11 +33,11 @@ moltbot workspace init hummbl-agent --template mental-models
 ### **Install Base120 Skills**
 ```bash
 # Install P1 First Principles Framing
-clawdhub install hummbl-agent/p1-first-principles-framing
+moltbot-registry install hummbl-agent/p1-first-principles-framing
 
 # Install additional Base120 skills as they're created
-clawdhub install hummbl-agent/de3-decomposition
-clawdhub install hummbl-agent/sy8-systems-thinking
+moltbot-registry install hummbl-agent/de3-decomposition
+moltbot-registry install hummbl-agent/sy8-systems-thinking
 ```
 
 ### **Configure Claude Code Integration**
@@ -150,7 +150,7 @@ moltbot workspace report hummbl-agent --format markdown
 
 ### **Common Issues**
 - **Gateway won't start**: Check configuration syntax and port availability
-- **Skills not loading**: Verify ClawdHub connection and skill format
+- **Skills not loading**: Verify Moltbot registry connection and skill format
 - **Agent coordination failing**: Check session routing and protocol configuration
 
 ### **Debug Commands**
@@ -159,7 +159,7 @@ moltbot workspace report hummbl-agent --format markdown
 moltbot gateway status
 
 # Test skill installation
-clawdhub test hummbl-agent/p1-first-principles-framing
+moltbot-registry test hummbl-agent/p1-first-principles-framing
 
 # Verify agent routing
 moltbot agent --test-routing "mental.model"
