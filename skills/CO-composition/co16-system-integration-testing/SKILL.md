@@ -96,7 +96,7 @@ const result = applyModel("CO16", "Verify assembled components work correctly to
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co16-system-integration-testing
+moltbot-registry install hummbl-agent/co16-system-integration-testing
 ```
 
 ### Usage with Commands

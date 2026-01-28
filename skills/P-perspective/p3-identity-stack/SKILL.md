@@ -96,7 +96,7 @@ const result = applyModel("P3", "Recognize that individuals operate from multipl
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p3-identity-stack
+moltbot-registry install hummbl-agent/p3-identity-stack
 ```
 
 ### Usage with Commands

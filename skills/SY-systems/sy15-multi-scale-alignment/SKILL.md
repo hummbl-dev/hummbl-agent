@@ -96,7 +96,7 @@ const result = applyModel("SY15", "Ensure strategy, operations, and execution co
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy15-multi-scale-alignment
+moltbot-registry install hummbl-agent/sy15-multi-scale-alignment
 ```
 
 ### Usage with Commands

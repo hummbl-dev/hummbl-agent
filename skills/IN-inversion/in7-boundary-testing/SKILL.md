@@ -96,7 +96,7 @@ const result = applyModel("IN7", "Explore extreme conditions to find system limi
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in7-boundary-testing
+moltbot-registry install hummbl-agent/in7-boundary-testing
 ```
 
 ### Usage with Commands

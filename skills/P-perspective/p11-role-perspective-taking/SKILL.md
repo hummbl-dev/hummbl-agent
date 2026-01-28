@@ -96,7 +96,7 @@ const result = applyModel("P11", "Temporarily inhabit specific roles to understa
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p11-role-perspective-taking
+moltbot-registry install hummbl-agent/p11-role-perspective-taking
 ```
 
 ### Usage with Commands

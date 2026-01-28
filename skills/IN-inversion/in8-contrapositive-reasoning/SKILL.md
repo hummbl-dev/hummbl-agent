@@ -96,7 +96,7 @@ const result = applyModel("IN8", "Use logical equivalence that if A then B equal
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in8-contrapositive-reasoning
+moltbot-registry install hummbl-agent/in8-contrapositive-reasoning
 ```
 
 ### Usage with Commands

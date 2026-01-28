@@ -96,7 +96,7 @@ const result = applyModel("IN1", "Improve systems by removing elements rather th
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in1-subtractive-thinking
+moltbot-registry install hummbl-agent/in1-subtractive-thinking
 ```
 
 ### Usage with Commands

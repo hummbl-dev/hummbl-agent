@@ -96,7 +96,7 @@ const result = applyModel("SY18", "Instrument systems to capture state, changes,
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy18-measurement-and-telemetry
+moltbot-registry install hummbl-agent/sy18-measurement-and-telemetry
 ```
 
 ### Usage with Commands

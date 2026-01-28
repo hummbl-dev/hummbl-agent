@@ -96,7 +96,7 @@ const result = applyModel("P13", "Scale perspective from local details to global
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p13-spatial-framing
+moltbot-registry install hummbl-agent/p13-spatial-framing
 ```
 
 ### Usage with Commands

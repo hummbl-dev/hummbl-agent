@@ -388,7 +388,7 @@ interface PredictiveCoordination {
 
 ### **Manual Installation**
 ```bash
-clawdhub install hummbl-agent/multi-agent-coordination
+moltbot-registry install hummbl-agent/multi-agent-coordination
 ```
 
 ### **Usage Examples**

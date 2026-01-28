@@ -96,7 +96,7 @@ const result = applyModel("DE14", "Hold factors constant to measure single varia
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de14-variable-control-and-isolation
+moltbot-registry install hummbl-agent/de14-variable-control-and-isolation
 ```
 
 ### Usage with Commands

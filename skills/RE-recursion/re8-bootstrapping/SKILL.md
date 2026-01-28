@@ -96,7 +96,7 @@ const result = applyModel("RE8", "Build capability using currently available res
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re8-bootstrapping
+moltbot-registry install hummbl-agent/re8-bootstrapping
 ```
 
 ### Usage with Commands

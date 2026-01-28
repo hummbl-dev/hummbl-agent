@@ -96,7 +96,7 @@ const result = applyModel("SY9", "Identify thresholds where gradual changes prod
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy9-phase-transitions-and-tipping-points
+moltbot-registry install hummbl-agent/sy9-phase-transitions-and-tipping-points
 ```
 
 ### Usage with Commands

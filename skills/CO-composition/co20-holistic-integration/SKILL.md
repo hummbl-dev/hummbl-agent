@@ -96,7 +96,7 @@ const result = applyModel("CO20", "Unify disparate elements into coherent, seaml
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co20-holistic-integration
+moltbot-registry install hummbl-agent/co20-holistic-integration
 ```
 
 ### Usage with Commands

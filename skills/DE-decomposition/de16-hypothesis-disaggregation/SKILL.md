@@ -96,7 +96,7 @@ const result = applyModel("DE16", "Break compound claim into testable sub-hypoth
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de16-hypothesis-disaggregation
+moltbot-registry install hummbl-agent/de16-hypothesis-disaggregation
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("DE20", "Divide problem into independent subproblems s
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de20-partition-and-conquer
+moltbot-registry install hummbl-agent/de20-partition-and-conquer
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("SY1", "Identify intervention points where small chang
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy1-leverage-points
+moltbot-registry install hummbl-agent/sy1-leverage-points
 ```
 
 ### Usage with Commands

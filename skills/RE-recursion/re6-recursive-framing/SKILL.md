@@ -96,7 +96,7 @@ const result = applyModel("RE6", "Apply mental models to the process of selectin
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re6-recursive-framing
+moltbot-registry install hummbl-agent/re6-recursive-framing
 ```
 
 ### Usage with Commands

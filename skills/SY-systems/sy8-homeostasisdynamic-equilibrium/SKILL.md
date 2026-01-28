@@ -96,7 +96,7 @@ const result = applyModel("SY8", "Understand self-regulating mechanisms maintain
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy8-homeostasisdynamic-equilibrium
+moltbot-registry install hummbl-agent/sy8-homeostasisdynamic-equilibrium
 ```
 
 ### Usage with Commands

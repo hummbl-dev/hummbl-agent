@@ -96,7 +96,7 @@ const result = applyModel("P9", "Adjust communication and interpretation for dif
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p9-cultural-lens-shifting
+moltbot-registry install hummbl-agent/p9-cultural-lens-shifting
 ```
 
 ### Usage with Commands

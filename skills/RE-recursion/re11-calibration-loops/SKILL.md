@@ -96,7 +96,7 @@ const result = applyModel("RE11", "Repeatedly check predictions against outcomes
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re11-calibration-loops
+moltbot-registry install hummbl-agent/re11-calibration-loops
 ```
 
 ### Usage with Commands

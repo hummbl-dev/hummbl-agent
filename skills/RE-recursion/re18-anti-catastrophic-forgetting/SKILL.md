@@ -96,7 +96,7 @@ const result = applyModel("RE18", "Preserve critical knowledge while adapting to
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re18-anti-catastrophic-forgetting
+moltbot-registry install hummbl-agent/re18-anti-catastrophic-forgetting
 ```
 
 ### Usage with Commands

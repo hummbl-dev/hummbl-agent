@@ -96,7 +96,7 @@ const result = applyModel("CO5", "Recognize higher-order behavior arising from c
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co5-emergence
+moltbot-registry install hummbl-agent/co5-emergence
 ```
 
 ### Usage with Commands

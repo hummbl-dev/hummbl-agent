@@ -96,7 +96,7 @@ const result = applyModel("P20", "Make explicit the fundamental beliefs and valu
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p20-worldview-articulation
+moltbot-registry install hummbl-agent/p20-worldview-articulation
 ```
 
 ### Usage with Commands

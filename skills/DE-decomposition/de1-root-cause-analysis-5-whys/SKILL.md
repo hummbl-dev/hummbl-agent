@@ -96,7 +96,7 @@ const result = applyModel("DE1", "Iteratively ask why problems occur until funda
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de1-root-cause-analysis-5-whys
+moltbot-registry install hummbl-agent/de1-root-cause-analysis-5-whys
 ```
 
 ### Usage with Commands

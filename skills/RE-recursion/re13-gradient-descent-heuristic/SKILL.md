@@ -96,7 +96,7 @@ const result = applyModel("RE13", "Iteratively adjust toward improvement, even w
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re13-gradient-descent-heuristic
+moltbot-registry install hummbl-agent/re13-gradient-descent-heuristic
 ```
 
 ### Usage with Commands

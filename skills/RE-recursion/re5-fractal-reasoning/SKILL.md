@@ -96,7 +96,7 @@ const result = applyModel("RE5", "Recognize self-similar patterns repeating acro
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re5-fractal-reasoning
+moltbot-registry install hummbl-agent/re5-fractal-reasoning
 ```
 
 ### Usage with Commands

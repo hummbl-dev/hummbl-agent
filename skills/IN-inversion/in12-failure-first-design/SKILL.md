@@ -96,7 +96,7 @@ const result = applyModel("IN12", "Begin planning by identifying all possible fa
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in12-failure-first-design
+moltbot-registry install hummbl-agent/in12-failure-first-design
 ```
 
 ### Usage with Commands

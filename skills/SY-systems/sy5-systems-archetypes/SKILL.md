@@ -96,7 +96,7 @@ const result = applyModel("SY5", "Recognize recurring dynamic patterns across di
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy5-systems-archetypes
+moltbot-registry install hummbl-agent/sy5-systems-archetypes
 ```
 
 ### Usage with Commands

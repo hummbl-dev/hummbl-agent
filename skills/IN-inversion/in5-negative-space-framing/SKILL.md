@@ -96,7 +96,7 @@ const result = applyModel("IN5", "Study what is absent rather than what is prese
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in5-negative-space-framing
+moltbot-registry install hummbl-agent/in5-negative-space-framing
 ```
 
 ### Usage with Commands

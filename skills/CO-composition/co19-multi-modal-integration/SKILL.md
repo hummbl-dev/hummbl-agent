@@ -96,7 +96,7 @@ const result = applyModel("CO19", "Synthesize information from different sensory
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co19-multi-modal-integration
+moltbot-registry install hummbl-agent/co19-multi-modal-integration
 ```
 
 ### Usage with Commands

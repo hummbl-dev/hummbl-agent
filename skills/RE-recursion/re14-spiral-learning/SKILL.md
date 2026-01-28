@@ -96,7 +96,7 @@ const result = applyModel("RE14", "Revisit concepts at increasing depth, buildin
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re14-spiral-learning
+moltbot-registry install hummbl-agent/re14-spiral-learning
 ```
 
 ### Usage with Commands

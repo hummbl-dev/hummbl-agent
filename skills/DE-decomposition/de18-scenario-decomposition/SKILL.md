@@ -96,7 +96,7 @@ const result = applyModel("DE18", "Partition future possibilities into discrete,
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de18-scenario-decomposition
+moltbot-registry install hummbl-agent/de18-scenario-decomposition
 ```
 
 ### Usage with Commands

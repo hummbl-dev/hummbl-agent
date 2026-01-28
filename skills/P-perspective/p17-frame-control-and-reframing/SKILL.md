@@ -96,7 +96,7 @@ const result = applyModel("P17", "Consciously select or reshape interpretive fra
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p17-frame-control-and-reframing
+moltbot-registry install hummbl-agent/p17-frame-control-and-reframing
 ```
 
 ### Usage with Commands

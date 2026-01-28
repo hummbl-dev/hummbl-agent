@@ -96,7 +96,7 @@ const result = applyModel("IN13", "Evaluate options by what must be forgone rath
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in13-opportunity-cost-focus
+moltbot-registry install hummbl-agent/in13-opportunity-cost-focus
 ```
 
 ### Usage with Commands

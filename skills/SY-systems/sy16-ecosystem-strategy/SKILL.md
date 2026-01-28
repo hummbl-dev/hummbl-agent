@@ -96,7 +96,7 @@ const result = applyModel("SY16", "Position organization within network of partn
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy16-ecosystem-strategy
+moltbot-registry install hummbl-agent/sy16-ecosystem-strategy
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("P6", "Establish and maintain a consistent reference f
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p6-point-of-view-anchoring
+moltbot-registry install hummbl-agent/p6-point-of-view-anchoring
 ```
 
 ### Usage with Commands

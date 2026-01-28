@@ -96,7 +96,7 @@ const result = applyModel("P7", "Rotate through multiple viewpoints to identify 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p7-perspective-switching
+moltbot-registry install hummbl-agent/p7-perspective-switching
 ```
 
 ### Usage with Commands

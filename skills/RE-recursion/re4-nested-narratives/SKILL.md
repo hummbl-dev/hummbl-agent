@@ -96,7 +96,7 @@ const result = applyModel("RE4", "Structure information as stories within storie
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re4-nested-narratives
+moltbot-registry install hummbl-agent/re4-nested-narratives
 ```
 
 ### Usage with Commands

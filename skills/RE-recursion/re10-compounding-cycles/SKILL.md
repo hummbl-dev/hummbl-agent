@@ -96,7 +96,7 @@ const result = applyModel("RE10", "Design systems where gains reinforce future g
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re10-compounding-cycles
+moltbot-registry install hummbl-agent/re10-compounding-cycles
 ```
 
 ### Usage with Commands

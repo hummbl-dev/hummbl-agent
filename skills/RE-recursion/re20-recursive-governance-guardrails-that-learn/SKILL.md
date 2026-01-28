@@ -96,7 +96,7 @@ const result = applyModel("RE20", "Establish rules that adapt based on their own
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re20-recursive-governance-guardrails-that-learn
+moltbot-registry install hummbl-agent/re20-recursive-governance-guardrails-that-learn
 ```
 
 ### Usage with Commands

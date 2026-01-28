@@ -96,7 +96,7 @@ const result = applyModel("RE12", "Continuously revise beliefs as new evidence a
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re12-bayesian-updating-in-practice
+moltbot-registry install hummbl-agent/re12-bayesian-updating-in-practice
 ```
 
 ### Usage with Commands

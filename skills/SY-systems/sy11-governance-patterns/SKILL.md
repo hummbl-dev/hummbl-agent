@@ -96,7 +96,7 @@ const result = applyModel("SY11", "Design decision rights, accountability struct
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy11-governance-patterns
+moltbot-registry install hummbl-agent/sy11-governance-patterns
 ```
 
 ### Usage with Commands

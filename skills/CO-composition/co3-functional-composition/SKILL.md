@@ -96,7 +96,7 @@ const result = applyModel("CO3", "Chain pure operations where output of one beco
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co3-functional-composition
+moltbot-registry install hummbl-agent/co3-functional-composition
 ```
 
 ### Usage with Commands

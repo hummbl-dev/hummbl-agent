@@ -96,7 +96,7 @@ const result = applyModel("IN16", "Maximize worst outcomes to understand system 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in16-inverse-optimization
+moltbot-registry install hummbl-agent/in16-inverse-optimization
 ```
 
 ### Usage with Commands

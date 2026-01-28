@@ -96,7 +96,7 @@ const result = applyModel("CO17", "Choose between centralized coordination or di
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co17-orchestration-vs-choreography
+moltbot-registry install hummbl-agent/co17-orchestration-vs-choreography
 ```
 
 ### Usage with Commands

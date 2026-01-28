@@ -96,7 +96,7 @@ const result = applyModel("DE9", "Distinguish meaningful patterns from random va
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de9-signal-separation
+moltbot-registry install hummbl-agent/de9-signal-separation
 ```
 
 ### Usage with Commands

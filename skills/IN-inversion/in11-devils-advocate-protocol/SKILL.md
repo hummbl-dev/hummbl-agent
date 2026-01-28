@@ -96,7 +96,7 @@ const result = applyModel("IN11", "Assign explicit role to argue against group c
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in11-devils-advocate-protocol
+moltbot-registry install hummbl-agent/in11-devils-advocate-protocol
 ```
 
 ### Usage with Commands

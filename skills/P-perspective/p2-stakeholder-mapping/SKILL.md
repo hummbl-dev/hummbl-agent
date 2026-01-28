@@ -96,7 +96,7 @@ const result = applyModel("P2", "Identify all parties with interest, influence, 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p2-stakeholder-mapping
+moltbot-registry install hummbl-agent/p2-stakeholder-mapping
 ```
 
 ### Usage with Commands

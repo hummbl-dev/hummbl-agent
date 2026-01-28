@@ -96,7 +96,7 @@ const result = applyModel("P19", "Deploy structured templates to systematically 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p19-sensemaking-canvases
+moltbot-registry install hummbl-agent/p19-sensemaking-canvases
 ```
 
 ### Usage with Commands

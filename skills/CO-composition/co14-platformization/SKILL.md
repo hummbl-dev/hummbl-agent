@@ -96,7 +96,7 @@ const result = applyModel("CO14", "Extract common capabilities into reusable inf
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co14-platformization
+moltbot-registry install hummbl-agent/co14-platformization
 ```
 
 ### Usage with Commands

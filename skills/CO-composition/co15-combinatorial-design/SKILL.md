@@ -96,7 +96,7 @@ const result = applyModel("CO15", "Systematically explore option combinations to
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co15-combinatorial-design
+moltbot-registry install hummbl-agent/co15-combinatorial-design
 ```
 
 ### Usage with Commands

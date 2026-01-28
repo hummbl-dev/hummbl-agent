@@ -96,7 +96,7 @@ const result = applyModel("SY4", "Match control system's complexity to system be
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy4-requisite-variety
+moltbot-registry install hummbl-agent/sy4-requisite-variety
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("CO8", "Separate concerns into hierarchical levels wit
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co8-layered-abstraction
+moltbot-registry install hummbl-agent/co8-layered-abstraction
 ```
 
 ### Usage with Commands

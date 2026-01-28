@@ -96,7 +96,7 @@ const result = applyModel("SY2", "Define what is inside versus outside system sc
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy2-system-boundaries
+moltbot-registry install hummbl-agent/sy2-system-boundaries
 ```
 
 ### Usage with Commands

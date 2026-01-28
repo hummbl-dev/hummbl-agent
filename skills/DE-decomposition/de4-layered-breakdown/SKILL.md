@@ -96,7 +96,7 @@ const result = applyModel("DE4", "Decompose from system to subsystem to componen
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de4-layered-breakdown
+moltbot-registry install hummbl-agent/de4-layered-breakdown
 ```
 
 ### Usage with Commands
