@@ -80,6 +80,23 @@ jobs:
         shell: bash
         run: node scripts/validate-base120-canonical.cjs
 
+      - name: Lint for legacy registry references
+        shell: bash
+        run: node scripts/lint-no-clawdhub.mjs
+
+      - name: Compute skills manifest
+        shell: bash
+        run: node scripts/registry/compute-skills-manifest.mjs
+
+      - name: Ensure skills manifest committed
+        shell: bash
+        run: |
+          git diff --exit-code skills/MANIFEST.json
+
+      - name: Verify skills manifest hashes
+        shell: bash
+        run: node scripts/registry/check-skills-manifest.mjs
+
       - name: Lint ESM usage
         shell: bash
         run: node scripts/lint-esm.mjs
