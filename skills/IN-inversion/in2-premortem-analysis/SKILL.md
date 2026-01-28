@@ -96,7 +96,7 @@ const result = applyModel("IN2", "Assume failure has occurred and work backward 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in2-premortem-analysis
+moltbot-registry install hummbl-agent/in2-premortem-analysis
 ```
 
 ### Usage with Commands

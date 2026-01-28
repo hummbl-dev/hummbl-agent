@@ -96,7 +96,7 @@ const result = applyModel("SY10", "Visualize circular cause-effect relationships
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy10-causal-loop-diagrams
+moltbot-registry install hummbl-agent/sy10-causal-loop-diagrams
 ```
 
 ### Usage with Commands

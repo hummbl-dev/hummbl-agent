@@ -96,7 +96,7 @@ const result = applyModel("CO7", "Exploit increasing value as user base or conne
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co7-network-effects
+moltbot-registry install hummbl-agent/co7-network-effects
 ```
 
 ### Usage with Commands

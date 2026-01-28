@@ -96,7 +96,7 @@ const result = applyModel("CO1", "Design combinations where integrated value exc
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co1-synergy-principle
+moltbot-registry install hummbl-agent/co1-synergy-principle
 ```
 
 ### Usage with Commands

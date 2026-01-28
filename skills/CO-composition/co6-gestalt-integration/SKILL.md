@@ -96,7 +96,7 @@ const result = applyModel("CO6", "Perceive and leverage whole patterns rather th
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co6-gestalt-integration
+moltbot-registry install hummbl-agent/co6-gestalt-integration
 ```
 
 ### Usage with Commands

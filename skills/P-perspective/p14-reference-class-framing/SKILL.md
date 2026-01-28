@@ -96,7 +96,7 @@ const result = applyModel("P14", "Select comparable situations to inform judgmen
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p14-reference-class-framing
+moltbot-registry install hummbl-agent/p14-reference-class-framing
 ```
 
 ### Usage with Commands

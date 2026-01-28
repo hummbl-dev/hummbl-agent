@@ -96,7 +96,7 @@ const result = applyModel("IN19", "Improve by removing harmful elements rather t
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in19-harm-minimization-via-negativa
+moltbot-registry install hummbl-agent/in19-harm-minimization-via-negativa
 ```
 
 ### Usage with Commands

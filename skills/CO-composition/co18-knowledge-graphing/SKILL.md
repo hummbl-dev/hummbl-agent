@@ -96,7 +96,7 @@ const result = applyModel("CO18", "Represent information as interconnected entit
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co18-knowledge-graphing
+moltbot-registry install hummbl-agent/co18-knowledge-graphing
 ```
 
 ### Usage with Commands

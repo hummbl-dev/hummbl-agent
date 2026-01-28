@@ -96,7 +96,7 @@ const result = applyModel("CO2", "Group related elements into meaningful units t
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co2-chunking
+moltbot-registry install hummbl-agent/co2-chunking
 ```
 
 ### Usage with Commands

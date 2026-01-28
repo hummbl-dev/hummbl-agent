@@ -96,7 +96,7 @@ const result = applyModel("IN3", "Solve the inverse of the stated problem to rev
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in3-problem-reversal
+moltbot-registry install hummbl-agent/in3-problem-reversal
 ```
 
 ### Usage with Commands

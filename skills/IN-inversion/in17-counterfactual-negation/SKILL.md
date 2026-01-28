@@ -96,7 +96,7 @@ const result = applyModel("IN17", "Imagine outcomes if key decision had been rev
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in17-counterfactual-negation
+moltbot-registry install hummbl-agent/in17-counterfactual-negation
 ```
 
 ### Usage with Commands

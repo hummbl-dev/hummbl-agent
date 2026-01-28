@@ -96,7 +96,7 @@ const result = applyModel("RE3", "Improve the process of learning itself, not ju
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re3-meta-learning-learn-to-learn
+moltbot-registry install hummbl-agent/re3-meta-learning-learn-to-learn
 ```
 
 ### Usage with Commands

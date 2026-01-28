@@ -96,7 +96,7 @@ const result = applyModel("P16", "Recognize how identities shape interpretations
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p16-identity-context-reciprocity
+moltbot-registry install hummbl-agent/p16-identity-context-reciprocity
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("IN18", "Define conditions that trigger project termin
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in18-kill-criteria-and-stop-rules
+moltbot-registry install hummbl-agent/in18-kill-criteria-and-stop-rules
 ```
 
 ### Usage with Commands

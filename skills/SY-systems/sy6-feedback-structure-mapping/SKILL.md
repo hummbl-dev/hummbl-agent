@@ -96,7 +96,7 @@ const result = applyModel("SY6", "Diagram causal loops showing how variables inf
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy6-feedback-structure-mapping
+moltbot-registry install hummbl-agent/sy6-feedback-structure-mapping
 ```
 
 ### Usage with Commands

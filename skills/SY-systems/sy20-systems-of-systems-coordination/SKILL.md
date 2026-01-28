@@ -96,7 +96,7 @@ const result = applyModel("SY20", "Manage interactions between independent syste
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy20-systems-of-systems-coordination
+moltbot-registry install hummbl-agent/sy20-systems-of-systems-coordination
 ```
 
 ### Usage with Commands

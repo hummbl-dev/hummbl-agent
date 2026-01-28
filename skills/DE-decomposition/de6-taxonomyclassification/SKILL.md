@@ -96,7 +96,7 @@ const result = applyModel("DE6", "Organize entities into hierarchical categories
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de6-taxonomyclassification
+moltbot-registry install hummbl-agent/de6-taxonomyclassification
 ```
 
 ### Usage with Commands

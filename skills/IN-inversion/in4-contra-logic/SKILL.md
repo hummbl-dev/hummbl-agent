@@ -96,7 +96,7 @@ const result = applyModel("IN4", "Argue the opposite position to stress-test ass
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in4-contra-logic
+moltbot-registry install hummbl-agent/in4-contra-logic
 ```
 
 ### Usage with Commands

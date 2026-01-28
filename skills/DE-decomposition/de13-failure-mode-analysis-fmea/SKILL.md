@@ -96,7 +96,7 @@ const result = applyModel("DE13", "Enumerate potential failure points with sever
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de13-failure-mode-analysis-fmea
+moltbot-registry install hummbl-agent/de13-failure-mode-analysis-fmea
 ```
 
 ### Usage with Commands

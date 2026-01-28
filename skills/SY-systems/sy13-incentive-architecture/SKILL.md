@@ -96,7 +96,7 @@ const result = applyModel("SY13", "Design reward and penalty structures aligning
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy13-incentive-architecture
+moltbot-registry install hummbl-agent/sy13-incentive-architecture
 ```
 
 ### Usage with Commands

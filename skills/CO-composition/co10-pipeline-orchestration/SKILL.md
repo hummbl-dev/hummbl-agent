@@ -96,7 +96,7 @@ const result = applyModel("CO10", "Coordinate sequential stages with explicit ha
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co10-pipeline-orchestration
+moltbot-registry install hummbl-agent/co10-pipeline-orchestration
 ```
 
 ### Usage with Commands

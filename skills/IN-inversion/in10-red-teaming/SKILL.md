@@ -96,7 +96,7 @@ const result = applyModel("IN10", "Organize adversarial review to find vulnerabi
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in10-red-teaming
+moltbot-registry install hummbl-agent/in10-red-teaming
 ```
 
 ### Usage with Commands

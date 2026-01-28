@@ -96,7 +96,7 @@ const result = applyModel("P10", "Define explicit boundaries in time, space, and
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p10-context-windowing
+moltbot-registry install hummbl-agent/p10-context-windowing
 ```
 
 ### Usage with Commands

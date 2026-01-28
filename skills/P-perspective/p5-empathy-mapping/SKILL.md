@@ -96,7 +96,7 @@ const result = applyModel("P5", "Systematically capture what stakeholders see, t
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p5-empathy-mapping
+moltbot-registry install hummbl-agent/p5-empathy-mapping
 ```
 
 ### Usage with Commands

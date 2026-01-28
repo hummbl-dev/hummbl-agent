@@ -96,7 +96,7 @@ const result = applyModel("SY7", "Acknowledge how early decisions constrain futu
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy7-path-dependence
+moltbot-registry install hummbl-agent/sy7-path-dependence
 ```
 
 ### Usage with Commands

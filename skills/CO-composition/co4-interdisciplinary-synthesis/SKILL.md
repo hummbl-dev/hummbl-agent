@@ -96,7 +96,7 @@ const result = applyModel("CO4", "Merge insights from distinct fields to generat
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co4-interdisciplinary-synthesis
+moltbot-registry install hummbl-agent/co4-interdisciplinary-synthesis
 ```
 
 ### Usage with Commands

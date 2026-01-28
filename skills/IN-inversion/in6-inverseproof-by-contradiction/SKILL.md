@@ -96,7 +96,7 @@ const result = applyModel("IN6", "Assume a claim is false, derive logical imposs
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in6-inverseproof-by-contradiction
+moltbot-registry install hummbl-agent/in6-inverseproof-by-contradiction
 ```
 
 ### Usage with Commands

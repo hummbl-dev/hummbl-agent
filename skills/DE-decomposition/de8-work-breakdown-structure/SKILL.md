@@ -96,7 +96,7 @@ const result = applyModel("DE8", "Hierarchically divide project into deliverable
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de8-work-breakdown-structure
+moltbot-registry install hummbl-agent/de8-work-breakdown-structure
 ```
 
 ### Usage with Commands

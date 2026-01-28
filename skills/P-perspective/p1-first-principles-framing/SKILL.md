@@ -96,7 +96,7 @@ const result = applyModel("P1", "Reduce complex problems to foundational truths 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p1-first-principles-framing
+moltbot-registry install hummbl-agent/p1-first-principles-framing
 ```
 
 ### Usage with Commands

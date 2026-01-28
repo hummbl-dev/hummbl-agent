@@ -96,7 +96,7 @@ const result = applyModel("RE7", "Create systems that monitor, measure, or modif
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re7-self-referential-logic
+moltbot-registry install hummbl-agent/re7-self-referential-logic
 ```
 
 ### Usage with Commands

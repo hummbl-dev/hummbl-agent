@@ -96,7 +96,7 @@ const result = applyModel("CO12", "Ensure independent components work together t
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co12-modular-interoperability
+moltbot-registry install hummbl-agent/co12-modular-interoperability
 ```
 
 ### Usage with Commands

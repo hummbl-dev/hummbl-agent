@@ -96,7 +96,7 @@ const result = applyModel("CO9", "Define explicit agreements about data structur
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co9-interface-contracts
+moltbot-registry install hummbl-agent/co9-interface-contracts
 ```
 
 ### Usage with Commands

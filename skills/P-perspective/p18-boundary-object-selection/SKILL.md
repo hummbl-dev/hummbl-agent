@@ -96,7 +96,7 @@ const result = applyModel("P18", "Choose representations that bridge multiple pe
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p18-boundary-object-selection
+moltbot-registry install hummbl-agent/p18-boundary-object-selection
 ```
 
 ### Usage with Commands

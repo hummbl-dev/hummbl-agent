@@ -96,7 +96,7 @@ const result = applyModel("DE7", "Identify vital few drivers producing most impa
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de7-pareto-decomposition-8020
+moltbot-registry install hummbl-agent/de7-pareto-decomposition-8020
 ```
 
 ### Usage with Commands

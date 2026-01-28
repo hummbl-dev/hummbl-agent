@@ -96,7 +96,7 @@ const result = applyModel("CO13", "Transfer solution patterns from one domain to
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co13-cross-domain-analogy
+moltbot-registry install hummbl-agent/co13-cross-domain-analogy
 ```
 
 ### Usage with Commands

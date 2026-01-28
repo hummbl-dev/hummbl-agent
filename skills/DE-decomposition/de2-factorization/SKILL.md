@@ -96,7 +96,7 @@ const result = applyModel("DE2", "Separate multiplicative components to understa
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de2-factorization
+moltbot-registry install hummbl-agent/de2-factorization
 ```
 
 ### Usage with Commands

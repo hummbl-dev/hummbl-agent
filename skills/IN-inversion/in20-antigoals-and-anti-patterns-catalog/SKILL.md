@@ -96,7 +96,7 @@ const result = applyModel("IN20", "Document failure modes to avoid rather than s
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in20-antigoals-and-anti-patterns-catalog
+moltbot-registry install hummbl-agent/in20-antigoals-and-anti-patterns-catalog
 ```
 
 ### Usage with Commands

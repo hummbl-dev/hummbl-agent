@@ -96,7 +96,7 @@ const result = applyModel("P12", "Organize understanding across past causes, pre
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p12-temporal-framing
+moltbot-registry install hummbl-agent/p12-temporal-framing
 ```
 
 ### Usage with Commands

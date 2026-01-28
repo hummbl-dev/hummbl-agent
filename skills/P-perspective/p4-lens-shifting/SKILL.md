@@ -96,7 +96,7 @@ const result = applyModel("P4", "Deliberately adopt different interpretive frame
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p4-lens-shifting
+moltbot-registry install hummbl-agent/p4-lens-shifting
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("SY19", "Choose appropriate framework or tool for spec
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy19-meta-model-selection
+moltbot-registry install hummbl-agent/sy19-meta-model-selection
 ```
 
 ### Usage with Commands

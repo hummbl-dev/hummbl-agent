@@ -96,7 +96,7 @@ const result = applyModel("RE17", "Track changes over time and compare versions 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re17-versioning-and-diff
+moltbot-registry install hummbl-agent/re17-versioning-and-diff
 ```
 
 ### Usage with Commands

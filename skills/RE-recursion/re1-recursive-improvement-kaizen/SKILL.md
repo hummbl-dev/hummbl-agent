@@ -96,7 +96,7 @@ const result = applyModel("RE1", "Continuously refine process through small, fre
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re1-recursive-improvement-kaizen
+moltbot-registry install hummbl-agent/re1-recursive-improvement-kaizen
 ```
 
 ### Usage with Commands

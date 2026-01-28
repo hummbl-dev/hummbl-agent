@@ -96,7 +96,7 @@ const result = applyModel("CO11", "Combine repeating elements to construct compl
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/co11-pattern-composition-tiling
+moltbot-registry install hummbl-agent/co11-pattern-composition-tiling
 ```
 
 ### Usage with Commands

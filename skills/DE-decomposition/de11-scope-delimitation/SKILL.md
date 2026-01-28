@@ -96,7 +96,7 @@ const result = applyModel("DE11", "Define precise boundaries of what is included
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de11-scope-delimitation
+moltbot-registry install hummbl-agent/de11-scope-delimitation
 ```
 
 ### Usage with Commands

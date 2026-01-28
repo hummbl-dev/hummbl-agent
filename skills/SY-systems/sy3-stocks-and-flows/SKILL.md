@@ -96,7 +96,7 @@ const result = applyModel("SY3", "Distinguish accumulations from rates of change
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy3-stocks-and-flows
+moltbot-registry install hummbl-agent/sy3-stocks-and-flows
 ```
 
 ### Usage with Commands

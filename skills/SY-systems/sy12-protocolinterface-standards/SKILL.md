@@ -96,7 +96,7 @@ const result = applyModel("SY12", "Specify rules for interaction enabling coordi
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy12-protocolinterface-standards
+moltbot-registry install hummbl-agent/sy12-protocolinterface-standards
 ```
 
 ### Usage with Commands

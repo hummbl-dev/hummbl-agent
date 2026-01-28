@@ -96,7 +96,7 @@ const result = applyModel("DE17", "Ensure factors vary independently without cor
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de17-orthogonalization
+moltbot-registry install hummbl-agent/de17-orthogonalization
 ```
 
 ### Usage with Commands

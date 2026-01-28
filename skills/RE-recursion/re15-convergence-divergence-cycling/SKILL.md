@@ -96,7 +96,7 @@ const result = applyModel("RE15", "Alternate between expanding possibilities and
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re15-convergence-divergence-cycling
+moltbot-registry install hummbl-agent/re15-convergence-divergence-cycling
 ```
 
 ### Usage with Commands

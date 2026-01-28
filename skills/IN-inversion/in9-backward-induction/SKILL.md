@@ -96,7 +96,7 @@ const result = applyModel("IN9", "Begin with desired end state and work backward
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in9-backward-induction
+moltbot-registry install hummbl-agent/in9-backward-induction
 ```
 
 ### Usage with Commands

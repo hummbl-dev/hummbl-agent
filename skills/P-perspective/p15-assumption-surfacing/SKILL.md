@@ -96,7 +96,7 @@ const result = applyModel("P15", "Explicitly identify and document beliefs under
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p15-assumption-surfacing
+moltbot-registry install hummbl-agent/p15-assumption-surfacing
 ```
 
 ### Usage with Commands

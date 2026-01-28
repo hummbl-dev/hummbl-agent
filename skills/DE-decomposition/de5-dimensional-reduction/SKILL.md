@@ -96,7 +96,7 @@ const result = applyModel("DE5", "Focus on most informative variables while disc
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de5-dimensional-reduction
+moltbot-registry install hummbl-agent/de5-dimensional-reduction
 ```
 
 ### Usage with Commands

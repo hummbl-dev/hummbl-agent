@@ -96,7 +96,7 @@ const result = applyModel("DE19", "Trace longest sequence of dependent tasks det
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de19-critical-path-unwinding
+moltbot-registry install hummbl-agent/de19-critical-path-unwinding
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("DE3", "Partition system into self-contained units wit
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de3-modularization
+moltbot-registry install hummbl-agent/de3-modularization
 ```
 
 ### Usage with Commands

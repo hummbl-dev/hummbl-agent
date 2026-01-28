@@ -96,7 +96,7 @@ const result = applyModel("IN15", "Temporarily remove assumed constraints to exp
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in15-constraint-reversal
+moltbot-registry install hummbl-agent/in15-constraint-reversal
 ```
 
 ### Usage with Commands

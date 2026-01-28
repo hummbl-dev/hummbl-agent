@@ -96,7 +96,7 @@ const result = applyModel("RE19", "Systematically improve system structure witho
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re19-auto-refactor
+moltbot-registry install hummbl-agent/re19-auto-refactor
 ```
 
 ### Usage with Commands

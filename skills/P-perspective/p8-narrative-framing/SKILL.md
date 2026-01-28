@@ -96,7 +96,7 @@ const result = applyModel("P8", "Structure information as causal stories with co
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/p8-narrative-framing
+moltbot-registry install hummbl-agent/p8-narrative-framing
 ```
 
 ### Usage with Commands

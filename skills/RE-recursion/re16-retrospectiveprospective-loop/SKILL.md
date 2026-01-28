@@ -96,7 +96,7 @@ const result = applyModel("RE16", "Use systematic reflection on past to inform f
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re16-retrospectiveprospective-loop
+moltbot-registry install hummbl-agent/re16-retrospectiveprospective-loop
 ```
 
 ### Usage with Commands

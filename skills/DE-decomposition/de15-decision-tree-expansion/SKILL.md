@@ -96,7 +96,7 @@ const result = applyModel("DE15", "Map choices and their consequences as branchi
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de15-decision-tree-expansion
+moltbot-registry install hummbl-agent/de15-decision-tree-expansion
 ```
 
 ### Usage with Commands

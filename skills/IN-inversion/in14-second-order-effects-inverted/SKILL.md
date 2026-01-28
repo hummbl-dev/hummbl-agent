@@ -96,7 +96,7 @@ const result = applyModel("IN14", "Trace negative downstream consequences rather
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/in14-second-order-effects-inverted
+moltbot-registry install hummbl-agent/in14-second-order-effects-inverted
 ```
 
 ### Usage with Commands

@@ -96,7 +96,7 @@ const result = applyModel("RE9", "Cycle rapidly through build-test-learn loops w
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re9-iterative-prototyping
+moltbot-registry install hummbl-agent/re9-iterative-prototyping
 ```
 
 ### Usage with Commands

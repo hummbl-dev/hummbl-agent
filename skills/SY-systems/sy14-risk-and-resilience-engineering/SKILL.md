@@ -96,7 +96,7 @@ const result = applyModel("SY14", "Build systems that fail gracefully and recove
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy14-risk-and-resilience-engineering
+moltbot-registry install hummbl-agent/sy14-risk-and-resilience-engineering
 ```
 
 ### Usage with Commands

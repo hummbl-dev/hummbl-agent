@@ -96,7 +96,7 @@ const result = applyModel("SY17", "Anticipate how rules shape behavior, which cr
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/sy17-policy-feedbacks
+moltbot-registry install hummbl-agent/sy17-policy-feedbacks
 ```
 
 ### Usage with Commands

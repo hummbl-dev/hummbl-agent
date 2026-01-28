@@ -96,7 +96,7 @@ const result = applyModel("DE12", "Identify specific limiting factor preventing 
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de12-constraint-isolation
+moltbot-registry install hummbl-agent/de12-constraint-isolation
 ```
 
 ### Usage with Commands

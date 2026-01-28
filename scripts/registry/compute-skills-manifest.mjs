@@ -43,13 +43,14 @@ function listSkillDirs(root) {
 
   for (const d of dirs) {
     if (posix.basename(d) === "_registry") continue;
-    const children = readdirSync(d).map((name) => join(d, name)).filter((p) => statSync(p).isDirectory());
+    const children = readdirSync(d)
+      .map((name) => join(d, name))
+      .filter((p) => statSync(p).isDirectory());
     if (children.length === 0) {
       skillDirs.push(d);
     } else {
       for (const c of children) {
-        const files = listFiles(c);
-        if (files.length > 0) skillDirs.push(c);
+        if (listFiles(c).length > 0) skillDirs.push(c);
       }
     }
   }
@@ -69,7 +70,6 @@ function main() {
 
   const manifest = {
     version: "1.0.0",
-    generated_at: new Date().toISOString(),
     registry_root: REGISTRY_ROOT,
     skills,
   };

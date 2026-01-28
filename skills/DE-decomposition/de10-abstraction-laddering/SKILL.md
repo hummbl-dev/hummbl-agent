@@ -96,7 +96,7 @@ const result = applyModel("DE10", "Move up and down conceptual hierarchy to find
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/de10-abstraction-laddering
+moltbot-registry install hummbl-agent/de10-abstraction-laddering
 ```
 
 ### Usage with Commands

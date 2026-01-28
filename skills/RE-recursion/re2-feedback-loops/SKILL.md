@@ -96,7 +96,7 @@ const result = applyModel("RE2", "Create mechanisms where system outputs influen
 
 ### Manual Installation
 ```bash
-clawdhub install hummbl-agent/re2-feedback-loops
+moltbot-registry install hummbl-agent/re2-feedback-loops
 ```
 
 ### Usage with Commands
