@@ -101,7 +101,7 @@
     "auto_export_threshold": 0.8
   },
   "integration": {
-    "clawdhub": {
+    "moltbot-registry": {
       "auto_publish": false,
       "quality_threshold": 0.9,
       "review_required": true

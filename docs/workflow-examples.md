@@ -1,6 +1,6 @@
 # HUMMBL Integration Workflow and Examples
 
-Complete guide for integrating HUMMBL Base120 mental models with Moltbot, ClawdHub, and Claude Code for multi-agent coordination.
+Complete guide for integrating HUMMBL Base120 mental models with Moltbot, Moltbot registry, and Claude Code for multi-agent coordination.
 
 Workflows index: `docs/workflows-index.md`
 
@@ -9,7 +9,7 @@ Workflows index: `docs/workflows-index.md`
 ```
 HUMMBL Base120 Mental Models
          ↓
-ClawdHub (Skills Distribution)
+Moltbot registry (Skills Distribution)
          ↓
 Moltbot (Multi-Agent Coordination)
          ↓
@@ -58,9 +58,9 @@ moltbot gateway status
 
 ### **Step 4: Install Base120 Skills**
 ```bash
-# Install from ClawdHub
-clawdhub install hummbl-agent/p1-first-principles-framing
-clawdhub install hummbl-agent/multi-agent-coordination
+# Install from Moltbot registry
+moltbot-registry install hummbl-agent/p1-first-principles-framing
+moltbot-registry install hummbl-agent/multi-agent-coordination
 
 # Or install locally from development
 cp -r /Users/others/hummbl-agent/skills/* ~/clawd/hummbl-agent/skills/
@@ -486,7 +486,7 @@ moltbot message send --to #hummbl-coordination --message "🧠 Applied P1 to red
 
 ## **Community and Support**
 
-- **ClawdHub**: Publish and share Base120 skills
+- **Moltbot registry**: Publish and share Base120 skills
 - **Discord**: `discord.gg/clawd` for community support
 - **Documentation**: `docs.clawd.bot` for detailed guides
 - **GitHub**: `github.com/moltbot/moltbot` for issues and contributions
