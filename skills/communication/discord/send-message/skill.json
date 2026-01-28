@@ -1,0 +1,9 @@
+{
+  "id": "communication.discord.send-message",
+  "version": "0.1.0",
+  "registry": "local",
+  "capabilities": ["send-message"],
+  "requires": ["network"],
+  "entrypoint": "adapter/index.cjs",
+  "tuples": "tuples.json"
+}

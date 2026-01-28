@@ -56,14 +56,14 @@ moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
 moltbot gateway status
 ```
 
-### **Step 4: Install Base120 Skills**
-```bash
-# Install from Moltbot registry
-moltbot-registry install hummbl-agent/p1-first-principles-framing
-moltbot-registry install hummbl-agent/multi-agent-coordination
+### **Step 4: Use local communication skill**
+Tuple (canonical form): `agent:planner|communication:send|scope{channel=slack;target=C123456}`
 
-# Or install locally from development
-cp -r /Users/others/hummbl-agent/skills/* ~/clawd/hummbl-agent/skills/
+```ts
+const res = await callSkill("communication.slack.send-message", {
+  channel_id: "C123456",
+  text: "Phase 1 ready"
+});
 ```
 
 ## Daily Workflow Examples

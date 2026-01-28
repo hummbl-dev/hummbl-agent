@@ -1,0 +1,10 @@
+[
+  {
+    "principal": "agent:*",
+    "capability": "communication:send",
+    "scope": {
+      "channel": "slack",
+      "target": "channel_id"
+    }
+  }
+]

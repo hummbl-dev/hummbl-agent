@@ -1,0 +1,10 @@
+[
+  {
+    "principal": "agent:*",
+    "capability": "communication:send",
+    "scope": {
+      "channel": "discord",
+      "target": "channel_id"
+    }
+  }
+]
