@@ -673,6 +673,16 @@
       "sha256_tree": "58053b98a4d8d7d5f6a347416a5d9e3aa3a2e74479c22ee16ae5a9a101ba6401"
     },
     {
+      "id": "communication/discord",
+      "path": "skills/communication/discord",
+      "sha256_tree": "b57af8d06544ee90b8d1013c2cb27bc388d82ba323a1caa1e69619214c8e7426"
+    },
+    {
+      "id": "communication/slack",
+      "path": "skills/communication/slack",
+      "sha256_tree": "f9a0e101e433a864004422804664456981be50273f2dd6270014fb9a0a5eed54"
+    },
+    {
       "id": "continuous-learning",
       "path": "skills/continuous-learning",
       "sha256_tree": "b475518c4dbd5ba535d6f3315248058c2e2335c38428f724e637bd793126184b"

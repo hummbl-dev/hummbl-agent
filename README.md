@@ -9,7 +9,7 @@ hummbl-agent/
 ├── .github/                                  # CI workflows + checks
 ├── README.md                                  # This file
 ├── _state/                                    # Canonical state + run logs
-├── skills/                                    # Base120 mental model skills for Moltbot registry
+├── skills/                                    # Base120 and communication skills (local registry)
 │   ├── P-perspective/                         # Perspective transformation (P1-P20)
 │   ├── IN-inversion/                          # Inversion transformation (IN1-IN20)
 │   ├── CO-composition/                        # Composition transformation (CO1-CO20)
@@ -70,7 +70,7 @@ hummbl-agent/
 
 - Publish Base120 mental models as installable skills
 - Version-controlled mental model evolution
-- Community distribution and feedback
+- Communication skills live under `skills/communication/**` (no external registry)
 
 ### 2. Moltbot Integration
 
