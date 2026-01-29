@@ -675,12 +675,12 @@
     {
       "id": "communication/discord",
       "path": "skills/communication/discord",
-      "sha256_tree": "b57af8d06544ee90b8d1013c2cb27bc388d82ba323a1caa1e69619214c8e7426"
+      "sha256_tree": "76f0fc09cbe390c03ead07eb209d12521c0b65e7a4eb7d2248faef213a8a78a8"
     },
     {
       "id": "communication/slack",
       "path": "skills/communication/slack",
-      "sha256_tree": "f9a0e101e433a864004422804664456981be50273f2dd6270014fb9a0a5eed54"
+      "sha256_tree": "9ba81d9a0266e233322188161693b01415dd5e032eb41444285455847944e463"
     },
     {
       "id": "continuous-learning",
