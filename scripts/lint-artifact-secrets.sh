@@ -11,6 +11,7 @@ const { execSync } = require("child_process");
 const root = process.cwd();
 const patterns = [
   { name: "OpenAI key", re: /\bsk-[A-Za-z0-9]{20,}\b/ },
+  { name: "Anthropic key", re: /\bsk-ant-[A-Za-z0-9\-_]{20,}\b/ },
   { name: "GitHub PAT", re: /\bghp_[A-Za-z0-9]{36,}\b/ },
   { name: "GitHub token", re: /\bgho_[A-Za-z0-9]{36,}\b/ },
   { name: "GitHub app token", re: /\bghs_[A-Za-z0-9]{36,}\b/ },
@@ -19,6 +20,8 @@ const patterns = [
   { name: "Google API key", re: /\bAIza[0-9A-Za-z\-_]{35}\b/ },
   { name: "Bearer token", re: /Bearer\s+[A-Za-z0-9._\-]{20,}/ },
   { name: "xAI key", re: /\bxai-[A-Za-z0-9]{20,}\b/ },
+  { name: "AWS Access Key ID", re: /\bAKIA[0-9A-Z]{16}\b/ },
+  { name: "Private key header", re: /-----BEGIN (?:RSA |EC |OPENSSH |DSA |PGP )?PRIVATE KEY-----/ },
 ];
 
 const tracked = execSync("git ls-files", { encoding: "utf8" })
