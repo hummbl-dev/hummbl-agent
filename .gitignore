@@ -6,3 +6,4 @@ node_modules/
 _state/evidence/*/*
 !_state/evidence/.gitkeep
 !_state/evidence/README.md
+configs/moltbot/*.local.json

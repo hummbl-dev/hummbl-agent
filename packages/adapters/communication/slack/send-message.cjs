@@ -1,16 +1,29 @@
 "use strict";
 
-const { readFileSync } = require("node:fs");
+const { readFileSync, existsSync } = require("node:fs");
+const path = require("node:path");
 
-function loadJson(path) {
-  return JSON.parse(readFileSync(path, "utf8"));
-}
+const BASE_CONFIG_PATH = path.resolve(__dirname, "../../../../configs/moltbot/communication.slack.json");
+const LOCAL_CONFIG_PATH = path.resolve(__dirname, "../../../../configs/moltbot/communication.slack.local.json");
 
 function ok(res) {
   return Object.assign({ ok: true }, res);
 }
 function fail(res) {
   return Object.assign({ ok: false }, res);
+}
+
+function loadConfig() {
+  const base = JSON.parse(readFileSync(BASE_CONFIG_PATH, "utf8"));
+  if (existsSync(LOCAL_CONFIG_PATH)) {
+    const local = JSON.parse(readFileSync(LOCAL_CONFIG_PATH, "utf8"));
+    const merged = { ...base, ...local };
+    if (Array.isArray(local.allowed_channel_ids)) {
+      merged.allowed_channel_ids = local.allowed_channel_ids;
+    }
+    return merged;
+  }
+  return base;
 }
 
 function boundsCheck({ channel_id, text, thread_ts }) {
@@ -51,7 +64,7 @@ module.exports = {
         return fail({ error: err, provider: "slack", channel_id, tuple_sha256, mode: "dry_run" });
       }
 
-      const cfg = loadJson("configs/moltbot/communication.slack.json");
+      const cfg = loadConfig();
 
       if (!cfg?.enabled) {
         return fail({ error: "config_disabled", provider: "slack", channel_id, tuple_sha256, mode: "dry_run" });
@@ -68,7 +81,14 @@ module.exports = {
       }
 
       const timeout_ms = Number.isFinite(cfg.timeout_ms) ? cfg.timeout_ms : 8000;
-      const dry_run = cfg.dry_run !== false;
+      const liveGuard = process.env.MOLTBOT_LIVE_SEND === "1";
+      const wantsLive = cfg.dry_run === false;
+
+      if (wantsLive && !liveGuard) {
+        return fail({ error: "live_guard_disabled", provider: "slack", channel_id, tuple_sha256, mode: "dry_run" });
+      }
+
+      const dry_run = cfg.dry_run !== false || !liveGuard;
 
       if (dry_run) {
         return ok({ provider: "slack", mode: "dry_run", channel_id, tuple_sha256 });
