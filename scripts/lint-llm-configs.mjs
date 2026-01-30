@@ -5,9 +5,13 @@ function fail(msg) {
   process.exit(1);
 }
 
-const cfg = JSON.parse(readFileSync("configs/moltbot/llm.anthropic.json", "utf8"));
+function guard(path) {
+  const cfg = JSON.parse(readFileSync(path, "utf8"));
+  if (cfg.enabled === true) fail(`${path}: enabled must remain false`);
+  if (cfg.dry_run === false) fail(`${path}: dry_run must remain true`);
+}
 
-if (cfg.enabled === true) fail("configs/moltbot/llm.anthropic.json: enabled must remain false");
-if (cfg.dry_run === false) fail("configs/moltbot/llm.anthropic.json: dry_run must remain true");
+guard("configs/moltbot/llm.anthropic.json");
+guard("configs/moltbot/llm.openai.json");
 
-console.log("[OK] committed LLM config remains disabled + dry_run");
+console.log("[OK] committed LLM configs remain disabled + dry_run");

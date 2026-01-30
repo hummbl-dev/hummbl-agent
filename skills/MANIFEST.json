@@ -783,6 +783,11 @@
       "sha256_tree": "4acd67f49c434cc523289720abfe84226e974d8d3068f30b2f51144ba0b15d71"
     },
     {
+      "id": "llm/openai",
+      "path": "skills/llm/openai",
+      "sha256_tree": "6e7660100f97523cf53c0f3b8b4141cb3f32e7dcb7f55e596e794e4abb586a14"
+    },
+    {
       "id": "local-places/src",
       "path": "skills/local-places/src",
       "sha256_tree": "7df514604a0279446669ed4c9635650ccba431ef39215a15f00022b790882830"

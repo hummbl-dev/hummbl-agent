@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "dry_run": true,
+  "token_env": "MOLTBOT_OPENAI_API_KEY",
+  "timeout_ms": 15000,
+  "default_model": "gpt-4.1-mini",
+  "max_output_tokens_default": 512,
+  "max_output_tokens_cap": 2048,
+  "allowed_models": [],
+  "live_guard_env": "MOLTBOT_LIVE_LLM_CALLS"
+}

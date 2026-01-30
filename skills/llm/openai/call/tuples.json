@@ -1,0 +1,11 @@
+[
+  {
+    "principal": "agent:*",
+    "capability": "llm:call",
+    "scope": {
+      "vendor": "openai",
+      "model": "default",
+      "purpose": "default"
+    }
+  }
+]
