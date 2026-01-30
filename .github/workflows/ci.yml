@@ -141,6 +141,10 @@ jobs:
         shell: bash
         run: node --test packages/adapters/llm/tests/*.test.mjs
 
+      - name: Router LLM routing tests
+        shell: bash
+        run: npx --yes tsx packages/router/tests/llm-routing.test.ts
+
       - name: Lint SITREPs (if present)
         shell: bash
         run: |

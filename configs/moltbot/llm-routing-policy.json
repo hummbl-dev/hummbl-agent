@@ -1,0 +1,14 @@
+{
+  "version": "0.1.0",
+  "vendor_default_order": ["anthropic", "openai"],
+  "purpose_vendor_preference": {
+    "plan": ["anthropic", "openai"],
+    "summarize": ["openai", "anthropic"],
+    "code_review": ["anthropic", "openai"],
+    "extract": ["openai", "anthropic"]
+  },
+  "vendor_model_hints": {
+    "anthropic": ["claude-3-5-sonnet-latest"],
+    "openai": ["gpt-4.1-mini"]
+  }
+}

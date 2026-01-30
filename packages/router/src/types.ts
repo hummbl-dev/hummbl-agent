@@ -6,6 +6,7 @@ import type {
   SkillId,
   SkillPermissions,
 } from "../../skills/registry/src/types";
+import type { TupleV1 } from "../../kernel/src/tuples/types";
 import type { RunnerCapabilities } from "./capabilities";
 
 export type ToolPolicy = {
@@ -23,6 +24,7 @@ export type RouterInput = {
   availableRunners: RunnerId[];
   capabilities?: RunnerCapabilities[];
   toolPolicy: ToolPolicy;
+  llmTuple?: TupleV1;
 };
 
 export type RouteStep = {
@@ -40,6 +42,13 @@ export type RouteExplain = {
   runnerRationale: string;
   policyChecks: Array<{ check: string; ok: boolean; reason?: string }>;
   alternatives: Array<{ skillId: SkillId; runner: RunnerId; reason: string }>;
+  llmRouting?: {
+    vendor: string;
+    purpose: string;
+    model: string;
+    score: number;
+    vendorRank: number;
+  };
 };
 
 export type RouteDecision = {

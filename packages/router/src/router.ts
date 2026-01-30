@@ -1,5 +1,6 @@
 import type { RouterInput, RouteResult, RouteStep, RouteExplain } from "./types";
 import { pickBest, pickRunner, pickRunnerWithCapabilities, policyCheck, scoreSkill, capabilityCheck } from "./selectors";
+import { selectLlmSkill } from "./llm-routing";
 import type { SkillDefinition, RunnerId } from "../../skills/registry/src/types";
 
 const scriptBySkill: Record<string, string> = {
@@ -11,6 +12,40 @@ const scriptBySkill: Record<string, string> = {
 const promptPathForRunner = (runner: string): string =>
   `_state/runs/<date>/prompts/${runner}-prompt.md`;
 
+const buildStepsForSkill = (skill: SkillDefinition, runner: RunnerId): RouteStep[] => {
+  const steps: RouteStep[] = [
+    {
+      id: "log-1",
+      kind: "log",
+      summary: `Route selected: ${skill.id}`,
+    },
+    {
+      id: "prompt-1",
+      kind: "prompt",
+      summary: `Prepare prompt for ${runner}`,
+      artifactPaths: [promptPathForRunner(runner)],
+    },
+  ];
+
+  const script = scriptBySkill[skill.id];
+  if (script) {
+    steps.push({
+      id: "run-script-1",
+      kind: "run-script",
+      summary: `Run ${script}`,
+      command: { script, args: [] },
+    });
+  }
+
+  steps.push({
+    id: "manual-1",
+    kind: "manual",
+    summary: "Update CURRENT_STATE locks and next handoff",
+  });
+
+  return steps;
+};
+
 const buildExplain = (input: RouterInput): RouteExplain => ({
   matchedByTags: [],
   constraintsConsidered: input.state.constraints || [],
@@ -19,12 +54,90 @@ const buildExplain = (input: RouterInput): RouteExplain => ({
   alternatives: [],
 });
 
+const routeLlm = (input: RouterInput, explain: RouteExplain): RouteResult => {
+  const llmTuple = input.llmTuple;
+  if (!llmTuple) {
+    explain.runnerRationale = "llm tuple missing";
+    return { ok: false, error: "NO_SKILL_MATCH", explain };
+  }
+  const llmResult = selectLlmSkill({ tuple: llmTuple, skills: input.skills });
+  if (!llmResult.ok) {
+    explain.runnerRationale = llmResult.reason;
+    return { ok: false, error: "NO_SKILL_MATCH", explain };
+  }
+
+  const skill = llmResult.best.skill;
+  const runner =
+    input.capabilities && input.capabilities.length > 0
+      ? pickRunnerWithCapabilities(skill, input.availableRunners, input.capabilities)
+      : pickRunner(skill, input.availableRunners);
+
+  if (!runner) {
+    explain.runnerRationale = "no runner available for selected llm skill";
+    return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
+  }
+
+  let capabilityChecks: RouteExplain["policyChecks"] = [];
+  if (input.capabilities && input.capabilities.length > 0) {
+    const capMap = new Map(input.capabilities.map((cap) => [cap.runnerId, cap]));
+    const cap = capMap.get(runner);
+    if (!cap) {
+      explain.runnerRationale = `runner ${runner} missing capabilities`;
+      return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
+    }
+    const capResult = capabilityCheck(skill, cap);
+    capabilityChecks = capResult.checks;
+    if (!capResult.ok) {
+      explain.policyChecks = capabilityChecks;
+      explain.runnerRationale = `runner ${runner} fails capability checks`;
+      return { ok: false, error: "NO_RUNNER_AVAILABLE", explain };
+    }
+  }
+
+  const policy = policyCheck(skill, input.toolPolicy);
+  if (!policy.ok) {
+    explain.policyChecks = policy.checks;
+    explain.runnerRationale = `policy denied ${skill.id}`;
+    return { ok: false, error: "POLICY_DENY", explain };
+  }
+
+  explain.llmRouting = {
+    vendor: llmResult.best.vendor,
+    purpose: llmResult.purpose,
+    model: llmResult.model,
+    score: llmResult.best.score,
+    vendorRank: llmResult.best.vendorRank,
+  };
+  explain.policyChecks = [...policy.checks, ...capabilityChecks];
+  explain.matchedByTags = [];
+  explain.alternatives = [];
+  explain.runnerRationale = `llm routing selected ${skill.id}`;
+
+  const steps = buildStepsForSkill(skill, runner);
+
+  return {
+    ok: true,
+    decision: {
+      skillId: skill.id,
+      runner,
+      requiredTools: skill.requiredTools,
+      permissions: skill.permissions,
+      steps,
+      explain,
+    },
+  };
+};
+
 export const route = (input: RouterInput): RouteResult => {
   const explain = buildExplain(input);
 
   if (!input.skills || input.skills.length === 0) {
     explain.runnerRationale = "no skills provided";
     return { ok: false, error: "NO_SKILL_MATCH", explain };
+  }
+
+  if (input.llmTuple) {
+    return routeLlm(input, explain);
   }
 
   const compatible = input.skills.filter((skill) =>
@@ -103,35 +216,7 @@ export const route = (input: RouterInput): RouteResult => {
     return { ok: false, error: "POLICY_DENY", explain };
   }
 
-  const steps: RouteStep[] = [
-    {
-      id: "log-1",
-      kind: "log",
-      summary: `Route selected: ${best.skill.id}`,
-    },
-    {
-      id: "prompt-1",
-      kind: "prompt",
-      summary: `Prepare prompt for ${runner}`,
-      artifactPaths: [promptPathForRunner(runner)],
-    },
-  ];
-
-  const script = scriptBySkill[best.skill.id];
-  if (script) {
-    steps.push({
-      id: "run-script-1",
-      kind: "run-script",
-      summary: `Run ${script}`,
-      command: { script, args: [] },
-    });
-  }
-
-  steps.push({
-    id: "manual-1",
-    kind: "manual",
-    summary: "Update CURRENT_STATE locks and next handoff",
-  });
+  const steps = buildStepsForSkill(best.skill, runner);
 
   return {
     ok: true,
