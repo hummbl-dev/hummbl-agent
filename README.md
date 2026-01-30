@@ -73,6 +73,14 @@ hummbl-agent/
 - Communication skills live under `skills/communication/**` (no external registry); see `docs/communication-enablement.md` for enabling Slack/Discord sends safely.
 - LLM skills live under `skills/llm/**`; see `docs/llm-enablement.md` for the Anthropic wrapper rollout.
 
+## External ecosystems (informational only)
+
+This repository is **registry-first**: the only authoritative skill registry is the local `skills/` tree plus `skills/MANIFEST.json`, enforced by CI. External marketplaces or rebranded ecosystems (e.g., OpenClaw/ClawHub/MoltBot clusters or other vendor sites) are informational only and **not** dependencies:
+
+- we do not install skills from external registries
+- we do not require external services to resolve or execute skills
+- internal identifiers (skill IDs, tuple capabilities, config paths, env vars) stay stable regardless of upstream branding changes
+
 ### 2. Moltbot Integration
 
 - Multi-agent coordination hub

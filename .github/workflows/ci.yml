@@ -26,6 +26,10 @@ jobs:
         shell: bash
         run: node scripts/lint-llm-configs.mjs
 
+      - name: Lint external registry dependency language
+        shell: bash
+        run: node scripts/lint-no-external-registry-deps.mjs
+
       - name: Validate VERSION format
         shell: bash
         run: |
