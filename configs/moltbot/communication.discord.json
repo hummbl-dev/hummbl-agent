@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "token_env": "MOLTBOT_DISCORD_BOT_TOKEN",
+  "allowed_channel_ids": [],
+  "timeout_ms": 8000,
+  "dry_run": true
+}
