@@ -778,6 +778,11 @@
       "sha256_tree": "37386f7165ba8791355815207fd28ef7e86c7a9295d882ff9f41ca5859feee49"
     },
     {
+      "id": "llm/anthropic",
+      "path": "skills/llm/anthropic",
+      "sha256_tree": "4acd67f49c434cc523289720abfe84226e974d8d3068f30b2f51144ba0b15d71"
+    },
+    {
       "id": "local-places/src",
       "path": "skills/local-places/src",
       "sha256_tree": "7df514604a0279446669ed4c9635650ccba431ef39215a15f00022b790882830"

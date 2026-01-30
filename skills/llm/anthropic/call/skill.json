@@ -1,0 +1,9 @@
+{
+  "id": "llm.anthropic.call",
+  "version": "0.1.0",
+  "registry": "local",
+  "capabilities": ["llm-call"],
+  "requires": ["network"],
+  "entrypoint": "adapter/index.cjs",
+  "tuples": "tuples.json"
+}

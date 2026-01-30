@@ -22,6 +22,10 @@ jobs:
         shell: bash
         run: node scripts/lint-comm-configs.mjs
 
+      - name: Guard committed LLM configs
+        shell: bash
+        run: node scripts/lint-llm-configs.mjs
+
       - name: Validate VERSION format
         shell: bash
         run: |
@@ -132,6 +136,10 @@ jobs:
       - name: Lint Base120 skill map
         shell: bash
         run: scripts/lint-base120-skill-map.sh
+
+      - name: Offline LLM adapter tests
+        shell: bash
+        run: node --test packages/adapters/llm/tests/*.test.mjs
 
       - name: Lint SITREPs (if present)
         shell: bash

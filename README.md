@@ -71,6 +71,7 @@ hummbl-agent/
 - Publish Base120 mental models as installable skills
 - Version-controlled mental model evolution
 - Communication skills live under `skills/communication/**` (no external registry); see `docs/communication-enablement.md` for enabling Slack/Discord sends safely.
+- LLM skills live under `skills/llm/**`; see `docs/llm-enablement.md` for the Anthropic wrapper rollout.
 
 ### 2. Moltbot Integration
 

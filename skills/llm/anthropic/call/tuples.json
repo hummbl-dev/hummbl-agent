@@ -1,0 +1,11 @@
+[
+  {
+    "principal": "agent:*",
+    "capability": "llm:call",
+    "scope": {
+      "vendor": "anthropic",
+      "model": "default",
+      "purpose": "default"
+    }
+  }
+]
