@@ -18,6 +18,10 @@ jobs:
         shell: bash
         run: npm ci
 
+      - name: Guard committed communication configs
+        shell: bash
+        run: node scripts/lint-comm-configs.mjs
+
       - name: Validate VERSION format
         shell: bash
         run: |
