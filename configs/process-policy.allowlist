@@ -3,3 +3,10 @@
 
 git
 node
+openclaw
+security
+fswatch
+lsof
+netstat
+pfctl
+openssl

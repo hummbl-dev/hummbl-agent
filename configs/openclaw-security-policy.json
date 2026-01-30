@@ -1,0 +1,92 @@
+{
+  "version": "1.0.0",
+  "name": "openclaw-security-policy",
+  "description": "Comprehensive security policy for OpenClaw runtime protection",
+  "credentialStorage": {
+    "requireKeychain": true,
+    "requireEncryption": true,
+    "requireFileVault": true,
+    "allowedStorageMethods": ["keychain", "encrypted_file"],
+    "forbiddenStorageMethods": ["plaintext", "environment", "file"]
+  },
+  "fileSystemProtection": {
+    "clawdbotDirectory": {
+      "requiredPermissions": "700",
+      "filePermissions": "600",
+      "monitorAccess": true,
+      "integrityCheck": true
+    },
+    "oauthFiles": {
+      "requireEncryption": true,
+      "allowedFormats": ["encrypted", "keychain"],
+      "monitorChanges": true
+    }
+  },
+  "networkSecurity": {
+    "gatewayBinding": {
+      "default": "127.0.0.1",
+      "allowCustom": false,
+      "requireFirewall": true
+    },
+    "portRestrictions": {
+      "allowedPorts": [18789],
+      "requireAuthentication": true,
+      "monitorConnections": true
+    },
+    "discovery": {
+      "mDNS": {
+        "defaultMode": "off",
+        "allowedModes": ["off", "minimal"],
+        "forbiddenModes": ["full"]
+      }
+    }
+  },
+  "pluginSecurity": {
+    "requireSandbox": true,
+    "allowedPermissions": ["network", "filesystem_read"],
+    "forbiddenPermissions": ["filesystem_write", "system", "process"],
+    "requireReview": true,
+    "scanDependencies": true
+  },
+  "monitoring": {
+    "fileSystemAccess": {
+      "enabled": true,
+      "logLevel": "info",
+      "alertThreshold": 5
+    },
+    "credentialAccess": {
+      "enabled": true,
+      "logLevel": "warning",
+      "immediateAlert": true
+    },
+    "networkActivity": {
+      "enabled": true,
+      "logLevel": "info",
+      "anomalyDetection": true
+    },
+    "processActivity": {
+      "enabled": true,
+      "logLevel": "warning",
+      "injectionDetection": true
+    }
+  },
+  "incidentResponse": {
+    "automaticIsolation": true,
+    "evidencePreservation": true,
+    "alerting": {
+      "enabled": true,
+      "methods": ["notification", "log", "email"]
+    },
+    "escalation": {
+      "criticalThreshold": 3,
+      "escalationMethods": ["immediate_isolation", "admin_notification"]
+    }
+  },
+  "compliance": {
+    "requireAudit": true,
+    "logRetention": "90d",
+    "encryptionStandards": ["aes-256"],
+    "accessControl": "rbac"
+  },
+  "notes": "This policy enforces comprehensive OpenClaw security including credential encryption, file system protection, network hardening, and real-time monitoring."
+}

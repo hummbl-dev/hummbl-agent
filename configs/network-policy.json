@@ -9,7 +9,12 @@
   "allowlist": {
     "domains": [
       "api.openai.com",
-      "api.anthropic.com"
+      "api.anthropic.com",
+      "discord.com",
+      "api.twilio.com",
+      "gateway.openclaw.ai",
+      "hooks.slack.com",
+      "api.telegram.org"
     ]
   },
   "denylist": {
