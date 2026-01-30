@@ -848,6 +848,16 @@
       "sha256_tree": "0c80b156d2fffbe844b7e7a7ec652467534c20f93cf2729578e2f57d5ac3c896"
     },
     {
+      "id": "openclaw-credential-encryption",
+      "path": "skills/openclaw-credential-encryption",
+      "sha256_tree": "0fff1f581f42912d0f6cbfc329e95b9d71fa7d25837dfe2347873031244c5d81"
+    },
+    {
+      "id": "openclaw-runtime-monitor",
+      "path": "skills/openclaw-runtime-monitor",
+      "sha256_tree": "08d0162a957b655eb0952df494e739a29abbc3ffb967e459ec6767ab525cef11"
+    },
+    {
       "id": "openhue",
       "path": "skills/openhue",
       "sha256_tree": "1429699c6493f34f41cda267de1790623c54e48a5da17f23b65b269c57135a94"
