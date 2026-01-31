@@ -51,6 +51,14 @@ No inference or fuzzy matching in v1.
 - Apply `DE3` binding when resolving decomposition tool routing.
 - Scope: selection of decomposition-capable skills only.
 
+#### Implementation Status (Wave 5)
+
+- **Implemented:** `packages/router/src/de3-routing.ts`
+- **Selector:** `selectDe3Skill(ctx)`
+- **Binding:** `BASE120_BINDINGS.DE3.skills` constrains candidate set
+- **Telemetry:** `emitBindingResolution("DE3", matchedCount)`
+- **Fallback:** explicit fail on no intersection; canonical reason string
+
 ## Failure & Fallback Semantics
 
 - No binding → default behavior (current routing selection).
