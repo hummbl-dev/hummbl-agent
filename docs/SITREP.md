@@ -343,6 +343,29 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-010 — BASE120 Router Wave 10 (Binding Resolver)
+
+- **Date:** 2026-01-31
+- **Scope:** Shared binding resolver + consumer refactor
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Helper:** `packages/router/src/base120/applyBinding.ts`
+- **Tests:** `packages/router/tests/apply-binding.test.mjs`
+- **Refactor:** P1/DE3/IN2 now share binding semantics via `applyBinding`
+
+### Evidence
+
+- **Router tests:** 25 passing (applyBinding unit tests + existing suites)
+- **CI:** green expected
+
+---
+
+*End of SITREP-WAVE-010*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
