@@ -1,0 +1,1 @@
+{"version":3,"file":"escape.js","sourceRoot":"","sources":["../../src/tuples/escape.ts"],"names":[],"mappings":"AAAA,MAAM,SAAS,GAAG,YAAY,CAAC;AAE/B,MAAM,UAAU,oBAAoB,CAAC,KAAa;IAChD,OAAO,KAAK,CAAC,OAAO,CAAC,SAAS,EAAE,CAAC,KAAK,EAAE,EAAE,CAAC,KAAK,KAAK,EAAE,CAAC,CAAC;AAC3D,CAAC"}
