@@ -4,7 +4,8 @@ export type BindingErrorCode =
   | "MISSING_SKILLS_ARRAY"
   | "DUPLICATE_SKILL"
   | "NON_STRING_SKILL"
-  | "UNKNOWN_SKILL_ID";
+  | "UNKNOWN_SKILL_ID"
+  | "UNKNOWN_BASE120_CODE";
 
 export interface BindingError {
   code: BindingErrorCode;
@@ -20,11 +21,22 @@ export interface ValidationResult {
 
 export function validateBindings(
   bindings: Base120Bindings,
-  knownSkillIds?: ReadonlySet<string>
+  knownSkillIds?: ReadonlySet<string>,
+  knownBase120Codes?: ReadonlySet<string>
 ): ValidationResult {
   const errors: BindingError[] = [];
 
   for (const [transformation_code, binding] of Object.entries(bindings)) {
+    // Validate Base120 code if validation set provided
+    if (knownBase120Codes && !knownBase120Codes.has(transformation_code)) {
+      errors.push({
+        code: "UNKNOWN_BASE120_CODE",
+        message: `Unknown Base120 code: ${transformation_code}`,
+        transformation_code,
+      });
+      continue;
+    }
+
     // skills must exist and be an array
     if (!binding || !Array.isArray((binding as Base120Binding).skills)) {
       errors.push({

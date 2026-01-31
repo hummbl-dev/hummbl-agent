@@ -39,4 +39,13 @@ describe("validateBindings", () => {
     assert.equal(r.ok, false);
     assert.equal(r.errors[0].code, "UNKNOWN_SKILL_ID");
   });
+
+  it("unknown Base120 code fails with UNKNOWN_BASE120_CODE", () => {
+    const bindings = { XX99: { skills: ["skill-a"] } };
+    const knownCodes = new Set(["P1", "IN2", "DE3"]);
+    const r = validateBindings(bindings, undefined, knownCodes);
+    assert.equal(r.ok, false);
+    assert.equal(r.errors[0].code, "UNKNOWN_BASE120_CODE");
+    assert.equal(r.errors[0].transformation_code, "XX99");
+  });
 });

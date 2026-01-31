@@ -7,3 +7,4 @@ export * from "./artifact";
 export * from "./memory";
 export * from "./state";
 export * from "./tuples";
+export * from "./base120";

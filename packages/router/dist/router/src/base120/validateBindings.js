@@ -1,6 +1,15 @@
-export function validateBindings(bindings, knownSkillIds) {
+export function validateBindings(bindings, knownSkillIds, knownBase120Codes) {
     const errors = [];
     for (const [transformation_code, binding] of Object.entries(bindings)) {
+        // Validate Base120 code if validation set provided
+        if (knownBase120Codes && !knownBase120Codes.has(transformation_code)) {
+            errors.push({
+                code: "UNKNOWN_BASE120_CODE",
+                message: `Unknown Base120 code: ${transformation_code}`,
+                transformation_code,
+            });
+            continue;
+        }
         // skills must exist and be an array
         if (!binding || !Array.isArray(binding.skills)) {
             errors.push({
