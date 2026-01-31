@@ -11,6 +11,12 @@ scripts/orchestrate.sh
 - Use `--force` to overwrite existing prompts for the day.
 - Prompts are written to `_state/runs/YYYY-MM-DD/prompts/`.
 
+## Generate Daily Commit Summary
+
+```bash
+scripts/generate-commit-summary.sh --date 2026-01-31 --output /tmp/commit-summary.md
+```
+
 ## Governed Command Execution
 
 ```bash
