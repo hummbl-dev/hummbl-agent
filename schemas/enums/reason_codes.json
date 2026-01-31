@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Governor Reason Codes",
+  "type": "string",
+  "enum": [
+    "AUTHORIZED",
+    "ALLOWLIST_MISSING",
+    "COMMAND_NOT_ALLOWLISTED",
+    "FREEZE_ACK_REQUIRED"
+  ]
+}

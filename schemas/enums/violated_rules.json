@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Governor Violated Rule Codes",
+  "type": "string",
+  "enum": [
+    "NONE",
+    "FREEZE_STATUS_MISSING",
+    "PROCESS_POLICY_ALLOWLIST"
+  ]
+}

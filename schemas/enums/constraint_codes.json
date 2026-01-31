@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Governor Constraint Codes",
+  "type": "string",
+  "enum": [
+    "ALLOWLIST_ONLY",
+    "REPO_CWD_ONLY",
+    "SAFE_PATH_ONLY"
+  ]
+}

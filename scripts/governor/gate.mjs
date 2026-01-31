@@ -92,6 +92,8 @@ const repoContext = (() => {
   }
 })();
 
+const actionCode = `EXECUTE_COMMAND.${parsed.cmd.replace(/[^A-Za-z0-9]+/g, "_").toUpperCase()}`;
+
 const request = {
   schema_version: "1.0.0",
   request_id: requestId,
@@ -104,7 +106,7 @@ const request = {
   declared_intent: "Run a governed command via scripts/run-cmd.sh",
   proposed_actions: [
     {
-      action: `execute_command:${parsed.cmd}`,
+      action: actionCode,
       scope: `runner:${parsed.runner}`
     }
   ],
@@ -157,7 +159,7 @@ if (externalDecisionPath && fs.existsSync(externalDecisionPath)) {
   let violatedRule = "NONE";
   let decisionValue = "AUTHORIZE";
   let haltRequired = false;
-  const constraints = ["SAFE_PATH_ONLY", "ALLOWLIST_ONLY", "REPO_CWD_ONLY"];
+  const constraints = ["ALLOWLIST_ONLY", "REPO_CWD_ONLY", "SAFE_PATH_ONLY"];
 
   if (!freezeAck) {
     decisionValue = "DENY";
@@ -190,7 +192,7 @@ if (externalDecisionPath && fs.existsSync(externalDecisionPath)) {
     timestamp,
     governor: "HUMMBL_GOVERNOR",
     decision: decisionValue,
-    action: `execute_command:${parsed.cmd}`,
+    action: actionCode,
     reason,
     violated_rule: violatedRule,
     constraints,

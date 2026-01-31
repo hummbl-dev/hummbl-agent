@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Governor Action Codes",
+  "type": "string",
+  "enum": [
+    "EXECUTE_COMMAND.GIT",
+    "EXECUTE_COMMAND.NODE",
+    "EXECUTE_COMMAND.OPENCLAW",
+    "EXECUTE_COMMAND.SECURITY",
+    "EXECUTE_COMMAND.FSWATCH",
+    "EXECUTE_COMMAND.LSOF",
+    "EXECUTE_COMMAND.NETSTAT",
+    "EXECUTE_COMMAND.PFCTL",
+    "EXECUTE_COMMAND.OPENSSL"
+  ]
+}
