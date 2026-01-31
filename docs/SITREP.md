@@ -241,6 +241,29 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-005 — BASE120 Router Wave 4 (Spec-Only)
+
+- **Date:** 2026-01-31
+- **Scope:** Binding application points v1 specification
+- **Baseline Anchor:** v0.1.1-base120-router-wave1
+- **Status:** COMPLETE / SPEC-ONLY
+
+### What Shipped
+
+- **Spec:** `docs/specs/BINDING_APPLICATION_POINTS_v1.md`
+- **Decision:** DE3 selected as next binding application point (decomposition tool selection)
+
+### Outcome
+
+- **Implementation deferred:** no DE3 routing surface exists in runtime
+- **Next wave required:** introduce DE3 routing surface (design + implementation + tests)
+
+---
+
+*End of SITREP-WAVE-005*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
