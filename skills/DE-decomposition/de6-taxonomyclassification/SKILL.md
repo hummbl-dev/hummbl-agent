@@ -16,11 +16,13 @@ Apply the DE6 Taxonomy/Classification transformation to organize entities into h
 ## When to Use DE6
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Taxonomy/Classification here?"
 - "What changes if we apply DE6 to this breaking down an implementation plan?"
 - "Which assumptions does DE6 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE6 Taxonomy/Classification transformation to organize entities into h
 ## The DE6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE6 (Taxonomy/Classification) - Establish the focus
 const focus = "Organize entities into hierarchical categories based on shared properties";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE6 (Taxonomy/Classification) - Apply the transformation
 const output = applyModel("DE6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE6 (Taxonomy/Classification) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE6", "Organize entities into hierarchical categories
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE6", "Organize entities into hierarchical categories
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de6-taxonomyclassification
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE6 "Organize entities into hierarchical categories based on shared properties"
 ```

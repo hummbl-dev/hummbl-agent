@@ -16,11 +16,13 @@ Apply the DE2 Factorization transformation to separate multiplicative components
 ## When to Use DE2
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Factorization here?"
 - "What changes if we apply DE2 to this breaking down an implementation plan?"
 - "Which assumptions does DE2 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE2 Factorization transformation to separate multiplicative components
 ## The DE2 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE2 (Factorization) - Establish the focus
 const focus = "Separate multiplicative components to understand relative contribution of each factor";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE2 (Factorization) - Apply the transformation
 const output = applyModel("DE2", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE2 (Factorization) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE2", "Separate multiplicative components to understa
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE2", "Separate multiplicative components to understa
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de2-factorization
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE2 "Separate multiplicative components to understand relative contribution of each factor"
 ```

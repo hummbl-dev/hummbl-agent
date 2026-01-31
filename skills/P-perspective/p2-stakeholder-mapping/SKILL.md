@@ -16,11 +16,13 @@ Apply the P2 Stakeholder Mapping transformation to identify all parties with int
 ## When to Use P2
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Stakeholder Mapping here?"
 - "What changes if we apply P2 to this product requirements review?"
 - "Which assumptions does P2 help us surface?"
@@ -28,18 +30,21 @@ Apply the P2 Stakeholder Mapping transformation to identify all parties with int
 ## The P2 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P2 (Stakeholder Mapping) - Establish the focus
 const focus = "Identify all parties with interest, influence, or impact in a system or decision";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P2 (Stakeholder Mapping) - Apply the transformation
 const output = applyModel("P2", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P2 (Stakeholder Mapping) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P2", "Identify all parties with interest, influence, 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P2", "Identify all parties with interest, influence, 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p2-stakeholder-mapping
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P2 "Identify all parties with interest, influence, or impact in a system or decision"
 ```

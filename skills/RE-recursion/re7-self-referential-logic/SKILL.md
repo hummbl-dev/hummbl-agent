@@ -16,11 +16,13 @@ Apply the RE7 Self-Referential Logic transformation to create systems that monit
 ## When to Use RE7
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Self-Referential Logic here?"
 - "What changes if we apply RE7 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE7 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE7 Self-Referential Logic transformation to create systems that monit
 ## The RE7 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE7 (Self-Referential Logic) - Establish the focus
 const focus = "Create systems that monitor, measure, or modify themselves";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE7 (Self-Referential Logic) - Apply the transformation
 const output = applyModel("RE7", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE7 (Self-Referential Logic) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE7", "Create systems that monitor, measure, or modif
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE7", "Create systems that monitor, measure, or modif
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re7-self-referential-logic
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE7 "Create systems that monitor, measure, or modify themselves"
 ```

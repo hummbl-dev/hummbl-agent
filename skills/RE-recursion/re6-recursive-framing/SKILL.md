@@ -16,11 +16,13 @@ Apply the RE6 Recursive Framing transformation to apply mental models to the pro
 ## When to Use RE6
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Recursive Framing here?"
 - "What changes if we apply RE6 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE6 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE6 Recursive Framing transformation to apply mental models to the pro
 ## The RE6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE6 (Recursive Framing) - Establish the focus
 const focus = "Apply mental models to the process of selecting mental models";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE6 (Recursive Framing) - Apply the transformation
 const output = applyModel("RE6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE6 (Recursive Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE6", "Apply mental models to the process of selectin
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE6", "Apply mental models to the process of selectin
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re6-recursive-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE6 "Apply mental models to the process of selecting mental models"
 ```

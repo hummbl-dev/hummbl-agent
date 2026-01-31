@@ -3,6 +3,7 @@
 This flow covers run server → query → log artifacts.
 
 ## 1) Setup + Run the Server
+
 ```bash
 cd skills/local-places
 echo "GOOGLE_PLACES_API_KEY=your-key" > .env
@@ -12,11 +13,13 @@ uv run --env-file .env uvicorn local_places.main:app --host 127.0.0.1 --port 800
 ```
 
 Verify:
+
 ```bash
 curl http://127.0.0.1:8000/ping
 ```
 
 ## 2) Resolve Location
+
 ```bash
 curl -X POST http://127.0.0.1:8000/locations/resolve \
   -H "Content-Type: application/json" \
@@ -24,6 +27,7 @@ curl -X POST http://127.0.0.1:8000/locations/resolve \
 ```
 
 ## 3) Search Places
+
 ```bash
 curl -X POST http://127.0.0.1:8000/places/search \
   -H "Content-Type: application/json" \
@@ -36,13 +40,16 @@ curl -X POST http://127.0.0.1:8000/places/search \
 ```
 
 ## 4) Log Artifacts
+
 Use governed logging to capture responses:
+
 ```bash
 packages/runners/codex/scripts/log-run.sh "Local Places: resolve" --artifact /path/to/resolve.json --hash-file
 packages/runners/codex/scripts/log-run.sh "Local Places: search" --artifact /path/to/search.json --hash-file
 ```
 
 ## Notes
+
 - Skill reference: `skills/local-places/SKILL.md`
 - Server reference: `skills/local-places/SERVER_README.md`
 - Consider keeping raw responses under `_state/runs/YYYY-MM-DD/artifacts/`.

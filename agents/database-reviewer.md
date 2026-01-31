@@ -21,6 +21,7 @@ You are an expert PostgreSQL database specialist focused on query optimization, 
 ## Tools at Your Disposal
 
 ### Database Analysis Commands
+
 ```bash
 # Connect to database
 psql $DATABASE_URL
@@ -132,7 +133,7 @@ CREATE INDEX orders_customer_id_idx ON orders (customer_id);
 | Index Type | Use Case | Operators |
 |------------|----------|-----------|
 | **B-tree** (default) | Equality, range | `=`, `<`, `>`, `BETWEEN`, `IN` |
-| **GIN** | Arrays, JSONB, full-text | `@>`, `?`, `?&`, `?|`, `@@` |
+| **GIN** | Arrays, JSONB, full-text | `@>`, `?`, `?&`, `?|`,`@@` |
 | **BRIN** | Large time-series tables | Range queries on sorted data |
 | **Hash** | Equality only | `=` (marginally faster than B-tree) |
 
@@ -159,6 +160,7 @@ CREATE INDEX orders_status_created_idx ON orders (status, created_at);
 ```
 
 **Leftmost Prefix Rule:**
+
 - Index `(status, created_at)` works for:
   - `WHERE status = 'pending'`
   - `WHERE status = 'pending' AND created_at > '2024-01-01'`
@@ -191,6 +193,7 @@ CREATE INDEX users_active_email_idx ON users (email) WHERE deleted_at IS NULL;
 ```
 
 **Common Patterns:**
+
 - Soft deletes: `WHERE deleted_at IS NULL`
 - Status filters: `WHERE status = 'pending'`
 - Non-null values: `WHERE sku IS NOT NULL`
@@ -606,6 +609,7 @@ ORDER BY rank DESC;
 ## Anti-Patterns to Flag
 
 ### ❌ Query Anti-Patterns
+
 - `SELECT *` in production code
 - Missing indexes on WHERE/JOIN columns
 - OFFSET pagination on large tables
@@ -613,6 +617,7 @@ ORDER BY rank DESC;
 - Unparameterized queries (SQL injection risk)
 
 ### ❌ Schema Anti-Patterns
+
 - `int` for IDs (use `bigint`)
 - `varchar(255)` without reason (use `text`)
 - `timestamp` without timezone (use `timestamptz`)
@@ -620,12 +625,14 @@ ORDER BY rank DESC;
 - Mixed-case identifiers requiring quotes
 
 ### ❌ Security Anti-Patterns
+
 - `GRANT ALL` to application users
 - Missing RLS on multi-tenant tables
 - RLS policies calling functions per-row (not wrapped in SELECT)
 - Unindexed RLS policy columns
 
 ### ❌ Connection Anti-Patterns
+
 - No connection pooling
 - No idle timeouts
 - Prepared statements with transaction-mode pooling
@@ -635,7 +642,8 @@ ORDER BY rank DESC;
 
 ## Review Checklist
 
-### Before Approving Database Changes:
+### Before Approving Database Changes
+
 - [ ] All WHERE/JOIN columns indexed
 - [ ] Composite indexes in correct column order
 - [ ] Proper data types (bigint, text, timestamptz, numeric)

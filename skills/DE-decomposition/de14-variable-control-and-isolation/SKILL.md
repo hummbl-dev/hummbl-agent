@@ -16,11 +16,13 @@ Apply the DE14 Variable Control & Isolation transformation to hold factors const
 ## When to Use DE14
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Variable Control & Isolation here?"
 - "What changes if we apply DE14 to this breaking down an implementation plan?"
 - "Which assumptions does DE14 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE14 Variable Control & Isolation transformation to hold factors const
 ## The DE14 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE14 (Variable Control & Isolation) - Establish the focus
 const focus = "Hold factors constant to measure single variable's causal impact";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE14 (Variable Control & Isolation) - Apply the transformation
 const output = applyModel("DE14", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE14 (Variable Control & Isolation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE14", "Hold factors constant to measure single varia
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE14", "Hold factors constant to measure single varia
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de14-variable-control-and-isolation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE14 "Hold factors constant to measure single variable's causal impact"
 ```

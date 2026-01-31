@@ -16,11 +16,13 @@ Apply the IN6 Inverse/Proof by Contradiction transformation to assume a claim is
 ## When to Use IN6
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Inverse/Proof by Contradiction here?"
 - "What changes if we apply IN6 to this risk assessment for a launch?"
 - "Which assumptions does IN6 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN6 Inverse/Proof by Contradiction transformation to assume a claim is
 ## The IN6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN6 (Inverse/Proof by Contradiction) - Establish the focus
 const focus = "Assume a claim is false, derive logical impossibility, thus proving the claim true";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN6 (Inverse/Proof by Contradiction) - Apply the transformation
 const output = applyModel("IN6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN6 (Inverse/Proof by Contradiction) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN6", "Assume a claim is false, derive logical imposs
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN6", "Assume a claim is false, derive logical imposs
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in6-inverseproof-by-contradiction
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN6 "Assume a claim is false, derive logical impossibility, thus proving the claim true"
 ```

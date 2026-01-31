@@ -16,11 +16,13 @@ Apply the SY8 Homeostasis/Dynamic Equilibrium transformation to understand self-
 ## When to Use SY8
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Homeostasis/Dynamic Equilibrium here?"
 - "What changes if we apply SY8 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY8 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY8 Homeostasis/Dynamic Equilibrium transformation to understand self-
 ## The SY8 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY8 (Homeostasis/Dynamic Equilibrium) - Establish the focus
 const focus = "Understand self-regulating mechanisms maintaining stable states despite disturbances";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY8 (Homeostasis/Dynamic Equilibrium) - Apply the transformation
 const output = applyModel("SY8", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY8 (Homeostasis/Dynamic Equilibrium) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY8", "Understand self-regulating mechanisms maintain
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY8", "Understand self-regulating mechanisms maintain
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy8-homeostasisdynamic-equilibrium
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY8 "Understand self-regulating mechanisms maintaining stable states despite disturbances"
 ```

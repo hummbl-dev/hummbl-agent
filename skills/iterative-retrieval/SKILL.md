@@ -10,11 +10,13 @@ Solves the "context problem" in multi-agent workflows where subagents don't know
 ## The Problem
 
 Subagents are spawned with limited context. They don't know:
+
 - Which files contain relevant code
 - What patterns exist in the codebase
 - What terminology the project uses
 
 Standard approaches fail:
+
 - **Send everything**: Exceeds context limits
 - **Send nothing**: Agent lacks critical information
 - **Guess what's needed**: Often wrong
@@ -71,6 +73,7 @@ function evaluateRelevance(files, task) {
 ```
 
 Scoring criteria:
+
 - **High (0.8-1.0)**: Directly implements target functionality
 - **Medium (0.5-0.7)**: Contains related patterns or types
 - **Low (0.2-0.4)**: Tangentially related

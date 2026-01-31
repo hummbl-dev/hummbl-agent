@@ -16,11 +16,13 @@ Apply the CO5 Emergence transformation to recognize higher-order behavior arisin
 ## When to Use CO5
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Emergence here?"
 - "What changes if we apply CO5 to this integrating two services?"
 - "Which assumptions does CO5 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO5 Emergence transformation to recognize higher-order behavior arisin
 ## The CO5 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO5 (Emergence) - Establish the focus
 const focus = "Recognize higher-order behavior arising from component interactions";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO5 (Emergence) - Apply the transformation
 const output = applyModel("CO5", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO5 (Emergence) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO5", "Recognize higher-order behavior arising from c
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO5", "Recognize higher-order behavior arising from c
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co5-emergence
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO5 "Recognize higher-order behavior arising from component interactions"
 ```

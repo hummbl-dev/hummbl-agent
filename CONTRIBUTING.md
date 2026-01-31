@@ -50,6 +50,7 @@ git checkout -b fix/description
 ```
 
 **Branch naming:**
+
 - `feat/description` - New features
 - `fix/description` - Bug fixes
 - `docs/description` - Documentation
@@ -61,6 +62,7 @@ git checkout -b fix/description
 **Follow repository guidelines:** See `AGENTS.md`
 
 **Key rules:**
+
 - Two-space indentation
 - Named exports (ESM)
 - Tests in `.test.mjs` format only
@@ -98,6 +100,7 @@ bash scripts/e2e-validate.sh --mode offline
 ```
 
 **Types:**
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation
@@ -106,11 +109,13 @@ bash scripts/e2e-validate.sh --mode offline
 - `refactor`: Code restructure
 
 **Scopes:** Top-level directories
+
 - `kernel`, `router`, `adapters`, `skills`, `runners`
 - `scripts`, `docs`, `configs`
 - `llm`, `communication`, `process`
 
 **Examples:**
+
 ```bash
 git commit -m "feat(llm): add openai adapter with governed guard"
 git commit -m "fix(router): correct vendor selection logic"
@@ -131,6 +136,7 @@ git push origin feat/description
 **PR title:** Same format as commit messages
 
 **PR description must include:**
+
 - Summary of changes
 - Linked issue (e.g., "Closes #123")
 - Test results (paste e2e-validate output)
@@ -153,7 +159,7 @@ git push origin feat/description
 
 ## Common Pitfalls
 
-### Don't:
+### Don't
 
 - ❌ Commit secrets or API keys
 - ❌ Use `.test.ts` files (use `.test.mjs`)
@@ -163,7 +169,7 @@ git push origin feat/description
 - ❌ Mix multiple concerns in one PR
 - ❌ Use runtime TypeScript loaders
 
-### Do:
+### Do
 
 - ✅ Run `scripts/e2e-validate.sh` before PR
 - ✅ Write descriptive commit messages
@@ -188,11 +194,12 @@ git push origin feat/description
 - **Issues:** Ask questions in issue comments
 - **Discussions:** Start GitHub Discussion for proposals
 - **PRs:** Use PR comments for code-specific questions
-- **Security:** Email security@hummbl.dev for vulnerabilities
+- **Security:** Email <security@hummbl.dev> for vulnerabilities
 
 ## Recognition
 
 Contributors are recognized in:
+
 - Git commit history
 - PR author attribution
 - `CHANGELOG.md` (for significant contributions)

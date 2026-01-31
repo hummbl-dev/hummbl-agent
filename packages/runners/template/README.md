@@ -3,6 +3,7 @@
 Generic runner scaffold for adding new vendors.
 
 ## Usage
+
 ```bash
 packages/runners/template/scripts/make-prompt.sh > /tmp/vendor-prompt.md
 packages/runners/template/scripts/log-run.sh "Session start: vendor" \
@@ -10,6 +11,7 @@ packages/runners/template/scripts/log-run.sh "Session start: vendor" \
 ```
 
 ## Customize
+
 - Copy this folder to `packages/runners/<vendor>/`.
 - Update `prompt.md.template` header and any vendor-specific notes.
 - Update `README.md` usage examples.

@@ -41,6 +41,7 @@ Generate a standardized Situation Report with Base120 mental model references an
 ```
 
 Expected output:
+
 ```
 SITREP-1: HUMMBL-Agent - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMMBL-LEAD | 5 sections
 ```

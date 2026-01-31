@@ -16,11 +16,13 @@ Apply the RE3 Meta-Learning (Learn-to-Learn) transformation to improve the proce
 ## When to Use RE3
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Meta-Learning (Learn-to-Learn) here?"
 - "What changes if we apply RE3 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE3 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE3 Meta-Learning (Learn-to-Learn) transformation to improve the proce
 ## The RE3 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE3 (Meta-Learning (Learn-to-Learn)) - Establish the focus
 const focus = "Improve the process of learning itself, not just domain knowledge";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE3 (Meta-Learning (Learn-to-Learn)) - Apply the transformation
 const output = applyModel("RE3", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE3 (Meta-Learning (Learn-to-Learn)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE3", "Improve the process of learning itself, not ju
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE3", "Improve the process of learning itself, not ju
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re3-meta-learning-learn-to-learn
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE3 "Improve the process of learning itself, not just domain knowledge"
 ```

@@ -16,11 +16,13 @@ Apply the CO13 Cross-Domain Analogy transformation to transfer solution patterns
 ## When to Use CO13
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Cross-Domain Analogy here?"
 - "What changes if we apply CO13 to this integrating two services?"
 - "Which assumptions does CO13 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO13 Cross-Domain Analogy transformation to transfer solution patterns
 ## The CO13 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO13 (Cross-Domain Analogy) - Establish the focus
 const focus = "Transfer solution patterns from one domain to solve problems in another";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO13 (Cross-Domain Analogy) - Apply the transformation
 const output = applyModel("CO13", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO13 (Cross-Domain Analogy) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO13", "Transfer solution patterns from one domain to
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO13", "Transfer solution patterns from one domain to
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co13-cross-domain-analogy
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO13 "Transfer solution patterns from one domain to solve problems in another"
 ```

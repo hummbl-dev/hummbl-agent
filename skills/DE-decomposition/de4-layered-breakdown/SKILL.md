@@ -16,11 +16,13 @@ Apply the DE4 Layered Breakdown transformation to decompose from system to subsy
 ## When to Use DE4
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Layered Breakdown here?"
 - "What changes if we apply DE4 to this breaking down an implementation plan?"
 - "Which assumptions does DE4 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE4 Layered Breakdown transformation to decompose from system to subsy
 ## The DE4 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE4 (Layered Breakdown) - Establish the focus
 const focus = "Decompose from system to subsystem to component progressively";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE4 (Layered Breakdown) - Apply the transformation
 const output = applyModel("DE4", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE4 (Layered Breakdown) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE4", "Decompose from system to subsystem to componen
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE4", "Decompose from system to subsystem to componen
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de4-layered-breakdown
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE4 "Decompose from system to subsystem to component progressively"
 ```

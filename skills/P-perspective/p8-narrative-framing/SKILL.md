@@ -16,11 +16,13 @@ Apply the P8 Narrative Framing transformation to structure information as causal
 ## When to Use P8
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Narrative Framing here?"
 - "What changes if we apply P8 to this product requirements review?"
 - "Which assumptions does P8 help us surface?"
@@ -28,18 +30,21 @@ Apply the P8 Narrative Framing transformation to structure information as causal
 ## The P8 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P8 (Narrative Framing) - Establish the focus
 const focus = "Structure information as causal stories with conflict, choice, and consequence";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P8 (Narrative Framing) - Apply the transformation
 const output = applyModel("P8", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P8 (Narrative Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P8", "Structure information as causal stories with co
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P8", "Structure information as causal stories with co
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p8-narrative-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P8 "Structure information as causal stories with conflict, choice, and consequence"
 ```

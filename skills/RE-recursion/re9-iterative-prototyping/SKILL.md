@@ -16,11 +16,13 @@ Apply the RE9 Iterative Prototyping transformation to cycle rapidly through buil
 ## When to Use RE9
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Iterative Prototyping here?"
 - "What changes if we apply RE9 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE9 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE9 Iterative Prototyping transformation to cycle rapidly through buil
 ## The RE9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE9 (Iterative Prototyping) - Establish the focus
 const focus = "Cycle rapidly through build-test-learn loops with increasing fidelity";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE9 (Iterative Prototyping) - Apply the transformation
 const output = applyModel("RE9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE9 (Iterative Prototyping) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE9", "Cycle rapidly through build-test-learn loops w
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE9", "Cycle rapidly through build-test-learn loops w
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re9-iterative-prototyping
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE9 "Cycle rapidly through build-test-learn loops with increasing fidelity"
 ```

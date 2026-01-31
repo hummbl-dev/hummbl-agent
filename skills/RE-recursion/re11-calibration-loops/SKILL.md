@@ -16,11 +16,13 @@ Apply the RE11 Calibration Loops transformation to repeatedly check predictions 
 ## When to Use RE11
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Calibration Loops here?"
 - "What changes if we apply RE11 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE11 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE11 Calibration Loops transformation to repeatedly check predictions 
 ## The RE11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE11 (Calibration Loops) - Establish the focus
 const focus = "Repeatedly check predictions against outcomes to improve forecasting accuracy";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE11 (Calibration Loops) - Apply the transformation
 const output = applyModel("RE11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE11 (Calibration Loops) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE11", "Repeatedly check predictions against outcomes
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE11", "Repeatedly check predictions against outcomes
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re11-calibration-loops
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE11 "Repeatedly check predictions against outcomes to improve forecasting accuracy"
 ```

@@ -16,11 +16,13 @@ Apply the DE5 Dimensional Reduction transformation to focus on most informative 
 ## When to Use DE5
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Dimensional Reduction here?"
 - "What changes if we apply DE5 to this breaking down an implementation plan?"
 - "Which assumptions does DE5 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE5 Dimensional Reduction transformation to focus on most informative 
 ## The DE5 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE5 (Dimensional Reduction) - Establish the focus
 const focus = "Focus on most informative variables while discarding noise or redundancy";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE5 (Dimensional Reduction) - Apply the transformation
 const output = applyModel("DE5", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE5 (Dimensional Reduction) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE5", "Focus on most informative variables while disc
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE5", "Focus on most informative variables while disc
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de5-dimensional-reduction
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE5 "Focus on most informative variables while discarding noise or redundancy"
 ```

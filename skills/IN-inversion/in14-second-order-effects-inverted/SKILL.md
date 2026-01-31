@@ -16,11 +16,13 @@ Apply the IN14 Second-Order Effects (Inverted) transformation to trace negative 
 ## When to Use IN14
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Second-Order Effects (Inverted) here?"
 - "What changes if we apply IN14 to this risk assessment for a launch?"
 - "Which assumptions does IN14 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN14 Second-Order Effects (Inverted) transformation to trace negative 
 ## The IN14 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN14 (Second-Order Effects (Inverted)) - Establish the focus
 const focus = "Trace negative downstream consequences rather than immediate benefits";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN14 (Second-Order Effects (Inverted)) - Apply the transformation
 const output = applyModel("IN14", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN14 (Second-Order Effects (Inverted)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN14", "Trace negative downstream consequences rather
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN14", "Trace negative downstream consequences rather
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in14-second-order-effects-inverted
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN14 "Trace negative downstream consequences rather than immediate benefits"
 ```

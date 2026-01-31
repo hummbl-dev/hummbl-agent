@@ -16,11 +16,13 @@ Apply the P5 Empathy Mapping transformation to systematically capture what stake
 ## When to Use P5
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Empathy Mapping here?"
 - "What changes if we apply P5 to this product requirements review?"
 - "Which assumptions does P5 help us surface?"
@@ -28,18 +30,21 @@ Apply the P5 Empathy Mapping transformation to systematically capture what stake
 ## The P5 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P5 (Empathy Mapping) - Establish the focus
 const focus = "Systematically capture what stakeholders see, think, feel, and do in their context";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P5 (Empathy Mapping) - Apply the transformation
 const output = applyModel("P5", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P5 (Empathy Mapping) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P5", "Systematically capture what stakeholders see, t
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P5", "Systematically capture what stakeholders see, t
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p5-empathy-mapping
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P5 "Systematically capture what stakeholders see, think, feel, and do in their context"
 ```

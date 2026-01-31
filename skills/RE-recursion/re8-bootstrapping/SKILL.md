@@ -16,11 +16,13 @@ Apply the RE8 Bootstrapping transformation to build capability using currently a
 ## When to Use RE8
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Bootstrapping here?"
 - "What changes if we apply RE8 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE8 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE8 Bootstrapping transformation to build capability using currently a
 ## The RE8 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE8 (Bootstrapping) - Establish the focus
 const focus = "Build capability using currently available resources, then use that to build more";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE8 (Bootstrapping) - Apply the transformation
 const output = applyModel("RE8", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE8 (Bootstrapping) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE8", "Build capability using currently available res
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE8", "Build capability using currently available res
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re8-bootstrapping
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE8 "Build capability using currently available resources, then use that to build more"
 ```

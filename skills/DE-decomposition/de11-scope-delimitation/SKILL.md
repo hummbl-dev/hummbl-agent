@@ -16,11 +16,13 @@ Apply the DE11 Scope Delimitation transformation to define precise boundaries of
 ## When to Use DE11
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Scope Delimitation here?"
 - "What changes if we apply DE11 to this breaking down an implementation plan?"
 - "Which assumptions does DE11 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE11 Scope Delimitation transformation to define precise boundaries of
 ## The DE11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE11 (Scope Delimitation) - Establish the focus
 const focus = "Define precise boundaries of what is included versus excluded from consideration";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE11 (Scope Delimitation) - Apply the transformation
 const output = applyModel("DE11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE11 (Scope Delimitation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE11", "Define precise boundaries of what is included
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE11", "Define precise boundaries of what is included
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de11-scope-delimitation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE11 "Define precise boundaries of what is included versus excluded from consideration"
 ```

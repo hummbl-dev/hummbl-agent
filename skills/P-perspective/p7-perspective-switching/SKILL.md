@@ -16,11 +16,13 @@ Apply the P7 Perspective Switching transformation to rotate through multiple vie
 ## When to Use P7
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Perspective Switching here?"
 - "What changes if we apply P7 to this product requirements review?"
 - "Which assumptions does P7 help us surface?"
@@ -28,18 +30,21 @@ Apply the P7 Perspective Switching transformation to rotate through multiple vie
 ## The P7 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P7 (Perspective Switching) - Establish the focus
 const focus = "Rotate through multiple viewpoints to identify invariants and blind spots";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P7 (Perspective Switching) - Apply the transformation
 const output = applyModel("P7", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P7 (Perspective Switching) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P7", "Rotate through multiple viewpoints to identify 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P7", "Rotate through multiple viewpoints to identify 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p7-perspective-switching
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P7 "Rotate through multiple viewpoints to identify invariants and blind spots"
 ```

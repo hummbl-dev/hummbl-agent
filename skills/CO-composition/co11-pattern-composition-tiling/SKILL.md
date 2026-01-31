@@ -16,11 +16,13 @@ Apply the CO11 Pattern Composition (Tiling) transformation to combine repeating 
 ## When to Use CO11
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Pattern Composition (Tiling) here?"
 - "What changes if we apply CO11 to this integrating two services?"
 - "Which assumptions does CO11 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO11 Pattern Composition (Tiling) transformation to combine repeating 
 ## The CO11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO11 (Pattern Composition (Tiling)) - Establish the focus
 const focus = "Combine repeating elements to construct complex structures efficiently";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO11 (Pattern Composition (Tiling)) - Apply the transformation
 const output = applyModel("CO11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO11 (Pattern Composition (Tiling)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO11", "Combine repeating elements to construct compl
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO11", "Combine repeating elements to construct compl
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co11-pattern-composition-tiling
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO11 "Combine repeating elements to construct complex structures efficiently"
 ```

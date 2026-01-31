@@ -20,6 +20,7 @@ This skill provides comprehensive real-time security monitoring for OpenClaw, de
 ### 1. File System Access Monitoring
 
 #### Real-time File Monitoring
+
 ```bash
 # Monitor ~/.clawdbot/ directory access
 sudo fs_usage | grep clawdbot &
@@ -41,6 +42,7 @@ LSOF_PID=$!
 ```
 
 #### File Integrity Monitoring
+
 ```bash
 #!/bin/bash
 # file-integrity-monitor.sh
@@ -77,6 +79,7 @@ done &
 ### 2. Credential Access Detection
 
 #### Keychain Access Monitoring
+
 ```bash
 # Monitor Keychain access for OpenClaw credentials
 log stream --predicate 'subsystem == "com.apple.security" AND (process == "openclaw" OR process == "clawdbot")' | while read line; do
@@ -92,6 +95,7 @@ SECURITYD_PID=$!
 ```
 
 #### Process Monitoring for Credential Theft
+
 ```bash
 #!/bin/bash
 # credential-theft-monitor.sh
@@ -123,6 +127,7 @@ THEFT_MONITOR_PID=$!
 ### 3. Anomaly Detection
 
 #### Network Anomaly Detection
+
 ```bash
 #!/bin/bash
 # network-anomaly-detector.sh
@@ -158,6 +163,7 @@ NETWORK_MONITOR_PID=$!
 ```
 
 #### Process Anomaly Detection
+
 ```bash
 #!/bin/bash
 # process-anomaly-detector.sh
@@ -192,6 +198,7 @@ PROCESS_MONITOR_PID=$!
 ### 4. Automated Incident Response
 
 #### Incident Response Script
+
 ```bash
 #!/bin/bash
 # openclaw-incident-response.sh
@@ -295,6 +302,7 @@ esac
 ## Monitoring Dashboard
 
 ### Real-time Status Script
+
 ```bash
 #!/bin/bash
 # openclaw-security-dashboard.sh
@@ -376,6 +384,7 @@ echo "Press Ctrl+C to exit. Dashboard refreshes every 30 seconds."
 ## Installation and Setup
 
 ### Install Monitoring Dependencies
+
 ```bash
 # Install fswatch for file monitoring
 brew install fswatch
@@ -394,6 +403,7 @@ chmod +x *.sh
 ```
 
 ### Start Monitoring Services
+
 ```bash
 #!/bin/bash
 # start-openclaw-monitoring.sh

@@ -16,11 +16,13 @@ Apply the RE15 Convergence-Divergence Cycling transformation to alternate betwee
 ## When to Use RE15
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Convergence-Divergence Cycling here?"
 - "What changes if we apply RE15 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE15 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE15 Convergence-Divergence Cycling transformation to alternate betwee
 ## The RE15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE15 (Convergence-Divergence Cycling) - Establish the focus
 const focus = "Alternate between expanding possibilities and narrowing to decisions";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE15 (Convergence-Divergence Cycling) - Apply the transformation
 const output = applyModel("RE15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE15 (Convergence-Divergence Cycling) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE15", "Alternate between expanding possibilities and
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE15", "Alternate between expanding possibilities and
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re15-convergence-divergence-cycling
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE15 "Alternate between expanding possibilities and narrowing to decisions"
 ```

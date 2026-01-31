@@ -16,11 +16,13 @@ Apply the CO2 Chunking transformation to group related elements into meaningful 
 ## When to Use CO2
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Chunking here?"
 - "What changes if we apply CO2 to this integrating two services?"
 - "Which assumptions does CO2 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO2 Chunking transformation to group related elements into meaningful 
 ## The CO2 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO2 (Chunking) - Establish the focus
 const focus = "Group related elements into meaningful units to reduce cognitive load";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO2 (Chunking) - Apply the transformation
 const output = applyModel("CO2", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO2 (Chunking) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO2", "Group related elements into meaningful units t
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO2", "Group related elements into meaningful units t
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co2-chunking
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO2 "Group related elements into meaningful units to reduce cognitive load"
 ```

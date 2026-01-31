@@ -16,11 +16,13 @@ Apply the SY16 Ecosystem Strategy transformation to position organization within
 ## When to Use SY16
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Ecosystem Strategy here?"
 - "What changes if we apply SY16 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY16 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY16 Ecosystem Strategy transformation to position organization within
 ## The SY16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY16 (Ecosystem Strategy) - Establish the focus
 const focus = "Position organization within network of partners, competitors, and stakeholders";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY16 (Ecosystem Strategy) - Apply the transformation
 const output = applyModel("SY16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY16 (Ecosystem Strategy) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY16", "Position organization within network of partn
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY16", "Position organization within network of partn
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy16-ecosystem-strategy
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY16 "Position organization within network of partners, competitors, and stakeholders"
 ```

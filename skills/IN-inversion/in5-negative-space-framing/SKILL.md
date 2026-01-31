@@ -16,11 +16,13 @@ Apply the IN5 Negative Space Framing transformation to study what is absent rath
 ## When to Use IN5
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Negative Space Framing here?"
 - "What changes if we apply IN5 to this risk assessment for a launch?"
 - "Which assumptions does IN5 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN5 Negative Space Framing transformation to study what is absent rath
 ## The IN5 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN5 (Negative Space Framing) - Establish the focus
 const focus = "Study what is absent rather than what is present";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN5 (Negative Space Framing) - Apply the transformation
 const output = applyModel("IN5", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN5 (Negative Space Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN5", "Study what is absent rather than what is prese
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN5", "Study what is absent rather than what is prese
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in5-negative-space-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN5 "Study what is absent rather than what is present"
 ```

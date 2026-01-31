@@ -16,11 +16,13 @@ Apply the P6 Point-of-View Anchoring transformation to establish and maintain a 
 ## When to Use P6
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Point-of-View Anchoring here?"
 - "What changes if we apply P6 to this product requirements review?"
 - "Which assumptions does P6 help us surface?"
@@ -28,18 +30,21 @@ Apply the P6 Point-of-View Anchoring transformation to establish and maintain a 
 ## The P6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P6 (Point-of-View Anchoring) - Establish the focus
 const focus = "Establish and maintain a consistent reference frame before analysis begins";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P6 (Point-of-View Anchoring) - Apply the transformation
 const output = applyModel("P6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P6 (Point-of-View Anchoring) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P6", "Establish and maintain a consistent reference f
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P6", "Establish and maintain a consistent reference f
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p6-point-of-view-anchoring
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P6 "Establish and maintain a consistent reference frame before analysis begins"
 ```

@@ -16,11 +16,13 @@ Apply the IN13 Opportunity Cost Focus transformation to evaluate options by what
 ## When to Use IN13
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Opportunity Cost Focus here?"
 - "What changes if we apply IN13 to this risk assessment for a launch?"
 - "Which assumptions does IN13 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN13 Opportunity Cost Focus transformation to evaluate options by what
 ## The IN13 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN13 (Opportunity Cost Focus) - Establish the focus
 const focus = "Evaluate options by what must be forgone rather than what is gained";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN13 (Opportunity Cost Focus) - Apply the transformation
 const output = applyModel("IN13", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN13 (Opportunity Cost Focus) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN13", "Evaluate options by what must be forgone rath
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN13", "Evaluate options by what must be forgone rath
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in13-opportunity-cost-focus
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN13 "Evaluate options by what must be forgone rather than what is gained"
 ```

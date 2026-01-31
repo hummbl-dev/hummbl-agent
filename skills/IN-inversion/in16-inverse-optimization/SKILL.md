@@ -16,11 +16,13 @@ Apply the IN16 Inverse Optimization transformation to maximize worst outcomes to
 ## When to Use IN16
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Inverse Optimization here?"
 - "What changes if we apply IN16 to this risk assessment for a launch?"
 - "Which assumptions does IN16 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN16 Inverse Optimization transformation to maximize worst outcomes to
 ## The IN16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN16 (Inverse Optimization) - Establish the focus
 const focus = "Maximize worst outcomes to understand system vulnerabilities";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN16 (Inverse Optimization) - Apply the transformation
 const output = applyModel("IN16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN16 (Inverse Optimization) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN16", "Maximize worst outcomes to understand system 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN16", "Maximize worst outcomes to understand system 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in16-inverse-optimization
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN16 "Maximize worst outcomes to understand system vulnerabilities"
 ```

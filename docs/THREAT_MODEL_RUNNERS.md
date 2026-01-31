@@ -20,22 +20,27 @@ Automated vendor execution via runners (OpenAI, Anthropic, xAI, etc.).
 ## Threats
 
 ### T1 — Secret exfiltration
+
 - Runner logs or artifacts include secrets.
 - Mitigation: secret scan + artifact scan + runner redaction.
 
 ### T2 — Control plane exposure
+
 - Runner exposes HTTP server or remote control.
 - Mitigation: no‑server lint + no daemon processes.
 
 ### T3 — Policy bypass
+
 - Runner ignores network policy or uses unauthorized domains.
 - Mitigation: policy enforcement in runner + registry lint.
 
 ### T4 — Long‑lived sessions
+
 - Persistent connections or background processes.
 - Mitigation: one‑shot execution, no daemons.
 
 ### T5 — Runner compromise
+
 - Attacker extracts secrets from runner process.
 - Mitigation: short‑lived tokens, rotation, no shared keys.
 

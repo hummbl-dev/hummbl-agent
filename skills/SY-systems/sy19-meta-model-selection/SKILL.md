@@ -16,11 +16,13 @@ Apply the SY19 Meta-Model Selection transformation to choose appropriate framewo
 ## When to Use SY19
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Meta-Model Selection here?"
 - "What changes if we apply SY19 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY19 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY19 Meta-Model Selection transformation to choose appropriate framewo
 ## The SY19 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY19 (Meta-Model Selection) - Establish the focus
 const focus = "Choose appropriate framework or tool for specific problem characteristics";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY19 (Meta-Model Selection) - Apply the transformation
 const output = applyModel("SY19", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY19 (Meta-Model Selection) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY19", "Choose appropriate framework or tool for spec
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY19", "Choose appropriate framework or tool for spec
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy19-meta-model-selection
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY19 "Choose appropriate framework or tool for specific problem characteristics"
 ```

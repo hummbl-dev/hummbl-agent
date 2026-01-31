@@ -16,11 +16,13 @@ Apply the RE20 Recursive Governance (Guardrails that Learn) transformation to es
 ## When to Use RE20
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Recursive Governance (Guardrails that Learn) here?"
 - "What changes if we apply RE20 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE20 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE20 Recursive Governance (Guardrails that Learn) transformation to es
 ## The RE20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE20 (Recursive Governance (Guardrails that Learn)) - Establish the focus
 const focus = "Establish rules that adapt based on their own effectiveness";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE20 (Recursive Governance (Guardrails that Learn)) - Apply the transformation
 const output = applyModel("RE20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE20 (Recursive Governance (Guardrails that Learn)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE20", "Establish rules that adapt based on their own
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE20", "Establish rules that adapt based on their own
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re20-recursive-governance-guardrails-that-learn
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE20 "Establish rules that adapt based on their own effectiveness"
 ```

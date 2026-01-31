@@ -16,11 +16,13 @@ Apply the RE12 Bayesian Updating in Practice transformation to continuously revi
 ## When to Use RE12
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Bayesian Updating in Practice here?"
 - "What changes if we apply RE12 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE12 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE12 Bayesian Updating in Practice transformation to continuously revi
 ## The RE12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE12 (Bayesian Updating in Practice) - Establish the focus
 const focus = "Continuously revise beliefs as new evidence arrives, weighting by reliability";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE12 (Bayesian Updating in Practice) - Apply the transformation
 const output = applyModel("RE12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE12 (Bayesian Updating in Practice) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE12", "Continuously revise beliefs as new evidence a
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE12", "Continuously revise beliefs as new evidence a
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re12-bayesian-updating-in-practice
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE12 "Continuously revise beliefs as new evidence arrives, weighting by reliability"
 ```

@@ -16,11 +16,13 @@ Apply the SY1 Leverage Points transformation to identify intervention points whe
 ## When to Use SY1
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Leverage Points here?"
 - "What changes if we apply SY1 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY1 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY1 Leverage Points transformation to identify intervention points whe
 ## The SY1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY1 (Leverage Points) - Establish the focus
 const focus = "Identify intervention points where small changes produce disproportionate effects";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY1 (Leverage Points) - Apply the transformation
 const output = applyModel("SY1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY1 (Leverage Points) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY1", "Identify intervention points where small chang
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY1", "Identify intervention points where small chang
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy1-leverage-points
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY1 "Identify intervention points where small changes produce disproportionate effects"
 ```

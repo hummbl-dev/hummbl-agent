@@ -16,11 +16,13 @@ Apply the IN11 Devil's Advocate Protocol transformation to assign explicit role 
 ## When to Use IN11
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Devil's Advocate Protocol here?"
 - "What changes if we apply IN11 to this risk assessment for a launch?"
 - "Which assumptions does IN11 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN11 Devil's Advocate Protocol transformation to assign explicit role 
 ## The IN11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN11 (Devil's Advocate Protocol) - Establish the focus
 const focus = "Assign explicit role to argue against group consensus or preferred option";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN11 (Devil's Advocate Protocol) - Apply the transformation
 const output = applyModel("IN11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN11 (Devil's Advocate Protocol) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN11", "Assign explicit role to argue against group c
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN11", "Assign explicit role to argue against group c
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in11-devils-advocate-protocol
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN11 "Assign explicit role to argue against group consensus or preferred option"
 ```

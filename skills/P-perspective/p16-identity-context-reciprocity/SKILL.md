@@ -16,11 +16,13 @@ Apply the P16 Identity-Context Reciprocity transformation to recognize how ident
 ## When to Use P16
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Identity-Context Reciprocity here?"
 - "What changes if we apply P16 to this product requirements review?"
 - "Which assumptions does P16 help us surface?"
@@ -28,18 +30,21 @@ Apply the P16 Identity-Context Reciprocity transformation to recognize how ident
 ## The P16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P16 (Identity-Context Reciprocity) - Establish the focus
 const focus = "Recognize how identities shape interpretations and contexts reinforce identities";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P16 (Identity-Context Reciprocity) - Apply the transformation
 const output = applyModel("P16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P16 (Identity-Context Reciprocity) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P16", "Recognize how identities shape interpretations
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P16", "Recognize how identities shape interpretations
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p16-identity-context-reciprocity
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P16 "Recognize how identities shape interpretations and contexts reinforce identities"
 ```

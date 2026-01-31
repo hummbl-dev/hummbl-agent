@@ -7,11 +7,13 @@ metadata: {"moltbot":{"emoji":"📊","os":["darwin"],"requires":{"bins":["codexb
 # Model usage
 
 ## Overview
+
 Get per-model usage cost from CodexBar's local cost logs. Supports "current model" (most recent daily entry) or "all models" summaries for Codex or Claude.
 
 TODO: add Linux CLI support guidance once CodexBar CLI install path is documented for Linux.
 
 ## Quick start
+
 1) Fetch cost JSON via CodexBar CLI or pass a JSON file.
 2) Use the bundled script to summarize by model.
 
@@ -22,12 +24,14 @@ python {baseDir}/scripts/model_usage.py --provider claude --mode all --format js
 ```
 
 ## Current model logic
+
 - Uses the most recent daily row with `modelBreakdowns`.
 - Picks the model with the highest cost in that row.
 - Falls back to the last entry in `modelsUsed` when breakdowns are missing.
 - Override with `--model <name>` when you need a specific model.
 
 ## Inputs
+
 - Default: runs `codexbar cost --format json --provider <codex|claude>`.
 - File or stdin:
 
@@ -38,8 +42,10 @@ cat /tmp/cost.json | python {baseDir}/scripts/model_usage.py --input - --mode cu
 ```
 
 ## Output
+
 - Text (default) or JSON (`--format json --pretty`).
 - Values are cost-only per model; tokens are not split by model in CodexBar output.
 
 ## References
+
 - Read `references/codexbar-cli.md` for CLI flags and cost JSON fields.

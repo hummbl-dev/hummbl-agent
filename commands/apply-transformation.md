@@ -35,31 +35,37 @@ Applies HUMMBL Base120 mental model transformations systematically with explicit
 ## Transformation Reference
 
 ### **P - Perspective Transformations**
+
 - **P1**: First principles framing (reduce to foundational truths)
 - **P2**: Stakeholder mapping
 - **P3**: Identity stack
 
 ### **IN - Inversion Transformations**
+
 - **IN1**: Reverse assumptions and constraints
 - **IN2**: Work backward from desired outcome
 - **IN3**: Test through opposite scenarios
 
 ### **CO - Composition Transformations**
+
 - **CO1**: Build up from components
 - **CO2**: Integrate multiple solutions
 - **CO3**: Synthesize features and capabilities
 
 ### **DE - Decomposition Transformations**
+
 - **DE1**: Break into manageable parts
 - **DE2**: Modularize complex systems
 - **DE3**: Separate concerns and dependencies
 
 ### **RE - Recursion Transformations**
+
 - **RE1**: Iterative refinement
 - **RE2**: Pattern repetition and scaling
 - **RE3**: Self-reference and meta-thinking
 
 ### **SY - Systems Transformations**
+
 - **SY1**: Identify system patterns
 - **SY2**: Analyze emergent behaviors
 - **SY3**: Optimize system interactions
@@ -67,11 +73,13 @@ Applies HUMMBL Base120 mental model transformations systematically with explicit
 ## Examples
 
 ### **Apply First Principles Framing**
+
 ```bash
 /apply-transformation P1 "Reduce this API design challenge to its foundational truths"
 ```
 
 Expected output:
+
 ```typescript
 // Using P1 (First Principles Framing) - Foundational framing
 interface APIFirstPrinciples {
@@ -82,11 +90,13 @@ interface APIFirstPrinciples {
 ```
 
 ### **Apply Decomposition**
+
 ```bash
 /apply-transformation DE3 "Break this complex integration into manageable components"
 ```
 
 Expected output:
+
 ```typescript
 // Using DE3 (Decomposition) - Modular breakdown
 const integrationComponents = {
@@ -97,11 +107,13 @@ const integrationComponents = {
 ```
 
 ### **Apply Systems Thinking**
+
 ```bash
 /apply-transformation SY8 "Identify patterns in our multi-agent coordination"
 ```
 
 Expected output:
+
 ```typescript
 // Using SY8 (Systems) - Pattern recognition
 const coordinationPatterns = {
@@ -123,6 +135,7 @@ const coordinationPatterns = {
 ## Integration with Skills
 
 This command works seamlessly with Base120 skills:
+
 - Skills provide detailed transformation guidance
 - Command provides systematic application
 - Agent coordinates between them

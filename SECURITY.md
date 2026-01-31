@@ -5,11 +5,13 @@
 **DO NOT** create public GitHub issues for security vulnerabilities.
 
 Report security issues via:
-- Email: hummbl@proton.me or reuben@hummbl.io
+
+- Email: <hummbl@proton.me> or <reuben@hummbl.io>
 - Private vulnerability disclosure on GitHub
 - Direct message to repository maintainers
 
 Include:
+
 - Description of the vulnerability
 - Steps to reproduce
 - Potential impact
@@ -36,11 +38,13 @@ All external process execution flows through governed adapters:
 This repository integrates with external agents (Claude Code, Codex, Grok) under strict boundaries:
 
 **Informational Only:**
+
 - External ecosystems (OpenClaw, ClawHub, MoltBot) are documented for context
 - No runtime dependencies on external registries
 - Skills registry authority: local `skills/MANIFEST.json` only
 
 **Governed Writes:**
+
 - External agents cannot modify vendor code (`vendor/` protected)
 - All writes logged to `_state/runs/<date>/` with provenance
 - Process execution requires allowlist approval
@@ -48,18 +52,21 @@ This repository integrates with external agents (Claude Code, Codex, Grok) under
 ### Secrets Management
 
 **Never commit:**
+
 - API keys
 - Authentication tokens
 - Private keys
 - Credentials of any kind
 
 **Required practices:**
+
 - Use `configs/moltbot/*.local.json` templates (gitignored)
 - Run `scripts/lint-secret-scan.sh` before commits
 - Run `scripts/lint-secrets-policy.sh` to validate policy compliance
 - Store production secrets in secure vaults (1Password, Keychain, etc.)
 
 **Detection:**
+
 - CI runs `lint-secret-scan.sh` on every PR
 - `lint-artifact-secrets.sh` scans generated artifacts
 - Pattern-based detection for common secret formats
@@ -69,11 +76,13 @@ This repository integrates with external agents (Claude Code, Codex, Grok) under
 **Default posture:** Network access restricted
 
 **Allowlist required for:**
+
 - External API calls (LLM providers, communication channels)
 - Registry lookups (local only)
 - Any outbound HTTP/HTTPS
 
 **Enforcement:**
+
 - `scripts/lint-network-policy.sh` validates policy
 - `scripts/test-network-guard.sh` tests rate limiting
 - Adapters implement network guards with dry-run modes
@@ -81,11 +90,13 @@ This repository integrates with external agents (Claude Code, Codex, Grok) under
 ### File System Security
 
 **Protected paths:**
+
 - `vendor/`: Read-only; PRs reject edits (except README, UPSTREAM_PINS)
 - `configs/**/*.local.json`: Gitignored secrets storage
 - `_state/evidence/`: Governed evidence import only
 
 **Permitted writes:**
+
 - `_state/runs/<date>/`: Run logs and artifacts
 - `skills/`: Skill definitions (validated by registry lint)
 
@@ -121,11 +132,13 @@ Before submitting PRs:
 ## Disclosure Policy
 
 **Coordinated disclosure:**
+
 - 90-day private disclosure period
 - Public disclosure after patch available or 90 days (whichever comes first)
 - Credit to reporter in CHANGELOG and security advisories
 
 **Exceptions:**
+
 - Active exploitation: Immediate patch and disclosure
 - Low-severity issues: May be addressed in public PRs
 

@@ -16,6 +16,7 @@ Transcribe an audio file via OpenAI’s `/v1/audio/transcriptions` endpoint.
 ```
 
 Defaults:
+
 - Model: `whisper-1`
 - Output: `<input>.txt`
 

@@ -16,11 +16,13 @@ Apply the P12 Temporal Framing transformation to organize understanding across p
 ## When to Use P12
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Temporal Framing here?"
 - "What changes if we apply P12 to this product requirements review?"
 - "Which assumptions does P12 help us surface?"
@@ -28,18 +30,21 @@ Apply the P12 Temporal Framing transformation to organize understanding across p
 ## The P12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P12 (Temporal Framing) - Establish the focus
 const focus = "Organize understanding across past causes, present states, and future implications";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P12 (Temporal Framing) - Apply the transformation
 const output = applyModel("P12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P12 (Temporal Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P12", "Organize understanding across past causes, pre
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P12", "Organize understanding across past causes, pre
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p12-temporal-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P12 "Organize understanding across past causes, present states, and future implications"
 ```

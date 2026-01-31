@@ -12,6 +12,7 @@ Fast CLI to summarize URLs, local files, and YouTube links.
 ## When to use (trigger phrases)
 
 Use this skill immediately when the user asks any of:
+
 - “use summarize.sh”
 - “what’s this link/video about?”
 - “summarize this URL/article”
@@ -38,6 +39,7 @@ If the user asked for a transcript but it’s huge, return a tight summary first
 ## Model + keys
 
 Set the API key for your chosen provider:
+
 - OpenAI: `OPENAI_API_KEY`
 - Anthropic: `ANTHROPIC_API_KEY`
 - xAI: `XAI_API_KEY`
@@ -63,5 +65,6 @@ Optional config file: `~/.summarize/config.json`
 ```
 
 Optional services:
+
 - `FIRECRAWL_API_KEY` for blocked sites
 - `APIFY_API_TOKEN` for YouTube fallback

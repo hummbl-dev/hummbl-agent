@@ -107,9 +107,11 @@ This repository is **registry-first**: the only authoritative skill registry is 
 ## Quick Start
 
 1. **Review the current workflow**
+
    ```bash
    cat docs/workflow-examples.md
    ```
+
    - Workflows index: `docs/workflows-index.md`
    - Governed model calls: `docs/governed-model-call.md`
    - Skill selection + routing: `docs/skill-routing-flow.md`
@@ -117,16 +119,19 @@ This repository is **registry-first**: the only authoritative skill registry is 
    - Local Places skill: `docs/local-places-flow.md`
 
 2. **Inspect agents, commands, and skills**
+
    ```bash
    ls agents commands skills
    ```
 
 3. **Check configs and scripts**
+
    ```bash
    ls configs scripts
    ```
 
 4. **Optional: seed workspace coordination templates**
+
    ```bash
    mkdir -p ~/clawd/hummbl-agent
    cp docs/templates/AGENTS.md ~/clawd/hummbl-agent/AGENTS.md
@@ -135,16 +140,19 @@ This repository is **registry-first**: the only authoritative skill registry is 
    ```
 
 5. **Open a run + generate prompts**
+
    ```bash
    scripts/orchestrate.sh
    ```
 
 6. **Run a governed command**
+
    ```bash
    scripts/run-cmd.sh --runner codex -- git status --porcelain
    ```
 
 7. **Grok runner example**
+
    ```bash
    packages/runners/grok/scripts/make-prompt.sh > /tmp/grok-prompt.md
    packages/runners/grok/scripts/log-run.sh "Session start: grok" \
@@ -156,12 +164,15 @@ This repository is **registry-first**: the only authoritative skill registry is 
 - Codex CLI can be used without API keys by setting `preferred_auth_method = "chatgpt"` in `~/.codex/config.toml`.
 - Governed API calls (`scripts/run-openai-governed.sh`, `scripts/run-anthropic-governed.sh`) still require their vendor API keys.
 - Example config:
+
   ```bash
   cp configs/codex/config.example.toml ~/.codex/config.toml
   ```
+
 - Claude Code can use a Claude.ai subscription login (no API keys). If `ANTHROPIC_API_KEY` is set, it will use API billing instead.
   - Use `/login` inside Claude Code and verify with `/status`.
   - Ensure `ANTHROPIC_API_KEY` is unset in your shell and not injected via `~/.claude/settings.json`.
+
 ## Development Phases
 
 - **Phase 1**: Foundation setup and basic skills (P1 + coordination)

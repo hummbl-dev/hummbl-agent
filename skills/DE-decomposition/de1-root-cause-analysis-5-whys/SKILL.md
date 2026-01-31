@@ -16,11 +16,13 @@ Apply the DE1 Root Cause Analysis (5 Whys) transformation to iteratively ask why
 ## When to Use DE1
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Root Cause Analysis (5 Whys) here?"
 - "What changes if we apply DE1 to this breaking down an implementation plan?"
 - "Which assumptions does DE1 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE1 Root Cause Analysis (5 Whys) transformation to iteratively ask why
 ## The DE1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE1 (Root Cause Analysis (5 Whys)) - Establish the focus
 const focus = "Iteratively ask why problems occur until fundamental cause emerges";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE1 (Root Cause Analysis (5 Whys)) - Apply the transformation
 const output = applyModel("DE1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE1 (Root Cause Analysis (5 Whys)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE1", "Iteratively ask why problems occur until funda
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE1", "Iteratively ask why problems occur until funda
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de1-root-cause-analysis-5-whys
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE1 "Iteratively ask why problems occur until fundamental cause emerges"
 ```

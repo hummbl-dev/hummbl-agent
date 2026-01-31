@@ -16,11 +16,13 @@ Apply the IN7 Boundary Testing transformation to explore extreme conditions to f
 ## When to Use IN7
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Boundary Testing here?"
 - "What changes if we apply IN7 to this risk assessment for a launch?"
 - "Which assumptions does IN7 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN7 Boundary Testing transformation to explore extreme conditions to f
 ## The IN7 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN7 (Boundary Testing) - Establish the focus
 const focus = "Explore extreme conditions to find system limits and breaking points";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN7 (Boundary Testing) - Apply the transformation
 const output = applyModel("IN7", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN7 (Boundary Testing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN7", "Explore extreme conditions to find system limi
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN7", "Explore extreme conditions to find system limi
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in7-boundary-testing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN7 "Explore extreme conditions to find system limits and breaking points"
 ```

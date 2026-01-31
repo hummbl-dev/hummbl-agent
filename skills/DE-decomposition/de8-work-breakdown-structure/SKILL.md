@@ -16,11 +16,13 @@ Apply the DE8 Work Breakdown Structure transformation to hierarchically divide p
 ## When to Use DE8
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Work Breakdown Structure here?"
 - "What changes if we apply DE8 to this breaking down an implementation plan?"
 - "Which assumptions does DE8 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE8 Work Breakdown Structure transformation to hierarchically divide p
 ## The DE8 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE8 (Work Breakdown Structure) - Establish the focus
 const focus = "Hierarchically divide project into deliverable-oriented components with clear ownership";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE8 (Work Breakdown Structure) - Apply the transformation
 const output = applyModel("DE8", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE8 (Work Breakdown Structure) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE8", "Hierarchically divide project into deliverable
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE8", "Hierarchically divide project into deliverable
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de8-work-breakdown-structure
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE8 "Hierarchically divide project into deliverable-oriented components with clear ownership"
 ```

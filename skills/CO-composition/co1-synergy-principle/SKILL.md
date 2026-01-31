@@ -16,11 +16,13 @@ Apply the CO1 Synergy Principle transformation to design combinations where inte
 ## When to Use CO1
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Synergy Principle here?"
 - "What changes if we apply CO1 to this integrating two services?"
 - "Which assumptions does CO1 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO1 Synergy Principle transformation to design combinations where inte
 ## The CO1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO1 (Synergy Principle) - Establish the focus
 const focus = "Design combinations where integrated value exceeds sum of parts";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO1 (Synergy Principle) - Apply the transformation
 const output = applyModel("CO1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO1 (Synergy Principle) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO1", "Design combinations where integrated value exc
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO1", "Design combinations where integrated value exc
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co1-synergy-principle
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO1 "Design combinations where integrated value exceeds sum of parts"
 ```

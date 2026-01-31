@@ -16,11 +16,13 @@ Apply the SY13 Incentive Architecture transformation to design reward and penalt
 ## When to Use SY13
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Incentive Architecture here?"
 - "What changes if we apply SY13 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY13 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY13 Incentive Architecture transformation to design reward and penalt
 ## The SY13 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY13 (Incentive Architecture) - Establish the focus
 const focus = "Design reward and penalty structures aligning individual actions with system goals";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY13 (Incentive Architecture) - Apply the transformation
 const output = applyModel("SY13", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY13 (Incentive Architecture) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY13", "Design reward and penalty structures aligning
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY13", "Design reward and penalty structures aligning
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy13-incentive-architecture
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY13 "Design reward and penalty structures aligning individual actions with system goals"
 ```

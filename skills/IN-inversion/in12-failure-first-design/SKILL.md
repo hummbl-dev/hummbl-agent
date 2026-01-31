@@ -16,11 +16,13 @@ Apply the IN12 Failure First Design transformation to begin planning by identify
 ## When to Use IN12
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Failure First Design here?"
 - "What changes if we apply IN12 to this risk assessment for a launch?"
 - "Which assumptions does IN12 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN12 Failure First Design transformation to begin planning by identify
 ## The IN12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN12 (Failure First Design) - Establish the focus
 const focus = "Begin planning by identifying all possible failure modes and designing to prevent them";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN12 (Failure First Design) - Apply the transformation
 const output = applyModel("IN12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN12 (Failure First Design) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN12", "Begin planning by identifying all possible fa
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN12", "Begin planning by identifying all possible fa
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in12-failure-first-design
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN12 "Begin planning by identifying all possible failure modes and designing to prevent them"
 ```

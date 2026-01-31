@@ -16,11 +16,13 @@ Apply the RE1 Recursive Improvement (Kaizen) transformation to continuously refi
 ## When to Use RE1
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Recursive Improvement (Kaizen) here?"
 - "What changes if we apply RE1 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE1 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE1 Recursive Improvement (Kaizen) transformation to continuously refi
 ## The RE1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE1 (Recursive Improvement (Kaizen)) - Establish the focus
 const focus = "Continuously refine process through small, frequent enhancements";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE1 (Recursive Improvement (Kaizen)) - Apply the transformation
 const output = applyModel("RE1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE1 (Recursive Improvement (Kaizen)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE1", "Continuously refine process through small, fre
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE1", "Continuously refine process through small, fre
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re1-recursive-improvement-kaizen
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE1 "Continuously refine process through small, frequent enhancements"
 ```

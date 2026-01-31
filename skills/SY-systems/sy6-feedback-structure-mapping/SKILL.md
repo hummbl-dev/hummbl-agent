@@ -16,11 +16,13 @@ Apply the SY6 Feedback Structure Mapping transformation to diagram causal loops 
 ## When to Use SY6
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Feedback Structure Mapping here?"
 - "What changes if we apply SY6 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY6 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY6 Feedback Structure Mapping transformation to diagram causal loops 
 ## The SY6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY6 (Feedback Structure Mapping) - Establish the focus
 const focus = "Diagram causal loops showing how variables influence each other";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY6 (Feedback Structure Mapping) - Apply the transformation
 const output = applyModel("SY6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY6 (Feedback Structure Mapping) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY6", "Diagram causal loops showing how variables inf
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY6", "Diagram causal loops showing how variables inf
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy6-feedback-structure-mapping
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY6 "Diagram causal loops showing how variables influence each other"
 ```

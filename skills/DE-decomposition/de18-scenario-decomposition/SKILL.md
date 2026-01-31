@@ -16,11 +16,13 @@ Apply the DE18 Scenario Decomposition transformation to partition future possibi
 ## When to Use DE18
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Scenario Decomposition here?"
 - "What changes if we apply DE18 to this breaking down an implementation plan?"
 - "Which assumptions does DE18 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE18 Scenario Decomposition transformation to partition future possibi
 ## The DE18 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE18 (Scenario Decomposition) - Establish the focus
 const focus = "Partition future possibilities into discrete, mutually exclusive scenarios";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE18 (Scenario Decomposition) - Apply the transformation
 const output = applyModel("DE18", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE18 (Scenario Decomposition) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE18", "Partition future possibilities into discrete,
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE18", "Partition future possibilities into discrete,
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de18-scenario-decomposition
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE18 "Partition future possibilities into discrete, mutually exclusive scenarios"
 ```

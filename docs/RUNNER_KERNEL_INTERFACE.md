@@ -12,20 +12,25 @@ Define a strict contract between the kernel (planning/authorization) and runners
 ## Invariants
 
 ### RK1 — Kernel never sees raw secrets
+
 - Kernel receives only `secret_ref` identifiers and scope labels.
 - Kernel cannot resolve secret values.
 
 ### RK2 — Runner executes only approved plan
+
 - Runner may execute only a signed or explicitly authorized plan artifact.
 - No autonomous vendor selection or tool escalation.
 
 ### RK3 — Artifacts are mandatory
+
 Every execution must emit:
+
 - input artifact (request/prompt/parameters)
 - output artifact (response + metadata)
 - execution record (runner id, vendor, timestamp, scope, hashes)
 
 ### RK4 — No control plane exposure
+
 - Runners have no network control plane (no HTTP admin UI, no public ports).
 - Local CLI / one‑shot job invocation only.
 

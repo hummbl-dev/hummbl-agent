@@ -16,11 +16,13 @@ Apply the CO10 Pipeline Orchestration transformation to coordinate sequential st
 ## When to Use CO10
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Pipeline Orchestration here?"
 - "What changes if we apply CO10 to this integrating two services?"
 - "Which assumptions does CO10 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO10 Pipeline Orchestration transformation to coordinate sequential st
 ## The CO10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO10 (Pipeline Orchestration) - Establish the focus
 const focus = "Coordinate sequential stages with explicit handoffs and error handling";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO10 (Pipeline Orchestration) - Apply the transformation
 const output = applyModel("CO10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO10 (Pipeline Orchestration) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO10", "Coordinate sequential stages with explicit ha
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO10", "Coordinate sequential stages with explicit ha
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co10-pipeline-orchestration
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO10 "Coordinate sequential stages with explicit handoffs and error handling"
 ```

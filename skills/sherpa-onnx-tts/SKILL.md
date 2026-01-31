@@ -43,6 +43,7 @@ export PATH="{baseDir}/bin:$PATH"
 ```
 
 Notes:
+
 - Pick a different model from the sherpa-onnx `tts-models` release if you want another voice.
 - If the model dir has multiple `.onnx` files, set `SHERPA_ONNX_MODEL_FILE` or pass `--model-file`.
 - You can also pass `--tokens-file` or `--data-dir` to override the defaults.

@@ -16,11 +16,13 @@ Apply the IN17 Counterfactual Negation transformation to imagine outcomes if key
 ## When to Use IN17
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Counterfactual Negation here?"
 - "What changes if we apply IN17 to this risk assessment for a launch?"
 - "Which assumptions does IN17 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN17 Counterfactual Negation transformation to imagine outcomes if key
 ## The IN17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN17 (Counterfactual Negation) - Establish the focus
 const focus = "Imagine outcomes if key decision had been reversed";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN17 (Counterfactual Negation) - Apply the transformation
 const output = applyModel("IN17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN17 (Counterfactual Negation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN17", "Imagine outcomes if key decision had been rev
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN17", "Imagine outcomes if key decision had been rev
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in17-counterfactual-negation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN17 "Imagine outcomes if key decision had been reversed"
 ```

@@ -16,11 +16,13 @@ Apply the CO3 Functional Composition transformation to chain pure operations whe
 ## When to Use CO3
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Functional Composition here?"
 - "What changes if we apply CO3 to this integrating two services?"
 - "Which assumptions does CO3 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO3 Functional Composition transformation to chain pure operations whe
 ## The CO3 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO3 (Functional Composition) - Establish the focus
 const focus = "Chain pure operations where output of one becomes input of next";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO3 (Functional Composition) - Apply the transformation
 const output = applyModel("CO3", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO3 (Functional Composition) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO3", "Chain pure operations where output of one beco
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO3", "Chain pure operations where output of one beco
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co3-functional-composition
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO3 "Chain pure operations where output of one becomes input of next"
 ```

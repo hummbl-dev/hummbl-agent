@@ -16,11 +16,13 @@ Apply the IN4 Contra-Logic transformation to argue the opposite position to stre
 ## When to Use IN4
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Contra-Logic here?"
 - "What changes if we apply IN4 to this risk assessment for a launch?"
 - "Which assumptions does IN4 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN4 Contra-Logic transformation to argue the opposite position to stre
 ## The IN4 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN4 (Contra-Logic) - Establish the focus
 const focus = "Argue the opposite position to stress-test assumptions and expose weak reasoning";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN4 (Contra-Logic) - Apply the transformation
 const output = applyModel("IN4", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN4 (Contra-Logic) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN4", "Argue the opposite position to stress-test ass
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN4", "Argue the opposite position to stress-test ass
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in4-contra-logic
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN4 "Argue the opposite position to stress-test assumptions and expose weak reasoning"
 ```

@@ -16,11 +16,13 @@ Apply the CO16 System Integration Testing transformation to verify assembled com
 ## When to Use CO16
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use System Integration Testing here?"
 - "What changes if we apply CO16 to this integrating two services?"
 - "Which assumptions does CO16 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO16 System Integration Testing transformation to verify assembled com
 ## The CO16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO16 (System Integration Testing) - Establish the focus
 const focus = "Verify assembled components work correctly together, not just in isolation";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO16 (System Integration Testing) - Apply the transformation
 const output = applyModel("CO16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO16 (System Integration Testing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO16", "Verify assembled components work correctly to
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO16", "Verify assembled components work correctly to
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co16-system-integration-testing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO16 "Verify assembled components work correctly together, not just in isolation"
 ```

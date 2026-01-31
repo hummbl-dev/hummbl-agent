@@ -9,15 +9,18 @@ source: "hummbl-training"
 # Use Transformation Codes Explicitly
 
 ## Action
+
 Always reference Base120 transformation codes explicitly in comments and documentation (e.g., `// Using P1 (First Principles Framing)`).
 
 ## Evidence
+
 - User corrected 8 instances where transformation codes were missing
 - Explicit references improve pattern recognition by 60%
 - Code reviews show better mental model traceability
 - Team communication clearer with standardized references
 
 ## When to Apply
+
 - Any time a mental model is used in code
 - When documenting decision-making processes
 - During agent coordination and handoffs
@@ -25,6 +28,7 @@ Always reference Base120 transformation codes explicitly in comments and documen
 - When teaching or explaining mental models
 
 ## How to Apply
+
 1. Identify the specific transformation being used
 2. Include the code in comments: `// Using DE3 (Decomposition)`
 3. Briefly explain WHY this transformation was chosen
@@ -32,6 +36,7 @@ Always reference Base120 transformation codes explicitly in comments and documen
 5. Maintain consistency across all documentation
 
 ## Examples
+
 ```typescript
 // Using P1 (First Principles Framing) - Frame from foundational truths
 const perspectives = analyzeStakeholders(requirements);

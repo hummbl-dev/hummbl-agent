@@ -27,6 +27,7 @@ Requires `GOOGLE_PLACES_API_KEY` in `.env` or environment.
 1. **Check server:** `curl http://127.0.0.1:8000/ping`
 
 2. **Resolve location:**
+
 ```bash
 curl -X POST http://127.0.0.1:8000/locations/resolve \
   -H "Content-Type: application/json" \
@@ -34,6 +35,7 @@ curl -X POST http://127.0.0.1:8000/locations/resolve \
 ```
 
 3. **Search places:**
+
 ```bash
 curl -X POST http://127.0.0.1:8000/places/search \
   -H "Content-Type: application/json" \
@@ -46,6 +48,7 @@ curl -X POST http://127.0.0.1:8000/places/search \
 ```
 
 4. **Get details:**
+
 ```bash
 curl http://127.0.0.1:8000/places/{place_id}
 ```

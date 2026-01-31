@@ -16,11 +16,13 @@ Apply the CO15 Combinatorial Design transformation to systematically explore opt
 ## When to Use CO15
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Combinatorial Design here?"
 - "What changes if we apply CO15 to this integrating two services?"
 - "Which assumptions does CO15 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO15 Combinatorial Design transformation to systematically explore opt
 ## The CO15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO15 (Combinatorial Design) - Establish the focus
 const focus = "Systematically explore option combinations to find optimal configurations";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO15 (Combinatorial Design) - Apply the transformation
 const output = applyModel("CO15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO15 (Combinatorial Design) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO15", "Systematically explore option combinations to
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO15", "Systematically explore option combinations to
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co15-combinatorial-design
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO15 "Systematically explore option combinations to find optimal configurations"
 ```

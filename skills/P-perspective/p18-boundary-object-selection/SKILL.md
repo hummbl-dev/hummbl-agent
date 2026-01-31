@@ -16,11 +16,13 @@ Apply the P18 Boundary Object Selection transformation to choose representations
 ## When to Use P18
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Boundary Object Selection here?"
 - "What changes if we apply P18 to this product requirements review?"
 - "Which assumptions does P18 help us surface?"
@@ -28,18 +30,21 @@ Apply the P18 Boundary Object Selection transformation to choose representations
 ## The P18 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P18 (Boundary Object Selection) - Establish the focus
 const focus = "Choose representations that bridge multiple perspectives while remaining meaningful";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P18 (Boundary Object Selection) - Apply the transformation
 const output = applyModel("P18", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P18 (Boundary Object Selection) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P18", "Choose representations that bridge multiple pe
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P18", "Choose representations that bridge multiple pe
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p18-boundary-object-selection
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P18 "Choose representations that bridge multiple perspectives while remaining meaningful"
 ```

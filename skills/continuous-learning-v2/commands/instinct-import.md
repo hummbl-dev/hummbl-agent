@@ -14,6 +14,7 @@ python3 ~/.claude/skills/continuous-learning-v2/scripts/instinct-cli.py import <
 ```
 
 Import instincts from:
+
 - Teammates' exports
 - Skill Creator (repo analysis)
 - Community collections
@@ -77,13 +78,17 @@ Import 8 new, update 1, skip 3?
 ## Merge Strategies
 
 ### For Duplicates
+
 When importing an instinct that matches an existing one:
+
 - **Higher confidence wins**: Keep the one with higher confidence
 - **Merge evidence**: Combine observation counts
 - **Update timestamp**: Mark as recently validated
 
 ### For Conflicts
+
 When importing an instinct that contradicts an existing one:
+
 - **Skip by default**: Don't import conflicting instincts
 - **Flag for review**: Mark both as needing attention
 - **Manual resolution**: User decides which to keep
@@ -91,6 +96,7 @@ When importing an instinct that contradicts an existing one:
 ## Source Tracking
 
 Imported instincts are marked with:
+
 ```yaml
 source: "inherited"
 imported_from: "team-instincts.yaml"
@@ -107,6 +113,7 @@ When importing from Skill Creator:
 ```
 
 This fetches instincts generated from repo analysis:
+
 - Source: `repo-analysis`
 - Higher initial confidence (0.7+)
 - Linked to source repository
@@ -122,6 +129,7 @@ This fetches instincts generated from repo analysis:
 ## Output
 
 After import:
+
 ```
 ✅ Import complete!
 

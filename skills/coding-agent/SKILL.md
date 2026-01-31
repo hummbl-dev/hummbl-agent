@@ -8,7 +8,7 @@ metadata: {"moltbot":{"emoji":"🧩","requires":{"anyBins":["claude","codex","op
 
 Use **bash** (with optional background mode) for all coding agent work. Simple and effective.
 
-## ⚠️ PTY Mode Required!
+## ⚠️ PTY Mode Required
 
 Coding agents (Codex, Claude Code, Pi) are **interactive terminal applications** that need a pseudo-terminal (PTY) to work correctly. Without PTY, you'll get broken output, missing colors, or the agent may hang.
 
@@ -106,6 +106,7 @@ process action:kill sessionId:XXX
 | `--yolo` | NO sandbox, NO approvals (fastest, most dangerous) |
 
 ### Building/Creating
+
 ```bash
 # Quick one-shot (auto-approves) - remember PTY!
 bash pty:true workdir:~/project command:"codex exec --full-auto 'Build a dark mode toggle'"
@@ -133,6 +134,7 @@ bash pty:true workdir:/tmp/pr-130-review command:"codex review --base main"
 ```
 
 ### Batch PR Reviews (parallel army!)
+
 ```bash
 # Fetch all PR refs first
 git fetch origin '+refs/pull/*/head:refs/remotes/origin/pr/*'
@@ -259,6 +261,7 @@ moltbot gateway wake --text "Done: [brief summary of what was built]" --mode now
 ```
 
 **Example:**
+
 ```bash
 bash pty:true workdir:~/project background:true command:"codex --yolo exec 'Build a REST API for todos.
 

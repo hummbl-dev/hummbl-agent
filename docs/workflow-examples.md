@@ -19,6 +19,7 @@ Claude Code (Development & Application)
 ## Installation Workflow
 
 ### **Step 1: Setup HUMMBL Workspace**
+
 ```bash
 # Create workspace structure
 mkdir -p ~/clawd/hummbl-agent/{skills,agents,commands,configs,sessions}
@@ -30,6 +31,7 @@ cp /Users/others/hummbl-agent/configs/learning/continuous-learning.json ~/.claud
 ```
 
 ### **Step 2: Install Claude Code Components**
+
 ```bash
 # Install HUMMBL agents
 cp /Users/others/hummbl-agent/agents/hummbl-architect.md ~/.claude/agents/
@@ -48,6 +50,7 @@ cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settin
 ```
 
 ### **Step 3: Configure OpenClaw Gateway**
+
 ```bash
 # Start HUMMBL gateway
 moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
@@ -57,6 +60,7 @@ moltbot gateway status
 ```
 
 ### **Step 4: Use local communication skill**
+
 Tuple (canonical form): `agent:planner|communication:send|scope{channel=slack;target=C123456}`
 
 ```ts
@@ -69,6 +73,7 @@ const res = await callSkill("communication.slack.send-message", {
 ## Daily Workflow Examples
 
 ### **Example 1: Starting a New Project**
+
 ```bash
 # 1. Reduce the project to first principles with P1
 /apply-transformation P1 "Reduce this new API development project to its foundational truths"
@@ -83,6 +88,7 @@ const projectFirstPrinciples = {
 ```
 
 ### **Example 2: Complex Problem Decomposition**
+
 ```bash
 # 2. Break down complex integration
 /apply-transformation DE3 "Decompose the multi-agent integration challenge"
@@ -98,6 +104,7 @@ const integrationTasks = {
 ```
 
 ### **Example 3: Multi-Agent Coordination**
+
 ```bash
 # 3. Coordinate agents for feature development
 moltbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for user authentication feature"
@@ -107,6 +114,7 @@ moltbot agent --message "Apply multi-agent coordination using P1, DE3, SY8 for u
 ```
 
 ### **Example 4: Generating SITREPs**
+
 ```bash
 # 4. Generate daily situation report
 ~/clawd/hummbl-agent/scripts/generate-sitrep.sh --show
@@ -120,6 +128,7 @@ SITREP-1: HUMMBL-Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMM
 ```
 
 ### **Example 4.5: Governed Model Call (Prompt → Request → API → Log)**
+
 ```bash
 # 1) Open a run and generate prompt packets
 scripts/orchestrate.sh
@@ -134,12 +143,14 @@ scripts/run-anthropic-governed.sh --model claude-3-5-sonnet-20241022 --input "Su
 ```
 
 #### Notes
+
 - Requests are built via `scripts/build-request.cjs` with JSON escaping and `maxRequestBytes` enforcement.
 - Global rate limiting is enforced via `_state/.rate-limit.json`.
 - Artifacts and hashes are logged under `_state/runs/YYYY-MM-DD/artifacts/`.
 - Full walkthrough: `docs/governed-model-call.md`
 
 ### **Example 5: Skill Selection + Routing (Task → Decision → Prompt → Log)**
+
 ```bash
 # 1) Open a run and generate prompt packets
 scripts/orchestrate.sh
@@ -156,10 +167,12 @@ packages/runners/codex/scripts/log-run.sh "Prompt prepared" \
 ```
 
 #### Notes
+
 - Router output includes explain + alternatives for auditability.
 - Full walkthrough: `docs/skill-routing-flow.md`
 
 ### **Example 6: Evidence + SITREP (Capture → Lint → Generate)**
+
 ```bash
 # 1) Import evidence (canonical)
 scripts/import-observation.sh \
@@ -176,10 +189,12 @@ scripts/generate-sitrep.sh
 ```
 
 #### Notes
+
 - SITREP schema: `docs/sitrep-schema.md`
 - Full walkthrough: `docs/evidence-sitrep-flow.md`
 
 ### **Example 7: Local Places Skill (Run → Query → Log)**
+
 ```bash
 # 1) Run server
 cd skills/local-places
@@ -199,11 +214,13 @@ curl -X POST http://127.0.0.1:8000/places/search \
 ```
 
 #### Notes
+
 - Full walkthrough: `docs/local-places-flow.md`
 
 ## Advanced Integration Examples
 
 ### **Example 5: System Pattern Analysis**
+
 ```typescript
 // Using SY8 (Systems) - Identify coordination patterns
 const systemAnalysis = {
@@ -225,6 +242,7 @@ const systemAnalysis = {
 ```
 
 ### **Example 6: Risk Mitigation with Inversion**
+
 ```bash
 # Apply IN2 to identify coordination risks
 /apply-transformation IN2 "What could cause our multi-agent coordination to fail?"
@@ -240,6 +258,7 @@ const coordinationRisks = {
 ```
 
 ### **Example 7: Iterative Process Improvement**
+
 ```typescript
 // Using RE2 (Recursion) - Continuous refinement
 const improvementCycle = {
@@ -266,6 +285,7 @@ const improvementCycle = {
 ## Real-World Use Cases
 
 ### **Use Case 1: API Development Project**
+
 ```bash
 # Project kickoff with mental models
 /apply-transformation P1 "Frame customer API development from technical, business, user, system perspectives"
@@ -281,6 +301,7 @@ moltbot agent --message "Apply multi-agent coordination for API development usin
 ```
 
 ### **Use Case 2: System Migration**
+
 ```typescript
 // Complex migration with multiple stakeholders
 const migrationProject = {
@@ -312,6 +333,7 @@ const migrationProject = {
 ```
 
 ### **Use Case 3: Product Feature Launch**
+
 ```bash
 # Feature development with full HUMMBL integration
 echo "Starting feature development workflow..."
@@ -337,6 +359,7 @@ moltbot agent --session hummbl-sitrep --message "Generate SITREP for feature dev
 ### **Common Issues and Solutions**
 
 #### **Issue 1: Agent Handoff Failures**
+
 ```bash
 # Symptoms: Context loss, misunderstood requirements
 # Diagnosis: Check handoff protocol compliance
@@ -355,6 +378,7 @@ const handoffTemplate = {
 ```
 
 #### **Issue 2: Mental Model Inconsistency**
+
 ```bash
 # Symptoms: Inconsistent transformation application, unclear decision rationale
 # Diagnosis: Review mental model usage patterns
@@ -368,6 +392,7 @@ grep -r "Using.*(" ~/clawd/hummbl-agent/sessions/ | tail -20
 ```
 
 #### **Issue 3: Coordination Bottlenecks**
+
 ```bash
 # Symptoms: Decision delays, agent conflicts, duplicated work
 # Diagnosis: Generate SITREP to identify issues
@@ -387,6 +412,7 @@ const escalationProtocol = {
 ## Performance Optimization
 
 ### **Coordination Metrics to Track**
+
 ```typescript
 // Key Performance Indicators
 const kpis = {
@@ -398,6 +424,7 @@ const kpis = {
 ```
 
 ### **Continuous Improvement Process**
+
 ```bash
 # Weekly optimization cycle
 echo "Starting weekly coordination optimization..."
@@ -418,6 +445,7 @@ moltbot agent --message "Apply RE2 to refine coordination protocols based on wee
 ## Integration with External Tools
 
 ### **GitHub Integration**
+
 ```bash
 # Commit with mental model references
 git commit -m "feat: Add user authentication
@@ -446,6 +474,7 @@ echo "## Mental Model Application
 ```
 
 ### **Slack/Discord Integration**
+
 ```bash
 # Automated SITREP distribution
 moltbot message send --to #hummbl-updates --message "$(~/clawd/hummbl-agent/scripts/generate-sitrep.sh)"
@@ -457,18 +486,21 @@ moltbot message send --to #hummbl-coordination --message "🧠 Applied P1 to red
 ## Best Practices Summary
 
 ### **Daily Practices**
+
 1. **Start with P1** - Reduce every challenge to first principles
 2. **Use explicit codes** - Always reference transformation codes: `// Using DE3 (Decomposition)`
 3. **Generate SITREPs** - Daily progress reports with mental model tracking
 4. **Coordinate agents** - Use multi-agent coordination for complex tasks
 
 ### **Weekly Practices**  
+
 1. **Pattern analysis** - Apply SY8 to identify coordination patterns
 2. **Process refinement** - Use RE2 for iterative improvement
 3. **Risk assessment** - Apply IN2 to identify potential failures
 4. **Skill development** - Create new Base120 skills as needed
 
 ### **Quality Standards**
+
 - **TypeScript strict mode** for all code
 - **80%+ test coverage** for all implementations
 - **Explicit mental model references** in documentation

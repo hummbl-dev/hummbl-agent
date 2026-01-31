@@ -16,11 +16,13 @@ Apply the IN18 Kill-Criteria & Stop Rules transformation to define conditions th
 ## When to Use IN18
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Kill-Criteria & Stop Rules here?"
 - "What changes if we apply IN18 to this risk assessment for a launch?"
 - "Which assumptions does IN18 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN18 Kill-Criteria & Stop Rules transformation to define conditions th
 ## The IN18 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN18 (Kill-Criteria & Stop Rules) - Establish the focus
 const focus = "Define conditions that trigger project termination before launch";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN18 (Kill-Criteria & Stop Rules) - Apply the transformation
 const output = applyModel("IN18", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN18 (Kill-Criteria & Stop Rules) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN18", "Define conditions that trigger project termin
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN18", "Define conditions that trigger project termin
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in18-kill-criteria-and-stop-rules
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN18 "Define conditions that trigger project termination before launch"
 ```

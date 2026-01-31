@@ -16,11 +16,13 @@ Apply the DE15 Decision Tree Expansion transformation to map choices and their c
 ## When to Use DE15
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Decision Tree Expansion here?"
 - "What changes if we apply DE15 to this breaking down an implementation plan?"
 - "Which assumptions does DE15 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE15 Decision Tree Expansion transformation to map choices and their c
 ## The DE15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE15 (Decision Tree Expansion) - Establish the focus
 const focus = "Map choices and their consequences as branching paths";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE15 (Decision Tree Expansion) - Apply the transformation
 const output = applyModel("DE15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE15 (Decision Tree Expansion) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE15", "Map choices and their consequences as branchi
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE15", "Map choices and their consequences as branchi
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de15-decision-tree-expansion
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE15 "Map choices and their consequences as branching paths"
 ```

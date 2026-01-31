@@ -16,11 +16,13 @@ Apply the CO7 Network Effects transformation to exploit increasing value as user
 ## When to Use CO7
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Network Effects here?"
 - "What changes if we apply CO7 to this integrating two services?"
 - "Which assumptions does CO7 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO7 Network Effects transformation to exploit increasing value as user
 ## The CO7 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO7 (Network Effects) - Establish the focus
 const focus = "Exploit increasing value as user base or connections grow";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO7 (Network Effects) - Apply the transformation
 const output = applyModel("CO7", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO7 (Network Effects) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO7", "Exploit increasing value as user base or conne
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO7", "Exploit increasing value as user base or conne
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co7-network-effects
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO7 "Exploit increasing value as user base or connections grow"
 ```

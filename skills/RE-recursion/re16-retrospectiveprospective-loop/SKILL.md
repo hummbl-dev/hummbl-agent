@@ -16,11 +16,13 @@ Apply the RE16 Retrospective→Prospective Loop transformation to use systematic
 ## When to Use RE16
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Retrospective→Prospective Loop here?"
 - "What changes if we apply RE16 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE16 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE16 Retrospective→Prospective Loop transformation to use systematic
 ## The RE16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE16 (Retrospective→Prospective Loop) - Establish the focus
 const focus = "Use systematic reflection on past to inform future planning";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE16 (Retrospective→Prospective Loop) - Apply the transformation
 const output = applyModel("RE16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE16 (Retrospective→Prospective Loop) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE16", "Use systematic reflection on past to inform f
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE16", "Use systematic reflection on past to inform f
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re16-retrospectiveprospective-loop
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE16 "Use systematic reflection on past to inform future planning"
 ```

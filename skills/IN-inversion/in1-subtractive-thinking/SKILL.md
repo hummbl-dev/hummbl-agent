@@ -16,11 +16,13 @@ Apply the IN1 Subtractive Thinking transformation to improve systems by removing
 ## When to Use IN1
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Subtractive Thinking here?"
 - "What changes if we apply IN1 to this risk assessment for a launch?"
 - "Which assumptions does IN1 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN1 Subtractive Thinking transformation to improve systems by removing
 ## The IN1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN1 (Subtractive Thinking) - Establish the focus
 const focus = "Improve systems by removing elements rather than adding complexity";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN1 (Subtractive Thinking) - Apply the transformation
 const output = applyModel("IN1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN1 (Subtractive Thinking) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN1", "Improve systems by removing elements rather th
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN1", "Improve systems by removing elements rather th
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in1-subtractive-thinking
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN1 "Improve systems by removing elements rather than adding complexity"
 ```

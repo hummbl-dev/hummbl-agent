@@ -16,11 +16,13 @@ Apply the SY17 Policy Feedbacks transformation to anticipate how rules shape beh
 ## When to Use SY17
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Policy Feedbacks here?"
 - "What changes if we apply SY17 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY17 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY17 Policy Feedbacks transformation to anticipate how rules shape beh
 ## The SY17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY17 (Policy Feedbacks) - Establish the focus
 const focus = "Anticipate how rules shape behavior, which creates conditions affecting future rules";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY17 (Policy Feedbacks) - Apply the transformation
 const output = applyModel("SY17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY17 (Policy Feedbacks) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY17", "Anticipate how rules shape behavior, which cr
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY17", "Anticipate how rules shape behavior, which cr
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy17-policy-feedbacks
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY17 "Anticipate how rules shape behavior, which creates conditions affecting future rules"
 ```

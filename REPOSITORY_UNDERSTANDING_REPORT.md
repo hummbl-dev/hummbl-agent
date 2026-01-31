@@ -11,6 +11,7 @@
 The **hummbl-agent** repository is an ambitious and sophisticated integration workspace that implements the **Base120 mental model framework** as a foundation for AI agent coordination and multi-agent systems. This work represents a novel approach to structuring AI reasoning through explicit, codified mental models that can be systematically applied to problem-solving, system design, and agent coordination.
 
 The project integrates three key technologies:
+
 1. **Moltbot** - Multi-agent coordination hub and gateway
 2. **Moltbot Registry** - Distribution system for installable skills
 3. **Claude Code / Everything Claude Code** - Development environment with HUMMBL-specific agents and commands
@@ -56,9 +57,11 @@ Base120 is a comprehensive framework of **120 mental models** organized into **6
 ### The Six Transformations
 
 #### **P - Perspective** (20 models)
+
 **Purpose**: Frame, name, and shift points of view
 
 Key Models:
+
 - **P1 - First Principles Framing**: Reduce complex problems to foundational truths
 - **P2 - Stakeholder Mapping**: Identify and align stakeholders
 - **P7 - Perspective Switching**: View problems from multiple angles
@@ -67,9 +70,11 @@ Key Models:
 **When to Use**: Requirements gathering, problem definition, stakeholder alignment, reframing obstacles
 
 #### **IN - Inversion** (20 models)
+
 **Purpose**: Reverse assumptions, work backward, test by contradiction
 
 Key Models:
+
 - **IN1 - Subtractive Thinking**: Remove elements to reveal core
 - **IN2 - Premortem Analysis**: Identify failure modes before they occur
 - **IN3 - Problem Reversal**: Flip the problem to find solutions
@@ -78,9 +83,11 @@ Key Models:
 **When to Use**: Risk identification, validation, alternative solution discovery, assumption testing
 
 #### **CO - Composition** (20 models)
+
 **Purpose**: Build up, combine, integrate components
 
 Key Models:
+
 - **CO3 - Functional Composition**: Combine functions into pipelines
 - **CO5 - Emergence**: Recognize properties that arise from combination
 - **CO10 - Pipeline Orchestration**: Sequential stage coordination
@@ -89,9 +96,11 @@ Key Models:
 **When to Use**: Building complex systems, integration tasks, feature synthesis, architectural assembly
 
 #### **DE - Decomposition** (20 models)
+
 **Purpose**: Break down, modularize, separate concerns
 
 Key Models:
+
 - **DE1 - Root Cause Analysis (5 Whys)**: Get to fundamental causes
 - **DE3 - Modularization**: Break into manageable components
 - **DE7 - Pareto Decomposition (80/20)**: Focus on high-impact elements
@@ -100,9 +109,11 @@ Key Models:
 **When to Use**: Complex problem breakdown, task prioritization, system modularization, complexity management
 
 #### **RE - Recursion** (20 models)
+
 **Purpose**: Self-reference, repetition, iterative improvement
 
 Key Models:
+
 - **RE1 - Recursive Improvement (Kaizen)**: Continuous incremental improvement
 - **RE2 - Feedback Loops**: Learn from outcomes and adjust
 - **RE3 - Meta-Learning**: Learn how to learn
@@ -111,9 +122,11 @@ Key Models:
 **When to Use**: Process optimization, iterative development, continuous improvement, pattern refinement
 
 #### **SY - Systems** (20 models)
+
 **Purpose**: Meta-systems, patterns, emergence, holistic thinking
 
 Key Models:
+
 - **SY1 - Systems Thinking**: Understand interconnections and feedback
 - **SY8 - Pattern Recognition**: Identify recurring structures
 - **SY15 - Network Analysis**: Map and understand relationships
@@ -178,6 +191,7 @@ metadata: {"moltbot":{"nix":{...}}}
 ### Skills Registry
 
 The `skills/MANIFEST.json` (971 lines) provides:
+
 - SHA256 tree hashes for each skill
 - Canonical paths and identifiers
 - Registry bindings for installation
@@ -191,7 +205,8 @@ The `skills/MANIFEST.json` (971 lines) provides:
 
 The repository includes custom Claude Code agents for various tasks:
 
-#### Core HUMMBL Agents:
+#### Core HUMMBL Agents
+
 - **hummbl-architect.md**: System design using Base120 transformations
   - Proactively applies P/IN/CO/DE/RE/SY transformations
   - Documents mental model selection with explicit codes
@@ -201,7 +216,8 @@ The repository includes custom Claude Code agents for various tasks:
 - **transformation-guide.md**: Helps select appropriate transformations
 - **sitrep-generator.md**: Automated SITREP (Situation Report) generation
 
-#### General Development Agents:
+#### General Development Agents
+
 - architect.md, planner.md - General system design
 - build-error-resolver.md - Fix build issues
 - code-reviewer.md - Code review assistance
@@ -216,13 +232,15 @@ The repository includes custom Claude Code agents for various tasks:
 
 Slash commands for interactive mental model application:
 
-#### Mental Model Commands:
+#### Mental Model Commands
+
 - **/apply-transformation** - Apply specific transformation (e.g., P1, DE3)
 - **/plan-with-base120** - Create plans using Base120 framework
 - **/verify-hummbl** - Verify HUMMBL compliance
 - **/sitrep** - Generate situation reports
 
-#### Development Commands:
+#### Development Commands
+
 - /plan, /checkpoint, /verify - Project management
 - /tdd, /e2e, /test-coverage - Testing workflows
 - /code-review, /refactor-clean - Code quality
@@ -239,6 +257,7 @@ Slash commands for interactive mental model application:
 **Philosophy**: Stable, minimal contracts with no runtime behavior
 
 **Contents**:
+
 - `types.ts` - Shared primitives + provenance
 - `agent.ts` - Agent interface
 - `task.ts` - Task interface
@@ -249,6 +268,7 @@ Slash commands for interactive mental model application:
 - `state.ts` - Run state contract aligned to _state/CURRENT_STATE.md
 
 **Benefits**:
+
 - No dependencies
 - No build system
 - Pure type contracts
@@ -274,7 +294,8 @@ Slash commands for interactive mental model application:
 
 The repository demonstrates exceptional attention to governance and automation:
 
-#### Validation & Linting:
+#### Validation & Linting
+
 - `lint-skill-registry.sh` - Validate skill registry consistency
 - `lint-base120-skill-map.sh` - Check Base120 mapping
 - `lint-sitrep.sh` - Validate SITREP format
@@ -284,19 +305,22 @@ The repository demonstrates exceptional attention to governance and automation:
 - `lint-network-policy.sh` - Network policy enforcement
 - `lint-esm.mjs` - ESM module validation
 
-#### Orchestration & Execution:
+#### Orchestration & Execution
+
 - `orchestrate.sh` - Open run + generate prompts
 - `run-cmd.sh` - Governed command execution
 - `run-anthropic-governed.sh` - Governed Claude API calls
 - `run-openai-governed.sh` - Governed OpenAI API calls
 - `experiment-run.sh` - Controlled recursive improvement
 
-#### Generation:
+#### Generation
+
 - `generate-sitrep.sh` - Automated SITREP generation
 - `generate-base120-skill-map.cjs` - Base120 mapping
 - `build-request.cjs` - Build system integration
 
-#### State Management:
+#### State Management
+
 - `new-run.sh` - Initialize new run
 - `import-observation.sh` - Import evidence
 - `sync-upstreams.sh` - Vendor pin tooling
@@ -345,29 +369,34 @@ _state/
 
 The repository includes comprehensive documentation:
 
-#### Framework Documentation:
+#### Framework Documentation
+
 - `base120.v1.0.canonical.json` (56KB) - Complete Base120 specification
 - `base120-skill-map.md` - Mapping of models to implementations
 - `base120-skill-template.md` - Template for new skills
 
-#### Workflow Documentation:
+#### Workflow Documentation
+
 - `workflow-examples.md` - Complete usage examples
 - `workflows-index.md` - Index of available workflows
 - `governed-model-call.md` - How to make governed API calls
 - `skill-routing-flow.md` - Skill selection and routing
 - `evidence-sitrep-flow.md` - Evidence collection and reporting
 
-#### Runner Documentation:
+#### Runner Documentation
+
 - `runner-howto.md` - Creating new runners
 - `runner-manual-ui-log.md` - Manual UI logging
 - `RUNNER_KERNEL_INTERFACE.md` - Runner contract
 
-#### Security & Compliance:
+#### Security & Compliance
+
 - `THREAT_MODEL_RUNNERS.md` - Security model for runners
 - `SECRETS_LIFECYCLE.md` - Secrets management
 - `validation-checklist.md` - Quality validation
 
-#### Experimental Features:
+#### Experimental Features
+
 - `experiment-mode.md` - Controlled recursive improvement
 - `experiment-approval-checklist.md` - Human approval process
 - `experiment-run-walkthrough.md` - Step-by-step guide
@@ -433,16 +462,19 @@ State Update
 The project is organized into three phases:
 
 ### Phase 1: Foundation Setup
+
 - ✅ Basic skills infrastructure (P1 + coordination)
 - ✅ Core mental model implementation
 - ✅ Initial agent development
 
 ### Phase 2: Agent Integration
+
 - 🔄 Multi-agent coordination
 - 🔄 Communication hardening
 - 🔄 Cross-platform testing
 
 ### Phase 3: Automation & Learning
+
 - ⏳ Continuous learning expansion
 - ⏳ Automated improvement loops
 - ⏳ Advanced orchestration
@@ -471,10 +503,12 @@ Every code comment and decision explicitly references the mental model used (P1,
 ### 2. Governed API Calls
 
 All model API calls go through governance scripts:
+
 - `run-anthropic-governed.sh`
 - `run-openai-governed.sh`
 
 These scripts ensure:
+
 - Cost tracking
 - Rate limiting
 - Audit logging
@@ -484,6 +518,7 @@ These scripts ensure:
 ### 3. Skills as First-Class Citizens
 
 Skills are:
+
 - Version-controlled with SHA256 hashes
 - Installable via Moltbot registry
 - Distributed as Nix plugins
@@ -493,6 +528,7 @@ Skills are:
 ### 4. Runner Abstraction
 
 The kernel provides runner-agnostic interfaces, allowing the same mental models to work across:
+
 - Claude Code (Anthropic)
 - Codex (OpenAI)
 - Grok (xAI)
@@ -501,6 +537,7 @@ The kernel provides runner-agnostic interfaces, allowing the same mental models 
 ### 5. Audit-First Design
 
 Every execution produces:
+
 - Run logs with timestamps
 - Evidence artifacts with provenance
 - SHA256 checksums
@@ -512,6 +549,7 @@ This enables full reproducibility and accountability.
 ### 6. Network Policy Enforcement
 
 Scripts like `network-guard.cjs` and `lint-network-policy.sh` enforce controlled network access during runs, ensuring:
+
 - No accidental data exfiltration
 - Controlled API access
 - Deterministic execution
@@ -576,6 +614,7 @@ The repository includes production-ready communication integrations:
 ### TypeScript Strict Mode
 
 The project enforces TypeScript strict mode:
+
 - Explicit types and interfaces
 - No implicit any
 - Functional patterns over classes
@@ -591,6 +630,7 @@ The project enforces TypeScript strict mode:
 ### Testing Philosophy
 
 Tests are minimal and focused:
+
 - `packages/kernel/tests/TEST_PLAN.md` - Text-based test plan
 - Deterministic test approach
 - Types-only kernel requires no runtime tests
@@ -598,6 +638,7 @@ Tests are minimal and focused:
 ### Linting & Validation
 
 40+ lint scripts ensure:
+
 - Skill registry consistency
 - Base120 mapping accuracy
 - SITREP format compliance
@@ -614,6 +655,7 @@ Tests are minimal and focused:
 ### Moltbot Configuration (`configs/moltbot/`)
 
 Gateway configuration for multi-agent coordination:
+
 - Port settings (default: 18789)
 - Agent routing rules
 - Communication channels
@@ -622,6 +664,7 @@ Gateway configuration for multi-agent coordination:
 ### Claude Code Configuration (`configs/claude-code/`)
 
 Settings template for HUMMBL integration:
+
 - Agent definitions
 - Command mappings
 - Model preferences
@@ -630,6 +673,7 @@ Settings template for HUMMBL integration:
 ### Codex Configuration (`configs/codex/`)
 
 Example: `config.example.toml`:
+
 ```toml
 preferred_auth_method = "chatgpt"  # Use ChatGPT auth instead of API keys
 ```
@@ -637,6 +681,7 @@ preferred_auth_method = "chatgpt"  # Use ChatGPT auth instead of API keys
 ### Learning Configuration (`configs/learning/`)
 
 Continuous learning instincts and configurations:
+
 - Pattern recognition
 - Feedback integration
 - Model improvement
@@ -799,6 +844,7 @@ scripts/generate-sitrep.sh
 ### Documentation Gaps
 
 Several key documents are placeholders:
+
 - `ARCHITECTURE.md` - Needs comprehensive architecture description
 - `GOVERNANCE.md` - Needs decision process and roles
 - `CONTRIBUTING.md` - Needs contribution guidelines
@@ -813,6 +859,7 @@ Several key documents are placeholders:
 ### Skill Coverage
 
 While 160+ skills is impressive, some areas could be expanded:
+
 - More database integrations (MySQL, MongoDB, Redis)
 - Cloud provider integrations (AWS, GCP, Azure)
 - CI/CD pipeline integrations
@@ -822,6 +869,7 @@ While 160+ skills is impressive, some areas could be expanded:
 ### Runner Expansion
 
 Currently supports Claude Code, Codex, and Grok. Could expand to:
+
 - Mistral AI
 - Cohere
 - Local LLMs (Ollama, LM Studio)
@@ -830,6 +878,7 @@ Currently supports Claude Code, Codex, and Grok. Could expand to:
 ### Continuous Learning
 
 The learning infrastructure is in place but could be enhanced:
+
 - Automated pattern recognition
 - Strategy optimization based on outcomes
 - Dynamic mental model selection
@@ -971,6 +1020,7 @@ The ultimate goal is to make HUMMBL Base120 the **mental intelligence layer for 
 ### Personal Assessment
 
 I am impressed by:
+
 - The comprehensive nature of the Base120 framework
 - The production-grade engineering and governance
 - The attention to security and audit trails
@@ -979,6 +1029,7 @@ I am impressed by:
 - The quality of documentation
 
 This is **professional, well-thought-out work** that demonstrates:
+
 - Deep understanding of mental models and cognitive frameworks
 - Strong software engineering principles
 - Commitment to governance and security
@@ -988,6 +1039,7 @@ This is **professional, well-thought-out work** that demonstrates:
 ### Final Thoughts
 
 The hummbl-agent project is at the intersection of several important trends:
+
 - AI agent coordination and multi-agent systems
 - Transparent and explainable AI
 - Governed and auditable AI execution

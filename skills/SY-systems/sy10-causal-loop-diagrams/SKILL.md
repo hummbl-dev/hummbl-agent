@@ -16,11 +16,13 @@ Apply the SY10 Causal Loop Diagrams transformation to visualize circular cause-e
 ## When to Use SY10
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Causal Loop Diagrams here?"
 - "What changes if we apply SY10 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY10 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY10 Causal Loop Diagrams transformation to visualize circular cause-e
 ## The SY10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY10 (Causal Loop Diagrams) - Establish the focus
 const focus = "Visualize circular cause-effect relationships with reinforcing and balancing dynamics";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY10 (Causal Loop Diagrams) - Apply the transformation
 const output = applyModel("SY10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY10 (Causal Loop Diagrams) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY10", "Visualize circular cause-effect relationships
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY10", "Visualize circular cause-effect relationships
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy10-causal-loop-diagrams
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY10 "Visualize circular cause-effect relationships with reinforcing and balancing dynamics"
 ```

@@ -16,11 +16,13 @@ Apply the SY9 Phase Transitions & Tipping Points transformation to identify thre
 ## When to Use SY9
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Phase Transitions & Tipping Points here?"
 - "What changes if we apply SY9 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY9 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY9 Phase Transitions & Tipping Points transformation to identify thre
 ## The SY9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY9 (Phase Transitions & Tipping Points) - Establish the focus
 const focus = "Identify thresholds where gradual changes produce sudden qualitative shifts";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY9 (Phase Transitions & Tipping Points) - Apply the transformation
 const output = applyModel("SY9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY9 (Phase Transitions & Tipping Points) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY9", "Identify thresholds where gradual changes prod
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY9", "Identify thresholds where gradual changes prod
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy9-phase-transitions-and-tipping-points
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY9 "Identify thresholds where gradual changes produce sudden qualitative shifts"
 ```

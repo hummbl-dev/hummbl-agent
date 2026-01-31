@@ -16,11 +16,13 @@ Apply the IN2 Premortem Analysis transformation to assume failure has occurred a
 ## When to Use IN2
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Premortem Analysis here?"
 - "What changes if we apply IN2 to this risk assessment for a launch?"
 - "Which assumptions does IN2 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN2 Premortem Analysis transformation to assume failure has occurred a
 ## The IN2 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN2 (Premortem Analysis) - Establish the focus
 const focus = "Assume failure has occurred and work backward to identify causes";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN2 (Premortem Analysis) - Apply the transformation
 const output = applyModel("IN2", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN2 (Premortem Analysis) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN2", "Assume failure has occurred and work backward 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN2", "Assume failure has occurred and work backward 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in2-premortem-analysis
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN2 "Assume failure has occurred and work backward to identify causes"
 ```

@@ -16,11 +16,13 @@ Apply the SY18 Measurement & Telemetry transformation to instrument systems to c
 ## When to Use SY18
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Measurement & Telemetry here?"
 - "What changes if we apply SY18 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY18 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY18 Measurement & Telemetry transformation to instrument systems to c
 ## The SY18 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY18 (Measurement & Telemetry) - Establish the focus
 const focus = "Instrument systems to capture state, changes, and anomalies for informed response";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY18 (Measurement & Telemetry) - Apply the transformation
 const output = applyModel("SY18", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY18 (Measurement & Telemetry) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY18", "Instrument systems to capture state, changes,
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY18", "Instrument systems to capture state, changes,
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy18-measurement-and-telemetry
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY18 "Instrument systems to capture state, changes, and anomalies for informed response"
 ```

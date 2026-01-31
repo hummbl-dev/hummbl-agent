@@ -183,11 +183,13 @@ Environment variables: `BIRD_TIMEOUT_MS`, `BIRD_COOKIE_TIMEOUT_MS`, `BIRD_QUOTE_
 ## Troubleshooting
 
 ### Query IDs stale (404 errors)
+
 ```bash
 bird query-ids --fresh
 ```
 
 ### Cookie extraction fails
+
 - Check browser is logged into X
 - Try different `--cookie-source`
 - For Arc/Brave: use `--chrome-profile-dir`

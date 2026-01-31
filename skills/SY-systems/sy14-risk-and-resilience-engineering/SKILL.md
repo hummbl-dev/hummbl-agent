@@ -16,11 +16,13 @@ Apply the SY14 Risk & Resilience Engineering transformation to build systems tha
 ## When to Use SY14
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Risk & Resilience Engineering here?"
 - "What changes if we apply SY14 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY14 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY14 Risk & Resilience Engineering transformation to build systems tha
 ## The SY14 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY14 (Risk & Resilience Engineering) - Establish the focus
 const focus = "Build systems that fail gracefully and recover automatically";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY14 (Risk & Resilience Engineering) - Apply the transformation
 const output = applyModel("SY14", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY14 (Risk & Resilience Engineering) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY14", "Build systems that fail gracefully and recove
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY14", "Build systems that fail gracefully and recove
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy14-risk-and-resilience-engineering
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY14 "Build systems that fail gracefully and recover automatically"
 ```

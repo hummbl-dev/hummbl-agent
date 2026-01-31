@@ -16,11 +16,13 @@ Apply the CO4 Interdisciplinary Synthesis transformation to merge insights from 
 ## When to Use CO4
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Interdisciplinary Synthesis here?"
 - "What changes if we apply CO4 to this integrating two services?"
 - "Which assumptions does CO4 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO4 Interdisciplinary Synthesis transformation to merge insights from 
 ## The CO4 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO4 (Interdisciplinary Synthesis) - Establish the focus
 const focus = "Merge insights from distinct fields to generate novel solutions";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO4 (Interdisciplinary Synthesis) - Apply the transformation
 const output = applyModel("CO4", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO4 (Interdisciplinary Synthesis) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO4", "Merge insights from distinct fields to generat
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO4", "Merge insights from distinct fields to generat
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co4-interdisciplinary-synthesis
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO4 "Merge insights from distinct fields to generate novel solutions"
 ```

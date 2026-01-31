@@ -16,11 +16,13 @@ Apply the IN10 Red Teaming transformation to organize adversarial review to find
 ## When to Use IN10
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Red Teaming here?"
 - "What changes if we apply IN10 to this risk assessment for a launch?"
 - "Which assumptions does IN10 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN10 Red Teaming transformation to organize adversarial review to find
 ## The IN10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN10 (Red Teaming) - Establish the focus
 const focus = "Organize adversarial review to find vulnerabilities through simulated attack";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN10 (Red Teaming) - Apply the transformation
 const output = applyModel("IN10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN10 (Red Teaming) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN10", "Organize adversarial review to find vulnerabi
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN10", "Organize adversarial review to find vulnerabi
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in10-red-teaming
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN10 "Organize adversarial review to find vulnerabilities through simulated attack"
 ```

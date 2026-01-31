@@ -16,11 +16,13 @@ Apply the RE17 Versioning & Diff transformation to track changes over time and c
 ## When to Use RE17
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Versioning & Diff here?"
 - "What changes if we apply RE17 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE17 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE17 Versioning & Diff transformation to track changes over time and c
 ## The RE17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE17 (Versioning & Diff) - Establish the focus
 const focus = "Track changes over time and compare versions to understand evolution";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE17 (Versioning & Diff) - Apply the transformation
 const output = applyModel("RE17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE17 (Versioning & Diff) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE17", "Track changes over time and compare versions 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE17", "Track changes over time and compare versions 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re17-versioning-and-diff
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE17 "Track changes over time and compare versions to understand evolution"
 ```

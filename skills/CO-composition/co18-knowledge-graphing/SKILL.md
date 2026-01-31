@@ -16,11 +16,13 @@ Apply the CO18 Knowledge Graphing transformation to represent information as int
 ## When to Use CO18
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Knowledge Graphing here?"
 - "What changes if we apply CO18 to this integrating two services?"
 - "Which assumptions does CO18 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO18 Knowledge Graphing transformation to represent information as int
 ## The CO18 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO18 (Knowledge Graphing) - Establish the focus
 const focus = "Represent information as interconnected entities and relationships";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO18 (Knowledge Graphing) - Apply the transformation
 const output = applyModel("CO18", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO18 (Knowledge Graphing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO18", "Represent information as interconnected entit
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO18", "Represent information as interconnected entit
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co18-knowledge-graphing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO18 "Represent information as interconnected entities and relationships"
 ```

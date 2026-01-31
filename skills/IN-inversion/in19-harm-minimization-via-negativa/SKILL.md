@@ -16,11 +16,13 @@ Apply the IN19 Harm Minimization (Via Negativa) transformation to improve by rem
 ## When to Use IN19
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Harm Minimization (Via Negativa) here?"
 - "What changes if we apply IN19 to this risk assessment for a launch?"
 - "Which assumptions does IN19 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN19 Harm Minimization (Via Negativa) transformation to improve by rem
 ## The IN19 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN19 (Harm Minimization (Via Negativa)) - Establish the focus
 const focus = "Improve by removing harmful elements rather than adding beneficial ones";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN19 (Harm Minimization (Via Negativa)) - Apply the transformation
 const output = applyModel("IN19", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN19 (Harm Minimization (Via Negativa)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN19", "Improve by removing harmful elements rather t
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN19", "Improve by removing harmful elements rather t
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in19-harm-minimization-via-negativa
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN19 "Improve by removing harmful elements rather than adding beneficial ones"
 ```

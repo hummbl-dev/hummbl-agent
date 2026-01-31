@@ -16,11 +16,13 @@ Apply the P15 Assumption Surfacing transformation to explicitly identify and doc
 ## When to Use P15
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Assumption Surfacing here?"
 - "What changes if we apply P15 to this product requirements review?"
 - "Which assumptions does P15 help us surface?"
@@ -28,18 +30,21 @@ Apply the P15 Assumption Surfacing transformation to explicitly identify and doc
 ## The P15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P15 (Assumption Surfacing) - Establish the focus
 const focus = "Explicitly identify and document beliefs underlying plans or models";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P15 (Assumption Surfacing) - Apply the transformation
 const output = applyModel("P15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P15 (Assumption Surfacing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P15", "Explicitly identify and document beliefs under
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P15", "Explicitly identify and document beliefs under
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p15-assumption-surfacing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P15 "Explicitly identify and document beliefs underlying plans or models"
 ```

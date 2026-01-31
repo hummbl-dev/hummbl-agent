@@ -16,11 +16,13 @@ Apply the DE12 Constraint Isolation transformation to identify specific limiting
 ## When to Use DE12
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Constraint Isolation here?"
 - "What changes if we apply DE12 to this breaking down an implementation plan?"
 - "Which assumptions does DE12 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE12 Constraint Isolation transformation to identify specific limiting
 ## The DE12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE12 (Constraint Isolation) - Establish the focus
 const focus = "Identify specific limiting factor preventing performance improvement";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE12 (Constraint Isolation) - Apply the transformation
 const output = applyModel("DE12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE12 (Constraint Isolation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE12", "Identify specific limiting factor preventing 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE12", "Identify specific limiting factor preventing 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de12-constraint-isolation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE12 "Identify specific limiting factor preventing performance improvement"
 ```

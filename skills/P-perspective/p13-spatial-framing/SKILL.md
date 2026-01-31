@@ -16,11 +16,13 @@ Apply the P13 Spatial Framing transformation to scale perspective from local det
 ## When to Use P13
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Spatial Framing here?"
 - "What changes if we apply P13 to this product requirements review?"
 - "Which assumptions does P13 help us surface?"
@@ -28,18 +30,21 @@ Apply the P13 Spatial Framing transformation to scale perspective from local det
 ## The P13 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P13 (Spatial Framing) - Establish the focus
 const focus = "Scale perspective from local details to global patterns and back";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P13 (Spatial Framing) - Apply the transformation
 const output = applyModel("P13", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P13 (Spatial Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P13", "Scale perspective from local details to global
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P13", "Scale perspective from local details to global
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p13-spatial-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P13 "Scale perspective from local details to global patterns and back"
 ```

@@ -39,6 +39,7 @@ Generate a structured plan using Base120 transformations with explicit codes and
 ```
 
 Expected output:
+
 ```typescript
 // Using P1 (First Principles Framing) - Reduce the planning context to foundations
 const framing = {

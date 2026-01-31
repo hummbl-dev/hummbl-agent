@@ -16,11 +16,13 @@ Apply the P20 Worldview Articulation transformation to make explicit the fundame
 ## When to Use P20
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Worldview Articulation here?"
 - "What changes if we apply P20 to this product requirements review?"
 - "Which assumptions does P20 help us surface?"
@@ -28,18 +30,21 @@ Apply the P20 Worldview Articulation transformation to make explicit the fundame
 ## The P20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P20 (Worldview Articulation) - Establish the focus
 const focus = "Make explicit the fundamental beliefs and values that drive interpretation and action";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P20 (Worldview Articulation) - Apply the transformation
 const output = applyModel("P20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P20 (Worldview Articulation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P20", "Make explicit the fundamental beliefs and valu
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P20", "Make explicit the fundamental beliefs and valu
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p20-worldview-articulation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P20 "Make explicit the fundamental beliefs and values that drive interpretation and action"
 ```

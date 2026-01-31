@@ -1,6 +1,7 @@
 # Router Sample Case
 
 ## Input
+
 - Task: "Run governed command for status"
 - RunState objective: "Verify run logging"
 - Skills: registry entries (S.primitive.T.SYS.orchestrate-session.v0.1.0, S.primitive.T.SYS.run-governed-command.v0.1.0, S.primitive.T.SYS.sync-upstreams.v0.1.0)
@@ -9,6 +10,7 @@
 - Capabilities: include codex + grok
 
 ## Expected
+
 - Selected skill: S.primitive.T.SYS.run-governed-command.v0.1.0
 - Runner: codex (lexicographic tie-break if both capable)
 - Steps include:
@@ -18,6 +20,7 @@
   - manual: update CURRENT_STATE locks/hand-off
 
 ## Policy Checks
+
 - Risk <= medium
 - Network <= none
 - Exec <= allowlisted

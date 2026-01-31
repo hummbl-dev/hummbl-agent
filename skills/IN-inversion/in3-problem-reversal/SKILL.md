@@ -16,11 +16,13 @@ Apply the IN3 Problem Reversal transformation to solve the inverse of the stated
 ## When to Use IN3
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Problem Reversal here?"
 - "What changes if we apply IN3 to this risk assessment for a launch?"
 - "Which assumptions does IN3 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN3 Problem Reversal transformation to solve the inverse of the stated
 ## The IN3 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN3 (Problem Reversal) - Establish the focus
 const focus = "Solve the inverse of the stated problem to reveal insights";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN3 (Problem Reversal) - Apply the transformation
 const output = applyModel("IN3", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN3 (Problem Reversal) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN3", "Solve the inverse of the stated problem to rev
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN3", "Solve the inverse of the stated problem to rev
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in3-problem-reversal
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN3 "Solve the inverse of the stated problem to reveal insights"
 ```

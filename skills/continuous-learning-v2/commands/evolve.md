@@ -14,6 +14,7 @@ python3 ~/.claude/skills/continuous-learning-v2/scripts/instinct-cli.py evolve [
 ```
 
 Analyzes instincts and clusters related ones into higher-level structures:
+
 - **Commands**: When instincts describe user-invoked actions
 - **Skills**: When instincts describe auto-triggered behaviors
 - **Agents**: When instincts describe complex, multi-step processes
@@ -30,12 +31,15 @@ Analyzes instincts and clusters related ones into higher-level structures:
 ## Evolution Rules
 
 ### → Command (User-Invoked)
+
 When instincts describe actions a user would explicitly request:
+
 - Multiple instincts about "when user asks to..."
 - Instincts with triggers like "when creating a new X"
 - Instincts that follow a repeatable sequence
 
 Example:
+
 - `new-table-step1`: "when adding a database table, create migration"
 - `new-table-step2`: "when adding a database table, update schema"
 - `new-table-step3`: "when adding a database table, regenerate types"
@@ -43,12 +47,15 @@ Example:
 → Creates: `/new-table` command
 
 ### → Skill (Auto-Triggered)
+
 When instincts describe behaviors that should happen automatically:
+
 - Pattern-matching triggers
 - Error handling responses
 - Code style enforcement
 
 Example:
+
 - `prefer-functional`: "when writing functions, prefer functional style"
 - `use-immutable`: "when modifying state, use immutable patterns"
 - `avoid-classes`: "when designing modules, avoid class-based design"
@@ -56,12 +63,15 @@ Example:
 → Creates: `functional-patterns` skill
 
 ### → Agent (Needs Depth/Isolation)
+
 When instincts describe complex, multi-step processes that benefit from isolation:
+
 - Debugging workflows
 - Refactoring sequences
 - Research tasks
 
 Example:
+
 - `debug-step1`: "when debugging, first check logs"
 - `debug-step2`: "when debugging, isolate the failing component"
 - `debug-step3`: "when debugging, create minimal reproduction"
@@ -132,6 +142,7 @@ Run `/evolve --execute` to create these files.
 ## Generated File Format
 
 ### Command
+
 ```markdown
 ---
 name: new-table
@@ -153,6 +164,7 @@ evolved_from:
 ```
 
 ### Skill
+
 ```markdown
 ---
 name: functional-patterns
@@ -169,6 +181,7 @@ evolved_from:
 ```
 
 ### Agent
+
 ```markdown
 ---
 name: debugger

@@ -20,6 +20,7 @@ This skill provides comprehensive encryption and protection for OpenClaw runtime
 ### 1. macOS Keychain Integration
 
 #### ✅ Recommended Approach
+
 ```bash
 # Store credentials in macOS Keychain
 security add-generic-password -a "openclaw" -s "discord_token" -w "your_discord_token_here"
@@ -31,6 +32,7 @@ security find-generic-password -a "openclaw" -s "discord_token" -w
 ```
 
 #### ❌ Never Do This
+
 ```bash
 # Hardcoded credentials in files
 echo "DISCORD_TOKEN=abc123" > ~/.env
@@ -40,6 +42,7 @@ echo "API_KEY=sk-proj-xyz" >> ~/.env
 ### 2. File System Protection
 
 #### Directory Hardening
+
 ```bash
 # Secure ~/.clawdbot/ directory
 chmod 700 ~/.clawdbot/
@@ -52,6 +55,7 @@ chflags schg ~/.clawdbot/credentials/
 ```
 
 #### FileVault Enforcement
+
 ```bash
 # Check FileVault status
 fdesetup status
@@ -62,6 +66,7 @@ sudo fdesetup enable -user $(whoami)
 ### 3. OAuth Material Encryption
 
 #### OAuth JSON Protection
+
 ```bash
 # Encrypt oauth.json with OpenSSL
 openssl enc -aes-256-cbc -salt -in oauth.json -out oauth.json.enc
@@ -72,6 +77,7 @@ openssl enc -aes-256-cbc -d -in oauth.json.enc -out oauth.json
 ```
 
 #### Keychain Alternative for OAuth
+
 ```bash
 # Store OAuth tokens in Keychain
 security add-generic-password -a "openclaw" -s "oauth_access_token" -w "$(cat oauth.json | jq -r '.access_token')"
@@ -81,6 +87,7 @@ security add-generic-password -a "openclaw" -s "oauth_refresh_token" -w "$(cat o
 ## Security Verification
 
 ### Credential Security Audit
+
 ```bash
 # Check for plaintext credentials
 echo "=== OpenClaw Credential Security Audit ==="
@@ -109,6 +116,7 @@ find ~ -name ".env*" -exec grep -l "claw\|openclaw" {} \; 2>/dev/null || echo "�
 ```
 
 ### Keychain Verification
+
 ```bash
 # Verify Keychain credentials
 echo "=== Keychain Credential Verification ==="
@@ -120,6 +128,7 @@ security find-generic-password -a "openclaw" -s "twilio_auth_token" -g 2>/dev/nu
 ## Migration Scripts
 
 ### Migrate to Keychain
+
 ```bash
 #!/bin/bash
 # migrate-credentials-to-keychain.sh
@@ -154,6 +163,7 @@ echo "🎉 Credential migration complete!"
 ```
 
 ### Encrypt Existing OAuth
+
 ```bash
 #!/bin/bash
 # encrypt-oauth.sh
@@ -174,6 +184,7 @@ echo "🎉 OAuth encryption complete!"
 ## Configuration Integration
 
 ### OpenClaw Configuration Updates
+
 ```bash
 # Configure OpenClaw to use Keychain
 openclaw config set security.credential_storage="keychain"
@@ -182,6 +193,7 @@ openclaw config set security.filevault_required=true
 ```
 
 ### Environment Template
+
 ```bash
 # .env.template for OpenClaw
 # Copy to .env.local and fill with Keychain references
@@ -200,6 +212,7 @@ openclaw config set security.filevault_required=true
 ## Security Best Practices
 
 ### ✅ Always Do
+
 - Store credentials in macOS Keychain
 - Encrypt sensitive files with AES-256
 - Use FileVault for full-disk encryption
@@ -208,6 +221,7 @@ openclaw config set security.filevault_required=true
 - Use credential rotation policies
 
 ### ❌ Never Do
+
 - Store credentials in plaintext files
 - Commit secrets to version control
 - Use environment variables for production secrets
@@ -218,6 +232,7 @@ openclaw config set security.filevault_required=true
 ## Monitoring and Alerts
 
 ### Credential Access Monitoring
+
 ```bash
 # Monitor credential file access
 sudo fs_usage | grep clawdbot
@@ -227,6 +242,7 @@ log stream --predicate 'subsystem == "com.apple.security"' | grep keychain
 ```
 
 ### Automated Security Checks
+
 ```bash
 # Daily security scan
 echo "0 2 * * * /path/to/openclaw-credential-security-check.sh" | crontab -

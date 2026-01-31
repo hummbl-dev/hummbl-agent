@@ -16,11 +16,13 @@ Apply the CO6 Gestalt Integration transformation to perceive and leverage whole 
 ## When to Use CO6
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Gestalt Integration here?"
 - "What changes if we apply CO6 to this integrating two services?"
 - "Which assumptions does CO6 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO6 Gestalt Integration transformation to perceive and leverage whole 
 ## The CO6 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO6 (Gestalt Integration) - Establish the focus
 const focus = "Perceive and leverage whole patterns rather than isolated components";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO6 (Gestalt Integration) - Apply the transformation
 const output = applyModel("CO6", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO6 (Gestalt Integration) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO6", "Perceive and leverage whole patterns rather th
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO6", "Perceive and leverage whole patterns rather th
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co6-gestalt-integration
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO6 "Perceive and leverage whole patterns rather than isolated components"
 ```

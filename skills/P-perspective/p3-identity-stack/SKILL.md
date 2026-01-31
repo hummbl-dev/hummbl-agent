@@ -16,11 +16,13 @@ Apply the P3 Identity Stack transformation to recognize that individuals operate
 ## When to Use P3
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Identity Stack here?"
 - "What changes if we apply P3 to this product requirements review?"
 - "Which assumptions does P3 help us surface?"
@@ -28,18 +30,21 @@ Apply the P3 Identity Stack transformation to recognize that individuals operate
 ## The P3 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P3 (Identity Stack) - Establish the focus
 const focus = "Recognize that individuals operate from multiple nested identities simultaneously";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P3 (Identity Stack) - Apply the transformation
 const output = applyModel("P3", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P3 (Identity Stack) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P3", "Recognize that individuals operate from multipl
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P3", "Recognize that individuals operate from multipl
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p3-identity-stack
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P3 "Recognize that individuals operate from multiple nested identities simultaneously"
 ```

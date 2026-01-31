@@ -16,11 +16,13 @@ Apply the SY20 Systems-of-Systems Coordination transformation to manage interact
 ## When to Use SY20
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Systems-of-Systems Coordination here?"
 - "What changes if we apply SY20 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY20 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY20 Systems-of-Systems Coordination transformation to manage interact
 ## The SY20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY20 (Systems-of-Systems Coordination) - Establish the focus
 const focus = "Manage interactions between independent systems with emergent behaviors";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY20 (Systems-of-Systems Coordination) - Apply the transformation
 const output = applyModel("SY20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY20 (Systems-of-Systems Coordination) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY20", "Manage interactions between independent syste
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY20", "Manage interactions between independent syste
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy20-systems-of-systems-coordination
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY20 "Manage interactions between independent systems with emergent behaviors"
 ```

@@ -16,11 +16,13 @@ Apply the P17 Frame Control & Reframing transformation to consciously select or 
 ## When to Use P17
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Frame Control & Reframing here?"
 - "What changes if we apply P17 to this product requirements review?"
 - "Which assumptions does P17 help us surface?"
@@ -28,18 +30,21 @@ Apply the P17 Frame Control & Reframing transformation to consciously select or 
 ## The P17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P17 (Frame Control & Reframing) - Establish the focus
 const focus = "Consciously select or reshape interpretive frames to enable new solutions";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P17 (Frame Control & Reframing) - Apply the transformation
 const output = applyModel("P17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P17 (Frame Control & Reframing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P17", "Consciously select or reshape interpretive fra
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P17", "Consciously select or reshape interpretive fra
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p17-frame-control-and-reframing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P17 "Consciously select or reshape interpretive frames to enable new solutions"
 ```

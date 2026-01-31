@@ -16,11 +16,13 @@ Apply the CO9 Interface Contracts transformation to define explicit agreements a
 ## When to Use CO9
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Interface Contracts here?"
 - "What changes if we apply CO9 to this integrating two services?"
 - "Which assumptions does CO9 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO9 Interface Contracts transformation to define explicit agreements a
 ## The CO9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO9 (Interface Contracts) - Establish the focus
 const focus = "Define explicit agreements about data structures and behavior between components";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO9 (Interface Contracts) - Apply the transformation
 const output = applyModel("CO9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO9 (Interface Contracts) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO9", "Define explicit agreements about data structur
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO9", "Define explicit agreements about data structur
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co9-interface-contracts
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO9 "Define explicit agreements about data structures and behavior between components"
 ```

@@ -19,6 +19,7 @@
 ## Installation Commands
 
 ### **Setup HUMMBL Workspace**
+
 ```bash
 # Create workspace directory
 mkdir -p ~/clawd/hummbl-agent/{skills/{generated,base120,custom},workspace,sessions,config}
@@ -31,6 +32,7 @@ moltbot workspace init hummbl-agent --template mental-models
 ```
 
 ### **Install Base120 Skills**
+
 ```bash
 # Install P1 First Principles Framing
 moltbot-registry install hummbl-agent/p1-first-principles-framing
@@ -41,6 +43,7 @@ moltbot-registry install hummbl-agent/sy8-systems-thinking
 ```
 
 ### **Configure Claude Code Integration**
+
 ```bash
 # Copy HUMMBL agents to Claude Code
 cp /Users/others/hummbl-agent/agents/hummbl-architect.md ~/.claude/agents/
@@ -61,6 +64,7 @@ cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settin
 ## Gateway Management
 
 ### **Start HUMMBL Gateway**
+
 ```bash
 # Start with HUMMBL configuration
 moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
@@ -70,6 +74,7 @@ moltbot workspace start hummbl-agent
 ```
 
 ### **Test Integration**
+
 ```bash
 # Test mental model application
 moltbot agent --message "Apply P1 perspective framing to our current integration challenge"
@@ -81,12 +86,14 @@ moltbot agent --session hummbl-sitrep --message "Generate SITREP for integration
 ## Multi-Agent Coordination
 
 ### **Agent Roles**
+
 - **claude-sonnet**: Lead strategy and planning
 - **windsurf-cascade**: Implementation and execution
 - **chatgpt-5**: Product QA and validation
 - **cursor**: Prototyping and development
 
 ### **Coordination Protocol**
+
 ```typescript
 // SITREP coordination pattern
 interface HUMMBLCoordination {
@@ -105,11 +112,13 @@ interface HUMMBLCoordination {
 ## Mental Model Integration
 
 ### **Automatic Application**
+
 - Base120 transformations auto-detected in conversations
 - Skills automatically applied based on context
 - Usage tracked for learning and optimization
 
 ### **Documentation Standards**
+
 - All transformations explicitly referenced: `// Using P1 (First Principles Framing)`
 - Decision rationale documented with mental model citations
 - Cross-referenced with skill documentation
@@ -117,11 +126,13 @@ interface HUMMBLCoordination {
 ## Continuous Learning
 
 ### **Pattern Recognition**
+
 - Mental model usage patterns tracked
 - Effectiveness measured by outcomes
 - Instincts created for repeated patterns
 
 ### **Knowledge Evolution**
+
 - Successful patterns become instincts
 - Instincts cluster into new skills
 - Skills evolve based on usage feedback
@@ -129,12 +140,14 @@ interface HUMMBLCoordination {
 ## Quality Assurance
 
 ### **HUMMBL Compliance**
+
 - TypeScript strict mode enforced
 - Mental model references required
 - Documentation standards maintained
 - Test coverage 80%+ required
 
 ### **Validation Checks**
+
 ```bash
 # Verify HUMMBL compliance
 moltbot doctor --hummbl
@@ -149,11 +162,13 @@ moltbot workspace report hummbl-agent --format markdown
 ## Troubleshooting
 
 ### **Common Issues**
+
 - **Gateway won't start**: Check configuration syntax and port availability
 - **Skills not loading**: Verify OpenClaw registry connection and skill format
 - **Agent coordination failing**: Check session routing and protocol configuration
 
 ### **Debug Commands**
+
 ```bash
 # Check gateway status
 moltbot gateway status

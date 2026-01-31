@@ -5,6 +5,7 @@
 HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents across Claude Code, Codex, and Grok with strict execution boundaries, Base120 mental model integration, and comprehensive audit trails.
 
 **Core principles:**
+
 - **Registry-first:** Local `skills/MANIFEST.json` is authoritative; no external dependencies
 - **Governed writes:** All process execution flows through policy-checked adapters
 - **Artifact provenance:** Every run logged to `_state/runs/<date>/` with tuple gates
@@ -19,6 +20,7 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 **Purpose:** Provides shared type contracts for the entire system without runtime dependencies.
 
 **Key exports:**
+
 - Agent types (task, state, memory)
 - Runner interfaces
 - Tool definitions
@@ -34,6 +36,7 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 **Purpose:** Deterministic routing logic that selects skills based on capabilities, policies, and tuple scopes.
 
 **Key responsibilities:**
+
 - LLM vendor routing (Anthropic vs OpenAI based on purpose/scope)
 - Skill selection from registry
 - Capability matching
@@ -48,6 +51,7 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 **Purpose:** Canonical registry of all available skills with integrity hashes.
 
 **Structure:**
+
 ```json
 {
   "version": "1.0.0",
@@ -63,6 +67,7 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 ```
 
 **Governance:**
+
 - `scripts/registry/compute-skills-manifest.mjs`: Regenerates manifest
 - `scripts/registry/check-skills-manifest.mjs`: Validates hashes
 - `scripts/lint-skill-registry.sh`: Enforces integrity
@@ -79,6 +84,7 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 **Path:** `packages/adapters/process/`
 
 **Enforces:**
+
 - Allowlist of executable names (`configs/process-policy.allowlist`)
 - Timeout limits
 - Output size caps
@@ -89,10 +95,12 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 #### LLM Adapters
 
 **Paths:**
+
 - `packages/adapters/llm/anthropic/`
 - `packages/adapters/llm/openai/`
 
 **Enforces:**
+
 - Dry-run mode by default (requires `MOLTBOT_LIVE_LLM_CALLS=1`)
 - Model allowlists
 - Prompt length limits
@@ -104,10 +112,12 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 #### Communication Adapters
 
 **Paths:**
+
 - `packages/adapters/communication/slack/`
 - `packages/adapters/communication/discord/`
 
 **Enforces:**
+
 - Stub-first (no live networking in Phase 1)
 - Provider config validation
 - Live guard (requires `MOLTBOT_LIVE_COMM=1`)
@@ -122,12 +132,14 @@ HUMMBL Agent is a governed multi-runner substrate for orchestrating AI agents ac
 **Purpose:** Runner-specific scaffolding, prompts, and execution scripts.
 
 **Runners:**
+
 - `claude-code/`: Claude Code (Anthropic) integration
 - `codex/`: OpenAI Codex runner
 - `grok/`: xAI Grok runner
 - `template/`: Scaffold for new runners
 
 **Structure per runner:**
+
 ```
 runner-name/
 ├── prompts/           # Prompt packets for orchestration
@@ -139,6 +151,7 @@ runner-name/
 ```
 
 **Governance:**
+
 - `scripts/lint-runner-capabilities.sh`: Validates CAPABILITIES.json
 - `scripts/lint-runner-registry-consistency.sh`: Cross-checks with registry
 - `scripts/lint-runner-compatibility.sh`: Validates skill compatibility
@@ -150,6 +163,7 @@ runner-name/
 **Purpose:** Path mapping for vendor code without runtime coupling.
 
 **Responsibilities:**
+
 - Resolve vendor paths (if needed)
 - No execution or imports from vendor code
 - Documentation/reference only
@@ -159,11 +173,13 @@ runner-name/
 ### External Agents (Claude Code, Codex, Grok)
 
 **Boundary enforcement:**
+
 - Agents invoke via `scripts/run-cmd.sh --runner <name>`
 - All executions logged to `_state/runs/<date>/`
 - Provenance captured (agent, timestamp, command, output)
 
 **Protection:**
+
 - Vendor code read-only (CI rejects edits)
 - Process execution requires allowlist
 - Network calls require policy approval
@@ -171,12 +187,14 @@ runner-name/
 ### Base120 Mental Models
 
 **Integration:**
+
 - Skills under `skills/P-perspective/`, `skills/IN-inversion/`, etc.
 - Canonical JSON: `docs/base120.v1.0.canonical.json`
 - Router uses Base120 bindings for selection
 - Commands: `/apply-transformation`, `/plan-with-base120`
 
 **Validation:**
+
 - `scripts/validate-base120-canonical.cjs`: Validates canonical JSON
 - `scripts/validate-base120-refs.cjs`: Checks skill references
 - `scripts/lint-base120-skill-map.sh`: Ensures skill map current
@@ -184,6 +202,7 @@ runner-name/
 ### State Management
 
 **Artifacts:**
+
 - `_state/CURRENT_STATE.md`: Canonical state snapshot
 - `_state/TODO.md`: Task tracking
 - `_state/runs/<date>/`: Run logs (gitignored)
@@ -191,6 +210,7 @@ runner-name/
 - `_state/decisions/`: Architectural decisions
 
 **Governance:**
+
 - `scripts/lint-state.sh`: Validates state format
 - `scripts/check-kernel-decision.sh`: Ensures decision log current
 
@@ -255,16 +275,19 @@ CI checks hashes match
 ### Trust Zones
 
 **Trusted:**
+
 - Local skill registry (`skills/MANIFEST.json`)
 - Kernel type contracts (`packages/kernel/`)
 - Governance scripts (`scripts/*.sh`, `scripts/*.mjs`)
 
 **Governed:**
+
 - External process execution (allowlist required)
 - Network calls (policy required)
 - File writes (audit logged)
 
 **Untrusted:**
+
 - External registries (informational only)
 - Vendor code (read-only reference)
 - User-provided commands (validated before execution)
@@ -283,29 +306,34 @@ CI checks hashes match
 **Test runner:** Node's built-in `--test` flag
 
 **Test types:**
+
 - Unit tests: Adapter offline tests (config validation, guards)
 - Integration tests: Router selection logic (pending build)
 - E2E validation: `scripts/e2e-validate.sh` (all lints + tests)
 
 **Enforcement:**
+
 - `scripts/lint-no-ts-tests.sh`: Blocks `.test.ts` files
 - CI runs all tests on every PR
 
 ## Extension Points
 
 **Adding a new skill:**
+
 1. Create `skills/<category>/<name>/SKILL.md`
 2. Run `scripts/registry/compute-skills-manifest.mjs`
 3. Commit both skill and updated `MANIFEST.json`
 4. CI validates integrity
 
 **Adding a new runner:**
+
 1. Copy `packages/runners/template/`
 2. Update `CAPABILITIES.json`
 3. Add scripts (`make-prompt.sh`, `log-run.sh`)
 4. Validate with `scripts/lint-runner-capabilities.sh`
 
 **Adding a new adapter:**
+
 1. Create under `packages/adapters/<type>/`
 2. Implement governed interface (config, guards, dry-run)
 3. Add `.test.mjs` tests

@@ -16,11 +16,13 @@ Apply the SY11 Governance Patterns transformation to design decision rights, acc
 ## When to Use SY11
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Governance Patterns here?"
 - "What changes if we apply SY11 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY11 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY11 Governance Patterns transformation to design decision rights, acc
 ## The SY11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY11 (Governance Patterns) - Establish the focus
 const focus = "Design decision rights, accountability structures, and coordination mechanisms";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY11 (Governance Patterns) - Apply the transformation
 const output = applyModel("SY11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY11 (Governance Patterns) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY11", "Design decision rights, accountability struct
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY11", "Design decision rights, accountability struct
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy11-governance-patterns
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY11 "Design decision rights, accountability structures, and coordination mechanisms"
 ```

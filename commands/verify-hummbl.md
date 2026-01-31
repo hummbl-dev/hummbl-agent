@@ -31,6 +31,7 @@ Run a structured compliance check for Base120 standards.
 - Documentation matches current repo structure
 
 Example transformation reference:
+
 ```
 // Using P1 (First Principles Framing) - Reduce to foundational truths
 ```
@@ -42,6 +43,7 @@ Example transformation reference:
 ```
 
 Expected output:
+
 ```
 VERIFICATION RESULT: PASS
 Missing transformations: 0

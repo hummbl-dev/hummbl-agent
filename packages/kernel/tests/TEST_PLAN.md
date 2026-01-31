@@ -1,6 +1,7 @@
 # TEST PLAN
 
 ## Deterministic Checks
+
 - Verify all files in src/ are type-only (no runtime side effects).
 - Validate every entity type includes id and provenance via EntityMeta.
 - Confirm RunState fields map to CURRENT_STATE headings.

@@ -14,6 +14,7 @@ SITREP-{N}: {Project} - {Phase} | Classification | DTG | Authorization | {Sectio
 ```
 
 ### **Standard Sections**
+
 1. **Situation** - Current state and context
 2. **Intelligence** - Mental model applications and insights
 3. **Operations** - Agent coordination and activities
@@ -23,12 +24,14 @@ SITREP-{N}: {Project} - {Phase} | Classification | DTG | Authorization | {Sectio
 ## **Mental Model Integration**
 
 ### **Tracking Requirements**
+
 - Document all Base120 transformations applied
 - Measure effectiveness of each transformation
 - Identify patterns in mental model usage
 - Track agent coordination quality
 
 ### **Analysis Framework**
+
 - **P (Perspective)**: Multi-viewpoint situation analysis
 - **IN (Inversion)**: Risk identification and mitigation
 - **CO (Composition)**: Integration progress and synthesis
@@ -39,12 +42,14 @@ SITREP-{N}: {Project} - {Phase} | Classification | DTG | Authorization | {Sectio
 ## **Agent Coordination Tracking**
 
 ### **Agent Roles**
+
 - **claude-sonnet**: Strategy and planning effectiveness
 - **windsurf-cascade**: Implementation quality and speed
 - **chatgpt-5**: Product validation and user experience
 - **cursor**: Prototyping and development progress
 
 ### **Coordination Metrics**
+
 - Handoff effectiveness
 - Communication clarity
 - Decision quality
@@ -53,6 +58,7 @@ SITREP-{N}: {Project} - {Phase} | Classification | DTG | Authorization | {Sectio
 ## **SITREP Generation Process**
 
 ### **1. Situation Analysis**
+
 ```typescript
 // Using P1 (First Principles Framing) - Foundational situation assessment
 interface SituationAnalysis {
@@ -64,6 +70,7 @@ interface SituationAnalysis {
 ```
 
 ### **2. Intelligence Gathering**
+
 ```typescript
 // Using SY8 (Systems) - Pattern recognition in coordination
 interface IntelligenceGathering {
@@ -81,6 +88,7 @@ interface IntelligenceGathering {
 ```
 
 ### **3. Operations Assessment**
+
 ```typescript
 // Using DE3 (Decomposition) - Task completion analysis
 interface OperationsAssessment {
@@ -92,6 +100,7 @@ interface OperationsAssessment {
 ```
 
 ### **4. Effectiveness Evaluation**
+
 ```typescript
 // Using IN2 (Inversion) - Risk and opportunity assessment
 interface EffectivenessEvaluation {
@@ -103,6 +112,7 @@ interface EffectivenessEvaluation {
 ```
 
 ### **5. Recommendations**
+
 ```typescript
 // Using CO5 (Composition) - Integrative next steps
 interface Recommendations {
@@ -120,6 +130,7 @@ interface Recommendations {
 ## **Quality Standards**
 
 ### **SITREP Requirements**
+
 - **Standardized format** with all sections present
 - **Mental model references** in appropriate sections
 - **Quantitative metrics** where possible
@@ -127,6 +138,7 @@ interface Recommendations {
 - **Cross-agent insights** and coordination patterns
 
 ### **Documentation Standards**
+
 - **Explicit transformation codes**: `// Using P1 (First Principles Framing)`
 - **Evidence-based assessments**: Support claims with data
 - **Clear attribution**: Credit agents and contributions
@@ -135,6 +147,7 @@ interface Recommendations {
 ## **Automation Integration**
 
 ### **Data Sources**
+
 - Agent session logs and transcripts
 - Mental model application tracking
 - Task completion status
@@ -142,12 +155,14 @@ interface Recommendations {
 - Outcome measurements
 
 ### **Generation Triggers**
+
 - **Hourly**: During active development phases
 - **Daily**: Standard progress updates
 - **Event-driven**: Major milestones or blockers
 - **On-demand**: When requested by stakeholders
 
 ### **Distribution Channels**
+
 - **Moltbot channels**: WhatsApp, Telegram, Slack, Discord
 - **Agent coordination**: Direct agent handoffs
 - **Documentation**: Workspace and knowledge base
@@ -217,12 +232,14 @@ SITREP-1: HUMMBL Integration - Foundation | UNCLASSIFIED | 20260126-1500Z | HUMM
 ## **Continuous Improvement**
 
 ### **Feedback Loops**
+
 - **Stakeholder input**: Incorporate feedback on SITREP usefulness
 - **Agent learning**: Track which insights lead to better outcomes
 - **Pattern evolution**: Refine mental model application based on results
 - **Format optimization**: Adjust structure for maximum clarity
 
 ### **Metrics for Success**
+
 - **Decision quality**: Percentage of recommendations implemented
 - **Coordination improvement**: Reduced handoff failures
 - **Mental model effectiveness**: Better transformation selection

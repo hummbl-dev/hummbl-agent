@@ -16,11 +16,13 @@ Apply the IN20 Antigoals & Anti-Patterns Catalog transformation to document fail
 ## When to Use IN20
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Antigoals & Anti-Patterns Catalog here?"
 - "What changes if we apply IN20 to this risk assessment for a launch?"
 - "Which assumptions does IN20 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN20 Antigoals & Anti-Patterns Catalog transformation to document fail
 ## The IN20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN20 (Antigoals & Anti-Patterns Catalog) - Establish the focus
 const focus = "Document failure modes to avoid rather than success patterns to emulate";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN20 (Antigoals & Anti-Patterns Catalog) - Apply the transformation
 const output = applyModel("IN20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN20 (Antigoals & Anti-Patterns Catalog) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN20", "Document failure modes to avoid rather than s
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN20", "Document failure modes to avoid rather than s
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in20-antigoals-and-anti-patterns-catalog
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN20 "Document failure modes to avoid rather than success patterns to emulate"
 ```

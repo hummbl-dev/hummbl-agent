@@ -1,6 +1,7 @@
 # TEST PLAN
 
 ## Deterministic Checks
+
 - registry.json parses as JSON.
 - ids are unique and lowercase-with-dashes.
 - summaries are <= 140 chars.

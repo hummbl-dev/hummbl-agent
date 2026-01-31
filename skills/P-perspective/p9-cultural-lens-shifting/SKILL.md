@@ -16,11 +16,13 @@ Apply the P9 Cultural Lens Shifting transformation to adjust communication and i
 ## When to Use P9
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Cultural Lens Shifting here?"
 - "What changes if we apply P9 to this product requirements review?"
 - "Which assumptions does P9 help us surface?"
@@ -28,18 +30,21 @@ Apply the P9 Cultural Lens Shifting transformation to adjust communication and i
 ## The P9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P9 (Cultural Lens Shifting) - Establish the focus
 const focus = "Adjust communication and interpretation for different cultural contexts and norms";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P9 (Cultural Lens Shifting) - Apply the transformation
 const output = applyModel("P9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P9 (Cultural Lens Shifting) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P9", "Adjust communication and interpretation for dif
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P9", "Adjust communication and interpretation for dif
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p9-cultural-lens-shifting
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P9 "Adjust communication and interpretation for different cultural contexts and norms"
 ```

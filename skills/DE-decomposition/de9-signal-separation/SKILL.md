@@ -16,11 +16,13 @@ Apply the DE9 Signal Separation transformation to distinguish meaningful pattern
 ## When to Use DE9
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Signal Separation here?"
 - "What changes if we apply DE9 to this breaking down an implementation plan?"
 - "Which assumptions does DE9 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE9 Signal Separation transformation to distinguish meaningful pattern
 ## The DE9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE9 (Signal Separation) - Establish the focus
 const focus = "Distinguish meaningful patterns from random variation or confounding factors";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE9 (Signal Separation) - Apply the transformation
 const output = applyModel("DE9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE9 (Signal Separation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE9", "Distinguish meaningful patterns from random va
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE9", "Distinguish meaningful patterns from random va
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de9-signal-separation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE9 "Distinguish meaningful patterns from random variation or confounding factors"
 ```

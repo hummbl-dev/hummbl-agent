@@ -18,7 +18,7 @@ uv pip install -e ".[dev]"
 uv run --env-file .env uvicorn local_places.main:app --host 0.0.0.0 --reload
 ```
 
-Open the API docs at http://127.0.0.1:8000/docs.
+Open the API docs at <http://127.0.0.1:8000/docs>.
 
 ## Places API
 

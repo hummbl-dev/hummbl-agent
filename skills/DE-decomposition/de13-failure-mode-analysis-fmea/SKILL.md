@@ -16,11 +16,13 @@ Apply the DE13 Failure Mode Analysis (FMEA) transformation to enumerate potentia
 ## When to Use DE13
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Failure Mode Analysis (FMEA) here?"
 - "What changes if we apply DE13 to this breaking down an implementation plan?"
 - "Which assumptions does DE13 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE13 Failure Mode Analysis (FMEA) transformation to enumerate potentia
 ## The DE13 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE13 (Failure Mode Analysis (FMEA)) - Establish the focus
 const focus = "Enumerate potential failure points with severity, likelihood, and detectability ratings";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE13 (Failure Mode Analysis (FMEA)) - Apply the transformation
 const output = applyModel("DE13", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE13 (Failure Mode Analysis (FMEA)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE13", "Enumerate potential failure points with sever
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE13", "Enumerate potential failure points with sever
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de13-failure-mode-analysis-fmea
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE13 "Enumerate potential failure points with severity, likelihood, and detectability ratings"
 ```

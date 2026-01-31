@@ -16,11 +16,13 @@ Apply the P4 Lens Shifting transformation to deliberately adopt different interp
 ## When to Use P4
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Lens Shifting here?"
 - "What changes if we apply P4 to this product requirements review?"
 - "Which assumptions does P4 help us surface?"
@@ -28,18 +30,21 @@ Apply the P4 Lens Shifting transformation to deliberately adopt different interp
 ## The P4 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P4 (Lens Shifting) - Establish the focus
 const focus = "Deliberately adopt different interpretive frameworks to reveal hidden aspects";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P4 (Lens Shifting) - Apply the transformation
 const output = applyModel("P4", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P4 (Lens Shifting) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P4", "Deliberately adopt different interpretive frame
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P4", "Deliberately adopt different interpretive frame
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p4-lens-shifting
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P4 "Deliberately adopt different interpretive frameworks to reveal hidden aspects"
 ```

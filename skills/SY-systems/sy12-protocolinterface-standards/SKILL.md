@@ -16,11 +16,13 @@ Apply the SY12 Protocol/Interface Standards transformation to specify rules for 
 ## When to Use SY12
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Protocol/Interface Standards here?"
 - "What changes if we apply SY12 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY12 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY12 Protocol/Interface Standards transformation to specify rules for 
 ## The SY12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY12 (Protocol/Interface Standards) - Establish the focus
 const focus = "Specify rules for interaction enabling coordination without central control";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY12 (Protocol/Interface Standards) - Apply the transformation
 const output = applyModel("SY12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY12 (Protocol/Interface Standards) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY12", "Specify rules for interaction enabling coordi
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY12", "Specify rules for interaction enabling coordi
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy12-protocolinterface-standards
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY12 "Specify rules for interaction enabling coordination without central control"
 ```

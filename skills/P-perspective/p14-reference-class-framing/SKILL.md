@@ -16,11 +16,13 @@ Apply the P14 Reference Class Framing transformation to select comparable situat
 ## When to Use P14
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Reference Class Framing here?"
 - "What changes if we apply P14 to this product requirements review?"
 - "Which assumptions does P14 help us surface?"
@@ -28,18 +30,21 @@ Apply the P14 Reference Class Framing transformation to select comparable situat
 ## The P14 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P14 (Reference Class Framing) - Establish the focus
 const focus = "Select comparable situations to inform judgment and avoid uniqueness bias";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P14 (Reference Class Framing) - Apply the transformation
 const output = applyModel("P14", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P14 (Reference Class Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P14", "Select comparable situations to inform judgmen
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P14", "Select comparable situations to inform judgmen
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p14-reference-class-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P14 "Select comparable situations to inform judgment and avoid uniqueness bias"
 ```

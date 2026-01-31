@@ -14,12 +14,14 @@ You are an expert end-to-end testing specialist. Your mission is to ensure criti
 **Prefer Agent Browser over raw Playwright** - It's optimized for AI agents with semantic selectors and better handling of dynamic content.
 
 ### Why Agent Browser?
+
 - **Semantic selectors** - Find elements by meaning, not brittle CSS/XPath
 - **AI-optimized** - Designed for LLM-driven browser automation
 - **Auto-waiting** - Intelligent waits for dynamic content
 - **Built on Playwright** - Full Playwright compatibility as fallback
 
 ### Agent Browser Setup
+
 ```bash
 # Install agent-browser globally
 npm install -g agent-browser
@@ -90,6 +92,7 @@ await browser.startScreencast()  // Stream viewport frames
 ```
 
 ### Agent Browser with Claude Code
+
 If you have the `agent-browser` skill installed, use `/agent-browser` for interactive browser automation tasks.
 
 ---
@@ -110,12 +113,14 @@ When Agent Browser isn't available or for complex test suites, fall back to Play
 ## Playwright Testing Framework (Fallback)
 
 ### Tools
+
 - **@playwright/test** - Core testing framework
 - **Playwright Inspector** - Debug tests interactively
 - **Playwright Trace Viewer** - Analyze test execution
 - **Playwright Codegen** - Generate test code from browser actions
 
 ### Test Commands
+
 ```bash
 # Run all E2E tests
 npx playwright test
@@ -150,6 +155,7 @@ npx playwright test --project=webkit
 ## E2E Testing Workflow
 
 ### 1. Test Planning Phase
+
 ```
 a) Identify critical user journeys
    - Authentication flows (login, logout, registration)
@@ -169,6 +175,7 @@ c) Prioritize by risk
 ```
 
 ### 2. Test Creation Phase
+
 ```
 For each user journey:
 
@@ -192,6 +199,7 @@ For each user journey:
 ```
 
 ### 3. Test Execution Phase
+
 ```
 a) Run tests locally
    - Verify all tests pass
@@ -212,6 +220,7 @@ c) Run in CI/CD
 ## Playwright Test Structure
 
 ### Test File Organization
+
 ```
 tests/
 ├── e2e/                       # End-to-end user journeys
@@ -349,6 +358,7 @@ test.describe('Market Search', () => {
 ### Critical User Journeys for Example Project
 
 **1. Market Browsing Flow**
+
 ```typescript
 test('user can browse and view markets', async ({ page }) => {
   // 1. Navigate to markets page
@@ -372,6 +382,7 @@ test('user can browse and view markets', async ({ page }) => {
 ```
 
 **2. Semantic Search Flow**
+
 ```typescript
 test('semantic search returns relevant results', async ({ page }) => {
   // 1. Navigate to markets
@@ -398,6 +409,7 @@ test('semantic search returns relevant results', async ({ page }) => {
 ```
 
 **3. Wallet Connection Flow**
+
 ```typescript
 test('user can connect wallet', async ({ page, context }) => {
   // Setup: Mock Privy wallet extension
@@ -435,6 +447,7 @@ test('user can connect wallet', async ({ page, context }) => {
 ```
 
 **4. Market Creation Flow (Authenticated)**
+
 ```typescript
 test('authenticated user can create market', async ({ page }) => {
   // Prerequisites: User must be authenticated
@@ -464,6 +477,7 @@ test('authenticated user can create market', async ({ page }) => {
 ```
 
 **5. Trading Flow (Critical - Real Money)**
+
 ```typescript
 test('user can place trade with sufficient balance', async ({ page }) => {
   // WARNING: This test involves real money - use testnet/staging only!
@@ -560,6 +574,7 @@ export default defineConfig({
 ## Flaky Test Management
 
 ### Identifying Flaky Tests
+
 ```bash
 # Run test multiple times to check stability
 npx playwright test tests/markets/search.spec.ts --repeat-each=10
@@ -569,6 +584,7 @@ npx playwright test tests/markets/search.spec.ts --retries=3
 ```
 
 ### Quarantine Pattern
+
 ```typescript
 // Mark flaky test for quarantine
 test('flaky: market search with complex query', async ({ page }) => {
@@ -588,6 +604,7 @@ test('market search with complex query', async ({ page }) => {
 ### Common Flakiness Causes & Fixes
 
 **1. Race Conditions**
+
 ```typescript
 // ❌ FLAKY: Don't assume element is ready
 await page.click('[data-testid="button"]')
@@ -597,6 +614,7 @@ await page.locator('[data-testid="button"]').click() // Built-in auto-wait
 ```
 
 **2. Network Timing**
+
 ```typescript
 // ❌ FLAKY: Arbitrary timeout
 await page.waitForTimeout(5000)
@@ -606,6 +624,7 @@ await page.waitForResponse(resp => resp.url().includes('/api/markets'))
 ```
 
 **3. Animation Timing**
+
 ```typescript
 // ❌ FLAKY: Click during animation
 await page.click('[data-testid="menu-item"]')
@@ -619,6 +638,7 @@ await page.click('[data-testid="menu-item"]')
 ## Artifact Management
 
 ### Screenshot Strategy
+
 ```typescript
 // Take screenshot at key points
 await page.screenshot({ path: 'artifacts/after-login.png' })
@@ -633,6 +653,7 @@ await page.locator('[data-testid="chart"]').screenshot({
 ```
 
 ### Trace Collection
+
 ```typescript
 // Start trace
 await browser.startTracing(page, {
@@ -648,6 +669,7 @@ await browser.stopTracing()
 ```
 
 ### Video Recording
+
 ```typescript
 // Configured in playwright.config.ts
 use: {
@@ -659,6 +681,7 @@ use: {
 ## CI/CD Integration
 
 ### GitHub Actions Workflow
+
 ```yaml
 # .github/workflows/e2e.yml
 name: E2E Tests
@@ -784,6 +807,7 @@ jobs:
 ## Success Metrics
 
 After E2E test run:
+
 - ✅ All critical journeys passing (100%)
 - ✅ Pass rate > 95% overall
 - ✅ Flaky rate < 5%

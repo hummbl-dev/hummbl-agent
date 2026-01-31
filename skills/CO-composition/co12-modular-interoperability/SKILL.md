@@ -16,11 +16,13 @@ Apply the CO12 Modular Interoperability transformation to ensure independent com
 ## When to Use CO12
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Modular Interoperability here?"
 - "What changes if we apply CO12 to this integrating two services?"
 - "Which assumptions does CO12 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO12 Modular Interoperability transformation to ensure independent com
 ## The CO12 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO12 (Modular Interoperability) - Establish the focus
 const focus = "Ensure independent components work together through standardized connections";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO12 (Modular Interoperability) - Apply the transformation
 const output = applyModel("CO12", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO12 (Modular Interoperability) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO12", "Ensure independent components work together t
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO12", "Ensure independent components work together t
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co12-modular-interoperability
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO12 "Ensure independent components work together through standardized connections"
 ```

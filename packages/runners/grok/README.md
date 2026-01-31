@@ -3,6 +3,7 @@
 Runner scaffold for Grok.
 
 ## Usage
+
 ```bash
 packages/runners/grok/scripts/make-prompt.sh > /tmp/grok-prompt.md
 packages/runners/grok/scripts/log-run.sh "Session start: grok" \
@@ -10,6 +11,7 @@ packages/runners/grok/scripts/log-run.sh "Session start: grok" \
 ```
 
 ## Governed execution
+
 ```bash
 scripts/run-cmd.sh --runner grok -- git status --porcelain
 ```

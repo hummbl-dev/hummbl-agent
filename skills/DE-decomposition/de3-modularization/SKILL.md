@@ -16,11 +16,13 @@ Apply the DE3 Modularization transformation to partition system into self-contai
 ## When to Use DE3
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Modularization here?"
 - "What changes if we apply DE3 to this breaking down an implementation plan?"
 - "Which assumptions does DE3 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE3 Modularization transformation to partition system into self-contai
 ## The DE3 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE3 (Modularization) - Establish the focus
 const focus = "Partition system into self-contained units with minimal interdependencies";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE3 (Modularization) - Apply the transformation
 const output = applyModel("DE3", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE3 (Modularization) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE3", "Partition system into self-contained units wit
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE3", "Partition system into self-contained units wit
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de3-modularization
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE3 "Partition system into self-contained units with minimal interdependencies"
 ```

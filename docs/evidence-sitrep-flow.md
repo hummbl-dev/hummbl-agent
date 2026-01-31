@@ -3,7 +3,9 @@
 This flow covers capture evidence → lint → generate SITREP.
 
 ## 1) Capture Evidence (Canonical)
+
 Import external observations into the governed evidence log:
+
 ```bash
 scripts/import-observation.sh \
   --file /path/to/observations.jsonl \
@@ -12,16 +14,19 @@ scripts/import-observation.sh \
 ```
 
 This writes:
+
 - `_state/evidence/YYYY-MM-DD/<timestamp>-<file>`
 - `_state/evidence/YYYY-MM-DD/EVIDENCE.md` (hash + source)
 
 ## 2) Lint Evidence
+
 ```bash
 scripts/lint-evidence.sh
 scripts/lint-artifact-secrets.sh
 ```
 
 ## 3) Generate SITREP (with lint)
+
 ```bash
 scripts/generate-sitrep.sh
 ```
@@ -29,6 +34,7 @@ scripts/generate-sitrep.sh
 The generator automatically runs `scripts/lint-sitrep.sh` when available.
 
 ## Notes
+
 - SITREP schema details: `docs/sitrep-schema.md`
 - Evidence import reference: `docs/evidence-import.md`
 - Output defaults to `~/clawd/hummbl-agent/sessions/sitreps`.

@@ -16,11 +16,13 @@ Apply the P19 Sensemaking Canvases transformation to deploy structured templates
 ## When to Use P19
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Sensemaking Canvases here?"
 - "What changes if we apply P19 to this product requirements review?"
 - "Which assumptions does P19 help us surface?"
@@ -28,18 +30,21 @@ Apply the P19 Sensemaking Canvases transformation to deploy structured templates
 ## The P19 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P19 (Sensemaking Canvases) - Establish the focus
 const focus = "Deploy structured templates to systematically capture and organize observations";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P19 (Sensemaking Canvases) - Apply the transformation
 const output = applyModel("P19", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P19 (Sensemaking Canvases) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P19", "Deploy structured templates to systematically 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P19", "Deploy structured templates to systematically 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p19-sensemaking-canvases
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P19 "Deploy structured templates to systematically capture and organize observations"
 ```

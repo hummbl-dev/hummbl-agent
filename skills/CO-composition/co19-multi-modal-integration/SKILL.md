@@ -16,11 +16,13 @@ Apply the CO19 Multi-Modal Integration transformation to synthesize information 
 ## When to Use CO19
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Multi-Modal Integration here?"
 - "What changes if we apply CO19 to this integrating two services?"
 - "Which assumptions does CO19 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO19 Multi-Modal Integration transformation to synthesize information 
 ## The CO19 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO19 (Multi-Modal Integration) - Establish the focus
 const focus = "Synthesize information from different sensory or data modalities";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO19 (Multi-Modal Integration) - Apply the transformation
 const output = applyModel("CO19", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO19 (Multi-Modal Integration) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO19", "Synthesize information from different sensory
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO19", "Synthesize information from different sensory
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co19-multi-modal-integration
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO19 "Synthesize information from different sensory or data modalities"
 ```

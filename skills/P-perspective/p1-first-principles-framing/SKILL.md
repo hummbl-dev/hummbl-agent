@@ -16,11 +16,13 @@ Apply the P1 First Principles Framing transformation to reduce complex problems 
 ## When to Use P1
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use First Principles Framing here?"
 - "What changes if we apply P1 to this product requirements review?"
 - "Which assumptions does P1 help us surface?"
@@ -28,18 +30,21 @@ Apply the P1 First Principles Framing transformation to reduce complex problems 
 ## The P1 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P1 (First Principles Framing) - Establish the focus
 const focus = "Reduce complex problems to foundational truths that cannot be further simplified";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P1 (First Principles Framing) - Apply the transformation
 const output = applyModel("P1", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P1 (First Principles Framing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P1", "Reduce complex problems to foundational truths 
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P1", "Reduce complex problems to foundational truths 
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p1-first-principles-framing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P1 "Reduce complex problems to foundational truths that cannot be further simplified"
 ```

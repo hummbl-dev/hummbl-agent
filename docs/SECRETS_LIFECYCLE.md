@@ -3,6 +3,7 @@
 ## Scope
 
 Vendor credentials used by runners (OpenAI/Anthropic/xAI/etc.). Covers:
+
 - creation
 - storage
 - access
@@ -15,6 +16,7 @@ Vendor credentials used by runners (OpenAI/Anthropic/xAI/etc.). Covers:
 ### SL1 — No secret material in artifacts
 
 Forbidden locations:
+
 - prompts
 - plans
 - state files
@@ -23,12 +25,14 @@ Forbidden locations:
 - error traces
 
 Enforcement:
+
 - static secret scan in CI
 - artifact scan in CI
 
 ### SL2 — Kernel never receives raw secrets
 
 Kernel interfaces accept only:
+
 - secret_ref (opaque identifier)
 - scope labels
 - ttl_seconds
@@ -47,6 +51,7 @@ Runner obtains short-lived access tokens or decrypts locally with a key
 not exposed to the kernel.
 
 Default TTL policy:
+
 - interactive/local runs: <= 60 minutes
 - CI runs: <= 15 minutes
 - production runs: <= 5 minutes (or per-vendor best practice)
@@ -60,6 +65,7 @@ Default TTL policy:
 ### SL6 — Rotation is routine
 
 Rotation cadence:
+
 - dev: monthly
 - ci: monthly or on incident
 - prod: weekly/biweekly (or per vendor best practice)
@@ -69,6 +75,7 @@ Rotation must be possible without code changes.
 ### SL7 — Revocation is immediate
 
 Single procedure that:
+
 - disables secret at source (vendor dashboard)
 - invalidates local ref (registry update)
 - records revocation event artifact
@@ -76,6 +83,7 @@ Single procedure that:
 ### SL8 — Auditability without disclosure
 
 Store only:
+
 - secret id/ref
 - vendor
 - scope labels
@@ -84,16 +92,20 @@ Store only:
 - expiry policy
 
 Never store:
+
 - raw value
 - full token
 
 Optional (ops-only, out of repo):
+
 - sha256(token) fingerprint
 
 ## Data Model
 
 ### configs/secrets-policy.json
+
 Allowlist and constraints. Must include:
+
 - allowed secrets (names only)
 - required prefix (if any)
 - policy flags (no logging, no persistence)
@@ -101,6 +113,7 @@ Allowlist and constraints. Must include:
 ### configs/secrets-registry.yaml (refs only)
 
 Example:
+
 ```yaml
 openai:
   dev:
@@ -114,6 +127,7 @@ openai:
 ```
 
 Notes:
+
 - refs only, no values
 - not executable
 - can map to OS keychain, 1Password CLI, Vault, or GH Actions secrets
@@ -121,6 +135,7 @@ Notes:
 ## Runner Contract (Secret Access)
 
 Runner must ensure:
+
 - secrets are not printed
 - secrets are not included in exception strings
 - secrets are not included in request/response logs
@@ -134,6 +149,7 @@ Runner must ensure:
 ## Incident Response (v0.1)
 
 If a secret is suspected leaked:
+
 1. Revoke at vendor immediately
 2. Rotate replacement
 3. Invalidate secret_ref mapping

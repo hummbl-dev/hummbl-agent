@@ -16,11 +16,13 @@ Apply the CO14 Platformization transformation to extract common capabilities int
 ## When to Use CO14
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Platformization here?"
 - "What changes if we apply CO14 to this integrating two services?"
 - "Which assumptions does CO14 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO14 Platformization transformation to extract common capabilities int
 ## The CO14 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO14 (Platformization) - Establish the focus
 const focus = "Extract common capabilities into reusable infrastructure serving multiple use cases";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO14 (Platformization) - Apply the transformation
 const output = applyModel("CO14", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO14 (Platformization) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO14", "Extract common capabilities into reusable inf
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO14", "Extract common capabilities into reusable inf
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co14-platformization
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO14 "Extract common capabilities into reusable infrastructure serving multiple use cases"
 ```

@@ -16,11 +16,13 @@ Apply the CO17 Orchestration vs Choreography transformation to choose between ce
 ## When to Use CO17
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Orchestration vs Choreography here?"
 - "What changes if we apply CO17 to this integrating two services?"
 - "Which assumptions does CO17 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO17 Orchestration vs Choreography transformation to choose between ce
 ## The CO17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO17 (Orchestration vs Choreography) - Establish the focus
 const focus = "Choose between centralized coordination or distributed peer-to-peer interaction";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO17 (Orchestration vs Choreography) - Apply the transformation
 const output = applyModel("CO17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO17 (Orchestration vs Choreography) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO17", "Choose between centralized coordination or di
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO17", "Choose between centralized coordination or di
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co17-orchestration-vs-choreography
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO17 "Choose between centralized coordination or distributed peer-to-peer interaction"
 ```

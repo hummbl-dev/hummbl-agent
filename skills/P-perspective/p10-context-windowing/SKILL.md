@@ -16,11 +16,13 @@ Apply the P10 Context Windowing transformation to define explicit boundaries in 
 ## When to Use P10
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Context Windowing here?"
 - "What changes if we apply P10 to this product requirements review?"
 - "Which assumptions does P10 help us surface?"
@@ -28,18 +30,21 @@ Apply the P10 Context Windowing transformation to define explicit boundaries in 
 ## The P10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P10 (Context Windowing) - Establish the focus
 const focus = "Define explicit boundaries in time, space, and scope for analysis or action";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P10 (Context Windowing) - Apply the transformation
 const output = applyModel("P10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P10 (Context Windowing) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P10", "Define explicit boundaries in time, space, and
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P10", "Define explicit boundaries in time, space, and
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p10-context-windowing
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P10 "Define explicit boundaries in time, space, and scope for analysis or action"
 ```

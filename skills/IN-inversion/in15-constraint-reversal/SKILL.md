@@ -16,11 +16,13 @@ Apply the IN15 Constraint Reversal transformation to temporarily remove assumed 
 ## When to Use IN15
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Constraint Reversal here?"
 - "What changes if we apply IN15 to this risk assessment for a launch?"
 - "Which assumptions does IN15 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN15 Constraint Reversal transformation to temporarily remove assumed 
 ## The IN15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN15 (Constraint Reversal) - Establish the focus
 const focus = "Temporarily remove assumed constraints to explore alternative solution space";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN15 (Constraint Reversal) - Apply the transformation
 const output = applyModel("IN15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN15 (Constraint Reversal) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN15", "Temporarily remove assumed constraints to exp
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN15", "Temporarily remove assumed constraints to exp
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in15-constraint-reversal
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN15 "Temporarily remove assumed constraints to explore alternative solution space"
 ```

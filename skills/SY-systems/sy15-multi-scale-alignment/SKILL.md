@@ -16,11 +16,13 @@ Apply the SY15 Multi-Scale Alignment transformation to ensure strategy, operatio
 ## When to Use SY15
 
 ### Ideal Situations
+
 - Understand system-wide interactions and feedback loops
 - Detect patterns that emerge across components
 - Optimize for long-term system behavior, not just local gains
 
 ### Trigger Questions
+
 - "How can we use Multi-Scale Alignment here?"
 - "What changes if we apply SY15 to this analyzing coordination patterns across teams?"
 - "Which assumptions does SY15 help us surface?"
@@ -28,18 +30,21 @@ Apply the SY15 Multi-Scale Alignment transformation to ensure strategy, operatio
 ## The SY15 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using SY15 (Multi-Scale Alignment) - Establish the focus
 const focus = "Ensure strategy, operations, and execution cohere across organizational levels";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using SY15 (Multi-Scale Alignment) - Apply the transformation
 const output = applyModel("SY15", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using SY15 (Multi-Scale Alignment) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("SY15", "Ensure strategy, operations, and execution co
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("SY15", "Ensure strategy, operations, and execution co
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/sy15-multi-scale-alignment
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation SY15 "Ensure strategy, operations, and execution cohere across organizational levels"
 ```

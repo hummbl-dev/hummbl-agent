@@ -15,6 +15,7 @@ Lightweight checklist for verifying Base120 compliance and repo alignment.
   - Tuple linter over `configs/**` + `packages/skills/registry/**` (fixture keeps the path hot until real tuples land; once real tuples exist, set `TUPLES_LINT_STRICT=1` in CI and remove the fixture).
 
 Example code reference:
+
 ```
 // Using P1 (First Principles Framing) - Reduce to foundational truths
 ```
@@ -39,6 +40,7 @@ If `WARN` or `FAIL`, provide a short list of findings after the summary block.
 ```
 
 Example output (passing):
+
 ```
 VERIFICATION RESULT: PASS
 Missing transformations: 0
@@ -47,6 +49,7 @@ Recommendations: 0
 ```
 
 Example output (warn):
+
 ```
 VERIFICATION RESULT: WARN
 Missing transformations: 2
@@ -59,6 +62,7 @@ Findings:
 ```
 
 Example output (fail):
+
 ```
 VERIFICATION RESULT: FAIL
 Missing transformations: 1

@@ -12,7 +12,7 @@
 **HUMMBL Agent** is an ambitious integration workspace that implements the **Base120 mental model framework** as a foundation for AI agent coordination and multi-agent systems. The project represents a novel approach to structuring AI reasoning through explicit, codified mental models that can be systematically applied to problem-solving, system design, and agent coordination.
 
 **Current Version:** 0.1.1  
-**Repository:** https://github.com/hummbl-dev/hummbl-agent  
+**Repository:** <https://github.com/hummbl-dev/hummbl-agent>  
 **Project Stage:** Foundation Phase (Phase 1)
 
 ### Technical State
@@ -34,6 +34,7 @@ The ultimate goal is to make **HUMMBL Base120 the mental intelligence layer for 
 ### Team Structure
 
 Current development is managed by the hummbl-dev team with governance-first approach:
+
 - All changes require human approval for governance-critical components
 - Kernel modifications require decision notes
 - No autonomous learning or recursive self-modification without explicit approval
@@ -51,9 +52,10 @@ The repository has undergone rapid initial development with foundations establis
 **HUMMBL Agent was inspired by and integrates with three main repositories:**
 
 #### 1. **ClawdBot → MoltBot → OpenClaw**
+
 - **Evolution:** The project started as "ClawdBot", was renamed to "MoltBot", and is now known as "OpenClaw"
 - **Role in HUMMBL:** Multi-agent coordination hub and gateway
-- **Integration Pattern:** 
+- **Integration Pattern:**
   - Gateway and routing configuration patterns borrowed via vendor pins
   - Session and coordination idioms adapted for HUMMBL use cases
   - NO runtime code directly copied; all integration through adapter layers
@@ -62,6 +64,7 @@ The repository has undergone rapid initial development with foundations establis
 - **What We Don't Use:** Runtime code or internal modules
 
 #### 2. **ClawdHub (clawdhub.ai)**
+
 - **Status:** Affiliated with OpenClaw maker, stays up to date with name changes
 - **Current State:** Website now shows "OpenClaw" on main page, confirming ongoing alignment
 - **Role in HUMMBL:** Registry and skill distribution system
@@ -74,6 +77,7 @@ The repository has undergone rapid initial development with foundations establis
 - **What We Don't Use:** Registry implementation or distribution code
 
 #### 3. **everything-claude-code**
+
 - **Role in HUMMBL:** Claude Code agent and command conventions
 - **Integration Pattern:**
   - Agent and command file structure adapted for HUMMBL-specific needs
@@ -88,11 +92,13 @@ The repository has undergone rapid initial development with foundations establis
 **Key Principle:** "No copy-paste; prefer wrappers. Do not edit vendor code; wrap and pin."
 
 All three inspiration sources are managed as:
+
 - **Vendor pins** in `/vendor` directory (as submodules or pinned references)
 - **Adapter layers** in `/packages` that wrap external patterns
 - **Documentation** in `packages/vendor-bridge/docs/UPSTREAM_MAPPING.md` explaining integration boundaries
 
 This approach ensures:
+
 - Clear separation of concerns
 - No license violations
 - Ability to track upstream changes
@@ -105,6 +111,7 @@ This approach ensures:
 ### Development History
 
 The repository shows **2 commits** in current branch state, indicating either:
+
 1. Recent repository initialization with squashed history, or
 2. Active work on feature branch `copilot/create-sitrep-overview`
 
@@ -161,6 +168,7 @@ The repository shows **2 commits** in current branch state, indicating either:
    - Skills located in: `skills/SY-systems/`
 
 **Additional Skills Infrastructure:**
+
 - **75+ skill markdown files** across all transformations
 - **Communication skills** in `skills/communication/`
 - **Integration skills** for cross-transformation work
@@ -170,12 +178,14 @@ The repository shows **2 commits** in current branch state, indicating either:
 #### Agents & Commands (14 Agents + 19 Commands)
 
 **HUMMBL-Specific Agents (4):**
+
 1. `hummbl-architect.md` - System design with mental models
 2. `hummbl-planner.md` - Planning with Base120
 3. `sitrep-generator.md` - SITREP automation (8KB, comprehensive)
 4. `transformation-guide.md` - Transformation selection guide
 
 **General Development Agents (10):**
+
 1. `architect.md` - General system architecture
 2. `build-error-resolver.md` - Build troubleshooting (12KB)
 3. `code-reviewer.md` - Code review automation
@@ -188,6 +198,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 10. `tdd-guide.md` - Test-driven development guide
 
 **Slash Commands (19):**
+
 1. `/apply-transformation` - Apply specific Base120 mental model (4KB)
 2. `/build-fix` - Fix build errors
 3. `/checkpoint` - Save current state
@@ -211,6 +222,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 #### Packages Architecture
 
 **Kernel & Core (`packages/`):**
+
 1. **`kernel/`** - Types-only kernel interfaces (stable contracts)
    - No runtime behavior in kernel
    - Pure type definitions and contracts
@@ -241,6 +253,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 #### Scripts & Automation (40+ scripts)
 
 **Core Scripts:**
+
 1. `generate-sitrep.sh` - SITREP generation automation
 2. `orchestrate.sh` - Multi-agent orchestration
 3. `run-cmd.sh` - Governed command execution
@@ -252,6 +265,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 #### Documentation (25+ documents)
 
 **Workflow Documentation:**
+
 1. `workflow-examples.md` - Usage examples
 2. `workflows-index.md` - Workflow catalog
 3. `governed-model-call.md` - Model invocation patterns
@@ -260,6 +274,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 6. `local-places-flow.md` - Local system integration
 
 **Specifications:**
+
 1. `TUPLES_v1.0.md` - Tuple contract specification
 2. `SPEC_TRANSFORMATIONS.md` - Transformation specifications
 3. `RUNNER_KERNEL_INTERFACE.md` - Runner interface spec
@@ -267,6 +282,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 5. `SECRETS_LIFECYCLE.md` - Secret management
 
 **Templates & Guides:**
+
 1. `sitrep-schema.md` - SITREP format specification
 2. `sitrep-lint-checklist.md` - SITREP validation
 3. `base120-skill-template.md` - Skill creation template
@@ -281,6 +297,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 12. `runner-manual-ui-log.md` - Manual logging guide
 
 **Templates:**
+
 1. `templates/AGENTS.md` - Agent coordination template
 2. `templates/SOUL.md` - System soul template
 3. `templates/TOOLS.md` - Tool integration template
@@ -288,6 +305,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 #### Configuration Files
 
 **Runner Configurations:**
+
 1. `configs/moltbot/` - Moltbot gateway/workspace configs
 2. `configs/claude-code/` - Claude Code settings template
 3. `configs/codex/` - Codex runner guidance
@@ -295,12 +313,14 @@ The repository shows **2 commits** in current branch state, indicating either:
 5. `configs/learning/` - Continuous learning configs + instincts
 
 **Governance Configurations:**
+
 1. `configs/process-policy.allowlist` - Allowed command list
 2. `configs/experiment-policy.json` - Experiment guardrails
 
 #### State Management
 
 **`_state/` Directory:**
+
 1. `CURRENT_STATE.md` - Current project state (dated 2026-01-26)
 2. `TODO.md` - Task tracking
 3. `RUNBOOK.md` - Operational procedures
@@ -310,6 +330,7 @@ The repository shows **2 commits** in current branch state, indicating either:
 7. `runs/` - Run logs directory
 
 **Key Decision Notes:**
+
 1. `2026-01-27-tuple-spec-enforcement.md` - Tuple v1.0 approval
 2. `2026-01-28-plan-artifact-signatures.md` - Plan signing authorization
 
@@ -329,11 +350,13 @@ The repository shows **2 commits** in current branch state, indicating either:
 Based on `_state/CURRENT_STATE.md` (dated 2026-01-26):
 
 **Current Plan (Next 3 Steps):**
+
 1. Review imported legacy skills/commands/agents for relevance and governance fit
 2. Decide which legacy items to keep, quarantine, or retire; document decisions
 3. Expand router tests/sample cases to cover new skill namespaces
 
 **Workstream Locks:**
+
 - Documentation and governance updates: hummbl-dev team
 
 ### Blocked Items
@@ -341,6 +364,7 @@ Based on `_state/CURRENT_STATE.md` (dated 2026-01-26):
 **From `_state/TODO.md`:**
 
 **Immediate:**
+
 - Add Base120 skills to registry (manual/prompt-only, no execution)
 - Add router sample cases and text-only tests
 - Validate CI pass on latest changes
@@ -348,6 +372,7 @@ Based on `_state/CURRENT_STATE.md` (dated 2026-01-26):
 - Add CI check for base120-skill-map.md currency
 
 **Near-term:**
+
 - Capability-aware routing integration test cases
 - Evidence lint adoption
 - First controlled experiment cycle
@@ -374,6 +399,7 @@ From `_state/CURRENT_STATE.md`:
 ### Successes
 
 #### Architectural Excellence
+
 // Using P1 (First Principles Framing) - Foundation assessment
 
 1. **Clean Vendor Integration**
@@ -406,6 +432,7 @@ From `_state/CURRENT_STATE.md`:
    - Template-driven consistency
 
 #### Governance Maturity
+
 // Using SY8 (Systems) - Pattern recognition
 
 1. **Decision Note System**
@@ -426,6 +453,7 @@ From `_state/CURRENT_STATE.md`:
 ### Challenges
 
 #### Integration Readiness
+
 // Using IN2 (Premortem Analysis) - Risk identification
 
 1. **No Executable Skills Yet**
@@ -449,6 +477,7 @@ From `_state/CURRENT_STATE.md`:
    - Unclear which skills to retain vs retire
 
 #### Validation & Testing
+
 // Using DE1 (Root Cause Analysis)
 
 1. **CI/CD Coverage**
@@ -464,6 +493,7 @@ From `_state/CURRENT_STATE.md`:
 ### Lessons Learned
 
 #### Architecture Patterns
+
 // Using RE2 (Iterative Refinement)
 
 1. **Adapter Pattern Success**
@@ -482,6 +512,7 @@ From `_state/CURRENT_STATE.md`:
    - SITREP schema enables standardized reporting
 
 #### Governance Effectiveness
+
 // Using P2 (Stakeholder Mapping)
 
 1. **Human Approval Gates**
@@ -504,6 +535,7 @@ From `_state/CURRENT_STATE.md`:
 ## 5. RECOMMENDATIONS
 
 ### Immediate Actions (Next 24-48 Hours)
+
 // Using DE7 (Pareto Decomposition) - High-impact focus
 
 1. **Complete Current SITREP Documentation**
@@ -522,6 +554,7 @@ From `_state/CURRENT_STATE.md`:
    - Create text-only integration examples
 
 ### Short-Term Actions (Next 1-2 Weeks)
+
 // Using CO5 (Composition) - Integrative planning
 
 1. **Legacy Skill Governance**
@@ -545,6 +578,7 @@ From `_state/CURRENT_STATE.md`:
    - Document execution patterns for other skills
 
 ### Medium-Term Actions (Next 1-2 Months)
+
 // Using SY1 (Systems Thinking) - Holistic view
 
 1. **Runner Capability Validation**
@@ -568,6 +602,7 @@ From `_state/CURRENT_STATE.md`:
    - Link observations to continuous learning
 
 ### Base120 Mental Model Applications
+
 // Using transformation recommendations
 
 #### For Current Phase (Foundation → Integration)
@@ -641,6 +676,7 @@ From `_state/CURRENT_STATE.md`:
 ### Transformation Domain Coverage
 
 Each domain contains 20 mental models:
+
 - **P (Perspective):** 20 models ✅
 - **IN (Inversion):** 20 models ✅
 - **CO (Composition):** 20 models ✅
@@ -679,6 +715,7 @@ With 120 mental models structured, 14 specialized agents defined, and strong gov
 *Generated using P1 (First Principles Framing), SY8 (Pattern Recognition), DE3 (Decomposition), and CO5 (Composition) transformations*
 
 **Mental Model Applications in this SITREP:**
+
 - P1: Foundation assessment and current state framing
 - P2: Stakeholder mapping and governance effectiveness
 - DE1: Root cause analysis of challenges

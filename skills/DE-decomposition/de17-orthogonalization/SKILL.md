@@ -16,11 +16,13 @@ Apply the DE17 Orthogonalization transformation to ensure factors vary independe
 ## When to Use DE17
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Orthogonalization here?"
 - "What changes if we apply DE17 to this breaking down an implementation plan?"
 - "Which assumptions does DE17 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE17 Orthogonalization transformation to ensure factors vary independe
 ## The DE17 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE17 (Orthogonalization) - Establish the focus
 const focus = "Ensure factors vary independently without correlation or interdependence";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE17 (Orthogonalization) - Apply the transformation
 const output = applyModel("DE17", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE17 (Orthogonalization) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE17", "Ensure factors vary independently without cor
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE17", "Ensure factors vary independently without cor
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de17-orthogonalization
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE17 "Ensure factors vary independently without correlation or interdependence"
 ```

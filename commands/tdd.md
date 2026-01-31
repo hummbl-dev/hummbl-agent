@@ -17,6 +17,7 @@ This command invokes the **tdd-guide** agent to enforce test-driven development 
 ## When to Use
 
 Use `/tdd` when:
+
 - Implementing new features
 - Adding new functions/components
 - Fixing bugs (write test that reproduces bug first)
@@ -251,6 +252,7 @@ Coverage: 100% ✅ (Target: 80%)
 ```
 
 ✅ TDD session complete!
+
 ```
 
 ## TDD Best Practices

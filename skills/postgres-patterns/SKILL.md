@@ -41,6 +41,7 @@ Quick reference for PostgreSQL best practices. For detailed guidance, use the `d
 ### Common Patterns
 
 **Composite Index Order:**
+
 ```sql
 -- Equality columns first, then range columns
 CREATE INDEX idx ON orders (status, created_at);
@@ -48,24 +49,28 @@ CREATE INDEX idx ON orders (status, created_at);
 ```
 
 **Covering Index:**
+
 ```sql
 CREATE INDEX idx ON users (email) INCLUDE (name, created_at);
 -- Avoids table lookup for SELECT email, name, created_at
 ```
 
 **Partial Index:**
+
 ```sql
 CREATE INDEX idx ON users (email) WHERE deleted_at IS NULL;
 -- Smaller index, only includes active users
 ```
 
 **RLS Policy (Optimized):**
+
 ```sql
 CREATE POLICY policy ON orders
   USING ((SELECT auth.uid()) = user_id);  -- Wrap in SELECT!
 ```
 
 **UPSERT:**
+
 ```sql
 INSERT INTO settings (user_id, key, value)
 VALUES (123, 'theme', 'dark')
@@ -74,12 +79,14 @@ DO UPDATE SET value = EXCLUDED.value;
 ```
 
 **Cursor Pagination:**
+
 ```sql
 SELECT * FROM products WHERE id > $last_id ORDER BY id LIMIT 20;
 -- O(1) vs OFFSET which is O(n)
 ```
 
 **Queue Processing:**
+
 ```sql
 UPDATE jobs SET status = 'processing'
 WHERE id = (

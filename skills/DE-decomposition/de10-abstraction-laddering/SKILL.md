@@ -16,11 +16,13 @@ Apply the DE10 Abstraction Laddering transformation to move up and down conceptu
 ## When to Use DE10
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Abstraction Laddering here?"
 - "What changes if we apply DE10 to this breaking down an implementation plan?"
 - "Which assumptions does DE10 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE10 Abstraction Laddering transformation to move up and down conceptu
 ## The DE10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE10 (Abstraction Laddering) - Establish the focus
 const focus = "Move up and down conceptual hierarchy to find appropriate solution level";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE10 (Abstraction Laddering) - Apply the transformation
 const output = applyModel("DE10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE10 (Abstraction Laddering) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE10", "Move up and down conceptual hierarchy to find
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE10", "Move up and down conceptual hierarchy to find
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de10-abstraction-laddering
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE10 "Move up and down conceptual hierarchy to find appropriate solution level"
 ```

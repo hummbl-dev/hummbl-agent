@@ -16,11 +16,13 @@ Apply the DE16 Hypothesis Disaggregation transformation to break compound claim 
 ## When to Use DE16
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Hypothesis Disaggregation here?"
 - "What changes if we apply DE16 to this breaking down an implementation plan?"
 - "Which assumptions does DE16 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE16 Hypothesis Disaggregation transformation to break compound claim 
 ## The DE16 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE16 (Hypothesis Disaggregation) - Establish the focus
 const focus = "Break compound claim into testable sub-hypotheses";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE16 (Hypothesis Disaggregation) - Apply the transformation
 const output = applyModel("DE16", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE16 (Hypothesis Disaggregation) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE16", "Break compound claim into testable sub-hypoth
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE16", "Break compound claim into testable sub-hypoth
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de16-hypothesis-disaggregation
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE16 "Break compound claim into testable sub-hypotheses"
 ```

@@ -16,11 +16,13 @@ Apply the DE20 Partition-and-Conquer transformation to divide problem into indep
 ## When to Use DE20
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Partition-and-Conquer here?"
 - "What changes if we apply DE20 to this breaking down an implementation plan?"
 - "Which assumptions does DE20 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE20 Partition-and-Conquer transformation to divide problem into indep
 ## The DE20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE20 (Partition-and-Conquer) - Establish the focus
 const focus = "Divide problem into independent subproblems solvable separately then combined";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE20 (Partition-and-Conquer) - Apply the transformation
 const output = applyModel("DE20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE20 (Partition-and-Conquer) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE20", "Divide problem into independent subproblems s
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE20", "Divide problem into independent subproblems s
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de20-partition-and-conquer
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE20 "Divide problem into independent subproblems solvable separately then combined"
 ```

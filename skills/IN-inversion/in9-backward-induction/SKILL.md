@@ -16,11 +16,13 @@ Apply the IN9 Backward Induction transformation to begin with desired end state 
 ## When to Use IN9
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Backward Induction here?"
 - "What changes if we apply IN9 to this risk assessment for a launch?"
 - "Which assumptions does IN9 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN9 Backward Induction transformation to begin with desired end state 
 ## The IN9 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN9 (Backward Induction) - Establish the focus
 const focus = "Begin with desired end state and work backward to determine necessary steps";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN9 (Backward Induction) - Apply the transformation
 const output = applyModel("IN9", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN9 (Backward Induction) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN9", "Begin with desired end state and work backward
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN9", "Begin with desired end state and work backward
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in9-backward-induction
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN9 "Begin with desired end state and work backward to determine necessary steps"
 ```

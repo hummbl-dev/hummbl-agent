@@ -16,11 +16,13 @@ Apply the RE10 Compounding Cycles transformation to design systems where gains r
 ## When to Use RE10
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Compounding Cycles here?"
 - "What changes if we apply RE10 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE10 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE10 Compounding Cycles transformation to design systems where gains r
 ## The RE10 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE10 (Compounding Cycles) - Establish the focus
 const focus = "Design systems where gains reinforce future gains exponentially";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE10 (Compounding Cycles) - Apply the transformation
 const output = applyModel("RE10", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE10 (Compounding Cycles) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE10", "Design systems where gains reinforce future g
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE10", "Design systems where gains reinforce future g
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re10-compounding-cycles
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE10 "Design systems where gains reinforce future gains exponentially"
 ```

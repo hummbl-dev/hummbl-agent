@@ -16,11 +16,13 @@ Apply the DE7 Pareto Decomposition (80/20) transformation to identify vital few 
 ## When to Use DE7
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Pareto Decomposition (80/20) here?"
 - "What changes if we apply DE7 to this breaking down an implementation plan?"
 - "Which assumptions does DE7 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE7 Pareto Decomposition (80/20) transformation to identify vital few 
 ## The DE7 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE7 (Pareto Decomposition (80/20)) - Establish the focus
 const focus = "Identify vital few drivers producing most impact versus trivial many";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE7 (Pareto Decomposition (80/20)) - Apply the transformation
 const output = applyModel("DE7", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE7 (Pareto Decomposition (80/20)) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE7", "Identify vital few drivers producing most impa
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE7", "Identify vital few drivers producing most impa
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de7-pareto-decomposition-8020
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE7 "Identify vital few drivers producing most impact versus trivial many"
 ```

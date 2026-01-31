@@ -16,11 +16,13 @@ Apply the RE2 Feedback Loops transformation to create mechanisms where system ou
 ## When to Use RE2
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Feedback Loops here?"
 - "What changes if we apply RE2 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE2 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE2 Feedback Loops transformation to create mechanisms where system ou
 ## The RE2 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE2 (Feedback Loops) - Establish the focus
 const focus = "Create mechanisms where system outputs influence future inputs";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE2 (Feedback Loops) - Apply the transformation
 const output = applyModel("RE2", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE2 (Feedback Loops) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE2", "Create mechanisms where system outputs influen
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE2", "Create mechanisms where system outputs influen
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re2-feedback-loops
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE2 "Create mechanisms where system outputs influence future inputs"
 ```

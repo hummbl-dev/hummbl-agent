@@ -16,11 +16,13 @@ Apply the IN8 Contrapositive Reasoning transformation to use logical equivalence
 ## When to Use IN8
 
 ### Ideal Situations
+
 - Stress-test a plan by reversing assumptions
 - Identify risks by imagining failure states
 - Simplify outcomes by removing unnecessary elements
 
 ### Trigger Questions
+
 - "How can we use Contrapositive Reasoning here?"
 - "What changes if we apply IN8 to this risk assessment for a launch?"
 - "Which assumptions does IN8 help us surface?"
@@ -28,18 +30,21 @@ Apply the IN8 Contrapositive Reasoning transformation to use logical equivalence
 ## The IN8 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using IN8 (Contrapositive Reasoning) - Establish the focus
 const focus = "Use logical equivalence that if A then B equals if not B then not A";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using IN8 (Contrapositive Reasoning) - Apply the transformation
 const output = applyModel("IN8", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using IN8 (Contrapositive Reasoning) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("IN8", "Use logical equivalence that if A then B equal
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("IN8", "Use logical equivalence that if A then B equal
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/in8-contrapositive-reasoning
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation IN8 "Use logical equivalence that if A then B equals if not B then not A"
 ```

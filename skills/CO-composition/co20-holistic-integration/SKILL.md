@@ -16,11 +16,13 @@ Apply the CO20 Holistic Integration transformation to unify disparate elements i
 ## When to Use CO20
 
 ### Ideal Situations
+
 - Assemble components into a coherent whole
 - Integrate multiple solutions into a unified approach
 - Design systems that depend on clear interfaces and seams
 
 ### Trigger Questions
+
 - "How can we use Holistic Integration here?"
 - "What changes if we apply CO20 to this integrating two services?"
 - "Which assumptions does CO20 help us surface?"
@@ -28,18 +30,21 @@ Apply the CO20 Holistic Integration transformation to unify disparate elements i
 ## The CO20 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using CO20 (Holistic Integration) - Establish the focus
 const focus = "Unify disparate elements into coherent, seamless whole where boundaries dissolve";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using CO20 (Holistic Integration) - Apply the transformation
 const output = applyModel("CO20", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using CO20 (Holistic Integration) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("CO20", "Unify disparate elements into coherent, seaml
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("CO20", "Unify disparate elements into coherent, seaml
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/co20-holistic-integration
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation CO20 "Unify disparate elements into coherent, seamless whole where boundaries dissolve"
 ```

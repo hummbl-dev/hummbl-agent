@@ -1,6 +1,7 @@
 # Claude Code Runner
 
 ## Usage
+
 ```bash
 packages/runners/claude-code/scripts/make-prompt.sh > /tmp/claude-prompt.md
 packages/runners/claude-code/scripts/log-run.sh "Session start: claude" \
@@ -8,6 +9,7 @@ packages/runners/claude-code/scripts/log-run.sh "Session start: claude" \
 ```
 
 ## Anthropic Messages (networked)
+
 ```bash
 export ANTHROPIC_API_KEY="..."
 packages/runners/claude-code/scripts/run-anthropic.sh \
@@ -18,5 +20,6 @@ packages/runners/claude-code/scripts/run-anthropic.sh \
 Artifacts are written to `_state/runs/YYYY-MM-DD/artifacts/` and logged with hashes.
 
 ## Notes
+
 - Anthropic requests are non-streaming (v0.1).
 - Domain allowlist enforced by `configs/network-policy.json`.

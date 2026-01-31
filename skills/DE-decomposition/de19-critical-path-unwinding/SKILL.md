@@ -16,11 +16,13 @@ Apply the DE19 Critical Path Unwinding transformation to trace longest sequence 
 ## When to Use DE19
 
 ### Ideal Situations
+
 - Break a complex problem into manageable parts
 - Separate concerns to isolate risk and effort
 - Create modular workstreams for parallel progress
 
 ### Trigger Questions
+
 - "How can we use Critical Path Unwinding here?"
 - "What changes if we apply DE19 to this breaking down an implementation plan?"
 - "Which assumptions does DE19 help us surface?"
@@ -28,18 +30,21 @@ Apply the DE19 Critical Path Unwinding transformation to trace longest sequence 
 ## The DE19 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using DE19 (Critical Path Unwinding) - Establish the focus
 const focus = "Trace longest sequence of dependent tasks determining minimum project duration";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using DE19 (Critical Path Unwinding) - Apply the transformation
 const output = applyModel("DE19", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using DE19 (Critical Path Unwinding) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("DE19", "Trace longest sequence of dependent tasks det
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("DE19", "Trace longest sequence of dependent tasks det
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/de19-critical-path-unwinding
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation DE19 "Trace longest sequence of dependent tasks determining minimum project duration"
 ```

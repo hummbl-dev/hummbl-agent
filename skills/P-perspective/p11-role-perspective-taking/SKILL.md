@@ -16,11 +16,13 @@ Apply the P11 Role Perspective-Taking transformation to temporarily inhabit spec
 ## When to Use P11
 
 ### Ideal Situations
+
 - Reframe a problem to uncover hidden assumptions or perspectives
 - Align stakeholders around a shared understanding
 - Clarify scope before choosing a solution path
 
 ### Trigger Questions
+
 - "How can we use Role Perspective-Taking here?"
 - "What changes if we apply P11 to this product requirements review?"
 - "Which assumptions does P11 help us surface?"
@@ -28,18 +30,21 @@ Apply the P11 Role Perspective-Taking transformation to temporarily inhabit spec
 ## The P11 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using P11 (Role Perspective-Taking) - Establish the focus
 const focus = "Temporarily inhabit specific roles to understand constraints and priorities";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using P11 (Role Perspective-Taking) - Apply the transformation
 const output = applyModel("P11", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using P11 (Role Perspective-Taking) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("P11", "Temporarily inhabit specific roles to understa
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("P11", "Temporarily inhabit specific roles to understa
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/p11-role-perspective-taking
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation P11 "Temporarily inhabit specific roles to understand constraints and priorities"
 ```

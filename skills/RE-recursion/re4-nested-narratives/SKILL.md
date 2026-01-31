@@ -16,11 +16,13 @@ Apply the RE4 Nested Narratives transformation to structure information as stori
 ## When to Use RE4
 
 ### Ideal Situations
+
 - Iterate toward a better solution using feedback loops
 - Refine a process through repeated cycles
 - Scale a pattern through repetition and standardization
 
 ### Trigger Questions
+
 - "How can we use Nested Narratives here?"
 - "What changes if we apply RE4 to this iterating a workflow over several cycles?"
 - "Which assumptions does RE4 help us surface?"
@@ -28,18 +30,21 @@ Apply the RE4 Nested Narratives transformation to structure information as stori
 ## The RE4 Process
 
 ### Step 1: Define the focus
+
 ```typescript
 // Using RE4 (Nested Narratives) - Establish the focus
 const focus = "Structure information as stories within stories for depth and memorability";
 ```
 
 ### Step 2: Apply the model
+
 ```typescript
 // Using RE4 (Nested Narratives) - Apply the transformation
 const output = applyModel("RE4", focus);
 ```
 
 ### Step 3: Synthesize outcomes
+
 ```typescript
 // Using RE4 (Nested Narratives) - Capture insights and decisions
 const insights = summarize(output);
@@ -86,6 +91,7 @@ const result = applyModel("RE4", "Structure information as stories within storie
 ## Installation and Usage
 
 ### Nix Installation
+
 ```nix
 {
   programs.moltbot.plugins = [
@@ -95,11 +101,13 @@ const result = applyModel("RE4", "Structure information as stories within storie
 ```
 
 ### Manual Installation
+
 ```bash
 moltbot-registry install hummbl-agent/re4-nested-narratives
 ```
 
 ### Usage with Commands
+
 ```bash
 /apply-transformation RE4 "Structure information as stories within stories for depth and memorability"
 ```
