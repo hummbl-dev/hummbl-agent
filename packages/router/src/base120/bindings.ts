@@ -28,7 +28,13 @@ export const BASE120_BINDINGS: Base120Bindings = {
 
   // Wave 2A placeholders (empty until validated)
   IN2: { skills: [] },
-  DE3: { skills: [] },
+  DE3: {
+    skills: [
+      "de3/decompose-plan.v0.1.0",
+      "de3/decompose-task.v0.1.0",
+      "de3/decompose-problem.v0.1.0",
+    ],
+  },
   SY8: { skills: [] },
   DE1: { skills: [] },
   RE2: { skills: [] },

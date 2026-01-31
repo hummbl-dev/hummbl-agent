@@ -18,29 +18,37 @@ const withBinding = (skills, fn) => {
 describe("DE3 binding constraint", () => {
   it("binding empty preserves baseline", () => {
     withBinding([], () => {
-      const skills = [{ id: "de3/a" }, { id: "de3/b" }];
+      const skills = [
+        { id: "de3/decompose-plan.v0.1.0" },
+        { id: "de3/decompose-task.v0.1.0" },
+        { id: "de3/decompose-problem.v0.1.0" },
+      ];
       const result = selectDe3Skill({ skills });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skill.id, "de3/a");
+        assert.equal(result.skill.id, "de3/decompose-plan.v0.1.0");
       }
     });
   });
 
   it("binding forces selection", () => {
-    withBinding(["de3/b"], () => {
-      const skills = [{ id: "de3/a" }, { id: "de3/b" }];
+    withBinding(["de3/decompose-problem.v0.1.0"], () => {
+      const skills = [
+        { id: "de3/decompose-plan.v0.1.0" },
+        { id: "de3/decompose-task.v0.1.0" },
+        { id: "de3/decompose-problem.v0.1.0" },
+      ];
       const result = selectDe3Skill({ skills });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skill.id, "de3/b");
+        assert.equal(result.skill.id, "de3/decompose-problem.v0.1.0");
       }
     });
   });
 
   it("binding with no intersection fails", () => {
     withBinding(["de3/zzz"], () => {
-      const skills = [{ id: "de3/a" }];
+      const skills = [{ id: "de3/decompose-plan.v0.1.0" }];
       const result = selectDe3Skill({ skills });
       assert.equal(result.ok, false);
       if (!result.ok) {
