@@ -105,6 +105,101 @@ If invariants break:
 
 ---
 
-**Status:** ACTIVE
+**Status:** COMPLETE
 
-**Last Updated:** 2026-01-30
+**Last Updated:** 2026-01-31
+
+---
+
+## Wave 1 Closure
+
+**Wave:** BASE120_ROUTER_WAVE  
+**Status:** COMPLETE  
+**Branch:** `wave/base120-router`  
+**Baseline Tag:** `v0.1.0-hummbl-agent-foundation` (commit `54310af`)  
+**Head Commit:** `eff0620` (chore: build before tests when importing dist)  
+**Duration:** 2026-01-30 to 2026-01-31
+
+### What Shipped
+
+**Commits (7 total):**
+
+1. `12ae8dc` - feat(router): add Base120 bindings surface (data-only)
+2. `d116ef7` - feat(router): add deterministic Base120 bindings validator
+3. `04f1855` - test(router): cover Base120 bindings validator error codes
+4. `faedd12` - ci(router): validate Base120 bindings before tests (amended)
+5. `f6d80fd` - feat(router): wire P1 Base120 binding to llm-routing (thin slice)
+6. `8e26886` - obs(router): extract Base120 binding telemetry module (v1)
+7. `eff0620` - chore(router): build before tests when importing dist
+
+**Modules Created:**
+
+- `packages/router/src/base120/bindings.ts` - Pure data bindings surface
+- `packages/router/src/base120/validateBindings.ts` - Deterministic validator (3 error codes)
+- `packages/router/src/base120/telemetry.ts` - Structured event emission (v1 schema)
+- `packages/router/scripts/validate-bindings.mjs` - ESM validator runner
+
+**Tests Added:**
+
+- 4 validator tests (error codes: MISSING_SKILLS_ARRAY, NON_STRING_SKILL, DUPLICATE_SKILL)
+- 1 golden regression test (non-breaking behavior proof)
+- Total: 6 tests passing (up from 1)
+
+**CI Enhancements:**
+
+- Validate Base120 bindings gate (runs before tests)
+- Pretest build hook (eliminates stale dist/ false greens)
+
+**Implementation:**
+
+- P1 transformation wired end-to-end (thin slice)
+- No-op when binding empty; safe fallback if intersection empty
+- Telemetry emitted on binding resolution
+
+### Invariants Check
+
+✅ **1. CI Green Per Commit** - All 7 commits passed CI  
+✅ **2. Test Coverage** - 6 tests total (5 new), all .test.mjs format, import from dist/  
+✅ **3. Kernel Authoritative** - Router imports TupleV1 from kernel; no duplication  
+✅ **4. Non-Breaking** - Golden regression test proves existing behavior unchanged  
+✅ **5. Governance Compliance** - Markdownlint enforced; validator CI-gated
+
+### Evidence
+
+**CI Status:** ✅ GREEN  
+**Branch:** `origin/wave/base120-router`  
+**Latest Run:** <https://github.com/hummbl-dev/hummbl-agent/actions> (wave/base120-router @ eff0620)  
+**Test Count:** 6 passing (router) + 9 passing (LLM adapters) + 1 passing (e2e) = 16 total  
+**Lint Guards:** All passing (markdownlint, Base120 refs, ESM, network policy)
+
+**Local Verification:**
+
+```
+> npm test (packages/router)
+✓ Bindings valid
+✓ golden regression: router selection unchanged (1 test)
+✓ validateBindings (4 tests)
+✓ selectLlmSkill returns error when no skills match (1 test)
+ℹ tests 6
+ℹ pass 6
+```
+
+### Outcome
+
+- **Binding Surface Contract:** Established single canonical location for Base120 transformation bindings
+- **Deterministic Validation:** Shape + duplicates validated; transformation validity deferred to kernel-fed set
+- **CI Integration:** Validator runs post-build, pre-test (policy-compliant)
+- **Thin Vertical Slice:** P1 wired with safe no-op/fallback pattern
+- **Telemetry v1:** Structured events centralized with stable schema
+- **Test Determinism:** Pretest build hook prevents stale-dist regressions
+
+### Follow-On Work
+
+**Wave 2 Scope (future):**
+
+- Expand bindings to additional transformations (IN2, DE3, etc.)
+- Kernel-fed transformation code validation (replace hardcoded checks)
+- Bindings report JSON artifact (governance visibility)
+- Telemetry aggregation/metrics
+
+**No Blockers:** Wave 1 complete; ready for merge to main
