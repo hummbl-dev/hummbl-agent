@@ -163,6 +163,44 @@ This SITREP is factual, non-prescriptive, append-only. Future baseline anchors w
 
 ---
 
+## SITREP-WAVE-003 — BASE120 Router Wave 2B Complete
+
+- **Date:** 2026-01-31
+- **Scope:** Kernel-authoritative Base120 code validation
+- **Baseline Anchor:** v0.1.1-base120-router-wave1
+- **Main Head:** 22ae494
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+**Wave 2B established kernel as the single authoritative source for Base120 model code validity:**
+
+- **Kernel export:** Created `packages/kernel/src/base120.ts` with frozen set of 120 codes (6 domains × 20 models)
+- **Validator extension:** Added `UNKNOWN_BASE120_CODE` error; checks binding keys (P1, IN2, etc.) against kernel's canonical set
+- **No hardcoded lists:** Removed implicit assumptions; validator references kernel authority
+- **Policy compliance:** Inlined codes in runner script (maintains no-runtime-TS-loader policy)
+
+### Evidence
+
+- **Commit:** `22ae494` (kernel export + validator integration)
+- **Tests:** 11/11 passing (1 new validator test for unknown Base120 code)
+- **CI:** GREEN throughout
+- **Kernel authority:** 120 codes exported from `packages/kernel/src/base120.ts`
+- **Validation scope:** Binding keys validated (P1, IN2, DE3, SY8, DE1, RE2, IN10, CO5 all valid)
+
+### Governance
+
+- **Kernel authoritative:** Base120 codes are kernel-owned; router validates against canonical source
+- **Deterministic validation:** Binding keys checked against frozen set (no ad hoc lists)
+- **No runtime loaders:** Validator script inlines codes (ESM .mjs, no tsx/ts-node)
+- **Test coverage:** New error code has dedicated test
+
+---
+
+*End of SITREP-WAVE-003*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)

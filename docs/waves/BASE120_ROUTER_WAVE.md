@@ -288,3 +288,70 @@ If invariants break:
 - **ESM Compliance:** Test imports and relative module paths follow Node ESM requirements
 
 **No Blockers:** Wave 2A complete; bindings expansion (Wave 3) or kernel-fed validity (Wave 2B) now viable
+
+---
+
+## Wave 2B Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE  
+**Commits:** `22ae494`  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+**Kernel-Authoritative Base120 Codes:**
+- Created `packages/kernel/src/base120.ts` with frozen set of 120 model codes
+- Exported `BASE120_CODES` (Set<string>) covering all 6 domains (P, IN, CO, DE, RE, SY) × 20 models each
+- Kernel becomes single source of truth for Base120 code validity
+
+**Validator Enhancement:**
+- Extended `validateBindings()` with `knownBase120Codes` parameter
+- Added `UNKNOWN_BASE120_CODE` error code for invalid binding keys
+- Validator now checks binding keys (P1, IN2, etc.) against kernel's canonical set
+- Runner script inlines Base120 codes (maintains no-runtime-TS-loader policy)
+
+**Commits:**
+- `22ae494` - feat(kernel): export canonical Base120 model codes + feat(router): validate binding keys
+
+### Tests Added
+
+**Validator Coverage:**
+- 1 new test: unknown Base120 code rejection (validates binding keys)
+- Total: 11 tests passing (6 validator tests + 3 enforcement + 2 other)
+
+### Invariants Check
+
+✅ **1. CI Green** - All tests passing  
+✅ **2. Kernel Authoritative** - Base120 codes exported from kernel, router imports  
+✅ **3. No Runtime TS Loaders** - Validator script inlines codes (ESM .mjs)  
+✅ **4. Deterministic Validation** - Binding keys checked against frozen canonical set  
+✅ **5. Test Coverage** - New error code has test coverage
+
+### Evidence
+
+**CI Status:** ✅ GREEN  
+**Test Results:**
+```
+✓ Bindings valid
+✓ validateBindings (6 tests - added UNKNOWN_BASE120_CODE)
+✓ P1 binding enforcement (3 tests)
+✓ golden regression (1 test)
+✓ selectLlmSkill (1 test)
+ℹ tests 11
+ℹ pass 11
+```
+
+**Kernel Authority:**
+- 120 codes defined in `packages/kernel/src/base120.ts`
+- Router validator references kernel codes (inlined in runner to avoid TS loader)
+- Validates binding keys: `P1`, `IN2`, `DE3`, `SY8`, `DE1`, `RE2`, `IN10`, `CO5`
+
+### Outcome
+
+- **Kernel Authority Established:** Base120 codes are kernel-owned, router validates against them
+- **No Hardcoded Lists:** Removed implicit assumptions; canonical source is `packages/kernel/src/base120.ts`
+- **Binding Key Validation:** Router rejects bindings with invalid Base120 codes (e.g., `XX99`)
+- **Policy Compliance:** No runtime TypeScript loaders; validator script uses inlined codes
+
+**No Blockers:** Wave 2B complete; ready for Wave 3 (bindings expansion) or other tracks
