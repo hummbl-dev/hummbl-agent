@@ -278,7 +278,7 @@ Consumers MUST:
 - **CI Integration**: `.github/workflows/ci.yml` (artifact upload)
 - **Governance**: SITREP-10 Operations section
 - **Related Issues**: #12 (Base120 refs remediation), #13 (Router build infrastructure)
-- **Semantic Versioning**: https://semver.org/
+- **Semantic Versioning**: <https://semver.org/>
 
 ---
 
