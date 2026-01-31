@@ -124,6 +124,45 @@ This SITREP is factual, non-prescriptive, append-only. Future baseline anchors w
 
 ---
 
+## SITREP-WAVE-002 — BASE120 Router Wave 2A Complete (Remediation)
+
+- **Date:** 2026-01-31
+- **Scope:** Bindings expansion (7 transformations), manifest validation, P1 population remediation
+- **Baseline Anchor:** v0.1.1-base120-router-wave1
+- **Main Head:** 2b48a37
+- **Status:** COMPLETE / GREEN (after remediation)
+
+### What Shipped
+
+**Wave 2A delivered transformation placeholder expansion, manifest-authoritative validation, and corrected P1 binding semantic alignment:**
+
+- **Placeholders:** Added 7 empty transformation bindings (`IN2`, `DE3`, `SY8`, `DE1`, `RE2`, `IN10`, `CO5`) for future expansion
+- **Manifest validation:** Enhanced validator with `UNKNOWN_SKILL_ID` error code; integrated `skills/MANIFEST.json` (197 skills) as registry authority
+- **P1 remediation:** Corrected initial population that targeted P-perspective skills; aligned to LLM vendor skills (`llm/anthropic`, `llm/openai`) matching `llm-routing` surface
+- **Router alignment (R1):** Fixed `LLM_SKILL_BY_VENDOR` mapping from ghost IDs (`llm.anthropic.call`) to manifest-canonical slash format (`llm/anthropic`)
+- **Real enforcement (R2):** Replaced mechanical filtering test with behavioral assertions proving P1 binding constrains routing outcomes
+
+### Evidence
+
+- **Commits:** `320835a` (telemetry), `153410b` (expansion + manifest), `6879147` (R1 fix), `6caad11` (R2 test)
+- **Tests:** 10/10 passing (3 new enforcement tests, 1 manifest validation test, 6 existing)
+- **CI:** GREEN throughout remediation
+- **Manifest integration:** 197 skills validated, P1 skills verified present
+- **Enforcement assertions:** 3 behavioral tests prove binding affects vendor selection (not just filtering)
+
+### Governance
+
+- **Semantic violation discovered and resolved:** Initial P1 targeted wrong domain; remediation ensured binding aligns with routing surface
+- **Manifest authority maintained:** Validator rejects unknown skill IDs; registry is source of truth
+- **No rollback required:** Remediation commits preserve all invariants
+- **ESM compliance:** Fixed test imports and added `.js` extensions for Node module resolution
+
+---
+
+*End of SITREP-WAVE-002*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
