@@ -316,6 +316,32 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-009 — BASE120 Router Wave 9 (IN2 Supply + Binding)
+
+- **Date:** 2026-01-31
+- **Scope:** IN2 skill supply + binding population
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **IN2 skills added:**
+   - `in2/validate-schema.v0.1.0`
+   - `in2/check-invariants.v0.1.0`
+   - `in2/verify-artifacts.v0.1.0`
+- **Binding populated:** `BASE120_BINDINGS.IN2.skills` set to the three registry-backed IDs
+- **Tests:** IN2 binding enforcement uses real manifest IDs; explicit fail on no intersection
+
+### Invariants
+
+- **Manifest authority preserved:** bindings validated against skills/MANIFEST.json
+- **Kernel authority preserved:** Base120 codes remain kernel-owned
+
+---
+
+*End of SITREP-WAVE-009*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
