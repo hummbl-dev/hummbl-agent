@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hummbl.dev/schemas/skill_metadata_artifact_ref.schema.json",
+  "title": "Skill Metadata Artifact Reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "ref"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "$ref": "./enums/artifact_types.json" },
+    "ref": {
+      "type": "string",
+      "description": "Stable identifier: path, hash, version tag, or artifact pointer."
+    }
+  }
+}

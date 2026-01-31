@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Artifact Types",
+  "type": "string",
+  "enum": [
+    "file",
+    "hash",
+    "version_tag",
+    "run_artifact",
+    "policy_artifact",
+    "schema_artifact",
+    "text"
+  ]
+}

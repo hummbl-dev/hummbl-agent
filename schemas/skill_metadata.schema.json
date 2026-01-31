@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hummbl.dev/schemas/skill_metadata.schema.json",
+  "title": "HUMMBL Skill Metadata",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "skill_id",
+    "description",
+    "inputs",
+    "outputs",
+    "constraints",
+    "preconditions",
+    "postconditions"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "skill_id": {
+      "$ref": "./enums/skill_ids.json"
+    },
+    "description": {
+      "type": "string",
+      "description": "Concise, non-procedural description. No tool or runner references."
+    },
+    "inputs": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "./skill_metadata_artifact_ref.schema.json" },
+      "default": []
+    },
+    "outputs": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "./skill_metadata_artifact_ref.schema.json" },
+      "default": []
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "./enums/constraint_codes.json" },
+      "default": []
+    },
+    "preconditions": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "./skill_metadata_condition.schema.json" },
+      "default": []
+    },
+    "postconditions": {
+      "type": "array",
+      "minItems": 0,
+      "items": { "$ref": "./skill_metadata_condition.schema.json" },
+      "default": []
+    }
+  }
+}

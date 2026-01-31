@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hummbl.dev/schemas/skill_metadata_condition.schema.json",
+  "title": "Skill Metadata Condition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["condition_id", "artifacts"],
+  "properties": {
+    "condition_id": {
+      "type": "string",
+      "description": "Stable condition identifier. No free-text rationale."
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "./skill_metadata_artifact_ref.schema.json" }
+    }
+  }
+}
