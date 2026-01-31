@@ -6,6 +6,7 @@
     "lint:schemas": "node scripts/lint-schemas.mjs"
   },
   "devDependencies": {
+    "@types/node": "^20.17.10",
     "ajv": "^8.17.1",
     "ajv-cli": "^5.0.0",
     "fast-glob": "^3.3.2",
