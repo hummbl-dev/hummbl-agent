@@ -1,6 +1,7 @@
 # HUMMBL Integration Workspace
 
-This folder contains the integration work for HUMMBL Systems with Moltbot, Moltbot registry, and Everything Claude Code.
+This folder contains the integration work for HUMMBL Systems with OpenClaw, OpenClaw registry, and Everything Claude Code.
+(formerly MoltBot; references updated to OpenClaw).
 
 ## Project Structure
 
@@ -35,7 +36,7 @@ hummbl-agent/
 │   ├── sitrep.md                              # Generate SITREPs
 │   └── verify-hummbl.md                        # Verify HUMMBL compliance
 ├── configs/                                   # Configuration files
-│   ├── moltbot/                              # Moltbot gateway/workspace configs
+│   ├── moltbot/                              # OpenClaw gateway/workspace configs
 │   ├── claude-code/                           # Claude Code settings template
 │   ├── codex/                                 # Codex runner guidance
 │   ├── grok/                                  # Grok runner guidance
@@ -66,7 +67,7 @@ hummbl-agent/
 
 ## Integration Components
 
-### 1. Moltbot registry Skills
+### 1. OpenClaw registry Skills
 
 - Publish Base120 mental models as installable skills
 - Version-controlled mental model evolution
@@ -75,13 +76,13 @@ hummbl-agent/
 
 ## External ecosystems (informational only)
 
-This repository is **registry-first**: the only authoritative skill registry is the local `skills/` tree plus `skills/MANIFEST.json`, enforced by CI. External marketplaces or rebranded ecosystems (e.g., OpenClaw/ClawHub/MoltBot clusters or other vendor sites) are informational only and **not** dependencies:
+This repository is **registry-first**: the only authoritative skill registry is the local `skills/` tree plus `skills/MANIFEST.json`, enforced by CI. External marketplaces or rebranded ecosystems (e.g., OpenClaw/ClawHub clusters or other vendor sites) are informational only and **not** dependencies:
 
 - we do not install skills from external registries
 - we do not require external services to resolve or execute skills
 - internal identifiers (skill IDs, tuple capabilities, config paths, env vars) stay stable regardless of upstream branding changes
 
-### 2. Moltbot Integration
+### 2. OpenClaw Integration
 
 - Multi-agent coordination hub
 - Voice-accessible mental models

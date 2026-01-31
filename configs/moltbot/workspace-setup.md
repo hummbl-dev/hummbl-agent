@@ -8,7 +8,7 @@
 ├── SOUL.md                   # HUMMBL system personality and principles
 ├── TOOLS.md                  # HUMMBL-specific tool configurations
 ├── skills/                   # Downloaded and custom skills
-│   ├── generated/           # Auto-installed from Moltbot registry
+│   ├── generated/           # Auto-installed from OpenClaw registry
 │   ├── base120/             # Base120 mental model skills
 │   └── custom/              # HUMMBL-specific skills
 ├── workspace/               # Active project workspaces
@@ -150,7 +150,7 @@ moltbot workspace report hummbl-agent --format markdown
 
 ### **Common Issues**
 - **Gateway won't start**: Check configuration syntax and port availability
-- **Skills not loading**: Verify Moltbot registry connection and skill format
+- **Skills not loading**: Verify OpenClaw registry connection and skill format
 - **Agent coordination failing**: Check session routing and protocol configuration
 
 ### **Debug Commands**

@@ -1,6 +1,6 @@
 # HUMMBL Integration Workflow and Examples
 
-Complete guide for integrating HUMMBL Base120 mental models with Moltbot, Moltbot registry, and Claude Code for multi-agent coordination.
+Complete guide for integrating HUMMBL Base120 mental models with OpenClaw, OpenClaw registry, and Claude Code for multi-agent coordination.
 
 Workflows index: `docs/workflows-index.md`
 
@@ -9,9 +9,9 @@ Workflows index: `docs/workflows-index.md`
 ```
 HUMMBL Base120 Mental Models
          ↓
-Moltbot registry (Skills Distribution)
+OpenClaw registry (Skills Distribution)
          ↓
-Moltbot (Multi-Agent Coordination)
+OpenClaw (Multi-Agent Coordination)
          ↓
 Claude Code (Development & Application)
 ```
@@ -47,7 +47,7 @@ cp /Users/others/hummbl-agent/commands/verify-hummbl.md ~/.claude/commands/
 cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
-### **Step 3: Configure Moltbot Gateway**
+### **Step 3: Configure OpenClaw Gateway**
 ```bash
 # Start HUMMBL gateway
 moltbot gateway --config ~/.moltbot/moltbot.json --port 18789
@@ -486,7 +486,7 @@ moltbot message send --to #hummbl-coordination --message "🧠 Applied P1 to red
 
 ## **Community and Support**
 
-- **Moltbot registry**: Publish and share Base120 skills
+- **OpenClaw registry**: Publish and share Base120 skills
 - **Discord**: `discord.gg/clawd` for community support
 - **Documentation**: `docs.clawd.bot` for detailed guides
 - **GitHub**: `github.com/moltbot/moltbot` for issues and contributions
