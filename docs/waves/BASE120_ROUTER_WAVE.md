@@ -355,3 +355,69 @@ If invariants break:
 - **Policy Compliance:** No runtime TypeScript loaders; validator script uses inlined codes
 
 **No Blockers:** Wave 2B complete; ready for Wave 3 (bindings expansion) or other tracks
+
+---
+
+## Wave 3 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / NO-OP  
+**Commits:** None (architectural discovery only)  
+**Duration:** 2026-01-31
+
+### Investigation
+
+**Original Goal:** Populate remaining transformation bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5)
+
+**Discovery:**
+- Searched for binding consumption: `rg "BASE120_BINDINGS\.(IN2|DE3|...)" packages/router/src`
+- **Result:** Only `P1` is referenced at runtime (`packages/router/src/llm-routing.ts:70`)
+- **Manifest check:** Only 2 LLM vendor skills exist (`llm/anthropic`, `llm/openai`)
+- **P1 status:** Already contains both available LLM vendors (complete for current manifest)
+
+### Decision
+
+**No code changes required:**
+- Other bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) have **no routing surfaces** that consume them
+- Populating unused bindings would create semantic debt (bindings without runtime behavior)
+- Per governance: bindings should only be populated when routing surfaces actively use them
+
+**Architecture constraint:**
+- Adding new binding application points requires dedicated wave with:
+  - Behavior specification for how transformation constrains routing
+  - Routing surface implementation
+  - Enforcement tests proving constraint works
+  - Documentation of transformation semantics
+
+### Invariants Check
+
+✅ **1. No False Progress** - Did not populate unused bindings  
+✅ **2. Semantic Integrity** - P1 binding complete for available skills  
+✅ **3. Governance Compliance** - Deferred expansion until routing surfaces exist  
+✅ **4. CI Green** - No code changes; existing tests remain passing
+
+### Evidence
+
+**Routing Surface Analysis:**
+```bash
+$ rg "BASE120_BINDINGS\." packages/router/src -S
+packages/router/src/llm-routing.ts:70:  const p1Binding = BASE120_BINDINGS.P1;
+```
+Only P1 consumed at runtime.
+
+**Manifest Analysis:**
+```bash
+$ grep '"id".*llm' skills/MANIFEST.json
+"id": "llm/anthropic"
+"id": "llm/openai"
+```
+P1 binding already includes both.
+
+### Outcome
+
+- **Wave 3 closed as no-op** (architectural reality: no consumers for non-P1 bindings)
+- **P1 complete** for existing LLM vendor skills
+- **Next wave prerequisite:** Design binding application surfaces for additional transformations
+- **Governance preserved:** No semantic debt introduced by populating unused bindings
+
+**Next Work:** Wave 4 requires specification of where/how additional transformations constrain routing before population

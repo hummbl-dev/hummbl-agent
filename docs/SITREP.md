@@ -201,6 +201,46 @@ This SITREP is factual, non-prescriptive, append-only. Future baseline anchors w
 
 ---
 
+## SITREP-WAVE-004: BASE120 Router — Wave 3 (No-Op Closure)
+
+### Status
+
+**COMPLETE / NO-OP** | 20250203 | Architectural constraint discovered; no code changes required.
+
+### Objectives
+
+Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with appropriate skills from manifest.
+
+### Outcome
+
+**No code changes applied.** Investigation revealed only P1 binding has runtime consumer (LLM vendor routing in `packages/router/src/llm-routing.ts:70`). Other bindings (IN2, DE3, etc.) have no routing surfaces—populating them would introduce semantic debt without functional purpose. P1 binding already complete: includes both available LLM vendor skills from manifest (`llm/anthropic`, `llm/openai`). **Decision:** Close Wave 3 as no-op; defer binding expansion to Wave 4 (requires specification of new routing surfaces first).
+
+### Changes
+
+- **No code changes:** Bindings file remains unchanged (P1 populated, others empty)
+- **Documentation:** Wave doc updated with comprehensive Wave 3 closure section
+- **Governance:** Avoided semantic debt by not populating unused bindings
+
+### Evidence
+
+- **Routing discovery:** `rg "BASE120_BINDINGS\.(IN2|DE3|...)" packages/router/src` → only P1 referenced
+- **Manifest check:** `grep -i '"id".*llm' skills/MANIFEST.json` → only 2 LLM vendors exist
+- **P1 status:** Both LLM vendors included in P1 binding (complete for available skills)
+- **Architectural constraint:** No transformation application surfaces for non-P1 bindings
+
+### Governance
+
+- **Semantic discipline:** Refused to populate bindings without consumers (no semantic debt)
+- **Evidence-based decision:** Investigation proved no routing surfaces exist
+- **Architectural honesty:** Documented constraint rather than creating unused code
+- **Wave deferral:** Wave 4 requires routing surface design before bindings expansion
+
+---
+
+*End of SITREP-WAVE-004*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
