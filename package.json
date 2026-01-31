@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint:schemas": "ajv compile -s \"schemas/*.schema.json\" --spec=draft2019 --strict=false"
+    "lint:schemas": "node scripts/lint-schemas.mjs"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

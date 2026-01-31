@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://hummbl.dev/schemas/inter_agent_request.schema.json",
   "title": "HUMMBL Inter-Agent Request",
   "type": "object",
@@ -59,8 +59,7 @@
         "required": ["action", "scope"],
         "properties": {
           "action": {
-            "type": "string",
-            "description": "Enumerated action identifier"
+            "$ref": "./enums/action_codes.json"
           },
           "scope": {
             "type": "string",

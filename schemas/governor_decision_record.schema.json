@@ -1,5 +1,5 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://hummbl.dev/schemas/governor_decision_record.schema.json",
   "title": "HUMMBL Governor Decision Record",
   "type": "object",
@@ -50,23 +50,19 @@
       ]
     },
     "action": {
-      "type": "string",
-      "description": "Action identifier being decided on"
+      "$ref": "./enums/action_codes.json"
     },
     "reason": {
-      "type": "string",
-      "description": "Stable enumerated reason code"
+      "$ref": "./enums/reason_codes.json"
     },
     "violated_rule": {
-      "type": "string",
-      "description": "Stable enumerated rule identifier or NONE",
+      "$ref": "./enums/violated_rules.json",
       "default": "NONE"
     },
     "constraints": {
       "type": "array",
       "items": {
-        "type": "string",
-        "description": "Enumerated constraint identifiers"
+        "$ref": "./enums/constraint_codes.json"
       },
       "default": []
     },

@@ -1,6 +1,7 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "title": "Governor Action Codes",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hummbl.dev/schemas/enums/action_codes.json",
+  "title": "Action Codes",
   "type": "string",
   "enum": [
     "EXECUTE_COMMAND.GIT",

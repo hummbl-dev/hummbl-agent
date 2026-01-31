@@ -1,6 +1,7 @@
 {
-  "$schema": "https://json-schema.org/draft/2019-09/schema",
-  "title": "Governor Reason Codes",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hummbl.dev/schemas/enums/reason_codes.json",
+  "title": "Reason Codes",
   "type": "string",
   "enum": [
     "AUTHORIZED",

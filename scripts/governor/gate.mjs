@@ -2,7 +2,7 @@ import { execFileSync } from "node:child_process";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
-import Ajv from "ajv/dist/2019.js";
+import Ajv from "ajv/dist/2020.js";
 
 const args = process.argv.slice(2);
 const parsed = {
@@ -138,8 +138,18 @@ if (fs.existsSync(requestPath)) {
 const ajv = new Ajv({ strict: false, validateFormats: false });
 const requestSchemaPath = path.join(rootDir, "schemas", "inter_agent_request.schema.json");
 const decisionSchemaPath = path.join(rootDir, "schemas", "governor_decision_record.schema.json");
+const enumSchemaPaths = [
+  path.join(rootDir, "schemas", "enums", "action_codes.json"),
+  path.join(rootDir, "schemas", "enums", "reason_codes.json"),
+  path.join(rootDir, "schemas", "enums", "violated_rules.json"),
+  path.join(rootDir, "schemas", "enums", "constraint_codes.json")
+];
 const requestSchema = JSON.parse(fs.readFileSync(requestSchemaPath, "utf8"));
 const decisionSchema = JSON.parse(fs.readFileSync(decisionSchemaPath, "utf8"));
+for (const enumPath of enumSchemaPaths) {
+  const enumSchema = JSON.parse(fs.readFileSync(enumPath, "utf8"));
+  ajv.addSchema(enumSchema);
+}
 
 const validateRequest = ajv.compile(requestSchema);
 if (!validateRequest(request)) {
