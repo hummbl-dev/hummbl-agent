@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# supervisor: HUMMBL_GOVERNOR
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd -P)"
@@ -9,6 +10,7 @@ runner=""
 cwd="${ROOT_DIR}"
 name=""
 date_str="$(date +%Y-%m-%d)"
+freeze_ack="false"
 
 fail() {
   echo "$1" >&2
@@ -35,6 +37,13 @@ validate_name() {
   fi
 }
 
+validate_freeze_ack() {
+  local value="$1"
+  if [[ "${value}" != "true" && "${value}" != "false" ]]; then
+    fail "Invalid --freeze-ack (expected true|false): ${value}"
+  fi
+}
+
 resolve_path() {
   local target="$1"
   local base="$2"
@@ -58,7 +67,7 @@ resolve_path() {
 }
 
 usage() {
-  echo "Usage: $0 --runner <claude-code|codex> [--cwd <path>] [--name <artifact_prefix>] [--date <YYYY-MM-DD>] -- <cmd> [args...]" >&2
+  echo "Usage: $0 --runner <claude-code|codex> [--cwd <path>] [--name <artifact_prefix>] [--date <YYYY-MM-DD>] [--freeze-ack <true|false>] -- <cmd> [args...]" >&2
   exit 1
 }
 
@@ -78,6 +87,10 @@ while [[ $# -gt 0 ]]; do
       ;;
     --date)
       date_str="${2:-}"
+      shift 2
+      ;;
+    --freeze-ack)
+      freeze_ack="${2:-}"
       shift 2
       ;;
     --)
@@ -107,6 +120,7 @@ if [[ $# -lt 1 ]]; then
 fi
 
 validate_date "${date_str}"
+validate_freeze_ack "${freeze_ack}"
 
 cmd="$1"
 shift
@@ -119,27 +133,6 @@ fi
 
 if [[ ! -f "${ALLOWLIST_FILE}" ]]; then
   echo "Allowlist missing: ${ALLOWLIST_FILE}" >&2
-  exit 1
-fi
-
-allowed=false
-while IFS= read -r line; do
-  line="${line%%#*}"
-  line="${line//$'\t'/}"
-  line="${line//$'\r'/}"
-  line="${line#"${line%%[![:space:]]*}"}"
-  line="${line%"${line##*[![:space:]]}"}"
-  if [[ -z "${line}" ]]; then
-    continue
-  fi
-  if [[ "${line}" == "${cmd}" ]]; then
-    allowed=true
-    break
-  fi
-done < "${ALLOWLIST_FILE}"
-
-if [[ "${allowed}" != true ]]; then
-  echo "Command not allowlisted: ${cmd}" >&2
   exit 1
 fi
 
@@ -158,6 +151,15 @@ case "${resolved_cwd}" in
   "${ROOT_DIR}"|${ROOT_DIR}/*) ;;
   *) fail "cwd must be within repo: ${cwd}" ;;
 esac
+
+node "${ROOT_DIR}/scripts/governor/gate.mjs" \
+  --root "${ROOT_DIR}" \
+  --cmd "${cmd}" \
+  --runner "${runner}" \
+  --cwd "${resolved_cwd}" \
+  --date "${date_str}" \
+  --freeze-ack "${freeze_ack}" \
+  -- "${args[@]}"
 
 cmd_path="$(PATH="${SAFE_PATH}" command -v "${cmd}" || true)"
 if [[ -z "${cmd_path}" || "${cmd_path}" != /* ]]; then
