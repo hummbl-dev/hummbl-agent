@@ -502,3 +502,29 @@ P1 binding already includes both.
 
 **Router tests:** 16 passing (includes DE3 baseline + binding tests)  
 **CI:** expected green on main
+
+---
+
+## Wave 7 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **DE3 binding populated:** 3 registry-backed IDs
+  - `de3/decompose-plan.v0.1.0`
+  - `de3/decompose-task.v0.1.0`
+  - `de3/decompose-problem.v0.1.0`
+- **Tests updated:** enforcement now uses real manifest IDs
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (kernel build → router build → validate:bindings → tests)
+
+### Invariants
+
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **Manifest authority** - Binding IDs validated against skills/MANIFEST.json  
+✅ **CI green expected** - No regressions introduced
