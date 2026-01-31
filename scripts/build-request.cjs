@@ -7,7 +7,7 @@ const {
   enforceRequestSize,
   loadNetworkPolicy,
   checkRateLimit,
-} = require("./network-guard");
+} = require("./network-guard.cjs");
 
 const args = process.argv.slice(2);
 const getArg = (name) => {

@@ -102,7 +102,7 @@ export const capabilityCheck = (
   });
 
   const supports = new Set(capability.supports || []);
-  const requires = ["prompt", "log"];
+  const requires = ["prompt", "log"] as const;
   const missing = requires.filter((req) => !supports.has(req));
   const supportsOk = missing.length === 0;
   checks.push({

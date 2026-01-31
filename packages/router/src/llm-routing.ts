@@ -32,7 +32,7 @@ export const loadLlmRoutingPolicy = (): LlmRoutingPolicy => {
   if (!Array.isArray(json.vendor_default_order)) {
     throw new Error("llm routing policy missing vendor_default_order");
   }
-  cachedPolicy = json;
+  cachedPolicy = json as LlmRoutingPolicy;
   return cachedPolicy;
 };
 
