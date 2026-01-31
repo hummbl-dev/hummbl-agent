@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import type { SkillDefinition } from "../../skills/registry/src/types";
 import type { TupleV1 } from "../../kernel/src/tuples/types";
+import { BASE120_BINDINGS } from "./base120/bindings";
 
 const POLICY_PATH = resolve(process.cwd(), "configs/moltbot/llm-routing-policy.json");
 
@@ -62,7 +63,34 @@ const getScope = (tuple: TupleV1): Record<string, unknown> => {
 
 export const selectLlmSkill = (ctx: LlmRoutingContext): LlmRoutingResult => {
   const policy = ctx.policy ?? loadLlmRoutingPolicy();
-  const skillsById = new Map(ctx.skills.map((skill) => [skill.id, skill]));
+  
+  // Thin vertical slice: apply P1 binding if non-empty
+  let candidateSkills = ctx.skills;
+  const p1Binding = BASE120_BINDINGS.P1;
+  if (p1Binding && p1Binding.skills.length > 0) {
+    const boundSkillIds = new Set(p1Binding.skills);
+    const filtered = ctx.skills.filter((s) => boundSkillIds.has(s.id));
+    
+    // Safe fallback: if intersection empty, use original skills
+    if (filtered.length > 0) {
+      candidateSkills = filtered;
+      
+      // Emit telemetry event for binding resolution
+      if (p1Binding.telemetry) {
+        console.log(
+          JSON.stringify({
+            event: p1Binding.telemetry.event,
+            version: p1Binding.telemetry.version,
+            transformation_code: "P1",
+            skills_matched: filtered.length,
+            timestamp: new Date().toISOString(),
+          })
+        );
+      }
+    }
+  }
+  
+  const skillsById = new Map(candidateSkills.map((skill) => [skill.id, skill]));
   const scope = getScope(ctx.tuple);
   const scopeVendorRaw = normalize(scope.vendor as string | undefined);
   const vendorConstraint =
