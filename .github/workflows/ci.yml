@@ -24,7 +24,7 @@ jobs:
 
       - name: Lint Markdown
         shell: bash
-        run: pnpm markdownlint-cli2 "**/*.md"
+        run: pnpm markdownlint-cli2
 
       - name: Validate Schemas
         shell: bash
