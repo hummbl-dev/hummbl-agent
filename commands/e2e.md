@@ -6,11 +6,11 @@ description: Generate and run end-to-end tests with Playwright. Creates test jou
 
 This command invokes the **e2e-runner** agent to generate, maintain, and execute end-to-end tests using Playwright.
 
-## What This Command Does
+## What This Command Does (applying **RE2** feedback loops and **IN2** premortem analysis)
 
 1. **Generate Test Journeys** - Create Playwright tests for user flows
 2. **Run E2E Tests** - Execute tests across browsers
-3. **Capture Artifacts** - Screenshots, videos, traces on failures
+3. **Capture Artifacts** - Screenshots, videos, traces on failures (using **DE3** decomposition)
 4. **Upload Results** - HTML reports and JUnit XML
 5. **Identify Flaky Tests** - Quarantine unstable tests
 

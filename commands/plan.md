@@ -6,7 +6,7 @@ description: Restate requirements, assess risks, and create step-by-step impleme
 
 This command invokes the **planner** agent to create a comprehensive implementation plan before writing any code.
 
-## What This Command Does
+## What This Command Does (using **P1** framing, **DE3** decomposition, **SY8** systems thinking)
 
 1. **Restate Requirements** - Clarify what needs to be built
 2. **Identify Risks** - Surface potential issues and blockers

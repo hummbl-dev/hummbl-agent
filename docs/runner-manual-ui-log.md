@@ -1,4 +1,4 @@
-# Manual UI Runner Logging (Vendor-Agnostic)
+# Manual UI Runner Logging (Vendor-Agnostic) (using **P1** framing)
 
 Use this when you run a model via a vendor UI or CLI manually.
 

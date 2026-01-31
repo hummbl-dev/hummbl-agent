@@ -23,7 +23,7 @@ node scripts/setup-package-manager.js --project bun
 node scripts/setup-package-manager.js --list
 ```
 
-## Detection Priority
+## Detection Priority (using **P1** framing)
 
 When determining which package manager to use, the following order is checked:
 

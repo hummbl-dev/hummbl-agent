@@ -33,7 +33,7 @@ Created: $(date)
 
 2. Prompt user to fill in specific criteria
 
-## Check Evals
+## Check Evals (using **IN2** premortem and **RE2** feedback)
 
 `/eval check feature-name`
 

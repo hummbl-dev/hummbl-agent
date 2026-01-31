@@ -6,7 +6,7 @@ description: Enforce test-driven development workflow. Scaffold interfaces, gene
 
 This command invokes the **tdd-guide** agent to enforce test-driven development methodology.
 
-## What This Command Does
+## What This Command Does (applying **IN2** premortem and **DE3** decomposition)
 
 1. **Scaffold Interfaces** - Define types/interfaces first
 2. **Generate Tests First** - Write failing tests (RED)

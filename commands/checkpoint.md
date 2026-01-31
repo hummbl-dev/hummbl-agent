@@ -6,7 +6,7 @@ Create or verify a checkpoint in your workflow.
 
 `/checkpoint [create|verify|list] [name]`
 
-## Create Checkpoint
+## Create Checkpoint (using **RE2** feedback loops)
 
 When creating a checkpoint:
 

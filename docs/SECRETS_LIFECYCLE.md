@@ -11,7 +11,7 @@ Vendor credentials used by runners (OpenAI/Anthropic/xAI/etc.). Covers:
 - revocation
 - audit
 
-## Invariants (Enforced)
+## Invariants (Enforced with **IN2** premortem and **SY8** systems thinking)
 
 ### SL1 — No secret material in artifacts
 

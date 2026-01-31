@@ -17,7 +17,7 @@ Automated vendor execution via runners (OpenAI, Anthropic, xAI, etc.).
 - Runner (executes, holds secrets in memory)
 - Vendor API (external)
 
-## Threats
+## Threats (using **IN10** red team thinking and **IN2** premortem)
 
 ### T1 — Secret exfiltration
 

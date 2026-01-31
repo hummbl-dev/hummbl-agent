@@ -6,7 +6,7 @@ Date: 2026-01-26
 
 Define HUMMBL agent coordination protocols for the shared workspace.
 
-## Default Protocols
+## Default Protocols (using **P1** and **DE3**)
 
 - SITREP cadence: hourly
 - Escalation triggers: blocker, decision_needed, resource_conflict

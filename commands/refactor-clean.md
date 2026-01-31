@@ -1,4 +1,4 @@
-# Refactor Clean
+# Refactor Clean (applying **DE1** root cause, **RE2** feedback, and **DE3** decomposition)
 
 Safely identify and remove dead code with test verification:
 

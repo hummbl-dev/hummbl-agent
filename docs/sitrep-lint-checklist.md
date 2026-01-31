@@ -1,4 +1,4 @@
-# SITREP Lint Checklist
+# SITREP Lint Checklist (applying **IN2** premortem analysis)
 
 ## Governance Alignment
 

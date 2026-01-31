@@ -1,4 +1,4 @@
-# Governed Model Call Workflow
+# Governed Model Call Workflow (using **P1** framing and **SY8** systems thinking)
 
 This workflow covers the end-to-end governed model call path:
 Prompt → Request Build → API Call → Artifact Log.

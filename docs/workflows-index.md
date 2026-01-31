@@ -1,4 +1,4 @@
-# Workflows Index
+# Workflows Index (using **P1** framing)
 
 Quick links to end-to-end workflows.
 

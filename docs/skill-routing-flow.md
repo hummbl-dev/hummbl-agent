@@ -1,4 +1,4 @@
-# Skill Selection + Routing Workflow
+# Skill Selection + Routing Workflow (using **P1** framing and **DE3** decomposition)
 
 This flow covers task → router decision → prompt packet → run log.
 

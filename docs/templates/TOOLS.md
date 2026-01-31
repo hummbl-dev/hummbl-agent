@@ -1,4 +1,4 @@
-# TOOLS
+# TOOLS (using **P1** framing)
 
 Date: 2026-01-26
 

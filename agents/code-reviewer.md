@@ -13,7 +13,7 @@ When invoked:
 2. Focus on modified files
 3. Begin review immediately
 
-Review checklist:
+Review checklist (using **IN2** premortem analysis):
 
 - Code is simple and readable
 - Functions and variables are well-named
@@ -21,7 +21,7 @@ Review checklist:
 - Proper error handling
 - No exposed secrets or API keys
 - Input validation implemented
-- Good test coverage
+- Good test coverage (applying **DE1** root cause thinking)
 - Performance considerations addressed
 - Time complexity of algorithms analyzed
 - Licenses of integrated libraries checked

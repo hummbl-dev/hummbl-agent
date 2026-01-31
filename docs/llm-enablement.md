@@ -1,4 +1,4 @@
-# LLM Enablement
+# LLM Enablement (applying **P1** framing and **SY8** systems thinking)
 
 ## Anthropic Defaults
 

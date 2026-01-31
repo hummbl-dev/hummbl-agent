@@ -1,4 +1,4 @@
-# Experiment Approval Checklist
+# Experiment Approval Checklist (applying **IN2** premortem analysis)
 
 ## Safety
 

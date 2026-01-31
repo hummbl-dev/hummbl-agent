@@ -40,7 +40,7 @@ Security-focused review:
 security-reviewer -> code-reviewer -> architect
 ```
 
-## Execution Pattern
+## Execution Pattern (using **P1** framing and **SY8** systems thinking)
 
 For each agent in the workflow:
 

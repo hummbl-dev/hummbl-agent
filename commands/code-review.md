@@ -1,4 +1,4 @@
-# Code Review
+# Code Review (using **IN10** red team thinking and **IN2** premortem)
 
 Comprehensive security and quality review of uncommitted changes:
 

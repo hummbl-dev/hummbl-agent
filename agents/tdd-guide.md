@@ -20,7 +20,7 @@ You are a Test-Driven Development (TDD) specialist who ensures all code is devel
 ### Step 1: Write Test First (RED)
 
 ```typescript
-// ALWAYS start with a failing test
+// ALWAYS start with a failing test (using IN2 premortem and DE3 decomposition)
 describe('searchMarkets', () => {
   it('returns semantically similar markets', async () => {
     const results = await searchMarkets('election')

@@ -1,4 +1,4 @@
-# Local Places Skill Workflow
+# Local Places Skill Workflow (using **P1** framing)
 
 This flow covers run server → query → log artifacts.
 

@@ -2,7 +2,7 @@
 
 Run comprehensive verification on current codebase state.
 
-## Instructions
+## Instructions (applying **IN2** premortem analysis)
 
 Execute verification in this exact order:
 

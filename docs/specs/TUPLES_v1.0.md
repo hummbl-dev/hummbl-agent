@@ -7,7 +7,7 @@
 
 ---
 
-## 1. Purpose
+## 1. Purpose (using **P1** framing, **IN2** premortem, **SY8** systems thinking)
 
 Tuples are the atomic governance representation used across HUMMBL-Agent to bound agency, cognition, and execution deterministically.
 

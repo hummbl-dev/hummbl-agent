@@ -7,7 +7,7 @@
 
 ---
 
-## 1. Purpose
+## 1. Purpose (applying **P1** framing and **SY8** systems thinking)
 
 This specification defines the JSON output format produced by `verify-hummbl.sh --emit-json`. The JSON artifact is:
 

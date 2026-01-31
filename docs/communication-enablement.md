@@ -1,4 +1,4 @@
-# Communication Enablement (Slack & Discord)
+# Communication Enablement (Slack & Discord) (using **P1** and **SY8**)
 
 ## Defaults (tracked in repo)
 

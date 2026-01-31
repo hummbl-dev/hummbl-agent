@@ -1,4 +1,4 @@
-# Add a Vendor Runner (How‑To)
+# Add a Vendor Runner (How‑To) (using **P1** framing and **DE3** decomposition)
 
 ## Example: `acme-ai`
 

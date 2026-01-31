@@ -6,7 +6,7 @@ Analyze the current session and extract any patterns worth saving as skills.
 
 Run `/learn` at any point during a session when you've solved a non-trivial problem.
 
-## What to Extract
+## What to Extract (using **P1** framing and **DE3** decomposition)
 
 Look for:
 

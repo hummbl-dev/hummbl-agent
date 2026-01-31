@@ -1,4 +1,4 @@
-# Update Codemaps
+# Update Codemaps (applying **P1** framing and **DE3** decomposition)
 
 Analyze the codebase structure and update architecture documentation:
 

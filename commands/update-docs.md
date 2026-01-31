@@ -1,4 +1,4 @@
-# Update Documentation
+# Update Documentation (using **P1** framing and **CO5** composition)
 
 Sync documentation from source-of-truth:
 

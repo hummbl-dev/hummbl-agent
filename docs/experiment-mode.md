@@ -1,4 +1,4 @@
-# Controlled Recursive Improvement Mode
+# Controlled Recursive Improvement Mode (applying **IN2** premortem and **SY8** systems thinking)
 
 ## Purpose
 

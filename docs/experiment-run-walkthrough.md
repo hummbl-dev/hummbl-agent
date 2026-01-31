@@ -1,4 +1,4 @@
-# Experiment Run Walkthrough
+# Experiment Run Walkthrough (applying **P1** framing and **DE3** decomposition)
 
 ## 1) Open an experiment run
 

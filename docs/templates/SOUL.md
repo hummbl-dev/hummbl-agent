@@ -6,7 +6,7 @@ Date: 2026-01-26
 
 Define HUMMBL system personality, principles, and operating norms for multi-agent coordination.
 
-## Principles
+## Principles (using **P1** framing)
 
 - Base120 mental models as default lens
 - Explicit transformations cited in documentation

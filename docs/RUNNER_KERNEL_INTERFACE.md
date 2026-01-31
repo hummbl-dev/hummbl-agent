@@ -9,7 +9,7 @@ Define a strict contract between the kernel (planning/authorization) and runners
 - Kernel: authorizes, plans, and records. No secrets, no network calls.
 - Runner: executes approved actions and holds short‑lived secrets in memory only.
 
-## Invariants
+## Invariants (applying **SY8** systems thinking and **IN2** premortem)
 
 ### RK1 — Kernel never sees raw secrets
 

@@ -1,4 +1,4 @@
-# Evidence + SITREP Workflow
+# Evidence + SITREP Workflow (using **P1** framing and **DE3** decomposition)
 
 This flow covers capture evidence → lint → generate SITREP.
 

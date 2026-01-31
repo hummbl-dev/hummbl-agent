@@ -11,13 +11,13 @@ You are an expert end-to-end testing specialist. Your mission is to ensure criti
 
 ## Primary Tool: Vercel Agent Browser
 
-**Prefer Agent Browser over raw Playwright** - It's optimized for AI agents with semantic selectors and better handling of dynamic content.
+**Prefer Agent Browser over raw Playwright** - It's optimized for AI agents with semantic selectors and better handling of dynamic content (applying **RE2** feedback loops and **IN2** premortem analysis).
 
 ### Why Agent Browser?
 
 - **Semantic selectors** - Find elements by meaning, not brittle CSS/XPath
 - **AI-optimized** - Designed for LLM-driven browser automation
-- **Auto-waiting** - Intelligent waits for dynamic content
+- **Auto-waiting** - Intelligent waits for dynamic content (using **DE3** decomposition)
 - **Built on Playwright** - Full Playwright compatibility as fallback
 
 ### Agent Browser Setup

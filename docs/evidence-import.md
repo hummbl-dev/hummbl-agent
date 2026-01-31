@@ -1,4 +1,4 @@
-# Governed Observation Import
+# Governed Observation Import (using **P1** framing)
 
 Use this to bring external observations into a canonical, hashed evidence log.
 
