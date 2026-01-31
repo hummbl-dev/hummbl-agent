@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "test": "node --test tests/*.test.mjs"
+    "validate:bindings": "node scripts/validate-bindings.mjs",
+    "test": "npm run validate:bindings && node --test tests/*.test.mjs"
   },
   "devDependencies": {
     "typescript": "^5.7.2",

@@ -154,6 +154,10 @@ jobs:
         working-directory: packages/router
         run: npm install && npm run build
 
+      - name: Validate Base120 bindings
+        shell: bash
+        run: cd packages/router && npm run validate:bindings
+
       - name: Router tests
         shell: bash
         run: node --test packages/router/tests/*.test.mjs

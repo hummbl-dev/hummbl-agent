@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { selectLlmSkill } from "../src/llm-routing.js";
+import { selectLlmSkill } from "../dist/llm-routing.js";
 
 describe("golden regression: router selection unchanged", () => {
   it("same fixture yields identical selection (no skills case)", () => {

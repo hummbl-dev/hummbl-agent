@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert/strict";
-import { validateBindings } from "../src/base120/validateBindings.js";
+import { validateBindings } from "../dist/router/src/base120/validateBindings.js";
 
 describe("validateBindings", () => {
   it("valid bindings return ok=true, errors=[]", () => {
