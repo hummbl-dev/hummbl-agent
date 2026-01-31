@@ -324,10 +324,11 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ### What Shipped
 
-- **IN2 skills added:**
-   - `in2/validate-schema.v0.1.0`
-   - `in2/check-invariants.v0.1.0`
-   - `in2/verify-artifacts.v0.1.0`
+**IN2 skills added:**
+
+- `in2/validate-schema.v0.1.0`
+- `in2/check-invariants.v0.1.0`
+- `in2/verify-artifacts.v0.1.0`
 - **Binding populated:** `BASE120_BINDINGS.IN2.skills` set to the three registry-backed IDs
 - **Tests:** IN2 binding enforcement uses real manifest IDs; explicit fail on no intersection
 
