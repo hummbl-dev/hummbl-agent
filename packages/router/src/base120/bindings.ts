@@ -14,7 +14,7 @@ export type Base120Bindings = Record<string, Base120Binding>;
 
 export const BASE120_BINDINGS: Base120Bindings = {
   // Thin vertical slice placeholder: P1 only.
-  // Populated in Commit 5.
+  // Populated in Wave 2A.
   P1: {
     skills: [],
     telemetry: {
@@ -22,4 +22,13 @@ export const BASE120_BINDINGS: Base120Bindings = {
       version: "v1.0.0",
     },
   },
+
+  // Wave 2A placeholders (empty until validated)
+  IN2: { skills: [] },
+  DE3: { skills: [] },
+  SY8: { skills: [] },
+  DE1: { skills: [] },
+  RE2: { skills: [] },
+  IN10: { skills: [] },
+  CO5: { skills: [] },
 };
