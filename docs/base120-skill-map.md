@@ -3,7 +3,7 @@
 Generated mapping of canonical Base120 models to existing HUMMBL skill artifacts.
 
 - Source: docs/base120.v1.0.canonical.json
-- Generated: 2026-01-27 00:48 UTC
+- Generated: 2026-01-31 23:35 UTC
 - Total models: 120
 - Models with skill folders: 120
 - Models referenced in registry bindings: 120

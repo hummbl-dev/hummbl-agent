@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import type { SkillDefinition } from "../../skills/registry/src/types";
 import type { TupleV1 } from "../../kernel/src/tuples/types";
 import { BASE120_BINDINGS } from "./base120/bindings.js";
+import { applyBinding } from "./base120/applyBinding.js";
 import { emitBindingResolution } from "./base120/telemetry.js";
 
 const POLICY_PATH = resolve(process.cwd(), "configs/moltbot/llm-routing-policy.json");
@@ -67,16 +68,20 @@ export const selectLlmSkill = (ctx: LlmRoutingContext): LlmRoutingResult => {
   
   // Thin vertical slice: apply P1 binding if non-empty
   let candidateSkills = ctx.skills;
-  const p1Binding = BASE120_BINDINGS.P1;
-  if (p1Binding && p1Binding.skills.length > 0) {
-    const boundSkillIds = new Set(p1Binding.skills);
-    const filtered = ctx.skills.filter((s) => boundSkillIds.has(s.id));
-    
-    // Safe fallback: if intersection empty, use original skills
-    if (filtered.length > 0) {
-      candidateSkills = filtered;
-      emitBindingResolution("P1", filtered.length);
-    }
+  const bindingResult = applyBinding({
+    transformationCode: "P1",
+    bindingSkills: BASE120_BINDINGS.P1.skills,
+    candidateSkillIds: ctx.skills.map((skill) => skill.id),
+    emptyReason: "no llm skills available for routing",
+    emit: emitBindingResolution,
+  });
+  if (!bindingResult.ok) {
+    return { ok: false, reason: bindingResult.reason };
+  }
+
+  if (bindingResult.applied) {
+    const filteredIds = new Set(bindingResult.candidates);
+    candidateSkills = ctx.skills.filter((skill) => filteredIds.has(skill.id));
   }
   
   const skillsById = new Map(candidateSkills.map((skill) => [skill.id, skill]));

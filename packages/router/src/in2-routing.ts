@@ -1,5 +1,6 @@
 import type { SkillDefinition } from "../../skills/registry/src/types";
 import { BASE120_BINDINGS } from "./base120/bindings.js";
+import { applyBinding } from "./base120/applyBinding.js";
 import { emitBindingResolution } from "./base120/telemetry.js";
 
 export type In2RoutingContext = {
@@ -24,16 +25,25 @@ export const selectIn2Skill = (ctx: In2RoutingContext): In2RoutingResult => {
     return { ok: false, reason: FAILURE_REASON };
   }
 
-  const binding = BASE120_BINDINGS.IN2;
-  if (binding && binding.skills.length > 0) {
-    const boundSkillIds = new Set(binding.skills);
-    const filtered = eligible.filter((skill) => boundSkillIds.has(skill.id));
-    emitBindingResolution("IN2", filtered.length);
-    if (filtered.length === 0) {
-      return { ok: false, reason: FAILURE_REASON };
-    }
-    return { ok: true, skill: filtered[0], reason: CONSTRAINED_REASON };
+  const bindingResult = applyBinding({
+    transformationCode: "IN2",
+    bindingSkills: BASE120_BINDINGS.IN2.skills,
+    candidateSkillIds: eligible.map((skill) => skill.id),
+    emptyReason: FAILURE_REASON,
+    emit: emitBindingResolution,
+  });
+  if (!bindingResult.ok) {
+    return { ok: false, reason: bindingResult.reason };
   }
 
-  return { ok: true, skill: eligible[0], reason: BASELINE_REASON };
+  const filteredIds = new Set(bindingResult.candidates);
+  const eligibleFiltered = bindingResult.applied
+    ? eligible.filter((skill) => filteredIds.has(skill.id))
+    : eligible;
+
+  return {
+    ok: true,
+    skill: eligibleFiltered[0],
+    reason: bindingResult.applied ? CONSTRAINED_REASON : BASELINE_REASON,
+  };
 };
