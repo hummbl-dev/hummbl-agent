@@ -195,3 +195,25 @@ jobs:
           name: verify-hummbl-report
           path: verify-hummbl-output.json
           retention-days: 90
+
+      - name: Display verify-hummbl summary
+        if: always()
+        shell: bash
+        run: |
+          if [[ -f verify-hummbl-output.json ]]; then
+            result=$(jq -r '.result' verify-hummbl-output.json)
+            missing=$(jq -r '.missing_transformations' verify-hummbl-output.json)
+            timestamp=$(jq -r '.timestamp' verify-hummbl-output.json)
+            
+            echo "## 📊 HUMMBL Verification Report" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+            echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+            echo "| Result | \`${result}\` |" >> $GITHUB_STEP_SUMMARY
+            echo "| Missing Transformations | ${missing} |" >> $GITHUB_STEP_SUMMARY
+            echo "| Timestamp | ${timestamp} |" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "📥 [Download full report artifact](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ verify-hummbl-output.json not found" >> $GITHUB_STEP_SUMMARY
+          fi

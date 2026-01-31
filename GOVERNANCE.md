@@ -241,6 +241,15 @@ What are the implications?
 - Skills manifest committed and valid
 - No secrets detected
 
+**HUMMBL verification gate (future enforcement):**
+
+After Issue #12 (Base120 refs remediation) merges, the following gate will be enforced via protected branch rules:
+
+- `scripts/verify-hummbl.sh --emit-json` must report `"missing_transformations": 0`
+- Current CI workflow warns on missing transformations but does not block
+- Artifact with full report uploaded to GitHub Actions (90-day retention)
+- JSON schema versioned at [VERIFY_HUMMBL_JSON_SCHEMA_v1.0.0.md](docs/specs/VERIFY_HUMMBL_JSON_SCHEMA_v1.0.0.md)
+
 ### Versioning
 
 **Version file:** `VERSION` (single line, `x.y.z` format)
