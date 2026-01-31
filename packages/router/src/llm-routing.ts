@@ -22,8 +22,8 @@ export type LlmRoutingCandidate = {
 };
 
 const LLM_SKILL_BY_VENDOR: Record<string, string> = {
-  anthropic: "llm.anthropic.call",
-  openai: "llm.openai.call",
+  anthropic: "llm/anthropic",
+  openai: "llm/openai",
 };
 
 let cachedPolicy: LlmRoutingPolicy | null = null;
