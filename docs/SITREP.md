@@ -264,6 +264,31 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-006 — BASE120 Router Wave 5 (DE3 Surface)
+
+- **Date:** 2026-01-31
+- **Scope:** DE3 routing surface + binding constraint + telemetry + enforcement tests
+- **Baseline Anchor:** v0.1.1-base120-router-wave1
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **DE3 routing surface:** `packages/router/src/de3-routing.ts`
+- **Binding constraint:** `BASE120_BINDINGS.DE3.skills` intersection applied when non-empty
+- **Telemetry:** `emitBindingResolution("DE3", matchedCount)`
+- **Enforcement tests:** baseline + binding constraint cases
+
+### Evidence
+
+- **Router tests:** 16 passing (includes DE3 baseline + binding tests)
+- **Failure semantics:** explicit fail on no intersection with canonical reason string
+
+---
+
+*End of SITREP-WAVE-006*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
