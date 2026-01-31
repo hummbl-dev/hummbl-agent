@@ -141,13 +141,17 @@ jobs:
         shell: bash
         run: scripts/lint-base120-skill-map.sh
 
+      - name: Lint no TypeScript tests
+        shell: bash
+        run: scripts/lint-no-ts-tests.sh
+
       - name: Offline LLM adapter tests
         shell: bash
         run: node --test packages/adapters/llm/tests/*.test.mjs
 
-      - name: Router LLM routing tests
+      - name: Router tests
         shell: bash
-        run: npx --yes tsx packages/router/tests/llm-routing.test.ts
+        run: node --test packages/router/tests/*.test.mjs
 
       - name: Lint SITREPs (if present)
         shell: bash

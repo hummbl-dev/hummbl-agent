@@ -25,11 +25,17 @@ run() {
 
 cd "$ROOT_DIR"
 
+# Verify required scripts exist
+for f in scripts/validate-base120-refs.cjs scripts/validate-base120-canonical.cjs; do
+  [ -f "$f" ] || { echo "Missing expected script: $f" >&2; exit 1; }
+done
+
 run "lint-state" scripts/lint-state.sh
 run "kernel-decision" scripts/check-kernel-decision.sh
 run "lint-skill-registry" scripts/lint-skill-registry.sh
-run "lint-base120-refs" node scripts/validate-base120-refs.js
-run "lint-base120-canonical" node scripts/validate-base120-canonical.js
+run "lint-no-ts-tests" scripts/lint-no-ts-tests.sh
+run "lint-base120-refs" node scripts/validate-base120-refs.cjs
+run "lint-base120-canonical" node scripts/validate-base120-canonical.cjs
 run "lint-network-policy" scripts/lint-network-policy.sh
 run "lint-secrets-policy" scripts/lint-secrets-policy.sh
 run "lint-secret-scan" scripts/lint-secret-scan.sh
