@@ -708,6 +708,21 @@
       "sha256_tree": "1c878a5af135e39be6d563c282edd344f1c2e126f16e8460ea19c3fbee5eac4e"
     },
     {
+      "id": "de3/decompose-plan.v0.1.0",
+      "path": "skills/de3/decompose-plan.v0.1.0",
+      "sha256_tree": "1a78ca416900c8cf4938996476d91f144dfe083662489f78988328cd35fd9dcb"
+    },
+    {
+      "id": "de3/decompose-problem.v0.1.0",
+      "path": "skills/de3/decompose-problem.v0.1.0",
+      "sha256_tree": "84fed72a2b8ef722e84a7b54c458e54a6facb76a16b663546b05882c426a6e3a"
+    },
+    {
+      "id": "de3/decompose-task.v0.1.0",
+      "path": "skills/de3/decompose-task.v0.1.0",
+      "sha256_tree": "116e303ac237fac6e77108c8455d9e744702dd5c6d783e08cf5d3de490d207b7"
+    },
+    {
       "id": "discord",
       "path": "skills/discord",
       "sha256_tree": "a8bd10a23c64bc99f6641c150e3d05dc69f8c447b0ee9cd7820f753d5eb696bb"
