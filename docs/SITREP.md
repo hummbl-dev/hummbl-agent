@@ -289,6 +289,33 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-007 — BASE120 Router Wave 7 (DE3 Binding Populated)
+
+- **Date:** 2026-01-31
+- **Scope:** Wave 7 DE3 binding population
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+**DE3 binding IDs (registry-backed):**
+
+- `de3/decompose-plan.v0.1.0`
+- `de3/decompose-task.v0.1.0`
+- `de3/decompose-problem.v0.1.0`
+- **Tests:** DE3 binding enforcement now uses real manifest IDs (not placeholders)
+
+### Governance
+
+- **Manifest authority preserved:** bindings validated against skills/MANIFEST.json
+- **Kernel authority preserved:** Base120 codes remain kernel-owned
+- **CI expected green:** binding validation + router tests remain passing
+
+---
+
+*End of SITREP-WAVE-007*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
