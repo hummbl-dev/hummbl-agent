@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "pretest": "npm run build",
     "validate:bindings": "node scripts/validate-bindings.mjs",
     "test": "npm run validate:bindings && node --test tests/*.test.mjs"
   },
