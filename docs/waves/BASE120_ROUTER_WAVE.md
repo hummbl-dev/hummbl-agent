@@ -468,3 +468,37 @@ P1 binding already includes both.
 - **Spec delivered** and governance-safe
 - **Implementation deferred** until a DE3 routing surface exists
 - **Next wave required:** introduce DE3 routing surface (design + implementation + tests)
+
+---
+
+## Wave 5 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Commits:** `cadff6e`, `1182b15`  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **DE3 routing surface:** `packages/router/src/de3-routing.ts`
+- **Baseline selector:** `selectDe3Skill(ctx)` (skills-only)
+- **Binding constraint:** `BASE120_BINDINGS.DE3.skills` intersection applied when non-empty
+- **Telemetry:** `emitBindingResolution("DE3", matchedCount)`
+- **Failure semantics:** explicit fail on no intersection using canonical reason string
+
+### Tests Added
+
+- Baseline selector tests (empty + first-eligible)
+- Binding constraint tests (empty, forced selection, no intersection)
+
+### Invariants Check
+
+✅ **Skills-only routing** - No tool or runner leakage  
+✅ **Deterministic selection** - First eligible, explicit failure path  
+✅ **Governance intact** - No execution authority changes  
+✅ **Tests green** - Router test suite passing
+
+### Evidence
+
+**Router tests:** 16 passing (includes DE3 baseline + binding tests)  
+**CI:** expected green on main
