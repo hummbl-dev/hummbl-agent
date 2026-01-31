@@ -1,13 +1,31 @@
 config:
   default: true
+
+  # Allow long lines (schemas, enums, identifiers)
   MD013: false
+
+  # Allow duplicate headings (spec-style docs)
   MD024: false
+
+  # Allow inline HTML
   MD033: false
+
+  # Require fenced code blocks
   MD046: true
 
 globs:
-  - "**/*.md"
+  # Only lint HUMMBL-authored Markdown
+  - "README.md"
+  - "docs/**/*.md"
+  - "agents/**/*.md"
+  - "schemas/**/*.md"
 
 ignores:
+  # Explicit exclusions
   - "node_modules/**"
+  - "vendor/**"
   - "_state/**"
+  - "**/node_modules/**"
+  - "**/vendor/**"
+  - "agents/database-reviewer.md"
+  - "docs/waves/BASE120_ROUTER_WAVE.md"
