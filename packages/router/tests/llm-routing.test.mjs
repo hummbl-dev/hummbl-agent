@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { selectLlmSkill } from "../dist/llm-routing.js";
+import { selectLlmSkill } from "../dist/router/src/llm-routing.js";
 
 test("selectLlmSkill returns error when no skills match", () => {
   const mockPolicy = {

@@ -1,11 +1,11 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { BASE120_BINDINGS } from "./base120/bindings";
-import { emitBindingResolution } from "./base120/telemetry";
+import { BASE120_BINDINGS } from "./base120/bindings.js";
+import { emitBindingResolution } from "./base120/telemetry.js";
 const POLICY_PATH = resolve(process.cwd(), "configs/moltbot/llm-routing-policy.json");
 const LLM_SKILL_BY_VENDOR = {
-    anthropic: "llm.anthropic.call",
-    openai: "llm.openai.call",
+    anthropic: "llm/anthropic",
+    openai: "llm/openai",
 };
 let cachedPolicy = null;
 export const loadLlmRoutingPolicy = () => {

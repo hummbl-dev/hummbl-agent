@@ -2,8 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import type { SkillDefinition } from "../../skills/registry/src/types";
 import type { TupleV1 } from "../../kernel/src/tuples/types";
-import { BASE120_BINDINGS } from "./base120/bindings";
-import { emitBindingResolution } from "./base120/telemetry";
+import { BASE120_BINDINGS } from "./base120/bindings.js";
+import { emitBindingResolution } from "./base120/telemetry.js";
 
 const POLICY_PATH = resolve(process.cwd(), "configs/moltbot/llm-routing-policy.json");
 
