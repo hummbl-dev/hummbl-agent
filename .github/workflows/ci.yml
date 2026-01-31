@@ -30,6 +30,10 @@ jobs:
         shell: bash
         run: pnpm run lint:schemas
 
+      - name: Test Schemas
+        shell: bash
+        run: pnpm run test:schemas
+
       - name: Guard committed communication configs
         shell: bash
         run: node scripts/lint-comm-configs.mjs

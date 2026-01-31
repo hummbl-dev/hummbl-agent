@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0.0",
+  "skill_id": "SAMPLE.SKILL.ID",
+  "description": "Sample skill metadata for schema validation.",
+  "inputs": [
+    {
+      "id": "input_file",
+      "type": "file",
+      "ref": "docs/examples/input.txt"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "output_file",
+      "type": "file",
+      "ref": "docs/examples/output.txt"
+    }
+  ],
+  "constraints": [],
+  "preconditions": [
+    {
+      "condition_id": "input_available",
+      "artifacts": [
+        {
+          "id": "input_file",
+          "type": "file",
+          "ref": "docs/examples/input.txt"
+        }
+      ]
+    }
+  ],
+  "postconditions": [
+    {
+      "condition_id": "output_written",
+      "artifacts": [
+        {
+          "id": "output_file",
+          "type": "file",
+          "ref": "docs/examples/output.txt"
+        }
+      ]
+    }
+  ]
+}

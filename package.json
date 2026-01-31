@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "lint:schemas": "ajv compile -s schemas/*.schema.json -r schemas/enums/*.json -r schemas/*.schema.json --strict=false"
+    "lint:schemas": "ajv compile --spec=draft2019 --strict=false -r \"schemas/enums/*.json\" -s \"schemas/*.schema.json\"",
+    "test:schemas": "ajv validate --spec=draft2019 --strict=false -r \"schemas/enums/*.json\" -r schemas/skill_metadata_artifact_ref.schema.json -r schemas/skill_metadata_condition.schema.json -s schemas/skill_metadata.schema.json -d docs/examples/skill_metadata_sample.json"
   },
   "devDependencies": {
     "@types/node": "^20.17.10",
