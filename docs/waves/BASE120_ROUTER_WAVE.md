@@ -528,3 +528,27 @@ P1 binding already includes both.
 ✅ **Kernel authority** - Base120 codes remain kernel-owned  
 ✅ **Manifest authority** - Binding IDs validated against skills/MANIFEST.json  
 ✅ **CI green expected** - No regressions introduced
+
+---
+
+## Wave 9 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **Supply added:** `skills/in2/*` (3 skills), MANIFEST updated (203 skills)
+- **Binding populated:** `BASE120_BINDINGS.IN2.skills` set to 3 registry-backed IDs
+- **Enforcement:** IN2 binding tests use real IDs; explicit fail on no intersection
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (kernel build → router build → validate:bindings → tests)
+
+### Invariants
+
+✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **CI green expected** - Router gates and tests green
