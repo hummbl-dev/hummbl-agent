@@ -18,6 +18,18 @@ jobs:
         shell: bash
         run: npm ci
 
+      - name: Enable pnpm
+        shell: bash
+        run: corepack enable
+
+      - name: Lint Markdown
+        shell: bash
+        run: pnpm markdownlint-cli2 "**/*.md"
+
+      - name: Validate Schemas
+        shell: bash
+        run: pnpm run lint:schemas
+
       - name: Guard committed communication configs
         shell: bash
         run: node scripts/lint-comm-configs.mjs

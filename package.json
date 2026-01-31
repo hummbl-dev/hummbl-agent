@@ -2,8 +2,14 @@
   "name": "hummbl-agent",
   "private": true,
   "type": "module",
+  "scripts": {
+    "lint:schemas": "ajv compile -s \"schemas/*.schema.json\" --spec=draft2019 --strict=false"
+  },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-cli": "^5.0.0",
     "fast-glob": "^3.3.2",
+    "markdownlint-cli2": "^0.20.0",
     "yaml": "^2.5.0"
   }
 }

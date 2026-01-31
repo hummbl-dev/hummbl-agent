@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://hummbl.dev/schemas/inter_agent_request.schema.json",
+  "title": "HUMMBL Inter-Agent Request",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "request_id",
+    "timestamp",
+    "requesting_agent",
+    "supervisor",
+    "declared_intent",
+    "proposed_actions",
+    "artifacts",
+    "repo_context",
+    "freeze_status_acknowledgment"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "request_id": {
+      "type": "string",
+      "description": "Stable unique identifier (UUID v4 recommended)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Request creation time (ISO 8601)"
+    },
+    "requesting_agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": {
+          "type": "string",
+          "enum": ["execution", "analysis", "interface"]
+        }
+      }
+    },
+    "supervisor": {
+      "type": "string",
+      "const": "HUMMBL_GOVERNOR"
+    },
+    "declared_intent": {
+      "type": "string",
+      "description": "Concise statement of purpose; no procedural detail"
+    },
+    "proposed_actions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["action", "scope"],
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "Enumerated action identifier"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Bounded scope identifier"
+          }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "type", "ref"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": {
+            "type": "string",
+            "enum": ["file", "hash", "version_tag", "run_artifact"]
+          },
+          "ref": {
+            "type": "string",
+            "description": "Path, hash, or version tag"
+          }
+        }
+      }
+    },
+    "repo_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "branch", "commit"],
+      "properties": {
+        "repo": { "type": "string" },
+        "branch": { "type": "string" },
+        "commit": { "type": "string" }
+      }
+    },
+    "freeze_status_acknowledgment": {
+      "type": "boolean"
+    }
+  }
+}

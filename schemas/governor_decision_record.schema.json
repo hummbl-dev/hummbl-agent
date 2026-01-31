@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://hummbl.dev/schemas/governor_decision_record.schema.json",
+  "title": "HUMMBL Governor Decision Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "decision_id",
+    "request_id",
+    "timestamp",
+    "governor",
+    "decision",
+    "action",
+    "reason",
+    "violated_rule",
+    "constraints",
+    "halt_required"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "decision_id": {
+      "type": "string",
+      "description": "Stable unique identifier for this decision (UUID v4 recommended)"
+    },
+    "request_id": {
+      "type": "string",
+      "description": "Must match the request_id from the inter-agent request"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Decision creation time (ISO 8601)"
+    },
+    "governor": {
+      "type": "string",
+      "const": "HUMMBL_GOVERNOR"
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "AUTHORIZE",
+        "DENY",
+        "REQUEST_CLARIFICATION",
+        "ESCALATE",
+        "TERMINATE_RUN"
+      ]
+    },
+    "action": {
+      "type": "string",
+      "description": "Action identifier being decided on"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Stable enumerated reason code"
+    },
+    "violated_rule": {
+      "type": "string",
+      "description": "Stable enumerated rule identifier or NONE",
+      "default": "NONE"
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Enumerated constraint identifiers"
+      },
+      "default": []
+    },
+    "halt_required": {
+      "type": "boolean",
+      "description": "If true, all subordinate agents MUST halt immediately"
+    }
+  }
+}
