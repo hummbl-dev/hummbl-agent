@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import type { SkillDefinition } from "../../skills/registry/src/types";
 import type { TupleV1 } from "../../kernel/src/tuples/types";
 import { BASE120_BINDINGS } from "./base120/bindings";
+import { emitBindingResolution } from "./base120/telemetry";
 
 const POLICY_PATH = resolve(process.cwd(), "configs/moltbot/llm-routing-policy.json");
 
@@ -74,19 +75,7 @@ export const selectLlmSkill = (ctx: LlmRoutingContext): LlmRoutingResult => {
     // Safe fallback: if intersection empty, use original skills
     if (filtered.length > 0) {
       candidateSkills = filtered;
-      
-      // Emit telemetry event for binding resolution
-      if (p1Binding.telemetry) {
-        console.log(
-          JSON.stringify({
-            event: p1Binding.telemetry.event,
-            version: p1Binding.telemetry.version,
-            transformation_code: "P1",
-            skills_matched: filtered.length,
-            timestamp: new Date().toISOString(),
-          })
-        );
-      }
+      emitBindingResolution("P1", filtered.length);
     }
   }
   
