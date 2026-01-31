@@ -216,15 +216,18 @@ If invariants break:
 ### What Shipped
 
 **A1.1 - Transformation Placeholders:**
+
 - Added 7 empty transformation bindings: IN2, DE3, SY8, DE1, RE2, IN10, CO5
 - Prepared binding surface for expansion
 
 **A2.1 - Manifest Validation:**
+
 - Enhanced validator with `UNKNOWN_SKILL_ID` error code
 - Integrated `skills/MANIFEST.json` (197 skills) as authoritative registry
 - Validator now checks skill IDs against manifest before allowing bindings
 
 **A3.1 - P1 Population (corrected via R1+R2):**
+
 - Initial: Populated P1 with P-perspective skills (semantic mismatch discovered)
 - **Remediation R1:** Aligned `LLM_SKILL_BY_VENDOR` mapping to manifest IDs (`llm/anthropic`, `llm/openai`)
 - **Remediation R1:** Corrected P1 binding to LLM vendor skills matching llm-routing surface
@@ -234,6 +237,7 @@ If invariants break:
 > Initial P1 population targeted non-LLM skills (P-perspective namespace); corrected to align bindings with `llm-routing` vendor selection surface. Router used ghost skill IDs (`llm.anthropic.call`) not present in manifest; aligned to canonical slash format (`llm/anthropic`, `llm/openai`). Enforcement test updated to assert actual routing behavior rather than filtering mechanics.
 
 **Commits:**
+
 - `320835a` - obs(router): extract Base120 binding telemetry module (v1)
 - `153410b` - feat(router): expand Base120 bindings + manifest validation
 - `6879147` - fix(router): align llm-routing vendor skill IDs with manifest (R1)
@@ -242,12 +246,14 @@ If invariants break:
 ### Tests Added
 
 **Enforcement (R2):**
+
 - 3 behavioral tests proving P1 binding constrains LLM vendor selection:
   1. Selection constrained to P1-bound vendors when multiple matches exist
   2. Single-vendor P1 forces selection
   3. Correct fallback/error when no intersection exists
 
 **Test Infrastructure Fixes:**
+
 - Updated imports to nested dist structure (`dist/router/src/`)
 - Added `.js` extensions to relative imports for ESM compliance
 - Removed stale flat dist files
@@ -264,6 +270,7 @@ If invariants break:
 
 **CI Status:** ✅ GREEN  
 **Test Results:**
+
 ```
 ✓ Bindings valid
 ✓ P1 binding enforcement (3 tests)
@@ -275,6 +282,7 @@ If invariants break:
 ```
 
 **Manifest Integration:**
+
 - 197 skills loaded from `skills/MANIFEST.json`
 - P1 skills (`llm/anthropic`, `llm/openai`) verified present in manifest
 - Validator rejects unknown skill IDs with specific error code
@@ -301,22 +309,26 @@ If invariants break:
 ### What Shipped
 
 **Kernel-Authoritative Base120 Codes:**
+
 - Created `packages/kernel/src/base120.ts` with frozen set of 120 model codes
-- Exported `BASE120_CODES` (Set<string>) covering all 6 domains (P, IN, CO, DE, RE, SY) × 20 models each
+- Exported `BASE120_CODES` (Set of string) covering all 6 domains (P, IN, CO, DE, RE, SY) × 20 models each
 - Kernel becomes single source of truth for Base120 code validity
 
 **Validator Enhancement:**
+
 - Extended `validateBindings()` with `knownBase120Codes` parameter
 - Added `UNKNOWN_BASE120_CODE` error code for invalid binding keys
 - Validator now checks binding keys (P1, IN2, etc.) against kernel's canonical set
 - Runner script inlines Base120 codes (maintains no-runtime-TS-loader policy)
 
 **Commits:**
+
 - `22ae494` - feat(kernel): export canonical Base120 model codes + feat(router): validate binding keys
 
 ### Tests Added
 
 **Validator Coverage:**
+
 - 1 new test: unknown Base120 code rejection (validates binding keys)
 - Total: 11 tests passing (6 validator tests + 3 enforcement + 2 other)
 
@@ -332,6 +344,7 @@ If invariants break:
 
 **CI Status:** ✅ GREEN  
 **Test Results:**
+
 ```
 ✓ Bindings valid
 ✓ validateBindings (6 tests - added UNKNOWN_BASE120_CODE)
@@ -343,6 +356,7 @@ If invariants break:
 ```
 
 **Kernel Authority:**
+
 - 120 codes defined in `packages/kernel/src/base120.ts`
 - Router validator references kernel codes (inlined in runner to avoid TS loader)
 - Validates binding keys: `P1`, `IN2`, `DE3`, `SY8`, `DE1`, `RE2`, `IN10`, `CO5`
@@ -370,6 +384,7 @@ If invariants break:
 **Original Goal:** Populate remaining transformation bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5)
 
 **Discovery:**
+
 - Searched for binding consumption: `rg "BASE120_BINDINGS\.(IN2|DE3|...)" packages/router/src`
 - **Result:** Only `P1` is referenced at runtime (`packages/router/src/llm-routing.ts:70`)
 - **Manifest check:** Only 2 LLM vendor skills exist (`llm/anthropic`, `llm/openai`)
@@ -378,11 +393,13 @@ If invariants break:
 ### Decision
 
 **No code changes required:**
+
 - Other bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) have **no routing surfaces** that consume them
 - Populating unused bindings would create semantic debt (bindings without runtime behavior)
 - Per governance: bindings should only be populated when routing surfaces actively use them
 
 **Architecture constraint:**
+
 - Adding new binding application points requires dedicated wave with:
   - Behavior specification for how transformation constrains routing
   - Routing surface implementation
@@ -399,18 +416,22 @@ If invariants break:
 ### Evidence
 
 **Routing Surface Analysis:**
+
 ```bash
 $ rg "BASE120_BINDINGS\." packages/router/src -S
 packages/router/src/llm-routing.ts:70:  const p1Binding = BASE120_BINDINGS.P1;
 ```
+
 Only P1 consumed at runtime.
 
 **Manifest Analysis:**
+
 ```bash
 $ grep '"id".*llm' skills/MANIFEST.json
 "id": "llm/anthropic"
 "id": "llm/openai"
 ```
+
 P1 binding already includes both.
 
 ### Outcome
@@ -421,3 +442,29 @@ P1 binding already includes both.
 - **Governance preserved:** No semantic debt introduced by populating unused bindings
 
 **Next Work:** Wave 4 requires specification of where/how additional transformations constrain routing before population
+
+---
+
+## Wave 4 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE (SPEC-ONLY)  
+**Commits:** Spec-only (no runtime changes)  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **Spec:** `docs/specs/BINDING_APPLICATION_POINTS_v1.md`
+- **Decision:** DE3 (decomposition tool selection) chosen for v1 application point
+
+### Reason for Spec-Only Closure
+
+- No runtime decomposition selection surface exists in router/runners
+- Implementing DE3 bindings would invent new behavior outside wave scope
+- Wave discipline requires spec-first and existing consumer surfaces
+
+### Outcome
+
+- **Spec delivered** and governance-safe
+- **Implementation deferred** until a DE3 routing surface exists
+- **Next wave required:** introduce DE3 routing surface (design + implementation + tests)
