@@ -184,3 +184,14 @@ jobs:
       - name: Lint router exports
         shell: bash
         run: scripts/lint-router-exports.sh
+
+      - name: Generate verify-hummbl JSON artifact
+        shell: bash
+        run: bash scripts/verify-hummbl.sh --emit-json > verify-hummbl-output.json
+
+      - name: Upload verify-hummbl artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-hummbl-report
+          path: verify-hummbl-output.json
+          retention-days: 90

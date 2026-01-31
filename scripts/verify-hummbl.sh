@@ -72,6 +72,8 @@ fi
 if [[ "${EMIT_JSON}" == "true" ]]; then
   # Emit machine-readable JSON for remediation
   printf '{\n'
+  printf '  "schema_version": "1.0.0",\n'
+  printf '  "timestamp": "%s",\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
   printf '  "result": "%s",\n' "${result}"
   printf '  "missing_transformations": %d,\n' "${missing_transformations}"
   printf '  "documentation_mismatches": %d,\n' "${doc_mismatches}"
