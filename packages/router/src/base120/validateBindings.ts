@@ -3,7 +3,8 @@ import type { Base120Binding, Base120Bindings } from "./bindings";
 export type BindingErrorCode =
   | "MISSING_SKILLS_ARRAY"
   | "DUPLICATE_SKILL"
-  | "NON_STRING_SKILL";
+  | "NON_STRING_SKILL"
+  | "UNKNOWN_SKILL_ID";
 
 export interface BindingError {
   code: BindingErrorCode;
@@ -17,7 +18,10 @@ export interface ValidationResult {
   errors: BindingError[];
 }
 
-export function validateBindings(bindings: Base120Bindings): ValidationResult {
+export function validateBindings(
+  bindings: Base120Bindings,
+  knownSkillIds?: ReadonlySet<string>
+): ValidationResult {
   const errors: BindingError[] = [];
 
   for (const [transformation_code, binding] of Object.entries(bindings)) {
@@ -43,6 +47,13 @@ export function validateBindings(bindings: Base120Bindings): ValidationResult {
           field: "skills",
         });
         continue;
+      }
+      if (knownSkillIds && !knownSkillIds.has(skill)) {
+        errors.push({
+          code: "UNKNOWN_SKILL_ID",
+          message: `Unknown skill ID in binding: ${skill}`,
+          transformation_code,
+        });
       }
       if (seen.has(skill)) {
         errors.push({

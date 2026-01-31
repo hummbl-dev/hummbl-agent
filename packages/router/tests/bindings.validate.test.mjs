@@ -31,4 +31,12 @@ describe("validateBindings", () => {
     assert.equal(r.ok, false);
     assert.equal(r.errors[0].code, "DUPLICATE_SKILL");
   });
+
+  it("unknown skill id fails with UNKNOWN_SKILL_ID", () => {
+    const bindings = { P1: { skills: ["skill-does-not-exist"] } };
+    const known = new Set(["skill-a", "skill-b"]);
+    const r = validateBindings(bindings, known);
+    assert.equal(r.ok, false);
+    assert.equal(r.errors[0].code, "UNKNOWN_SKILL_ID");
+  });
 });

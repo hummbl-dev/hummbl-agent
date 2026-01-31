@@ -1,4 +1,4 @@
-export function validateBindings(bindings) {
+export function validateBindings(bindings, knownSkillIds) {
     const errors = [];
     for (const [transformation_code, binding] of Object.entries(bindings)) {
         // skills must exist and be an array
@@ -22,6 +22,13 @@ export function validateBindings(bindings) {
                     field: "skills",
                 });
                 continue;
+            }
+            if (knownSkillIds && !knownSkillIds.has(skill)) {
+                errors.push({
+                    code: "UNKNOWN_SKILL_ID",
+                    message: `Unknown skill ID in binding: ${skill}`,
+                    transformation_code,
+                });
             }
             if (seen.has(skill)) {
                 errors.push({
