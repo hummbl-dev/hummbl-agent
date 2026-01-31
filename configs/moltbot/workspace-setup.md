@@ -3,7 +3,7 @@
 ## Directory Structure
 
 ```
-~/clawd/hummbl-agent/
+hummbl-agent/
 ├── AGENTS.md                 # HUMMBL agent coordination protocols
 ├── SOUL.md                   # HUMMBL system personality and principles
 ├── TOOLS.md                  # HUMMBL-specific tool configurations
@@ -22,10 +22,10 @@
 
 ```bash
 # Create workspace directory
-mkdir -p ~/clawd/hummbl-agent/{skills/{generated,base120,custom},workspace,sessions,config}
+mkdir -p hummbl-agent/{skills/{generated,base120,custom},workspace,sessions,config}
 
 # Copy HUMMBL configuration
-cp /Users/others/hummbl-agent/configs/moltbot/gateway.json ~/.moltbot/moltbot.json
+cp configs/moltbot/gateway.json ~/.moltbot/moltbot.json
 
 # Initialize workspace
 moltbot workspace init hummbl-agent --template mental-models
@@ -46,19 +46,19 @@ moltbot-registry install hummbl-agent/sy8-systems-thinking
 
 ```bash
 # Copy HUMMBL agents to Claude Code
-cp /Users/others/hummbl-agent/agents/hummbl-architect.md ~/.claude/agents/
-cp /Users/others/hummbl-agent/agents/hummbl-planner.md ~/.claude/agents/
-cp /Users/others/hummbl-agent/agents/sitrep-generator.md ~/.claude/agents/
-cp /Users/others/hummbl-agent/agents/transformation-guide.md ~/.claude/agents/
+cp agents/hummbl-architect.md ~/.claude/agents/
+cp agents/hummbl-planner.md ~/.claude/agents/
+cp agents/sitrep-generator.md ~/.claude/agents/
+cp agents/transformation-guide.md ~/.claude/agents/
 
 # Copy HUMMBL commands
-cp /Users/others/hummbl-agent/commands/apply-transformation.md ~/.claude/commands/
-cp /Users/others/hummbl-agent/commands/plan-with-base120.md ~/.claude/commands/
-cp /Users/others/hummbl-agent/commands/sitrep.md ~/.claude/commands/
-cp /Users/others/hummbl-agent/commands/verify-hummbl.md ~/.claude/commands/
+cp commands/apply-transformation.md ~/.claude/commands/
+cp commands/plan-with-base120.md ~/.claude/commands/
+cp commands/sitrep.md ~/.claude/commands/
+cp commands/verify-hummbl.md ~/.claude/commands/
 
 # Update Claude Code settings (template)
-cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
+cp configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
 ## Gateway Management

@@ -133,10 +133,10 @@ This repository is **registry-first**: the only authoritative skill registry is 
 4. **Optional: seed workspace coordination templates**
 
    ```bash
-   mkdir -p ~/clawd/hummbl-agent
-   cp docs/templates/AGENTS.md ~/clawd/hummbl-agent/AGENTS.md
-   cp docs/templates/SOUL.md ~/clawd/hummbl-agent/SOUL.md
-   cp docs/templates/TOOLS.md ~/clawd/hummbl-agent/TOOLS.md
+   mkdir -p hummbl-agent
+   cp docs/templates/AGENTS.md hummbl-agent/AGENTS.md
+   cp docs/templates/SOUL.md hummbl-agent/SOUL.md
+   cp docs/templates/TOOLS.md hummbl-agent/TOOLS.md
    ```
 
 5. **Open a run + generate prompts**

@@ -5,7 +5,7 @@ These settings are intended as a starter template for integrating HUMMBL agents 
 ## Apply
 
 ```bash
-cp /Users/others/hummbl-agent/configs/claude-code/settings.json ~/.claude/settings.json
+cp configs/claude-code/settings.json ~/.claude/settings.json
 ```
 
 ## Notes

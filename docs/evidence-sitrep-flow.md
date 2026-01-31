@@ -37,4 +37,4 @@ The generator automatically runs `scripts/lint-sitrep.sh` when available.
 
 - SITREP schema details: `docs/sitrep-schema.md`
 - Evidence import reference: `docs/evidence-import.md`
-- Output defaults to `~/clawd/hummbl-agent/sessions/sitreps`.
+- Output defaults to `sessions/sitreps` in the hummbl-agent workspace.
