@@ -5,7 +5,7 @@
 **DO NOT** create public GitHub issues for security vulnerabilities.
 
 Report security issues via:
-- Email: security@hummbl.dev (if available)
+- Email: hummbl@proton.me or reuben@hummbl.io
 - Private vulnerability disclosure on GitHub
 - Direct message to repository maintainers
 
