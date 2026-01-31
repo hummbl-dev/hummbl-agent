@@ -86,6 +86,44 @@ This SITREP is factual, non-prescriptive, append-only. Future baseline anchors w
 
 ---
 
+## SITREP-WAVE-001 — BASE120 Router Wave 1 Complete
+
+- **Date:** 2026-01-31
+- **Scope:** Base120 binding surface contract (router), deterministic validation gate, P1 thin-slice wiring, telemetry v1, test determinism fix
+- **Baseline Anchor:** v0.1.0-hummbl-agent-foundation
+- **Plateau Tag:** v0.1.1-base120-router-wave1
+- **Main Head (plateau):** ecff708
+- **Status:** COMPLETE / GREEN
+
+### What Shipped (evidence-backed)
+
+- **Bindings surface:** `packages/router/src/base120/bindings.ts` (data-only, no runtime computation)
+- **Validator:** `packages/router/src/base120/validateBindings.ts` (stable error codes: `MISSING_SKILLS_ARRAY`, `NON_STRING_SKILL`, `DUPLICATE_SKILL`)
+- **Validator runner + CI gate:** `validate:bindings` runs before router tests
+- **Thin slice wiring:** P1 binding integration in `llm-routing` with safe semantics:
+  - no-op if binding skill list empty
+  - fallback to original skill set if intersection empty
+- **Telemetry v1:** `packages/router/src/base120/telemetry.ts` centralizes schema and emission
+- **Test determinism:** `pretest` builds before tests to prevent stale `dist/` false greens
+
+### Tests / Gates
+
+- **Router tests:** passing (includes validator coverage + golden regression)
+- **Kernel-tuples:** passing
+- **CI:** green on `main` at plateau tag
+
+### Merge / Governance Notes
+
+- **Merge mechanics:** PR #14 landed commits through `faedd12`; remaining wave commits rebased onto updated `main` and fast-forward merged
+- **Wave branch cleanup:** remote + local `wave/base120-router` deleted after tag
+- **Invariants:** PASS (CI green per commit, test coverage, kernel authoritative, non-breaking, governance compliance)
+
+---
+
+*End of SITREP-WAVE-001*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
