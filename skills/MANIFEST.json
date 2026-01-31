@@ -783,6 +783,21 @@
       "sha256_tree": "21c0d3ed5567bf418429dbb469983db285e6b439d7fd28aa4f44effdd40bde77"
     },
     {
+      "id": "in2/check-invariants.v0.1.0",
+      "path": "skills/in2/check-invariants.v0.1.0",
+      "sha256_tree": "cfbc2c21e51c86795645cd722fb4b2428c95b964844f5e28a0b4783ccd27c7eb"
+    },
+    {
+      "id": "in2/validate-schema.v0.1.0",
+      "path": "skills/in2/validate-schema.v0.1.0",
+      "sha256_tree": "2c2d8cd969f0bc7fee48e3c1344e17aa45aa7054a308bf95d548a5b65f909d42"
+    },
+    {
+      "id": "in2/verify-artifacts.v0.1.0",
+      "path": "skills/in2/verify-artifacts.v0.1.0",
+      "sha256_tree": "94c072079b78a87ec10ce914680a2709a2c96e7d0a6ba4a0b98f964cdee4dec3"
+    },
+    {
       "id": "integration/multi-agent-coordination",
       "path": "skills/integration/multi-agent-coordination",
       "sha256_tree": "0310fd24bf99b9c58260a3f27e77993e73c442dd90b5ba90d80f689a11464f56"
