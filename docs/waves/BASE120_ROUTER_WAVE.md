@@ -552,3 +552,32 @@ P1 binding already includes both.
 ✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
 ✅ **Kernel authority** - Base120 codes remain kernel-owned  
 ✅ **CI green expected** - Router gates and tests green
+
+---
+
+## Wave 10 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### Scope
+
+- **Shared resolver:** `applyBinding` helper + unit tests
+- **Refactor:** P1/DE3/IN2 consumers now use shared binding semantics
+
+### Behavior
+
+- **Preserved semantics:** reason strings unchanged
+- **Telemetry:** emitted only when binding applied
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (25 tests)
+
+### Invariants
+
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
+✅ **No TS loaders** - Tests run against compiled output only  
+✅ **Deterministic** - Order-preserving, pure binding application
