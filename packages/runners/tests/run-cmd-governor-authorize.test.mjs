@@ -14,8 +14,8 @@ const extractDecisionPath = (output) => {
   return match ? match[1] : null;
 };
 
-test("denies execution when freeze acknowledgment is false", () => {
-  const date = "2099-01-02";
+test("authorizes execution when freeze acknowledgment is true", () => {
+  const date = "2099-01-01";
   const runDir = path.join(repoRoot, "_state", "runs", date);
   const decisionDir = path.join(repoRoot, "_state", "governor", "decisions");
   const requestDir = path.join(repoRoot, "_state", "governor", "requests");
@@ -29,9 +29,9 @@ test("denies execution when freeze acknowledgment is false", () => {
       "--date",
       date,
       "--name",
-      "deny-test",
+      "allow-test",
       "--freeze-ack",
-      "false",
+      "true",
       "--",
       "git",
       "status",
@@ -40,23 +40,26 @@ test("denies execution when freeze acknowledgment is false", () => {
     { cwd: repoRoot, encoding: "utf8" }
   );
 
-  assert.notEqual(result.status, 0, "expected denial to exit non-zero");
+  assert.equal(result.status, 0, "expected authorize to exit zero");
 
-  const decisionPath = extractDecisionPath(result.stderr);
+  const decisionPath = extractDecisionPath(result.stdout);
   assert.ok(decisionPath, "decision record path should be reported");
   assert.ok(fs.existsSync(decisionPath), "decision record should exist");
 
   const decision = JSON.parse(fs.readFileSync(decisionPath, "utf8"));
-  assert.equal(decision.decision, "DENY");
-  assert.equal(decision.halt_required, true);
+  assert.equal(decision.decision, "AUTHORIZE");
+  assert.equal(decision.halt_required, false);
+  assert.ok(decision.constraints.includes("ALLOWLIST_ONLY"));
+  assert.ok(decision.constraints.includes("REPO_CWD_ONLY"));
   const requestPath = path.join(requestDir, `request_${decision.request_id}.json`);
   const requestHashPath = path.join(requestDir, `request_${decision.request_id}.sha256`);
   assert.ok(fs.existsSync(requestPath), "request record should be persisted");
   assert.ok(fs.existsSync(requestHashPath), "request hash should be persisted");
 
-  assert.ok(!fs.existsSync(runDir), "no run artifacts should be created");
+  assert.ok(fs.existsSync(runDir), "run artifacts directory should be created");
 
   fs.rmSync(decisionPath);
   fs.rmSync(requestPath);
   fs.rmSync(requestHashPath);
+  fs.rmSync(runDir, { recursive: true, force: true });
 });
