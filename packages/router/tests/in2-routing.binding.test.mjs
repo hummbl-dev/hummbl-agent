@@ -19,34 +19,36 @@ describe("IN2 binding constraint", () => {
   it("binding empty preserves baseline", () => {
     withBinding([], () => {
       const skills = [
-        { id: "in2/first" },
-        { id: "in2/second" },
+        { id: "in2/validate-schema.v0.1.0" },
+        { id: "in2/check-invariants.v0.1.0" },
+        { id: "in2/verify-artifacts.v0.1.0" },
       ];
       const result = selectIn2Skill({ skills });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skill.id, "in2/first");
+        assert.equal(result.skill.id, "in2/validate-schema.v0.1.0");
       }
     });
   });
 
   it("binding forces selection", () => {
-    withBinding(["in2/second"], () => {
+    withBinding(["in2/verify-artifacts.v0.1.0"], () => {
       const skills = [
-        { id: "in2/first" },
-        { id: "in2/second" },
+        { id: "in2/validate-schema.v0.1.0" },
+        { id: "in2/check-invariants.v0.1.0" },
+        { id: "in2/verify-artifacts.v0.1.0" },
       ];
       const result = selectIn2Skill({ skills });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skill.id, "in2/second");
+        assert.equal(result.skill.id, "in2/verify-artifacts.v0.1.0");
       }
     });
   });
 
   it("binding with no intersection fails", () => {
     withBinding(["in2/zzz"], () => {
-      const skills = [{ id: "in2/first" }];
+      const skills = [{ id: "in2/validate-schema.v0.1.0" }];
       const result = selectIn2Skill({ skills });
       assert.equal(result.ok, false);
       if (!result.ok) {

@@ -14,7 +14,17 @@ export const BASE120_BINDINGS = {
         },
     },
     // Wave 2A placeholders (empty until validated)
-    IN2: { skills: [] },
+    IN2: {
+        skills: [
+            "in2/validate-schema.v0.1.0",
+            "in2/check-invariants.v0.1.0",
+            "in2/verify-artifacts.v0.1.0",
+        ],
+        telemetry: {
+            event: "router.base120.binding_resolved",
+            version: "v1.0.0",
+        },
+    },
     DE3: {
         skills: [
             "de3/decompose-plan.v0.1.0",
