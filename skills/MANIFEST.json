@@ -10,612 +10,612 @@
     {
       "id": "CO-composition/co1-synergy-principle",
       "path": "skills/CO-composition/co1-synergy-principle",
-      "sha256_tree": "ea44f6db52e06c059f6bbeb2c5eb187f5d0db73c69ca4e31f5a790d01c557cd5"
+      "sha256_tree": "e471c958a404c1b36a2f4464d3c05f631703351fdd3867e80a0c9748d27e6aff"
     },
     {
       "id": "CO-composition/co10-pipeline-orchestration",
       "path": "skills/CO-composition/co10-pipeline-orchestration",
-      "sha256_tree": "1b324fc54f144f6b2bbef3719f96d2e36c10d508e7c7bae4fc59c3034f4c89aa"
+      "sha256_tree": "31edb08f95f9646b78c6d05c1abf96766981c37a745b1a6098305213aabae0c5"
     },
     {
       "id": "CO-composition/co11-pattern-composition-tiling",
       "path": "skills/CO-composition/co11-pattern-composition-tiling",
-      "sha256_tree": "a05172654f385e9b2be93bdebcdcfe910bf08ede17bcb9a7b3147248a86d7f5e"
+      "sha256_tree": "41bbd927579c0ed1326dd0af4ce61cea61dc5d7fea568defbfe6158bef85b7a2"
     },
     {
       "id": "CO-composition/co12-modular-interoperability",
       "path": "skills/CO-composition/co12-modular-interoperability",
-      "sha256_tree": "77df1fa9560d3a23946a557cae138500bc6816afbd2c28b7236b29ec5477c045"
+      "sha256_tree": "39b4e91a9642d3055273d5fbf9966c5d1876ac463f3e471f0c67f8163873641e"
     },
     {
       "id": "CO-composition/co13-cross-domain-analogy",
       "path": "skills/CO-composition/co13-cross-domain-analogy",
-      "sha256_tree": "d4c38d41f4230d653c034dcb59f76db94067dc140b436873ecf85c660fb17e4b"
+      "sha256_tree": "8bf2bff7186474159dfae19e4df49869263f2b5495aeaaec021e99ca6985c1cd"
     },
     {
       "id": "CO-composition/co14-platformization",
       "path": "skills/CO-composition/co14-platformization",
-      "sha256_tree": "d3c56c4607513619bbc1dd65368d20e1bc4eee852b865695fdcfddcc26cbc489"
+      "sha256_tree": "2f4076d39078d678020c1bdea42585cab953e39c0761b377b08726743c087e67"
     },
     {
       "id": "CO-composition/co15-combinatorial-design",
       "path": "skills/CO-composition/co15-combinatorial-design",
-      "sha256_tree": "7f3cbbcab9de24f30897299a684c1dcd313232edef5106ca6345172487dad509"
+      "sha256_tree": "8cecd4f405efb157952738b453560c49b1aa71a8db62f909b458291ee812cc21"
     },
     {
       "id": "CO-composition/co16-system-integration-testing",
       "path": "skills/CO-composition/co16-system-integration-testing",
-      "sha256_tree": "4474b329571443b05c8a73e58e8df74597d917b16cb942f210c81a272766da05"
+      "sha256_tree": "3a7a82ca2a020796ccdc37c16013fac97b2c906f605c8c4e1bc9e2ac62e2c1c5"
     },
     {
       "id": "CO-composition/co17-orchestration-vs-choreography",
       "path": "skills/CO-composition/co17-orchestration-vs-choreography",
-      "sha256_tree": "a4b6585a68974d78e7148069bc48fe56763b69f886e19f7c9c1121c21ffe32b5"
+      "sha256_tree": "0351368a93a2a3ef6a9cf4e63504eaae44519f74b117af49ed8d7f26a88d8970"
     },
     {
       "id": "CO-composition/co18-knowledge-graphing",
       "path": "skills/CO-composition/co18-knowledge-graphing",
-      "sha256_tree": "b450c375faf67a040f1ba075e47acba3aa2befafe33aebe18a24c213fa5358f8"
+      "sha256_tree": "068089e0bd6a4b2ffb18efb8e0fdd29ad8e45f9fda54a168d4cb05aadc62e5f7"
     },
     {
       "id": "CO-composition/co19-multi-modal-integration",
       "path": "skills/CO-composition/co19-multi-modal-integration",
-      "sha256_tree": "e78e12a32e8550696c8a6a2deeba5aa18f4104a951f87b87aad4159a305ca013"
+      "sha256_tree": "b688bf97d50c3161a870be7d3ff28890f524e42a66c2c1c3a0d343de59a3a15a"
     },
     {
       "id": "CO-composition/co2-chunking",
       "path": "skills/CO-composition/co2-chunking",
-      "sha256_tree": "9eae143bc3565c61213afdc4f8a7a33aaa5be6133ebfb1d2edb625173fc077c5"
+      "sha256_tree": "036bbeac48f09034e6ae2ae19ea866d49a0ad74dc3c1dee5ff7514ecf6c7ca6b"
     },
     {
       "id": "CO-composition/co20-holistic-integration",
       "path": "skills/CO-composition/co20-holistic-integration",
-      "sha256_tree": "6d9f43de72e45da2fb1df424ef19d00273ce7cb4b3f5b6849abf6ea65c285cf7"
+      "sha256_tree": "4f5a2f88e41e5d0fbb67064655770bce9fac2b9139a70de5732d6e38fe61e1f0"
     },
     {
       "id": "CO-composition/co3-functional-composition",
       "path": "skills/CO-composition/co3-functional-composition",
-      "sha256_tree": "4b68b50c49649d1e6692b8c70804198c5734114737338ee1ebdc1122650a3312"
+      "sha256_tree": "3a921b7bda4807b07f37c3224fe59f21a215c0259eb6b4b905f342bd9a031f98"
     },
     {
       "id": "CO-composition/co4-interdisciplinary-synthesis",
       "path": "skills/CO-composition/co4-interdisciplinary-synthesis",
-      "sha256_tree": "ce59c58b1fb1ef00d80fedaaff51301f5d4d6e634151a8e6dba7902dd2d7281a"
+      "sha256_tree": "c9a855a842e7442579a450485d066fc0bcc4c0cba0aaa4d87c71aa18f4a66052"
     },
     {
       "id": "CO-composition/co5-emergence",
       "path": "skills/CO-composition/co5-emergence",
-      "sha256_tree": "fbabc96b32af2109e7c5078c8e6a4d635736b12c1632295f8a4d09619a923763"
+      "sha256_tree": "b46754e67258dfde35a8a63469ae5cdd80900a1bc334abb989f9a19f6fe04f18"
     },
     {
       "id": "CO-composition/co6-gestalt-integration",
       "path": "skills/CO-composition/co6-gestalt-integration",
-      "sha256_tree": "49e9d9b5efcc8a6714711c5dd4c554ce7749fd6152a736f1c4bec809603163ad"
+      "sha256_tree": "0bf0934c82800850cd4cabe9a142f4953d5e47a1aad1abde86805e6f27b8cafc"
     },
     {
       "id": "CO-composition/co7-network-effects",
       "path": "skills/CO-composition/co7-network-effects",
-      "sha256_tree": "b517731ddba54032271bbe5efbe4fb5731db478a61db70f3d3c1683e528673dc"
+      "sha256_tree": "6768754aa723acc2c78609c6b345a6de684b1189a225b22fc597410908e28cb1"
     },
     {
       "id": "CO-composition/co8-layered-abstraction",
       "path": "skills/CO-composition/co8-layered-abstraction",
-      "sha256_tree": "aa8223d28456a5552f82daccf5cdfb1959164cfc5fe0e9d7c22af82da9591633"
+      "sha256_tree": "7c02376440ff03adf80af78eae544a566397abde16ebfcabad54a6c7ffd6d53f"
     },
     {
       "id": "CO-composition/co9-interface-contracts",
       "path": "skills/CO-composition/co9-interface-contracts",
-      "sha256_tree": "41558b822eb6841854050e154f67ba6938eecc64059ca6eefd1f1880384f8c10"
+      "sha256_tree": "9b1cbd8330d06b4b89efa453d550898748f96c501d577cc00cb8107d1997866c"
     },
     {
       "id": "DE-decomposition/de1-root-cause-analysis-5-whys",
       "path": "skills/DE-decomposition/de1-root-cause-analysis-5-whys",
-      "sha256_tree": "ca6274372b27051fd8c6c702123c7f365ca4b41a8848e417802300a6c27cff28"
+      "sha256_tree": "8c217dc1042ffb685799e6e38217b8646d643ae3e06c473863a0f5939e390ff5"
     },
     {
       "id": "DE-decomposition/de10-abstraction-laddering",
       "path": "skills/DE-decomposition/de10-abstraction-laddering",
-      "sha256_tree": "2c70bb70ade6624bd9c4e8a246b5bad5f84cfd0989cc9fbb6ca08bf7e85faa9e"
+      "sha256_tree": "5ced4829028bff942c5d8bae9813a46e218811556fb04f526769fe8eaea89edd"
     },
     {
       "id": "DE-decomposition/de11-scope-delimitation",
       "path": "skills/DE-decomposition/de11-scope-delimitation",
-      "sha256_tree": "80785195ea2f7bdcce7f581bd3e1cb4e85dbfafa81beb3c4f1f66ac68236fe05"
+      "sha256_tree": "d9b22b1c0b40504fdada644dc3dd2f9fd0a38a88689044b482042d25ec19352a"
     },
     {
       "id": "DE-decomposition/de12-constraint-isolation",
       "path": "skills/DE-decomposition/de12-constraint-isolation",
-      "sha256_tree": "7af4ffbc46c352dff6c54a390ad8dd1e1f51023e348c9f9e85250cee8f7890f9"
+      "sha256_tree": "170aaf261409c5f7d76c27be1922985b0f9335fc1bc16d8e849f2d0f953186b9"
     },
     {
       "id": "DE-decomposition/de13-failure-mode-analysis-fmea",
       "path": "skills/DE-decomposition/de13-failure-mode-analysis-fmea",
-      "sha256_tree": "2d9937fba5d4a09ece3367e2b980c383e705d9f0d8793b8e6c4d9c611d24dceb"
+      "sha256_tree": "e0bd754c207dab18e8249ca6401f1e7673dfe7add949e92cb82a9d715e3b26e4"
     },
     {
       "id": "DE-decomposition/de14-variable-control-and-isolation",
       "path": "skills/DE-decomposition/de14-variable-control-and-isolation",
-      "sha256_tree": "af41c7bd2a685534e79d8c83b157291913f707eec2a0cf3bd3f6468729230fd9"
+      "sha256_tree": "2239cb4dafbe730f544a18f51a515ce3ffe9865581547d46c564a6cfc90148d5"
     },
     {
       "id": "DE-decomposition/de15-decision-tree-expansion",
       "path": "skills/DE-decomposition/de15-decision-tree-expansion",
-      "sha256_tree": "e809eea5eea5a164abe9949ed16abd366ecd79bb27a43da1ab8290e1107fe9f3"
+      "sha256_tree": "1806347a97448bd4d4dd5889a872a24ae636616767ad7b289736e1517aa84465"
     },
     {
       "id": "DE-decomposition/de16-hypothesis-disaggregation",
       "path": "skills/DE-decomposition/de16-hypothesis-disaggregation",
-      "sha256_tree": "b016a5a55bdb3bdadab8c645a8a2d4558a6e7a0b74ed48202ec859e8ef99e081"
+      "sha256_tree": "c605c254de581d9f03935f50fecd57b4d471e866527d22121bdaf98b52c95c6c"
     },
     {
       "id": "DE-decomposition/de17-orthogonalization",
       "path": "skills/DE-decomposition/de17-orthogonalization",
-      "sha256_tree": "0696e2733510bba995891c259e23d53379118cdfaeedf3fb84964120ccd55947"
+      "sha256_tree": "72de1044a19394d927e4f684dc086015a83795957fdf3b96c85f7d23abdbd05f"
     },
     {
       "id": "DE-decomposition/de18-scenario-decomposition",
       "path": "skills/DE-decomposition/de18-scenario-decomposition",
-      "sha256_tree": "cbc69e9a052869cb674db99da1ba365e396b327b67aa0543e1a53623d696d765"
+      "sha256_tree": "d36078efd287e49d52422ef1a3039eb57a1bdf8895a2fed1b5c40e431f5dec98"
     },
     {
       "id": "DE-decomposition/de19-critical-path-unwinding",
       "path": "skills/DE-decomposition/de19-critical-path-unwinding",
-      "sha256_tree": "79cb63196a248da000bd72db860c7df852f52c45a6da801731d0f287c1351e63"
+      "sha256_tree": "24749a280bac1ae52acf5205d2cf87f3805c1054266392acca194d97592091ef"
     },
     {
       "id": "DE-decomposition/de2-factorization",
       "path": "skills/DE-decomposition/de2-factorization",
-      "sha256_tree": "e59923748aa0c138a9688202177b21d1f651555ed29cda55ab9224520af0254d"
+      "sha256_tree": "6acfa96af343c713175dd26aef562da755d920ebbce989987a61019fe19877b2"
     },
     {
       "id": "DE-decomposition/de20-partition-and-conquer",
       "path": "skills/DE-decomposition/de20-partition-and-conquer",
-      "sha256_tree": "e6268ea04007d5f33b418d4fbcf419498c830c5daecd76273cde2b1fa7f1c877"
+      "sha256_tree": "aea2bd5524d0e4abc79d90de9d228972fdbfd9bd3513d18adf8968f8807ef083"
     },
     {
       "id": "DE-decomposition/de3-modularization",
       "path": "skills/DE-decomposition/de3-modularization",
-      "sha256_tree": "c680b26a38d324dfed6c1a29daac99e2bfb25ec0ff8cb0a59032e6392e5e4a17"
+      "sha256_tree": "f1196ca63a46f3acc7845f780b54333fe6f4d8a8e786027aea42b4ad94b2e761"
     },
     {
       "id": "DE-decomposition/de4-layered-breakdown",
       "path": "skills/DE-decomposition/de4-layered-breakdown",
-      "sha256_tree": "5aa34804b118ac53b4f233bad55e36bbbdfde6a4eaf644aa6405a5dce2b00093"
+      "sha256_tree": "c68d8aba2e708d162346c41ecdfff65690614fb513e6da9ca33b3e63c97fd038"
     },
     {
       "id": "DE-decomposition/de5-dimensional-reduction",
       "path": "skills/DE-decomposition/de5-dimensional-reduction",
-      "sha256_tree": "4e6222ba7a1caac588bb022778cbc450c7ab4d60fe77390b815df2f271a44460"
+      "sha256_tree": "d1137e6dc2e98c9e15a6992fb751684c92315f32cc091500de17d495aaa96789"
     },
     {
       "id": "DE-decomposition/de6-taxonomyclassification",
       "path": "skills/DE-decomposition/de6-taxonomyclassification",
-      "sha256_tree": "9730232b15e6812bfabb3c6447f4dbc9a6ad7404d731e7ed31dfb4e96b037651"
+      "sha256_tree": "7f6d61340768a52226b7365f6c81c69d61eb3447283643e3c3711b7edafdb700"
     },
     {
       "id": "DE-decomposition/de7-pareto-decomposition-8020",
       "path": "skills/DE-decomposition/de7-pareto-decomposition-8020",
-      "sha256_tree": "28953937b482049150d9bba405a97fe27b52aeb87fc86ea1ae09c30b006a4d18"
+      "sha256_tree": "4737689a8bc4fbc1f3fd16806e02b3a624a4901d5b5553fffd96fe54c90fe340"
     },
     {
       "id": "DE-decomposition/de8-work-breakdown-structure",
       "path": "skills/DE-decomposition/de8-work-breakdown-structure",
-      "sha256_tree": "035571791c6fe2f604d4279860833217b881c10f2b9047774935eb2b7d132d4d"
+      "sha256_tree": "0a27e66046f649781685f2b4c7208cd91c8ac336e89c61db5c266638dbc5c273"
     },
     {
       "id": "DE-decomposition/de9-signal-separation",
       "path": "skills/DE-decomposition/de9-signal-separation",
-      "sha256_tree": "a82485e8dfedf03daae84dcaac63eb2c90b51ee7a126a39a0ae7397414890dc2"
+      "sha256_tree": "d82cf1928a02423c7e9bf9eae5db694bb13ed4a9e2b03df57497f7c6ffa93de0"
     },
     {
       "id": "IN-inversion/in1-subtractive-thinking",
       "path": "skills/IN-inversion/in1-subtractive-thinking",
-      "sha256_tree": "5659f7a1ca7670b870f6cbe3843d1cef8fac46b6bfedf9b8835166694a524d72"
+      "sha256_tree": "597cf7ac7a45c455155ea0a5be6492af7fa3a200d8b6eccf680d400fd7d585bd"
     },
     {
       "id": "IN-inversion/in10-red-teaming",
       "path": "skills/IN-inversion/in10-red-teaming",
-      "sha256_tree": "dc961d9cf73227860f7bcd19a39731fa46c5c6a2d4b5635fcf3b85c00d04cec9"
+      "sha256_tree": "290340c06b66663b6d7a7a119f761b5a46df8af14d70cd0de9982f19c9c8577b"
     },
     {
       "id": "IN-inversion/in11-devils-advocate-protocol",
       "path": "skills/IN-inversion/in11-devils-advocate-protocol",
-      "sha256_tree": "e93b7c051ba10134b556f041a527cb6aa081321d23b562f5160968267064b982"
+      "sha256_tree": "7d3b76676db00f2dbb81e98af551e464ccfc8b93f8ce906332b86418cd322cef"
     },
     {
       "id": "IN-inversion/in12-failure-first-design",
       "path": "skills/IN-inversion/in12-failure-first-design",
-      "sha256_tree": "439cb0045d8971ac3f7617921f19e86d9219e63cc9524732ea49da8e8614f2f3"
+      "sha256_tree": "2ad074ff350ee97d037ce5ed3373d3a0992bf2fa318093893e802020a12f62f2"
     },
     {
       "id": "IN-inversion/in13-opportunity-cost-focus",
       "path": "skills/IN-inversion/in13-opportunity-cost-focus",
-      "sha256_tree": "a95b15d2bc4ca4d182aa3dbc50a562d68dfbbf396d9948fcb1377a03699b9a02"
+      "sha256_tree": "468824a9f88682b136d2eb191af1d3005b07b6786469a41e537e9cbb980ac984"
     },
     {
       "id": "IN-inversion/in14-second-order-effects-inverted",
       "path": "skills/IN-inversion/in14-second-order-effects-inverted",
-      "sha256_tree": "f42e4590115ca07ed098a2971ed9ea35f50f798a53ff7567404472e34b1addae"
+      "sha256_tree": "e746f4e3454e5af6876a874b704cc5f41dcc4680c4be384cdf4d3f39d5a0dd8a"
     },
     {
       "id": "IN-inversion/in15-constraint-reversal",
       "path": "skills/IN-inversion/in15-constraint-reversal",
-      "sha256_tree": "caceab603afc85bcdeb58150d001ffba82447b6d9c06757e510e2b469d43bffd"
+      "sha256_tree": "d0a4e838dec4b46bef9dfaa84ba8ffd55a0d34b6a9565a9ee2a581d4fabfe7dd"
     },
     {
       "id": "IN-inversion/in16-inverse-optimization",
       "path": "skills/IN-inversion/in16-inverse-optimization",
-      "sha256_tree": "26ecf39b1c5a907b87d3bdad95759ea19e5f7cfcb2a9455f0d8fbda9da0d3427"
+      "sha256_tree": "3bfbd4a50a08e7815aea8e3a9155d1c2006a8317aa05682c52e3a0958af0b931"
     },
     {
       "id": "IN-inversion/in17-counterfactual-negation",
       "path": "skills/IN-inversion/in17-counterfactual-negation",
-      "sha256_tree": "313e3a2ced499e7aae412e3f7a754b6b5b0b7689d902d30367cb93a61670f737"
+      "sha256_tree": "1bd955107572559eef1f30a4fb8f17602e30c63557991af6891b24d52c2ababb"
     },
     {
       "id": "IN-inversion/in18-kill-criteria-and-stop-rules",
       "path": "skills/IN-inversion/in18-kill-criteria-and-stop-rules",
-      "sha256_tree": "7cbaddc5ed7f301419f7aab16a68a430e2d1d9efee4cc6eb7ad5bc1f0230ef23"
+      "sha256_tree": "8e30c2d8d46cc8c75eac324eba0b49d225432c97f1654b335ee7322fa227896a"
     },
     {
       "id": "IN-inversion/in19-harm-minimization-via-negativa",
       "path": "skills/IN-inversion/in19-harm-minimization-via-negativa",
-      "sha256_tree": "62ab3284765c5959b7fe0b559171afce31525bd89d2a8a791d1b20a7f3a73f6a"
+      "sha256_tree": "1974ca5cfa57ade18ee39aa56d3ea46644930851c3c8b76cb054f508aa509f0e"
     },
     {
       "id": "IN-inversion/in2-premortem-analysis",
       "path": "skills/IN-inversion/in2-premortem-analysis",
-      "sha256_tree": "2d9c49e29385a9de3cbf4a29d17c78313e6dc0830d3219b618919f4a71257ffe"
+      "sha256_tree": "bf5c8bcc513b5b0d04a62732d371fe5f464967830eba2d5d38c190f1ab443049"
     },
     {
       "id": "IN-inversion/in20-antigoals-and-anti-patterns-catalog",
       "path": "skills/IN-inversion/in20-antigoals-and-anti-patterns-catalog",
-      "sha256_tree": "8b962b0ccbbab2c1d94fcb402a4a92c64b6803b6f0999da4bfa0d5b8059dfa9e"
+      "sha256_tree": "5cff0fbf0817ad6c5b403acca18ab8979aa28fcdb9564edba5481dff4b962886"
     },
     {
       "id": "IN-inversion/in3-problem-reversal",
       "path": "skills/IN-inversion/in3-problem-reversal",
-      "sha256_tree": "e805370053f336c062ddadd26d8010670594bfbf3ec0f126b3aeb30a09a56366"
+      "sha256_tree": "6f91ab4170638ec7ce1949029bc5b7a353f8bbff0ac88dd52db7aba3ed866ce0"
     },
     {
       "id": "IN-inversion/in4-contra-logic",
       "path": "skills/IN-inversion/in4-contra-logic",
-      "sha256_tree": "702b3ec6ad3def08e9713e7eb4cc11f019f74257ea98de6a9bf93026487639ad"
+      "sha256_tree": "8aa7364183e283acb65fddaaabb1d040e1397fa8b8fccb1ef91e6e11dbe43f46"
     },
     {
       "id": "IN-inversion/in5-negative-space-framing",
       "path": "skills/IN-inversion/in5-negative-space-framing",
-      "sha256_tree": "1c796eaac306874d5b278127f49d5e494a08444cd881d81855b650015f7537fc"
+      "sha256_tree": "0dee014c307c26568ba11bb59a10f00bbe710c152f0e90a136481aee4fb12695"
     },
     {
       "id": "IN-inversion/in6-inverseproof-by-contradiction",
       "path": "skills/IN-inversion/in6-inverseproof-by-contradiction",
-      "sha256_tree": "9e80ed6902409012c19f1180a93b16db426dfd1408412d32bcdc0a6a4ab4e231"
+      "sha256_tree": "d5ac05b561dc46155e9220143a07e849e466d2adcceaf7db032b8f7baf036e69"
     },
     {
       "id": "IN-inversion/in7-boundary-testing",
       "path": "skills/IN-inversion/in7-boundary-testing",
-      "sha256_tree": "3d6996946148056ff377804692c4bf9ecc9fb9ca0a9181b190b15aacbe1a4130"
+      "sha256_tree": "4af548ee86a070ca090c32d03bc09a457160bcf7ac6b7712dcf983442f060c5f"
     },
     {
       "id": "IN-inversion/in8-contrapositive-reasoning",
       "path": "skills/IN-inversion/in8-contrapositive-reasoning",
-      "sha256_tree": "4d89e07d00b5815273d896e4fde32e093ec2287e4996cac8c434610a9dc09fba"
+      "sha256_tree": "23d6072fb7021c67763849375048e704bb9bb7108c8cadaa85c8d83c7c80e86b"
     },
     {
       "id": "IN-inversion/in9-backward-induction",
       "path": "skills/IN-inversion/in9-backward-induction",
-      "sha256_tree": "0cb4a4a4c0cbdb373d717bf86bc6b0de323e9045df3266b5d139cb235665ccf2"
+      "sha256_tree": "dd01f7e3607e2b4c3433913e87dadbd01245fbe885a4058e6250575bdbc37071"
     },
     {
       "id": "P-perspective/p1-first-principles-framing",
       "path": "skills/P-perspective/p1-first-principles-framing",
-      "sha256_tree": "1f6e8a541684be44c8caf89a4cafc316b17eeeb402405733801a2d3e2ae085e7"
+      "sha256_tree": "89f7f8db96ab053bee665e6bb52407a18c0be7a42bc8f917f27c7902eb271e38"
     },
     {
       "id": "P-perspective/p10-context-windowing",
       "path": "skills/P-perspective/p10-context-windowing",
-      "sha256_tree": "fda91d3efcd4de14606f17d46fe8617b8875b0837e367921f0476bcf88f1d072"
+      "sha256_tree": "e4c03ebece4966ac7f2c15416baf99de0e5d119892f617c8151dcd76e615b8a9"
     },
     {
       "id": "P-perspective/p11-role-perspective-taking",
       "path": "skills/P-perspective/p11-role-perspective-taking",
-      "sha256_tree": "f5dc6222c34ba2848bccdf279ac0a184db41010790b90a2da1657a24d5f3fd23"
+      "sha256_tree": "ba447d2ff1c12ff16ac43e94fa9c948b21bfa0236ecfa79bc3b65b4ec362c2f2"
     },
     {
       "id": "P-perspective/p12-temporal-framing",
       "path": "skills/P-perspective/p12-temporal-framing",
-      "sha256_tree": "785cb3d946f2b8f08111ee8f0665418af6d022c88274dca2e6b9d263e98e6a8a"
+      "sha256_tree": "19a5d4c4a6ed65c4d1e3769632ec9ab07385e870c262d856468ea25919e7f6bd"
     },
     {
       "id": "P-perspective/p13-spatial-framing",
       "path": "skills/P-perspective/p13-spatial-framing",
-      "sha256_tree": "57fa2d8afd01fa4daaa3b0b551e8b92ca918c6e0188f5af353883321bb6a1e72"
+      "sha256_tree": "274e76c463df0c33f7587873398ab33cb0690a414ca6683e7fbcc7363c43c7b9"
     },
     {
       "id": "P-perspective/p14-reference-class-framing",
       "path": "skills/P-perspective/p14-reference-class-framing",
-      "sha256_tree": "5478a27f31b87de12b94810e74283e17fd47213e9e55a4b4878f5d2517034ab8"
+      "sha256_tree": "28ab06d442530d6695d8219f9b62a675980e3c6f70b83af71522058af66d69ad"
     },
     {
       "id": "P-perspective/p15-assumption-surfacing",
       "path": "skills/P-perspective/p15-assumption-surfacing",
-      "sha256_tree": "6bf245ccfb443cacf57f759babe8c8bd8428db2ecd9128e912221add152bcdec"
+      "sha256_tree": "c3f5a78ebff8bcc039749e3472531a20108cf6f14523e07c0fe94ab341d2ec24"
     },
     {
       "id": "P-perspective/p16-identity-context-reciprocity",
       "path": "skills/P-perspective/p16-identity-context-reciprocity",
-      "sha256_tree": "55560044f905e6bc7e68665c1b2acacac1d49e26917867ca4ecb03b5dc2fd63f"
+      "sha256_tree": "20d38ddc5759a44caf22e069a059ee0d3f6cfa6f09cb4e96637ad474e65f8a7e"
     },
     {
       "id": "P-perspective/p17-frame-control-and-reframing",
       "path": "skills/P-perspective/p17-frame-control-and-reframing",
-      "sha256_tree": "aece93abc59f9a87d1fd10666f23e39d293c47247989e78c149a57ca0f0836c6"
+      "sha256_tree": "87e66f688a9c287e5928004c5f5a8a2060542a4ec85d831c4a935eb7125dd783"
     },
     {
       "id": "P-perspective/p18-boundary-object-selection",
       "path": "skills/P-perspective/p18-boundary-object-selection",
-      "sha256_tree": "6ba7b8a78e89c2c1db6d4a370f93e30abfd3845778b93bd64d0879a5bc02cffd"
+      "sha256_tree": "a7a58cfa4e14658e4694d6dcb38bb795d4db9e01b04417341676b87efb4642f5"
     },
     {
       "id": "P-perspective/p19-sensemaking-canvases",
       "path": "skills/P-perspective/p19-sensemaking-canvases",
-      "sha256_tree": "4e903965524882a6ae62fddedfe7472d8eb14c70b0df10b4fbc7540ffc571fe1"
+      "sha256_tree": "173617ea906f600dc3e486180e7fcb7047948fd6463562e480c26b7afebf56dc"
     },
     {
       "id": "P-perspective/p2-stakeholder-mapping",
       "path": "skills/P-perspective/p2-stakeholder-mapping",
-      "sha256_tree": "16947f9dc84b4806a69d42c3cf3940f08fec6b371065be470477fe357236005d"
+      "sha256_tree": "6fe33cec4aff6485a3734f8d23ef616e06fcd4a4441ca8355c5b821229469ccd"
     },
     {
       "id": "P-perspective/p20-worldview-articulation",
       "path": "skills/P-perspective/p20-worldview-articulation",
-      "sha256_tree": "6002afab98a54f5c8126e832f7484353dd9e29ca6c11c03f7be7fa4292f1473a"
+      "sha256_tree": "f542f3671bcb50ab094b0f1c9ba72d7815da0d789cb7952dccbb5ce8059fca16"
     },
     {
       "id": "P-perspective/p3-identity-stack",
       "path": "skills/P-perspective/p3-identity-stack",
-      "sha256_tree": "93863458f238e0472af8f513e7be75aab56ed5f5e5bfa51f8c136c14d4bb2e5b"
+      "sha256_tree": "e4df6dbfee361916f8f6ad3d07880f90fd8cccb25b9cc8e62ddf83e6219ac301"
     },
     {
       "id": "P-perspective/p4-lens-shifting",
       "path": "skills/P-perspective/p4-lens-shifting",
-      "sha256_tree": "cd985b5d93eec0b779fd751e580a4627275e8edb6e8caca31b5eb2d666acb712"
+      "sha256_tree": "1da504568b25f876a74738d7ffaab6bff121e6f145735fd659e4baa7be81bdff"
     },
     {
       "id": "P-perspective/p5-empathy-mapping",
       "path": "skills/P-perspective/p5-empathy-mapping",
-      "sha256_tree": "2212a17cdc5253dd2d917150e2dd3d3717e375567f9946b91635be95c82a1328"
+      "sha256_tree": "bd84396c56c3a406bb1fc4c2d4773d7778e148ebc8291135351ae7a2da61d1f9"
     },
     {
       "id": "P-perspective/p6-point-of-view-anchoring",
       "path": "skills/P-perspective/p6-point-of-view-anchoring",
-      "sha256_tree": "78f4ef9843703a031acc1dfc3b949340b966a1df2f047f8a7f42508b9fc53f38"
+      "sha256_tree": "db9071da845609aa56310b3d3b3d21772b7769d6400c2a9a2fc9798f776247db"
     },
     {
       "id": "P-perspective/p7-perspective-switching",
       "path": "skills/P-perspective/p7-perspective-switching",
-      "sha256_tree": "d357df38c6a0c78df077d6e942df623e2182b8fec77c83287b887c4064d0f507"
+      "sha256_tree": "d3af894091cf04eb8d1ed75509759aaafaaa1110ea00411e5ce3d94d260e260a"
     },
     {
       "id": "P-perspective/p8-narrative-framing",
       "path": "skills/P-perspective/p8-narrative-framing",
-      "sha256_tree": "cd3f5e33e3938814a27c098cfbcc98cd1c2bdf7a2baf6b13858e672597b6670e"
+      "sha256_tree": "9cb4f1d327afc2867fc43c2fa1af703dcfc17d999745684f7586a30d43b34682"
     },
     {
       "id": "P-perspective/p9-cultural-lens-shifting",
       "path": "skills/P-perspective/p9-cultural-lens-shifting",
-      "sha256_tree": "cd42b785da27f9afc64f0a868e4286f7d0887b607de27b13c5261e0b0c906654"
+      "sha256_tree": "8c44a8747f8f799806c1043cca7988377daecfd4fbd3677459bcc749dcc6246b"
     },
     {
       "id": "RE-recursion/re1-recursive-improvement-kaizen",
       "path": "skills/RE-recursion/re1-recursive-improvement-kaizen",
-      "sha256_tree": "e9df2ee3b4591a139ba507242e06f0e69bc10a412106a738992896b2f07de7a6"
+      "sha256_tree": "4e7927e7578caeca653f3bfd029b71237e42eda99e32fbdea85f642551d92ecd"
     },
     {
       "id": "RE-recursion/re10-compounding-cycles",
       "path": "skills/RE-recursion/re10-compounding-cycles",
-      "sha256_tree": "b27fd1414ae186e81ab1b6eb1157b0d54e26f0923170b387065d58858a6145f0"
+      "sha256_tree": "ff6b78b8bc85eaad178989c8cfaf92636172084af3287ddb626ffb105c89a922"
     },
     {
       "id": "RE-recursion/re11-calibration-loops",
       "path": "skills/RE-recursion/re11-calibration-loops",
-      "sha256_tree": "172af861ff44fe8b2f80439409281603d9fc21ae1c6c64590f594cc2bbfad6f7"
+      "sha256_tree": "c29fe0bb2a3cd9bfcc3bf254d589300ae327379caf0c66454b711f74d8603074"
     },
     {
       "id": "RE-recursion/re12-bayesian-updating-in-practice",
       "path": "skills/RE-recursion/re12-bayesian-updating-in-practice",
-      "sha256_tree": "74ed12ec7a5fb2f3a704eb6e46205b713e7c692e9763d04b9dab441996170f89"
+      "sha256_tree": "37b4b880a6c6e41d5627e3677321aa12f3c1f8c4dad71d29ef7625ddb43ded62"
     },
     {
       "id": "RE-recursion/re13-gradient-descent-heuristic",
       "path": "skills/RE-recursion/re13-gradient-descent-heuristic",
-      "sha256_tree": "1d936719abc939c2e64dabf75e5ed6cce5755c4f9db3f08c5cca44a6acc0ea96"
+      "sha256_tree": "6da650d46ad3771bac431466c7b47a12cdadeb776a36916a05f5bdb0fd60cbaa"
     },
     {
       "id": "RE-recursion/re14-spiral-learning",
       "path": "skills/RE-recursion/re14-spiral-learning",
-      "sha256_tree": "d309242e4f96f93dbb6c365a21f7e37fc3a980b77a8d4a29b49d4a123235468c"
+      "sha256_tree": "0fad66b69a1b42e0d932e9a29fcea1e1428c1530929ec7ece20b5eb4cbade83a"
     },
     {
       "id": "RE-recursion/re15-convergence-divergence-cycling",
       "path": "skills/RE-recursion/re15-convergence-divergence-cycling",
-      "sha256_tree": "a790eba120438ee6d1b7ba110e9a8640a4aa64eacbbb0930949c393ca84bdc9d"
+      "sha256_tree": "b93b8322cfdd81297300356d5d02e5524b739690cee84e3005bbd31956b46454"
     },
     {
       "id": "RE-recursion/re16-retrospectiveprospective-loop",
       "path": "skills/RE-recursion/re16-retrospectiveprospective-loop",
-      "sha256_tree": "baa5f65e26ab9bdde4287dc70780029d709a07acbecfa36dc29a8f355c200028"
+      "sha256_tree": "3a261d1e02830e2f4f70ff7e33246daf3b447fea46d4c0b77f30cb365ff5924c"
     },
     {
       "id": "RE-recursion/re17-versioning-and-diff",
       "path": "skills/RE-recursion/re17-versioning-and-diff",
-      "sha256_tree": "e98dee025d3cf775a482bce1e2dfa18567c97638464fc3da4a61c8d3df22d026"
+      "sha256_tree": "e81f927f0dd43051bc78a120817124ac73db78e4a3f0b94d2e2859fa11ed725d"
     },
     {
       "id": "RE-recursion/re18-anti-catastrophic-forgetting",
       "path": "skills/RE-recursion/re18-anti-catastrophic-forgetting",
-      "sha256_tree": "954f38c212790c552578c34eb6efe5fe8d6607b2e21a6cae0b95d462d63e30d8"
+      "sha256_tree": "893944f927e3e36ff5e40f64e5982022c8fa7c5219b21d09d8ffac60fd098ca8"
     },
     {
       "id": "RE-recursion/re19-auto-refactor",
       "path": "skills/RE-recursion/re19-auto-refactor",
-      "sha256_tree": "e54629bf8218763c27b577bf5c907492978d09531421ac1b207ffe13ef59df82"
+      "sha256_tree": "e6b2c7d7525976eb33008ac0762595f56d6d548dd608663c65cb72d914901146"
     },
     {
       "id": "RE-recursion/re2-feedback-loops",
       "path": "skills/RE-recursion/re2-feedback-loops",
-      "sha256_tree": "1077e9f4df89ec62b2841586baf1cb6b0548391c9c8fda146c06309e03d5b6e1"
+      "sha256_tree": "def7b538c230ea11631e2e77344e33b34b30041a9481d1464f2d8ace27be5522"
     },
     {
       "id": "RE-recursion/re20-recursive-governance-guardrails-that-learn",
       "path": "skills/RE-recursion/re20-recursive-governance-guardrails-that-learn",
-      "sha256_tree": "3a338ea36177a862f6426fcc7ba5f04940a2d9ac0fc33be1165f04a9ec220565"
+      "sha256_tree": "43927cd0b95840fe3ba05f3823bca0a178ae8aa3b7805dbc4f12129ad28549cd"
     },
     {
       "id": "RE-recursion/re3-meta-learning-learn-to-learn",
       "path": "skills/RE-recursion/re3-meta-learning-learn-to-learn",
-      "sha256_tree": "57fb9e10e4e6cc87428075ef1907d3379a9a54551841f6086ecbca10e3692c41"
+      "sha256_tree": "5fd7b62777e859d744d2b18d9af02b5522a1e93e5e55722232643a17716e83b9"
     },
     {
       "id": "RE-recursion/re4-nested-narratives",
       "path": "skills/RE-recursion/re4-nested-narratives",
-      "sha256_tree": "bca0f6dec54a793b7ab0f55f3646ad9477bb175bc0b126bf9e947b3abc9eaa0e"
+      "sha256_tree": "6af5230fe23e3bcd3008e7dbbefe580ac567f6083967e83d742e09d46bb7ca34"
     },
     {
       "id": "RE-recursion/re5-fractal-reasoning",
       "path": "skills/RE-recursion/re5-fractal-reasoning",
-      "sha256_tree": "c7d5a3c89d4c6f7f9aeeac273e1c2eae8559f8df6a2b32697685399c1b2a96a5"
+      "sha256_tree": "7633cc35a80013096244989f3be5e9b2f25eaffd2b8b9bc076bbd0c8c4912633"
     },
     {
       "id": "RE-recursion/re6-recursive-framing",
       "path": "skills/RE-recursion/re6-recursive-framing",
-      "sha256_tree": "940183d5a3ae5ecd2d6d2bff20aaad00e98427541340a7c2eadbe5f738e1d591"
+      "sha256_tree": "4d099757c205f6d7b25c2a6500481ff3ea09d39972b2b946a95a84422fec7c86"
     },
     {
       "id": "RE-recursion/re7-self-referential-logic",
       "path": "skills/RE-recursion/re7-self-referential-logic",
-      "sha256_tree": "647c38da37722b7246065963302f06d700263b2ee4ab75210a16656e1f345c09"
+      "sha256_tree": "7d543eb960b9cbdc6057d2776e3012f2493bd261f3ca4a906c353898c8fedc3f"
     },
     {
       "id": "RE-recursion/re8-bootstrapping",
       "path": "skills/RE-recursion/re8-bootstrapping",
-      "sha256_tree": "54ad583b571a10c23de4d7e5a27b3a01d42e8c82de607085e069632ced3b3a6c"
+      "sha256_tree": "a25407d26740a271cf046b9d09f064aab7d8c3b27b9f2020ebff2bde0c83c382"
     },
     {
       "id": "RE-recursion/re9-iterative-prototyping",
       "path": "skills/RE-recursion/re9-iterative-prototyping",
-      "sha256_tree": "0c4f2969eefacc532f9ca3cd695da740c2bad7a622cf024ae0f1e054d6198513"
+      "sha256_tree": "e740fcf5ab7f1dd3ca5cf4f6702754923d86fff09cbc7ceaddd3760900a5bebd"
     },
     {
       "id": "SY-systems/sy1-leverage-points",
       "path": "skills/SY-systems/sy1-leverage-points",
-      "sha256_tree": "697c422adad0d55d75358cedcc8a255c6c9bce0e10e042b8daa511d24b9c83a1"
+      "sha256_tree": "1c7af42fff2eeaf6501cc310845d4fb62e6eef008c47f4023ff301526c07c53b"
     },
     {
       "id": "SY-systems/sy10-causal-loop-diagrams",
       "path": "skills/SY-systems/sy10-causal-loop-diagrams",
-      "sha256_tree": "1a121344e6c5216a651fa73e7de61716b89a8a3dec5137f1c72c17a6ea54f338"
+      "sha256_tree": "fd9fa75c5a16f4a35c243ba8be8aefd00124d35277365420a14b904edfb1518c"
     },
     {
       "id": "SY-systems/sy11-governance-patterns",
       "path": "skills/SY-systems/sy11-governance-patterns",
-      "sha256_tree": "ed284e3dc26c6db404c282bc725075638ac5703477e599893ced7bcde03587e9"
+      "sha256_tree": "53252a7e77c5c967f7bd385af6cb84db1b95312121bf3e145b1d4aab3f1b72b3"
     },
     {
       "id": "SY-systems/sy12-protocolinterface-standards",
       "path": "skills/SY-systems/sy12-protocolinterface-standards",
-      "sha256_tree": "e39b85f502a29941ced417809a05c595414903e80566e03fcca1a3ce47304d71"
+      "sha256_tree": "7bbd559397270691b89af14d6b2f22219bd099f3338939e8435091d537bef18a"
     },
     {
       "id": "SY-systems/sy13-incentive-architecture",
       "path": "skills/SY-systems/sy13-incentive-architecture",
-      "sha256_tree": "97cc18ad1fd35fce47f7290e4bc78475fb7cd46e2f759263059b058fe6bd16c9"
+      "sha256_tree": "5ac0ee7f87eb3e92ef871a05a75b3d7011220c01ed215f101b99844ddc413929"
     },
     {
       "id": "SY-systems/sy14-risk-and-resilience-engineering",
       "path": "skills/SY-systems/sy14-risk-and-resilience-engineering",
-      "sha256_tree": "06106f830c4ec14d7fa625f1bdc8a0d409bf587a31a6240328bd7b1f452e5860"
+      "sha256_tree": "94c50b45121a703eb77ee391f6beed2fff0fe669931992786384c248dd466275"
     },
     {
       "id": "SY-systems/sy15-multi-scale-alignment",
       "path": "skills/SY-systems/sy15-multi-scale-alignment",
-      "sha256_tree": "d6c409f17c0405426e9d7fa2d33eedf4bc1620bffd2edf4ea180a2db3d03221f"
+      "sha256_tree": "c8e96cfd777516190831098033256ad219434fe03b7be3c9a56f2ab57417b92e"
     },
     {
       "id": "SY-systems/sy16-ecosystem-strategy",
       "path": "skills/SY-systems/sy16-ecosystem-strategy",
-      "sha256_tree": "eb931b50aaee17806d78ecf5c33666cd05d7ccc190b89723c49fb1e34b163241"
+      "sha256_tree": "bf7356d0f9c3bd7d4bd0d3021c35b77330ae4073b12af75a109db1ecfbf8a7f5"
     },
     {
       "id": "SY-systems/sy17-policy-feedbacks",
       "path": "skills/SY-systems/sy17-policy-feedbacks",
-      "sha256_tree": "e20d8eb53fd3e8929180032758f851d7ebc8aae7f62d70061e7c21a4b51e8c2c"
+      "sha256_tree": "07ccfe082387221fed8b15f072211bcca75a87f1c2ed53ae863762f12c7e9786"
     },
     {
       "id": "SY-systems/sy18-measurement-and-telemetry",
       "path": "skills/SY-systems/sy18-measurement-and-telemetry",
-      "sha256_tree": "8ee0424ddd158281954af21226d79c7e33506e5702cd503c4d8908c03c930ce7"
+      "sha256_tree": "c6ca78869194a9590b202a18e8ca2805a33c0344ef6e45f1ed055cf76e03b58d"
     },
     {
       "id": "SY-systems/sy19-meta-model-selection",
       "path": "skills/SY-systems/sy19-meta-model-selection",
-      "sha256_tree": "9c8e568f0df5511c0fc58be87052e1d27c12609bed0f887886c597c144ae5e23"
+      "sha256_tree": "f81fb96f9fccb7d5f5ac620132fa4da7f16475fcfb401a2ef2d794e640e1cd67"
     },
     {
       "id": "SY-systems/sy2-system-boundaries",
       "path": "skills/SY-systems/sy2-system-boundaries",
-      "sha256_tree": "37d17779f625850e51f6b62c75749326fc2d548a4207c83d7831a8bb79ab9231"
+      "sha256_tree": "88423f6bff9f46bde9b50626c73aa7c92e611ec64f11335a309113a52c2ce903"
     },
     {
       "id": "SY-systems/sy20-systems-of-systems-coordination",
       "path": "skills/SY-systems/sy20-systems-of-systems-coordination",
-      "sha256_tree": "88bcc67e2a253362d84d2ef662f5a2c2ea100fd3c1af6fe57b605ac76141ff69"
+      "sha256_tree": "044bb8919836874447e7dd9a4268acdf89515e0b9eef68a7c7811686af2d650b"
     },
     {
       "id": "SY-systems/sy3-stocks-and-flows",
       "path": "skills/SY-systems/sy3-stocks-and-flows",
-      "sha256_tree": "63fa173a96e3d2942b24275e14c8ef002f678baa4fa41b7593e9f4629a026535"
+      "sha256_tree": "e35c2529eec7c5c476118db850360bb09b483f49219b19db3c2b5c68cae35eb9"
     },
     {
       "id": "SY-systems/sy4-requisite-variety",
       "path": "skills/SY-systems/sy4-requisite-variety",
-      "sha256_tree": "a4e2c841d907d3acddcae0d49bbfee5cf614c969eab0f6534299c6af70fa7098"
+      "sha256_tree": "88e037b3ef3f6e3ada185ae93884a36c67ed944404d50f0895f3f821140f235e"
     },
     {
       "id": "SY-systems/sy5-systems-archetypes",
       "path": "skills/SY-systems/sy5-systems-archetypes",
-      "sha256_tree": "174ee659e7d379b3814c0f850fe977b8202c221ad29c67b849702ae3c2ae92c4"
+      "sha256_tree": "5202b477a06d6910a2d066ebdea361f4e366407d2020baf89ebf2dba08c7f9a9"
     },
     {
       "id": "SY-systems/sy6-feedback-structure-mapping",
       "path": "skills/SY-systems/sy6-feedback-structure-mapping",
-      "sha256_tree": "bf4ae69303881aa30994d67cd9aed8cafce644fd8b8ffac5706d29bdffa29db2"
+      "sha256_tree": "90fa49ffe978487a91001b11879f3fc6991d7d9aeb001d2534d623a74889583f"
     },
     {
       "id": "SY-systems/sy7-path-dependence",
       "path": "skills/SY-systems/sy7-path-dependence",
-      "sha256_tree": "ecb0956cadc8365a25ea83ae9c72bc154de3cf93005e45142c53579825e98bad"
+      "sha256_tree": "e64b20740218656aae0fdf3dd6a697a7364cf6023d9e4095df110b307e98a1c7"
     },
     {
       "id": "SY-systems/sy8-homeostasisdynamic-equilibrium",
       "path": "skills/SY-systems/sy8-homeostasisdynamic-equilibrium",
-      "sha256_tree": "c1203b6a6e6b62df45cb5a8d2d22aea31ca8e3e1eb17fc0a90aad5283f13c658"
+      "sha256_tree": "6bcc1243ce6ba4b4aa63f91eea9ad39a05ba6eed2c89864a67d5a0813506098a"
     },
     {
       "id": "SY-systems/sy9-phase-transitions-and-tipping-points",
       "path": "skills/SY-systems/sy9-phase-transitions-and-tipping-points",
-      "sha256_tree": "c7b1a287f70e86e4668f34f9a1376f8adc5a279b0f175a776dac3e2fb933797a"
+      "sha256_tree": "92712b8a2ba2fda08bef5f2c685c5e7c290a170417808001de2f1528ab194bde"
     },
     {
       "id": "apple-notes",
       "path": "skills/apple-notes",
-      "sha256_tree": "c3c1f21f63d2c1f9d855616305ae002801d3f04e53ebd0e0ae9597cad145ddde"
+      "sha256_tree": "99d0678016168a71151a80df330d8cf936f0e56234dc5e42c35535f9a884a85a"
     },
     {
       "id": "apple-reminders",
       "path": "skills/apple-reminders",
-      "sha256_tree": "729f89e0e9acc3ee7d08ff40c708f65632d7cdba5a973532a78d6ba18d3a543b"
+      "sha256_tree": "bd845ee2dc85d6e5e9deb8933d62462f78188bfe9803cc55e3ae31aa6531cca9"
     },
     {
       "id": "backend-patterns",
@@ -625,62 +625,62 @@
     {
       "id": "bear-notes",
       "path": "skills/bear-notes",
-      "sha256_tree": "1a53c6bdfbc2de5970583fb3c3a8068c2bb03b39cc3ca4dec005cfcdc63eb8ae"
+      "sha256_tree": "75df024919a169facae9d7dd4834774c18accd4051f578f1c436f7739f009805"
     },
     {
       "id": "bird",
       "path": "skills/bird",
-      "sha256_tree": "0d5ca264aaa23e8e869832b5d8ea6c0bf516422d2eab64fbf068d97ea2833bf1"
+      "sha256_tree": "e09c4b33ec261ac63a58bfb9c08a900f817739c106da0bf896101774cd96203e"
     },
     {
       "id": "blogwatcher",
       "path": "skills/blogwatcher",
-      "sha256_tree": "1b5fc34055e4c795b3e57d4162990349678c48c9a8ff8473ab411ad13e0d9926"
+      "sha256_tree": "9f752d14f1f0dfd8d75259ab648e3d13bfcbcf2e3daae0e78d70f3833d14c591"
     },
     {
       "id": "blucli",
       "path": "skills/blucli",
-      "sha256_tree": "bfcaf3880eb3eaba659aad7a4d44b9515b51254bcdfb9b9dc7e20768eab8a35d"
+      "sha256_tree": "6677682eff5f8a8dfb29572f5d381de7d04e356dfaed34a1806b2a0649831226"
     },
     {
       "id": "bluebubbles",
       "path": "skills/bluebubbles",
-      "sha256_tree": "7af7acd1db8fc72cd565573e1b635395bedb7d7193b8afe7be9b4c6c152a6d44"
+      "sha256_tree": "d2bc803b4d9bcbf7c2fc8bac0360fbce3489828de2b591e63b1086f7db54dd40"
     },
     {
       "id": "camsnap",
       "path": "skills/camsnap",
-      "sha256_tree": "1a9c0e4c6422fed8564b13fc0c07dd56af93500ac996a83766827e1f3c9cede4"
+      "sha256_tree": "4cfd070fb9c2ecd00a26a75bf7f8ce0b1c3c8670ba27e28367bd7f58a3d92412"
     },
     {
       "id": "canvas",
       "path": "skills/canvas",
-      "sha256_tree": "8c12fcfa3432b142eb8c0c4e05fcc506334f22292726afb5ce00279c634772ec"
+      "sha256_tree": "131df8115de5eb2242552b704da2e0bfe8dc3b1ab788016c97dd513e781ecad2"
     },
     {
       "id": "clickhouse-io",
       "path": "skills/clickhouse-io",
-      "sha256_tree": "318663ea27cc930c189c94daf5138cfcc0005f79fbd963653484539602b343e1"
+      "sha256_tree": "5cb5c3b0012e2c6a2149803cce79dc8a5695a765512320e1c4102cf7f92cd42c"
     },
     {
       "id": "coding-agent",
       "path": "skills/coding-agent",
-      "sha256_tree": "24181127cbd6a378fc764fc2a2cabef4ee443556fb5f1160eeca1a10436634b7"
+      "sha256_tree": "5a19f8b056f254a44743d919f8054c87697527b836f37b975888ae301515545f"
     },
     {
       "id": "coding-standards",
       "path": "skills/coding-standards",
-      "sha256_tree": "58053b98a4d8d7d5f6a347416a5d9e3aa3a2e74479c22ee16ae5a9a101ba6401"
+      "sha256_tree": "e813d61e3f80aa1607c27897eb5f2832815b056b20f992723158a32e9381eeb2"
     },
     {
       "id": "communication/discord",
       "path": "skills/communication/discord",
-      "sha256_tree": "594376e64fb465ed0e7b070492c6f5fbde894705e28486b56eee0bbd908711d3"
+      "sha256_tree": "cf6c74b2ef5f6e629ce8138077d679d64b6b7b38e3cf4ebcb244dadc73cee0c6"
     },
     {
       "id": "communication/slack",
       "path": "skills/communication/slack",
-      "sha256_tree": "584c0d3a80a026eb81ff386d17bba0ebf0f57fdf64ceb1c94f574998f828cce7"
+      "sha256_tree": "551ba2baf0b8df23339b98c4552bd45c669dd6b5ced50f3b3b7f40ecaec58181"
     },
     {
       "id": "continuous-learning",
@@ -690,12 +690,12 @@
     {
       "id": "continuous-learning-v2/agents",
       "path": "skills/continuous-learning-v2/agents",
-      "sha256_tree": "35865e931693779c1bbca72fd4e5e7ef1a75a509330ea8261bdc148cbba673f9"
+      "sha256_tree": "8d455170d1c15196becf82e4b0f2ca13c3036f8b97e8ea72735b911248cd1c2b"
     },
     {
       "id": "continuous-learning-v2/commands",
       "path": "skills/continuous-learning-v2/commands",
-      "sha256_tree": "7118dcd4f9600380b9ceeedb1e3c892830c2a703607cd41a53644479b559e440"
+      "sha256_tree": "ec1b7ce73180ea3363b56aeafd4b704337dc402659af43fc2277b4ae8ead70fd"
     },
     {
       "id": "continuous-learning-v2/hooks",
@@ -710,22 +710,22 @@
     {
       "id": "discord",
       "path": "skills/discord",
-      "sha256_tree": "64211c0c361dc9d32a64b5d422efc95fadc88067f0e88d141d95cf51df1c7906"
+      "sha256_tree": "a8bd10a23c64bc99f6641c150e3d05dc69f8c447b0ee9cd7820f753d5eb696bb"
     },
     {
       "id": "eightctl",
       "path": "skills/eightctl",
-      "sha256_tree": "d2d59f82a4f7788c0dd72ba4e07cb36069cb467571332bb822259a8ede68c674"
+      "sha256_tree": "b3885f2b2c1586cc11b734f3cabf86f55696dc5521ee5102ac091264fe7cf6d6"
     },
     {
       "id": "eval-harness",
       "path": "skills/eval-harness",
-      "sha256_tree": "6c6d7ac3ef75aa09ce87fef484ce3c30b24980d6947d5d448e5ba28b77a9a2db"
+      "sha256_tree": "52a85a5b3635a243cf2cc93192e5c5cfde4afc4cddfc64e0315aaff13db7d1c5"
     },
     {
       "id": "food-order",
       "path": "skills/food-order",
-      "sha256_tree": "c20c414f2061f9f14f269ddf6a3db89caaad0fe49bb9816d1c12aaba5b698918"
+      "sha256_tree": "4126bc22fdd8bfd043c891edc560c7c64855b9782814043b66aa8c3f90525310"
     },
     {
       "id": "frontend-patterns",
@@ -735,57 +735,57 @@
     {
       "id": "gemini",
       "path": "skills/gemini",
-      "sha256_tree": "f5e0b832c93450d2788ed1204fd9bd6ac56b3b43bc082cb29674727472f6a82a"
+      "sha256_tree": "826b53131cc149b8eeb772b5c32ee5df76cfe5193ee06e3ab6f3fd8eff02f771"
     },
     {
       "id": "gifgrep",
       "path": "skills/gifgrep",
-      "sha256_tree": "bf7e7a76c0541080b408b98ec73f002690fa696e10f7d278850063f74c893ea3"
+      "sha256_tree": "becca4c21b0ae3d6ecd0d17f6cc772b9f7e2d4a305bb362dc77f5d95804793cb"
     },
     {
       "id": "github",
       "path": "skills/github",
-      "sha256_tree": "3e2908f6de37364f97cc407725b158c6f8caa61c1ad2f5bfcc2d6d9e5dbd970a"
+      "sha256_tree": "7ac76e5165b9db5aa563deb8fe37afeeee5583b2afa7a9bffe02bc874d713957"
     },
     {
       "id": "gog",
       "path": "skills/gog",
-      "sha256_tree": "e0befff153a9e5cc1ebb585909dd46bd267ade6a2a1ad056d19b4ac90dfb2f62"
+      "sha256_tree": "b55dcbb57bf174b3c693fcc4365c9ecc2d254d2f72cd5521b812fbb824c81a04"
     },
     {
       "id": "goplaces",
       "path": "skills/goplaces",
-      "sha256_tree": "62d3eacc98ea1ae1048f2dcd0b46d8e5f3ae2aeaa5711f241ae599d77c29a5f5"
+      "sha256_tree": "406d69a3180c043ec8c2886bc8ad50247245a550ab2d5d8d90b00f71d4b77c83"
     },
     {
       "id": "himalaya/references",
       "path": "skills/himalaya/references",
-      "sha256_tree": "8c51fa8b4b1b9d1f7ee9f3eac30d67b27710114df8139d9dc2d4a2f0b3846399"
+      "sha256_tree": "67c5f550b03e2eae30377997f33656570e379f675b63cd6d62257541e7ea52ca"
     },
     {
       "id": "imsg",
       "path": "skills/imsg",
-      "sha256_tree": "5184801e46a7bbf574d43c768190de50b452662cc131fe4f7de8f229b99c9260"
+      "sha256_tree": "21c0d3ed5567bf418429dbb469983db285e6b439d7fd28aa4f44effdd40bde77"
     },
     {
       "id": "integration/multi-agent-coordination",
       "path": "skills/integration/multi-agent-coordination",
-      "sha256_tree": "bb409e401a20162dde66183d5c58221adc5e793a1bd9eaa21eba559f459fc3e5"
+      "sha256_tree": "0310fd24bf99b9c58260a3f27e77993e73c442dd90b5ba90d80f689a11464f56"
     },
     {
       "id": "iterative-retrieval",
       "path": "skills/iterative-retrieval",
-      "sha256_tree": "37386f7165ba8791355815207fd28ef7e86c7a9295d882ff9f41ca5859feee49"
+      "sha256_tree": "6c55d4ecf0b7362bdb8500762ff018eecc9b2df8c727f5bfeba808c335cc1c63"
     },
     {
       "id": "llm/anthropic",
       "path": "skills/llm/anthropic",
-      "sha256_tree": "4acd67f49c434cc523289720abfe84226e974d8d3068f30b2f51144ba0b15d71"
+      "sha256_tree": "b00e9671c5cf7d38e34eb4e47b7f8bd854f628f148c8400e6dcfd5c7509665d3"
     },
     {
       "id": "llm/openai",
       "path": "skills/llm/openai",
-      "sha256_tree": "6e7660100f97523cf53c0f3b8b4141cb3f32e7dcb7f55e596e794e4abb586a14"
+      "sha256_tree": "8049eb3ce44c2c250cc21ff6d4107ffa181131a89ab8fc0eec7d993f9d521126"
     },
     {
       "id": "local-places/src",
@@ -795,12 +795,12 @@
     {
       "id": "mcporter",
       "path": "skills/mcporter",
-      "sha256_tree": "1c356987459848bf98eeabfa8a4c6afe4fe56826584ed1dad155d6a791bb3681"
+      "sha256_tree": "020e6acaaa14fc0af2577f54c5d65f932b8d3b50ba185b3a418bc970c56698c1"
     },
     {
       "id": "model-usage/references",
       "path": "skills/model-usage/references",
-      "sha256_tree": "8d61376f64941dcc7f36072131c0ca2d35ddea5b5d9bbed13ddacac684981760"
+      "sha256_tree": "8bd8247b45ebd2930c94e339f6206e415c54aa94528a0facdb2a6b21b65c1bc6"
     },
     {
       "id": "model-usage/scripts",
@@ -810,7 +810,7 @@
     {
       "id": "moltbot-registry-cli",
       "path": "skills/moltbot-registry-cli",
-      "sha256_tree": "2ce09715f1196bac325f9770f6020cc5d5a06321f55915405ef6d2e454ce2469"
+      "sha256_tree": "8ba737a8ab1da857862c0626e1113ae5d96647aaa18e045b133563b7c8f3c375"
     },
     {
       "id": "nano-banana-pro/scripts",
@@ -820,17 +820,17 @@
     {
       "id": "nano-pdf",
       "path": "skills/nano-pdf",
-      "sha256_tree": "4a8a61c29efaafd693a268198f96cc2a2453db250e36a8b46135751f6d2c7f29"
+      "sha256_tree": "817eaa6153fa0abe2e45bc31eb3aa3e90349da3d4a945f2dc6dd4c8a30e98166"
     },
     {
       "id": "notion",
       "path": "skills/notion",
-      "sha256_tree": "cfb4d84d670ddc9d54e5016cc5c7f5acffb3273aa9881dc9bff5288b93e010d8"
+      "sha256_tree": "ef7d71cabc3646cbf8bdf3f2422215b744182d145c72b028d5c77e3a04379744"
     },
     {
       "id": "obsidian",
       "path": "skills/obsidian",
-      "sha256_tree": "1977d3756a3f1d26a4b41c1902571b50391c5dd75f5aa686a56849e4f550d9e0"
+      "sha256_tree": "5ecb3c69efb423a8bac690e44218c100baa5da757c71b14da655214be26e65e2"
     },
     {
       "id": "openai-image-gen/scripts",
@@ -840,7 +840,7 @@
     {
       "id": "openai-whisper",
       "path": "skills/openai-whisper",
-      "sha256_tree": "0c52c4fcdf9484f0dbf8de0de30279ebeda3dbbc5cdbd67c0dfe63a049b82e5a"
+      "sha256_tree": "041af04149611729aee2ddd90ad0ceda2ff887f2e4d5c6fcd20c17104e5be77d"
     },
     {
       "id": "openai-whisper-api/scripts",
@@ -850,57 +850,57 @@
     {
       "id": "openclaw-credential-encryption",
       "path": "skills/openclaw-credential-encryption",
-      "sha256_tree": "95ffb32dc898c5035fb3ca145704d67d7fa1b30b45509cc3179894bd0d2eb8d3"
+      "sha256_tree": "eb4a5f21f4d2cd37e33eed2c46a17d8d5c53eaeaedbf2307da4305f604c9b9c9"
     },
     {
       "id": "openclaw-runtime-monitor",
       "path": "skills/openclaw-runtime-monitor",
-      "sha256_tree": "5fb694f81633f60cb0693d9ae0387accf5b6633028abd276316fbd827992bb1f"
+      "sha256_tree": "c43c6ff116e111dc57f5211f0ebe7dbbee40e48a03fd0504bf3a670f9c24c7d9"
     },
     {
       "id": "openhue",
       "path": "skills/openhue",
-      "sha256_tree": "1429699c6493f34f41cda267de1790623c54e48a5da17f23b65b269c57135a94"
+      "sha256_tree": "6a1f5b08b6e600fd0e5e79e56bcaccb8c202e79128fe1447573b604b7359786f"
     },
     {
       "id": "oracle",
       "path": "skills/oracle",
-      "sha256_tree": "665d1ae0f7ecf931d55f6dcf8b9bc93983af18d27e9b4011dc4fdbf9250fde39"
+      "sha256_tree": "a4a5ea4c5faf1aed4d81630ca4fc3690f5d1284be5b1571c9ffa38a9024c6a8b"
     },
     {
       "id": "ordercli",
       "path": "skills/ordercli",
-      "sha256_tree": "7ea498471529f38565be2f7f398aca626dd866afc291c252f3af1ac5423eec92"
+      "sha256_tree": "6616a04013d9476477cebfaa0e885bf9e1eb538473e0d3936bb4798ea71928c6"
     },
     {
       "id": "peekaboo",
       "path": "skills/peekaboo",
-      "sha256_tree": "b290f017f4dcf7b703d451b382fb74b39275472853edc3b590f1aabfccde6d1a"
+      "sha256_tree": "81dcd8298c1339efa1d051b9845b444d14f38517a9975a911eaeeec055157fc6"
     },
     {
       "id": "postgres-patterns",
       "path": "skills/postgres-patterns",
-      "sha256_tree": "3b11b69c70668c9860ab733d81c1726a874ba07224fc70a9b07ddcc4f6cb0533"
+      "sha256_tree": "7c88287e46118b7b7a147aeb951ebb77f1314e24c938716faa6935bb1ed8eab0"
     },
     {
       "id": "project-guidelines-example",
       "path": "skills/project-guidelines-example",
-      "sha256_tree": "ec6181fdd7cdc60c3c9b7c79d239cb44dda57ba6ac2a4a3bee75f02f15d706cf"
+      "sha256_tree": "c4e4cead7db4a177bcaf6ce5c07fc68c0e1d486a8d21b87d2a597620182f561a"
     },
     {
       "id": "sag",
       "path": "skills/sag",
-      "sha256_tree": "d75f66359ee7cc62ed7a3ec778915f7fdc3071c1a28a1a2da39e658d99a30844"
+      "sha256_tree": "a6f228f0d71eebce4e3eafd2eb6d45c6b62f31f44780248dfa08583feae60643"
     },
     {
       "id": "security-review",
       "path": "skills/security-review",
-      "sha256_tree": "fecf5c212aac1f186f48d8c6e4173677adbe1705474e951f8896e52403859b55"
+      "sha256_tree": "1ca8a7d4dcc5e30739f2919902fac4fafb3fa9702672ac67696e773db44c66f2"
     },
     {
       "id": "session-logs",
       "path": "skills/session-logs",
-      "sha256_tree": "fffbbf65604ff27486af40fe1df844dc5c9bf924913caa66865a6043f2dbdc7e"
+      "sha256_tree": "4e58ec8fb8425aee68ef711f05c8fd6e6e2f45bdb756dec50ae9f66df9218ab9"
     },
     {
       "id": "sherpa-onnx-tts/bin",
@@ -920,37 +920,37 @@
     {
       "id": "songsee",
       "path": "skills/songsee",
-      "sha256_tree": "c4d5bb934128a95c0313371cb9c0b73aba059925d5ee4b394815b2263161d7e0"
+      "sha256_tree": "846b005308ccbec1ef18256890fd5c984d7d4da1a22984f9c22931c13dc616d6"
     },
     {
       "id": "sonoscli",
       "path": "skills/sonoscli",
-      "sha256_tree": "f395b2f56f7550ffb769f2e99a3606d1f275e38cf5977ca9dfcb9125cd8f8054"
+      "sha256_tree": "6ea82265bb260c894fc4035e3a68c0671bd8f8385adbd3b0a739109b678793c4"
     },
     {
       "id": "spotify-player",
       "path": "skills/spotify-player",
-      "sha256_tree": "b20807c2558bc29f9e9dccfbdb1fcf7a41ce50561b9c5fc3db0513b0a595f296"
+      "sha256_tree": "1695e2ef059f8f798638770c0597ef5dea5204d5948cad6e19fa34b297b99da2"
     },
     {
       "id": "strategic-compact",
       "path": "skills/strategic-compact",
-      "sha256_tree": "363800af6f3683f3c95a872acd0d3869f03b5e7de1141e9ecbceda6983fc27dd"
+      "sha256_tree": "7f5d22354c153cfde9bdd89ca43f2c597409269281d29f4bb0cfa5f50629d2be"
     },
     {
       "id": "summarize",
       "path": "skills/summarize",
-      "sha256_tree": "41a963795e61f87588542bfc687f89df14b2c5ff26d6d1753ae0f55b12efb185"
+      "sha256_tree": "f081911bf10215e184d3fdbadd39d27b29e46a9e27096b5c3e0f45f81b8f7a01"
     },
     {
       "id": "tdd-workflow",
       "path": "skills/tdd-workflow",
-      "sha256_tree": "b4da6404f8a9af497b629bb958bee0930f0968f40ed1115ec97621ff4a309603"
+      "sha256_tree": "5614f710fc6703175345a87acad4c850a0f5944d4df1a41dbbcc39100fb267e6"
     },
     {
       "id": "things-mac",
       "path": "skills/things-mac",
-      "sha256_tree": "4ff50ec97580576576668373b523572a0e84d8f5f8be03a7c77ec90a7605ade5"
+      "sha256_tree": "ded69afaf589fcafd78a56135717486ee589bf95978e184d3552fc02cb3ad315"
     },
     {
       "id": "tmux/scripts",
@@ -960,12 +960,12 @@
     {
       "id": "trello",
       "path": "skills/trello",
-      "sha256_tree": "96ed7a252c47a4f32358450aab4c2639784a6ff807f21f54ceb52404ea0f1f2d"
+      "sha256_tree": "2777cbe6fbb5ade08ab6beb24d33623d6859b9186c20bb96c880cb08e308e8d7"
     },
     {
       "id": "verification-loop",
       "path": "skills/verification-loop",
-      "sha256_tree": "20a4d4f501d9f4ea5176205e6c9b9e83b312c4bf58b27884ec664a57aff18769"
+      "sha256_tree": "d82217b9b768259a246f9ae231a90a3308933650502aa4be93b95f2b460ec3b5"
     },
     {
       "id": "video-frames/scripts",
@@ -975,17 +975,17 @@
     {
       "id": "voice-call",
       "path": "skills/voice-call",
-      "sha256_tree": "7d012c63fd0de6b0191fde3e658f84536b299d049879c21e9be21eaaaacc7f5d"
+      "sha256_tree": "d0e6dce1a7ff43c13d08e3fed98c7db673b7fdc4e89b8ed89f9d2c79efea10f6"
     },
     {
       "id": "wacli",
       "path": "skills/wacli",
-      "sha256_tree": "72131a0c919fe1a9c63ccf31f1584ff50e78ae6a911095b3850a310edb424f25"
+      "sha256_tree": "ab7eabd3485fa9d83b3eacb763255590e8a2040b9e830e9d0c49fa1035bd1579"
     },
     {
       "id": "weather",
       "path": "skills/weather",
-      "sha256_tree": "02232d55683a81f76515febfae7a6f024d9c0a88e6fdc2ef84c4bea9021aa038"
+      "sha256_tree": "3cf8c19cdcf1e10bb62e6123acfc44836a1d78ab459984b21231851b047aba62"
     }
   ]
 }
