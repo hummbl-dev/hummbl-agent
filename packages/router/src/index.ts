@@ -5,6 +5,7 @@ export * from "./router";
 export * from "./capabilities";
 export * from "./de3-routing";
 export * from "./in2-routing";
+export * from "./route-by-application-point";
 export * from "./base120/bindings";
 export * from "./base120/validateBindings";
 export * from "./base120/telemetry";
