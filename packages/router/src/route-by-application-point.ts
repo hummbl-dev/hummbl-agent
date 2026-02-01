@@ -4,17 +4,18 @@ import { resolveApplicationPoint } from "./base120/applicationPoints.js";
 import { selectLlmSkill, type LlmRoutingPolicy } from "./llm-routing.js";
 import { selectDe3Skill } from "./de3-routing.js";
 import { selectIn2Skill } from "./in2-routing.js";
+import { selectSy8Skill } from "./sy8-routing.js";
 
 export type RoutedSelection =
   | {
       ok: true;
-      applicationPoint: "P1" | "DE3" | "IN2";
+      applicationPoint: "P1" | "DE3" | "IN2" | "SY8";
       skillId: string;
       reason: string;
     }
   | {
       ok: false;
-      applicationPoint: null | "P1" | "DE3" | "IN2";
+      applicationPoint: null | "P1" | "DE3" | "IN2" | "SY8";
       reason: string;
     };
 
@@ -56,13 +57,25 @@ export function routeByApplicationPoint(params: {
       : { ok: false, applicationPoint: "DE3", reason: r.reason };
   }
 
-  const r = selectIn2Skill({ skills: params.skills });
+  if (ap.code === "IN2") {
+    const r = selectIn2Skill({ skills: params.skills });
+    return r.ok
+      ? {
+          ok: true,
+          applicationPoint: "IN2",
+          skillId: r.skill.id,
+          reason: r.reason,
+        }
+      : { ok: false, applicationPoint: "IN2", reason: r.reason };
+  }
+
+  const r = selectSy8Skill({ tuple: params.tuple, skills: params.skills });
   return r.ok
     ? {
         ok: true,
-        applicationPoint: "IN2",
-        skillId: r.skill.id,
+        applicationPoint: "SY8",
+        skillId: r.skillId,
         reason: r.reason,
       }
-    : { ok: false, applicationPoint: "IN2", reason: r.reason };
+    : { ok: false, applicationPoint: "SY8", reason: r.reason };
 }

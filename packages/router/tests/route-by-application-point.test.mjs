@@ -66,3 +66,26 @@ test("routeByApplicationPoint dispatches IN2 for in2:*", () => {
     assert.equal(result.skillId, "in2/validate-schema.v0.1.0");
   }
 });
+
+test("routeByApplicationPoint dispatches SY8 for sy8:*", () => {
+  const skills = [
+    { id: "sy8/synthesize-summary.v0.1.0" },
+    { id: "sy8/synthesize-options.v0.1.0" },
+    { id: "sy8/synthesize-recommendation.v0.1.0" },
+  ];
+  const result = routeByApplicationPoint({
+    tuple: { ...baseTuple, capability: "sy8:synthesize" },
+    skills,
+  });
+  assert.equal(result.ok, true);
+  if (result.ok) {
+    assert.equal(result.applicationPoint, "SY8");
+    assert.ok(
+      [
+        "sy8/synthesize-summary.v0.1.0",
+        "sy8/synthesize-options.v0.1.0",
+        "sy8/synthesize-recommendation.v0.1.0",
+      ].includes(result.skillId)
+    );
+  }
+});

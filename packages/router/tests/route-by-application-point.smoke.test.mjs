@@ -9,6 +9,7 @@ function snapshotBindings() {
     P1: [...BASE120_BINDINGS.P1.skills],
     DE3: [...BASE120_BINDINGS.DE3.skills],
     IN2: [...BASE120_BINDINGS.IN2.skills],
+    SY8: [...BASE120_BINDINGS.SY8.skills],
   };
 }
 
@@ -16,6 +17,7 @@ function restoreBindings(snap) {
   BASE120_BINDINGS.P1.skills = snap.P1;
   BASE120_BINDINGS.DE3.skills = snap.DE3;
   BASE120_BINDINGS.IN2.skills = snap.IN2;
+  BASE120_BINDINGS.SY8.skills = snap.SY8;
 }
 
 function makeTuple(capability) {
@@ -108,6 +110,33 @@ describe("routeByApplicationPoint smoke", () => {
       assert.equal(res.ok, true);
       assert.equal(res.applicationPoint, "IN2");
       assert.ok(IN2_IDS.includes(res.skillId));
+      assert.equal(typeof res.reason, "string");
+    } finally {
+      restoreBindings(snap);
+    }
+  });
+
+  it("SY8: sy8:* dispatch selects a SY8 skill within SY8 binding", () => {
+    const snap = snapshotBindings();
+    try {
+      const SY8_IDS = [
+        "sy8/synthesize-summary.v0.1.0",
+        "sy8/synthesize-options.v0.1.0",
+        "sy8/synthesize-recommendation.v0.1.0",
+      ];
+      BASE120_BINDINGS.SY8.skills = SY8_IDS;
+
+      const res = routeByApplicationPoint({
+        tuple: makeTuple("sy8:synthesize"),
+        skills: [
+          skill("sy8/synthesize-options.v0.1.0"),
+          skill("noise"),
+        ],
+      });
+
+      assert.equal(res.ok, true);
+      assert.equal(res.applicationPoint, "SY8");
+      assert.ok(SY8_IDS.includes(res.skillId));
       assert.equal(typeof res.reason, "string");
     } finally {
       restoreBindings(snap);
