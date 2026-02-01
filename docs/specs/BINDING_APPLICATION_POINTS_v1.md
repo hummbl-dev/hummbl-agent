@@ -42,6 +42,16 @@ No inference or fuzzy matching in v1.
 
 ## Application Points (v1)
 
+### Canonical Dispatch Rule (v1)
+
+- Dispatch is capability-prefix based:
+  - `llm:* → P1`
+  - `de3:* → DE3`
+  - `in2:* → IN2`
+  - else: no application point (null)
+- Canonical implementation: `packages/router/src/base120/applicationPoints.ts::resolveApplicationPoint()`
+- Resolver-only in Wave 11A; integration deferred.
+
 ### P1 (Existing)
 
 - LLM vendor selection (already implemented).
