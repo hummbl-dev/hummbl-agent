@@ -481,6 +481,37 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-016 — BASE120 Router Wave 16 (RE2 Iterative Refinement Surface)
+
+- **Date:** 2026-01-31
+- **Scope:** RE2 end-to-end (consumer + binding + dispatch)
+- **Status:** COMPLETE / GREEN
+- **Tag (planned):** v0.2.3-re2-iterative-refinement-surface
+
+### What Shipped
+
+- **Selector:** RE2 baseline routing + binding constraint + telemetry
+- **Skills:** 3 re2/* iterative refinement skills added
+- **Binding:** RE2 populated with manifest-backed IDs
+- **Dispatch:** `re2:*` routed via resolver + orchestrator + smoke
+
+### Evidence
+
+- **Router tests:** 53 passing
+- **Manifest:** 209 skills after re2 additions
+- **Bindings:** `BASE120_BINDINGS.RE2.skills` populated with 3 IDs
+- **CI:** green expected
+
+### Semantic Decisions
+
+- **RE2 defaults to iterative refinement**; verification loops deferred
+
+---
+
+*End of SITREP-WAVE-016*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
