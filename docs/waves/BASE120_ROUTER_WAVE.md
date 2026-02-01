@@ -672,3 +672,56 @@ P1 binding already includes both.
 ✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
 ✅ **No TS loaders** - Tests run against compiled output only  
 ✅ **CI gates** - Bindings validated + router tests green
+
+---
+
+## Wave 16 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+**Scope shipped (evidence-backed):**
+
+- `re2-routing.ts` baseline + binding constraint + telemetry
+- `skills/re2/*` (3) + MANIFEST regen
+- `BASE120_BINDINGS.RE2` populated with 3 IDs
+- `re2:*` dispatch integrated (resolver + orchestrator + smoke)
+
+**Wave steps:**
+
+- **W16.1:** RE2 baseline selector + tests
+- **W16.2:** Binding constraint via `applyBinding` + telemetry + tests
+- **W16.3:** re2/* skills supplied; manifest regenerated (209 skills)
+- **W16.4:** `BASE120_BINDINGS.RE2.skills` populated with real IDs
+- **W16.5–W16.7:** resolver + orchestrator + smoke now include `re2:*`
+
+### Evidence
+
+**Commits:**
+
+- `c1954a4` - feat(router): add RE2 routing surface (baseline)
+- `c7c2aa8` - feat(router): apply RE2 binding constraint with telemetry
+- `386b59f` - feat(skills): add re2/* iterative refinement skills (Wave 16)
+- `8c46852` - feat(router): populate RE2 binding with registry-backed skills (Wave 16)
+- `6cfb34d` - feat(router): add RE2 to application point dispatch (Wave 16)
+
+**Tests added:**
+
+- `packages/router/tests/re2-routing.baseline.test.mjs`
+- `packages/router/tests/re2-routing.binding.test.mjs`
+- `packages/router/tests/application-points.resolve.test.mjs` (re2 case)
+- `packages/router/tests/route-by-application-point.test.mjs` (re2 dispatch)
+- `packages/router/tests/route-by-application-point.smoke.test.mjs` (re2 smoke)
+
+**packages/router npm test:** ✅ PASS (53 tests)
+
+### Invariants
+
+✅ **CI green per commit** - Router gates green for each wave step  
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
+✅ **Non-breaking** - additive routing surface + bindings only  
+✅ **Governance compliance** - .test.mjs + no TS loaders + markdownlint
