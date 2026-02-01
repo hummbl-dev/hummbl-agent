@@ -411,6 +411,29 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-013 — BASE120 Router Wave 13A (Orchestrator Smoke)
+
+- **Date:** 2026-01-31
+- **Scope:** Router orchestrator smoke coverage
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Test:** `packages/router/tests/route-by-application-point.smoke.test.mjs`
+- **Coverage:** capability → application point → selector → binding constraint
+- **Notes:** no behavior change beyond test coverage
+
+### Evidence
+
+- **Router tests:** 37 passing
+- **CI:** green expected
+
+---
+
+*End of SITREP-WAVE-013*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
