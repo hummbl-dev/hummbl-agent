@@ -645,3 +645,30 @@ P1 binding already includes both.
 ### Evidence
 
 - **packages/router npm test:** ✅ PASS (37 tests)
+
+---
+
+## Wave 14 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **W14.1:** SY8 baseline selector + tests
+- **W14.2:** binding constraint via `applyBinding` + telemetry + tests
+- **W14.3:** sy8/* skills supplied; manifest regenerated (206 skills)
+- **W14.4:** `BASE120_BINDINGS.SY8.skills` populated with real IDs
+- **W14.6:** resolver + orchestrator + smoke now include `sy8:*`
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (45 tests)
+
+### Invariants
+
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
+✅ **No TS loaders** - Tests run against compiled output only  
+✅ **CI gates** - Bindings validated + router tests green
