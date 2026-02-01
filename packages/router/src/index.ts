@@ -7,6 +7,7 @@ export * from "./de3-routing";
 export * from "./in2-routing";
 export * from "./sy8-routing";
 export * from "./re2-routing";
+export * from "./co5-routing";
 export * from "./route-by-application-point";
 export * from "./base120/bindings";
 export * from "./base120/validateBindings";
