@@ -627,3 +627,21 @@ P1 binding already includes both.
 ✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
 ✅ **Deterministic** - Capability-prefix dispatch + selector determinism  
 ✅ **No TS loaders** - Tests run against compiled output only
+
+---
+
+## Wave 13A Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **Smoke coverage:** orchestrator end-to-end chain validation
+  - capability → application point → selector → binding constraint
+- **Coverage:** P1/DE3/IN2 + unknown capability case
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (37 tests)
