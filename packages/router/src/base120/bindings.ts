@@ -45,7 +45,17 @@ export const BASE120_BINDINGS: Base120Bindings = {
       "de3/decompose-problem.v0.1.0",
     ],
   },
-  SY8: { skills: [] },
+  SY8: {
+    skills: [
+      "sy8/synthesize-summary.v0.1.0",
+      "sy8/synthesize-options.v0.1.0",
+      "sy8/synthesize-recommendation.v0.1.0",
+    ],
+    telemetry: {
+      event: "router.base120.binding_resolved",
+      version: "v1.0.0",
+    },
+  },
   DE1: { skills: [] },
   RE2: { skills: [] },
   IN10: { skills: [] },

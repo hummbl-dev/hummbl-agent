@@ -19,8 +19,8 @@ describe("SY8 binding constraint", () => {
   it("binding empty preserves baseline", () => {
     withBinding([], () => {
       const skills = [
-        { id: "sy8/x", description: "test" },
-        { id: "sy8/y", description: "test" },
+        { id: "sy8/synthesize-summary.v0.1.0", description: "test" },
+        { id: "sy8/synthesize-options.v0.1.0", description: "test" },
       ];
       const result = selectSy8Skill({
         tuple: { principal: "user:test", capability: "sy8:synthesize", scope: "test" },
@@ -28,15 +28,19 @@ describe("SY8 binding constraint", () => {
       });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skillId, "sy8/x");
+        assert.equal(result.skillId, "sy8/synthesize-summary.v0.1.0");
       }
     });
   });
 
   it("binding populated + intersection selects bound skill", () => {
-    withBinding(["sy8/a", "sy8/b"], () => {
+    withBinding([
+      "sy8/synthesize-summary.v0.1.0",
+      "sy8/synthesize-options.v0.1.0",
+      "sy8/synthesize-recommendation.v0.1.0",
+    ], () => {
       const skills = [
-        { id: "sy8/b", description: "test" },
+        { id: "sy8/synthesize-options.v0.1.0", description: "test" },
         { id: "noise", description: "test" },
       ];
       const result = selectSy8Skill({
@@ -45,14 +49,18 @@ describe("SY8 binding constraint", () => {
       });
       assert.equal(result.ok, true);
       if (result.ok) {
-        assert.equal(result.skillId, "sy8/b");
+        assert.equal(result.skillId, "sy8/synthesize-options.v0.1.0");
       }
     });
   });
 
   it("binding populated + no intersection fails", () => {
-    withBinding(["sy8/a"], () => {
-      const skills = [{ id: "sy8/b", description: "test" }];
+    withBinding([
+      "sy8/synthesize-summary.v0.1.0",
+      "sy8/synthesize-options.v0.1.0",
+      "sy8/synthesize-recommendation.v0.1.0",
+    ], () => {
+      const skills = [{ id: "llm/openai", description: "test" }];
       const result = selectSy8Skill({
         tuple: { principal: "user:test", capability: "sy8:synthesize", scope: "test" },
         skills,
