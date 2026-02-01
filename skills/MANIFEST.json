@@ -918,6 +918,21 @@
       "sha256_tree": "c4e4cead7db4a177bcaf6ce5c07fc68c0e1d486a8d21b87d2a597620182f561a"
     },
     {
+      "id": "re2/refine-plan.v0.1.0",
+      "path": "skills/re2/refine-plan.v0.1.0",
+      "sha256_tree": "b86b34ac7ed0df1c0458171c6059b69615f74c86ce9d6d3db70fb42d130e7092"
+    },
+    {
+      "id": "re2/refine-recommendation.v0.1.0",
+      "path": "skills/re2/refine-recommendation.v0.1.0",
+      "sha256_tree": "757571fda4f393c7e03b573999d58092bba453e7e4bf65c025101f8414fc8eba"
+    },
+    {
+      "id": "re2/refine-solution.v0.1.0",
+      "path": "skills/re2/refine-solution.v0.1.0",
+      "sha256_tree": "5209eaf00a0e26df3f84e3a28a42b62c4c1ebaf910bec9060db8372f8668e204"
+    },
+    {
       "id": "sag",
       "path": "skills/sag",
       "sha256_tree": "a6f228f0d71eebce4e3eafd2eb6d45c6b62f31f44780248dfa08583feae60643"
