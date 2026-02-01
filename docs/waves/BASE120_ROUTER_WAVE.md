@@ -581,3 +581,24 @@ P1 binding already includes both.
 ✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
 ✅ **No TS loaders** - Tests run against compiled output only  
 ✅ **Deterministic** - Order-preserving, pure binding application
+
+---
+
+## Wave 11A Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **Resolver:** `resolveApplicationPoint(tuple)` mapping
+  - `llm:* → P1`
+  - `de3:* → DE3`
+  - `in2:* → IN2`
+  - else `null`
+- **Scope:** resolver-only (no behavior integration)
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (29 tests)
