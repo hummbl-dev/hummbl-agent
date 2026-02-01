@@ -457,6 +457,30 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-015 — Base120 Transformation Map Guard
+
+- **Date:** 2026-01-31
+- **Scope:** Canonical Base120 → `T.*` mapping guard + CI enforcement
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Mapping artifact:** `docs/base120.transformation-map.json`
+- **Guardrail:** `scripts/lint-base120-transformation-map.sh`
+- **CI step:** Base120 transformation map lint
+- **Docs:** two-layer model clarified in `docs/SPEC_TRANSFORMATIONS.md` and `docs/specs/BINDING_APPLICATION_POINTS_v1.md`
+
+### Governance Impact
+
+- **Canonical separation enforced:** Base120 model IDs vs `T.*` transformations
+- **Drift prevention:** mapping validated in CI
+
+---
+
+*End of SITREP-WAVE-015*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
