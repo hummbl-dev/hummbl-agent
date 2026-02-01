@@ -112,6 +112,10 @@ jobs:
         shell: bash
         run: node scripts/validate-base120-canonical.cjs
 
+      - name: Lint Base120 transformation map
+        shell: bash
+        run: scripts/lint-base120-transformation-map.sh
+
       - name: Lint for legacy registry references
         shell: bash
         run: node scripts/lint-no-clawdhub.mjs

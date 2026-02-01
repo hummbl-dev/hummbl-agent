@@ -52,6 +52,12 @@ No inference or fuzzy matching in v1.
 - Canonical implementation: `packages/router/src/base120/applicationPoints.ts::resolveApplicationPoint()`
 - Resolver-only in Wave 11A; integration deferred.
 
+### Two-Layer Model (v1)
+
+- **Transformations:** `T.*` codes drive execution semantics.
+- **Base120 codes:** mental model identifiers (e.g., `P1`, `DE3`, `SY8`).
+- **Mapping:** Base120 → `T.*` is explicit and governed (see `docs/base120.transformation-map.json`).
+
 ### P1 (Existing)
 
 - LLM vendor selection (already implemented).

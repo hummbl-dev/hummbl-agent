@@ -1,0 +1,12 @@
+{
+  "schema_version": "base120.transformation-map.v1",
+  "base120_version": "1.0.0",
+  "mapping": {
+    "P": "T.PER",
+    "IN": "T.INV",
+    "CO": "T.COM",
+    "DE": "T.DEC",
+    "RE": "T.REC",
+    "SY": "T.SYS"
+  }
+}
