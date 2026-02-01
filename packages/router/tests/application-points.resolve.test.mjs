@@ -40,6 +40,10 @@ test("resolveApplicationPoint maps sy8:* to SY8", () => {
   assertOk("sy8:synthesize", "SY8");
 });
 
+test("resolveApplicationPoint maps re2:* to RE2", () => {
+  assertOk("re2:refine", "RE2");
+});
+
 test("resolveApplicationPoint returns null for unsupported capability", () => {
   assertNull("runner:exec");
   assertNull("");

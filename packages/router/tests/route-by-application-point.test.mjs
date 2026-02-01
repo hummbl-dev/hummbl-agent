@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { routeByApplicationPoint } from "../dist/router/src/route-by-application-point.js";
+import { BASE120_BINDINGS } from "../dist/router/src/base120/bindings.js";
 
 const baseTuple = {
   principal: "test",
@@ -87,5 +88,32 @@ test("routeByApplicationPoint dispatches SY8 for sy8:*", () => {
         "sy8/synthesize-recommendation.v0.1.0",
       ].includes(result.skillId)
     );
+  }
+});
+
+test("routeByApplicationPoint dispatches RE2 for re2:*", () => {
+  const prev = [...BASE120_BINDINGS.RE2.skills];
+  BASE120_BINDINGS.RE2.skills = [
+    "re2/refine-plan.v0.1.0",
+    "re2/refine-solution.v0.1.0",
+    "re2/refine-recommendation.v0.1.0",
+  ];
+  try {
+    const skills = [
+      { id: "re2/refine-solution.v0.1.0" },
+      { id: "re2/refine-plan.v0.1.0" },
+      { id: "de3/decompose-plan.v0.1.0" },
+    ];
+    const result = routeByApplicationPoint({
+      tuple: { ...baseTuple, capability: "re2:refine" },
+      skills,
+    });
+    assert.equal(result.ok, true);
+    if (result.ok) {
+      assert.equal(result.applicationPoint, "RE2");
+      assert.ok(BASE120_BINDINGS.RE2.skills.includes(result.skillId));
+    }
+  } finally {
+    BASE120_BINDINGS.RE2.skills = prev;
   }
 });

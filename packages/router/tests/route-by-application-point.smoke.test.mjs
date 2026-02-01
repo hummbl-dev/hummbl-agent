@@ -10,6 +10,7 @@ function snapshotBindings() {
     DE3: [...BASE120_BINDINGS.DE3.skills],
     IN2: [...BASE120_BINDINGS.IN2.skills],
     SY8: [...BASE120_BINDINGS.SY8.skills],
+    RE2: [...BASE120_BINDINGS.RE2.skills],
   };
 }
 
@@ -18,6 +19,7 @@ function restoreBindings(snap) {
   BASE120_BINDINGS.DE3.skills = snap.DE3;
   BASE120_BINDINGS.IN2.skills = snap.IN2;
   BASE120_BINDINGS.SY8.skills = snap.SY8;
+  BASE120_BINDINGS.RE2.skills = snap.RE2;
 }
 
 function makeTuple(capability) {
@@ -137,6 +139,34 @@ describe("routeByApplicationPoint smoke", () => {
       assert.equal(res.ok, true);
       assert.equal(res.applicationPoint, "SY8");
       assert.ok(SY8_IDS.includes(res.skillId));
+      assert.equal(typeof res.reason, "string");
+    } finally {
+      restoreBindings(snap);
+    }
+  });
+
+  it("RE2: re2:* dispatch selects a RE2 skill within RE2 binding", () => {
+    const snap = snapshotBindings();
+    try {
+      const RE2_IDS = [
+        "re2/refine-plan.v0.1.0",
+        "re2/refine-solution.v0.1.0",
+        "re2/refine-recommendation.v0.1.0",
+      ];
+      BASE120_BINDINGS.RE2.skills = RE2_IDS;
+
+      const res = routeByApplicationPoint({
+        tuple: makeTuple("re2:refine"),
+        skills: [
+          skill("re2/refine-solution.v0.1.0"),
+          skill("de3/decompose-plan.v0.1.0"),
+          skill("re2/refine-plan.v0.1.0"),
+        ],
+      });
+
+      assert.equal(res.ok, true);
+      assert.equal(res.applicationPoint, "RE2");
+      assert.ok(RE2_IDS.includes(res.skillId));
       assert.equal(typeof res.reason, "string");
     } finally {
       restoreBindings(snap);

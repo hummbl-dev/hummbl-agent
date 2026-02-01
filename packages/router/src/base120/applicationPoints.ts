@@ -1,6 +1,6 @@
 import type { TupleV1 } from "../../../kernel/src/tuples/types";
 
-export type ApplicationPointCode = "P1" | "DE3" | "IN2" | "SY8";
+export type ApplicationPointCode = "P1" | "DE3" | "IN2" | "SY8" | "RE2";
 
 export type ApplicationPointResolution =
   | { ok: true; code: ApplicationPointCode; reason: string }
@@ -40,6 +40,14 @@ export function resolveApplicationPoint(
       ok: true,
       code: "SY8",
       reason: "capability prefix sy8:*",
+    };
+  }
+
+  if (cap.startsWith("re2:")) {
+    return {
+      ok: true,
+      code: "RE2",
+      reason: "capability prefix re2:*",
     };
   }
 
