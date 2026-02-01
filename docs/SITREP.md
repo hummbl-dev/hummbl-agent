@@ -366,6 +366,28 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-011 — BASE120 Router Wave 11A (Resolver-Only)
+
+- **Date:** 2026-01-31
+- **Scope:** Resolver-only capability prefix dispatch
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Resolver:** `resolveApplicationPoint(tuple)` mapping `llm:* → P1`, `de3:* → DE3`, `in2:* → IN2`, else null
+- **Behavior:** No routing integration or behavior changes
+
+### Evidence
+
+- **Router tests:** 29 passing
+- **CI:** green expected
+
+---
+
+*End of SITREP-WAVE-011*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
