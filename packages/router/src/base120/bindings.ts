@@ -57,7 +57,17 @@ export const BASE120_BINDINGS: Base120Bindings = {
     },
   },
   DE1: { skills: [] },
-  RE2: { skills: [] },
+  RE2: {
+    skills: [
+      "re2/refine-plan.v0.1.0",
+      "re2/refine-solution.v0.1.0",
+      "re2/refine-recommendation.v0.1.0",
+    ],
+    telemetry: {
+      event: "router.base120.binding_resolved",
+      version: "v1.0.0",
+    },
+  },
   IN10: { skills: [] },
   CO5: { skills: [] },
 };
