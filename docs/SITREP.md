@@ -434,6 +434,29 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-014 — BASE120 Router Wave 14 (SY8 Surface)
+
+- **Date:** 2026-01-31
+- **Scope:** SY8 end-to-end (consumer + binding + dispatch)
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Skills:** 3 sy8/* synthesis skills added
+- **Binding:** SY8 populated with manifest-backed IDs
+- **Dispatch:** `sy8:*` routed via resolver + orchestrator
+
+### Evidence
+
+- **Router tests:** 45 passing
+- **CI:** green expected
+
+---
+
+*End of SITREP-WAVE-014*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
