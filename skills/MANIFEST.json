@@ -973,6 +973,21 @@
       "sha256_tree": "f081911bf10215e184d3fdbadd39d27b29e46a9e27096b5c3e0f45f81b8f7a01"
     },
     {
+      "id": "sy8/synthesize-options.v0.1.0",
+      "path": "skills/sy8/synthesize-options.v0.1.0",
+      "sha256_tree": "d3170acb90ea31453c3c28f7990fc43bfcfbcdbafe6d3e503c2e0559ac535e2f"
+    },
+    {
+      "id": "sy8/synthesize-recommendation.v0.1.0",
+      "path": "skills/sy8/synthesize-recommendation.v0.1.0",
+      "sha256_tree": "66a52b0c5a8339e536ed23c0f53089706e7c88f90ca4a13c7b53e00a3933fa2a"
+    },
+    {
+      "id": "sy8/synthesize-summary.v0.1.0",
+      "path": "skills/sy8/synthesize-summary.v0.1.0",
+      "sha256_tree": "e043b55cc964da75243d922b94e342dff8ea078044ca04af1ce801e9977c44d6"
+    },
+    {
       "id": "tdd-workflow",
       "path": "skills/tdd-workflow",
       "sha256_tree": "5614f710fc6703175345a87acad4c850a0f5944d4df1a41dbbcc39100fb267e6"
