@@ -388,6 +388,29 @@ Wave 3: Populate remaining bindings (IN2, DE3, SY8, DE1, RE2, IN10, CO5) with ap
 
 ---
 
+## SITREP-WAVE-012 — BASE120 Router Wave 12 (Orchestrator)
+
+- **Date:** 2026-01-31
+- **Scope:** Capability → application point → selector integration entrypoint
+- **Status:** COMPLETE / GREEN
+
+### What Shipped
+
+- **Entrypoint:** `packages/router/src/route-by-application-point.ts`
+- **Dispatch:** uses `resolveApplicationPoint()` + P1/DE3/IN2 selectors
+- **Tests:** `packages/router/tests/route-by-application-point.test.mjs`
+
+### Evidence
+
+- **Router tests:** 33 passing
+- **CI:** green expected
+
+---
+
+*End of SITREP-WAVE-012*
+
+---
+
 ## ARCHIVE: Historical SITREPs
 
 ### SITREP-1 (DRAFT - NON-CANONICAL)
