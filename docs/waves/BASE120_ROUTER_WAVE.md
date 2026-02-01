@@ -602,3 +602,28 @@ P1 binding already includes both.
 ### Evidence
 
 - **packages/router npm test:** ✅ PASS (29 tests)
+
+---
+
+## Wave 12 Closure
+
+**Wave:** BASE120_ROUTER_WAVE (continued)  
+**Status:** COMPLETE / GREEN  
+**Duration:** 2026-01-31
+
+### What Shipped
+
+- **Entrypoint:** `routeByApplicationPoint({ tuple, skills })`
+- **Dispatch:** uses `resolveApplicationPoint()` capability-prefix mapping
+- **Scope:** additive only; existing selectors unchanged
+
+### Evidence
+
+- **packages/router npm test:** ✅ PASS (33 tests)
+
+### Invariants
+
+✅ **Kernel authority** - Base120 codes remain kernel-owned  
+✅ **Manifest authority** - Skill IDs validated against skills/MANIFEST.json  
+✅ **Deterministic** - Capability-prefix dispatch + selector determinism  
+✅ **No TS loaders** - Tests run against compiled output only
